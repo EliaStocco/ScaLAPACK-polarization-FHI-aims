@@ -1,0 +1,36 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipm2057
+Job start: Wed May 27 23:22:07 CEST 2026
+Job end:   Wed May 27 23:38:55 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/PBEsol-spin/converge/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/PBEsol-spin/converge/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9118016           BaTiO3      1           256                             00:16:48      0:0
+9118016.0     aims.26033      1    128    256      327.24M      303.95M   00:01:51      0:0
+9118016.1     aims.26033      1    128    256      342.13M      310.14M   00:01:53      0:0
+9118016.2     aims.26033      1    128    256      325.94M      308.97M   00:01:52      0:0
+9118016.3     aims.26033      1    128    256      325.81M      307.26M   00:01:51      0:0
+9118016.4     aims.26033      1    128    256      325.41M      307.07M   00:01:51      0:0
+9118016.5     aims.26033      1    128    256      326.13M      304.94M   00:01:51      0:0
+9118016.6     aims.26033      1    128    256      325.59M      307.85M   00:01:51      0:0
+9118016.7     aims.26033      1    128    256      337.88M      308.08M   00:01:52      0:0
+9118016.8     aims.26033      1    128    256      327.03M      308.32M   00:01:52      0:0
+  
+Maximum memory per node: 45.920158 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 94.0 %
+  
