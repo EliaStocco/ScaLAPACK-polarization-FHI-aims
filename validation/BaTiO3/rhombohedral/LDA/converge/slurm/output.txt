@@ -1,0 +1,36 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipl2066
+Job start: Sun May 24 18:25:12 CEST 2026
+Job end:   Sun May 24 18:33:53 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/rhombohedral/LDA/converge/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/rhombohedral/LDA/converge/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9056364           BaTiO3      1           256                             00:08:41      0:0
+9056364.0     aims.26033      1    128    256      183.79M      177.31M   00:01:04      0:0
+9056364.1     aims.26033      1    128    256      286.11M      240.58M   00:00:56      0:0
+9056364.2     aims.26033      1    128    256      288.86M      245.84M   00:00:57      0:0
+9056364.3     aims.26033      1    128    256      287.99M      224.90M   00:00:56      0:0
+9056364.4     aims.26033      1    128    256      286.65M      230.16M   00:00:57      0:0
+9056364.5     aims.26033      1    128    256      285.44M      214.80M   00:00:57      0:0
+9056364.6     aims.26033      1    128    256      287.06M      215.94M   00:00:56      0:0
+9056364.7     aims.26033      1    128    256      289.50M      215.45M   00:00:56      0:0
+9056364.8     aims.26033      1    128    256      287.54M      230.27M   00:00:57      0:0
+  
+Maximum memory per node: 38.856294 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 82.7 %
+  
