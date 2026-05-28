@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  CrI3
+Node list: vipc2427
+Job start: Thu May 21 16:49:45 CEST 2026
+Job end:   Thu May 21 16:50:24 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/CrI3/FM/converge/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/CrI3/FM/converge/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+8998366             CrI3      1           256                             00:00:39      0:0
+8998366.0     aims.26033      1    128    256      145.44M      123.72M   00:00:35      0:0
+  
+Maximum memory per node: 19.520553 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 66.7 %
+  
