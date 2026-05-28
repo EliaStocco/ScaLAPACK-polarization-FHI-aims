@@ -1,0 +1,36 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipc[2434,2436,2438-2441]
+Job start: Fri May 22 22:03:45 CEST 2026
+Job end:   Fri May 22 22:08:56 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/scalapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/scalapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9018708           BaTiO3      6          1536                             00:05:11      0:0
+9018708.0     aims.26033      6    768   1536      236.18M      225.85M   00:00:40      0:0
+9018708.1     aims.26033      6    768   1536      265.63M      228.71M   00:00:33      0:0
+9018708.2     aims.26033      6    768   1536      264.77M      228.74M   00:00:33      0:0
+9018708.3     aims.26033      6    768   1536      265.75M      228.36M   00:00:35      0:0
+9018708.4     aims.26033      6    768   1536      265.07M      228.92M   00:00:32      0:0
+9018708.5     aims.26033      6    768   1536      265.73M      228.81M   00:00:32      0:0
+9018708.6     aims.26033      6    768   1536      263.69M      228.75M   00:00:33      0:0
+9018708.7     aims.26033      6    768   1536      245.86M      228.68M   00:00:33      0:0
+9018708.8     aims.26033      6    768   1536      264.76M      228.95M   00:00:33      0:0
+  
+Maximum memory per node: 35.668230 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 80.1 %
+  
