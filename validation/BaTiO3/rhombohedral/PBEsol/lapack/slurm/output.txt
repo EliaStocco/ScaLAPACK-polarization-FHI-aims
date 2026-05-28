@@ -1,0 +1,36 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipm2072
+Job start: Fri May 22 21:50:05 CEST 2026
+Job end:   Fri May 22 22:00:53 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/rhombohedral/lapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/rhombohedral/lapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9018923           BaTiO3      1           256                             00:10:48      0:0
+9018923.0     aims.26033      1    128    256      226.07M      155.71M   00:01:17      0:0
+9018923.1     aims.26033      1    128    256      233.92M      172.70M   00:01:11      0:0
+9018923.2     aims.26033      1    128    256      233.39M      173.74M   00:01:11      0:0
+9018923.3     aims.26033      1    128    256      235.01M      178.19M   00:01:11      0:0
+9018923.4     aims.26033      1    128    256      233.55M      178.57M   00:01:11      0:0
+9018923.5     aims.26033      1    128    256      232.65M      178.02M   00:01:11      0:0
+9018923.6     aims.26033      1    128    256      233.10M      174.09M   00:01:10      0:0
+9018923.7     aims.26033      1    128    256      234.55M      175.29M   00:01:12      0:0
+9018923.8     aims.26033      1    128    256      234.60M      181.10M   00:01:11      0:0
+  
+Maximum memory per node: 31.542346 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 85.0 %
+  
