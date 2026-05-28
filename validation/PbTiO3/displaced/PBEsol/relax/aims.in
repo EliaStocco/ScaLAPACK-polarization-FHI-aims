@@ -1,0 +1,9 @@
+xc                           pbesol
+relativistic                 atomic_zora scalar
+k_grid                       16 16 16
+include_spin_orbit           non_self_consistent
+sc_accuracy_rho              1e-8   
+compute_forces               .true.
+compute_analytical_stress    .true.
+
+
