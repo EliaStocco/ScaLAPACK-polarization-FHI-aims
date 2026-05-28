@@ -1,0 +1,36 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipm2087
+Job start: Fri May 22 21:46:14 CEST 2026
+Job end:   Fri May 22 21:57:09 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/lapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/lapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9018916           BaTiO3      1           256                             00:10:55      0:0
+9018916.0     aims.26033      1    128    256      224.64M      155.69M   00:01:17      0:0
+9018916.1     aims.26033      1    128    256      236.68M      173.20M   00:01:13      0:0
+9018916.2     aims.26033      1    128    256      234.50M      172.52M   00:01:10      0:0
+9018916.3     aims.26033      1    128    256      235.07M      169.10M   00:01:11      0:0
+9018916.4     aims.26033      1    128    256      223.09M      164.74M   00:01:10      0:0
+9018916.5     aims.26033      1    128    256      235.41M      180.06M   00:01:13      0:0
+9018916.6     aims.26033      1    128    256      235.37M      172.11M   00:01:10      0:0
+9018916.7     aims.26033      1    128    256      237.89M      173.19M   00:01:11      0:0
+9018916.8     aims.26033      1    128    256      235.57M      172.27M   00:01:11      0:0
+  
+Maximum memory per node: 31.928615 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 82.0 %
+  
