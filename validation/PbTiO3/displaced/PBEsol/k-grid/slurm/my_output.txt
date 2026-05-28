@@ -1,0 +1,44 @@
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cat: aims.in: No such file or directory
+cat: species.tight.in: No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
