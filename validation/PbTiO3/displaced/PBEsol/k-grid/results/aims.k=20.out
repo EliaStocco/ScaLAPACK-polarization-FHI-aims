@@ -1,0 +1,226 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. If so, please cite them. A partial list of references
+          is written at the end of this file. Thank you for giving credit to the authors
+          of these developments.
+
+          For general information about FHI-aims please find us at
+
+            https://fhi-aims.org
+
+          Online tutorials can be found at
+
+            https://fhi-aims-club.gitlab.io/tutorials/tutorials-overview/
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@ms1p.org and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20260522, Time     :  110653.471
+  Time zero on CPU 1             :   0.521250000000000E-01  s.
+  Internal wall clock time zero  :           548680013.471  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : B3BC8299-BACE-405C-A8B6-1021BEDEDD1F
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 260331
+  Commit number         : 4b0e6bbaf
+  CMake host system     : Linux-5.14.0-570.103.1.el9_6.x86_64
+  CMake version         : 3.26.5
+  OS Distribution       : Red Hat Enterprise Linux 9.6 (Plow)
+  Built on              : AMD EPYC 9554 64-Core Processor
+  Fortran compiler      : /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mpi/2021.11/bin/mpiifort (Intel) version 2021.1.0.20231117
+  Fortran compiler flags: -O3 -ip -fp-model precise -diag-disable=10448
+  C compiler            : /mpcdf/soft/RHEL_9/packages/x86_64/intel/2024.0.2/bin/icx (IntelLLVM) version 2024.0.2
+  C compiler flags      : -O3 -std=gnu99
+  C++ compiler          : /mpcdf/soft/RHEL_9/packages/x86_64/intel/2024.0.2/bin/icpx (IntelLLVM) version 2024.0.2
+  C++ compiler flags    : -O3 -std=c++14
+  HIP compiler          :
+  HIP compiler flags    :
+  HIP GPU arch          :
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Using GREENX
+  Linking against: /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_intel_lp64.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_sequential.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_core.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_scalapack_lp64.so
+
+  Using      128 parallel tasks.
+  Task        0 on host vipl2037 reporting.
+  Task        1 on host vipl2037 reporting.
+  Task        2 on host vipl2037 reporting.
+  Task        3 on host vipl2037 reporting.
+  Task        4 on host vipl2037 reporting.
+  Task        5 on host vipl2037 reporting.
+  Task        6 on host vipl2037 reporting.
+  Task        7 on host vipl2037 reporting.
+  Task        8 on host vipl2037 reporting.
+  Task        9 on host vipl2037 reporting.
+  Task       10 on host vipl2037 reporting.
+  Task       11 on host vipl2037 reporting.
+  Task       12 on host vipl2037 reporting.
+  Task       13 on host vipl2037 reporting.
+  Task       14 on host vipl2037 reporting.
+  Task       15 on host vipl2037 reporting.
+  Task       16 on host vipl2037 reporting.
+  Task       17 on host vipl2037 reporting.
+  Task       18 on host vipl2037 reporting.
+  Task       19 on host vipl2037 reporting.
+  Task       20 on host vipl2037 reporting.
+  Task       21 on host vipl2037 reporting.
+  Task       22 on host vipl2037 reporting.
+  Task       23 on host vipl2037 reporting.
+  Task       24 on host vipl2037 reporting.
+  Task       25 on host vipl2037 reporting.
+  Task       26 on host vipl2037 reporting.
+  Task       27 on host vipl2037 reporting.
+  Task       28 on host vipl2037 reporting.
+  Task       29 on host vipl2037 reporting.
+  Task       30 on host vipl2037 reporting.
+  Task       31 on host vipl2037 reporting.
+  Task       32 on host vipl2037 reporting.
+  Task       33 on host vipl2037 reporting.
+  Task       34 on host vipl2037 reporting.
+  Task       35 on host vipl2037 reporting.
+  Task       36 on host vipl2037 reporting.
+  Task       37 on host vipl2037 reporting.
+  Task       38 on host vipl2037 reporting.
+  Task       39 on host vipl2037 reporting.
+  Task       40 on host vipl2037 reporting.
+  Task       41 on host vipl2037 reporting.
+  Task       42 on host vipl2037 reporting.
+  Task       43 on host vipl2037 reporting.
+  Task       44 on host vipl2037 reporting.
+  Task       45 on host vipl2037 reporting.
+  Task       46 on host vipl2037 reporting.
+  Task       47 on host vipl2037 reporting.
+  Task       48 on host vipl2037 reporting.
+  Task       49 on host vipl2037 reporting.
+  Task       50 on host vipl2037 reporting.
+  Task       51 on host vipl2037 reporting.
+  Task       52 on host vipl2037 reporting.
+  Task       53 on host vipl2037 reporting.
+  Task       54 on host vipl2037 reporting.
+  Task       55 on host vipl2037 reporting.
+  Task       56 on host vipl2037 reporting.
+  Task       57 on host vipl2037 reporting.
+  Task       58 on host vipl2037 reporting.
+  Task       59 on host vipl2037 reporting.
+  Task       60 on host vipl2037 reporting.
+  Task       61 on host vipl2037 reporting.
+  Task       62 on host vipl2037 reporting.
+  Task       63 on host vipl2037 reporting.
+  Task       64 on host vipl2037 reporting.
+  Task       65 on host vipl2037 reporting.
+  Task       66 on host vipl2037 reporting.
+  Task       67 on host vipl2037 reporting.
+  Task       68 on host vipl2037 reporting.
+  Task       69 on host vipl2037 reporting.
+  Task       70 on host vipl2037 reporting.
+  Task       71 on host vipl2037 reporting.
+  Task       72 on host vipl2037 reporting.
+  Task       73 on host vipl2037 reporting.
+  Task       74 on host vipl2037 reporting.
+  Task       75 on host vipl2037 reporting.
+  Task       76 on host vipl2037 reporting.
+  Task       77 on host vipl2037 reporting.
+  Task       78 on host vipl2037 reporting.
+  Task       79 on host vipl2037 reporting.
+  Task       80 on host vipl2037 reporting.
+  Task       81 on host vipl2037 reporting.
+  Task       82 on host vipl2037 reporting.
+  Task       83 on host vipl2037 reporting.
+  Task       84 on host vipl2037 reporting.
+  Task       85 on host vipl2037 reporting.
+  Task       86 on host vipl2037 reporting.
+  Task       87 on host vipl2037 reporting.
+  Task       88 on host vipl2037 reporting.
+  Task       89 on host vipl2037 reporting.
+  Task       90 on host vipl2037 reporting.
+  Task       91 on host vipl2037 reporting.
+  Task       92 on host vipl2037 reporting.
+  Task       93 on host vipl2037 reporting.
+  Task       94 on host vipl2037 reporting.
+  Task       95 on host vipl2037 reporting.
+  Task       96 on host vipl2037 reporting.
+  Task       97 on host vipl2037 reporting.
+  Task       98 on host vipl2037 reporting.
+  Task       99 on host vipl2037 reporting.
+  Task      100 on host vipl2037 reporting.
+  Task      101 on host vipl2037 reporting.
+  Task      102 on host vipl2037 reporting.
+  Task      103 on host vipl2037 reporting.
+  Task      104 on host vipl2037 reporting.
+  Task      105 on host vipl2037 reporting.
+  Task      106 on host vipl2037 reporting.
+  Task      107 on host vipl2037 reporting.
+  Task      108 on host vipl2037 reporting.
+  Task      109 on host vipl2037 reporting.
+  Task      110 on host vipl2037 reporting.
+  Task      111 on host vipl2037 reporting.
+  Task      112 on host vipl2037 reporting.
+  Task      113 on host vipl2037 reporting.
+  Task      114 on host vipl2037 reporting.
+  Task      115 on host vipl2037 reporting.
+  Task      116 on host vipl2037 reporting.
+  Task      117 on host vipl2037 reporting.
+  Task      118 on host vipl2037 reporting.
+  Task      119 on host vipl2037 reporting.
+  Task      120 on host vipl2037 reporting.
+  Task      121 on host vipl2037 reporting.
+  Task      122 on host vipl2037 reporting.
+  Task      123 on host vipl2037 reporting.
+  Task      124 on host vipl2037 reporting.
+  Task      125 on host vipl2037 reporting.
+  Task      126 on host vipl2037 reporting.
+  Task      127 on host vipl2037 reporting.
+
+  Obtaining array dimensions for all initial allocations:
+  
+  -----------------------------------------------------------------------
+  Parsing control.in (first pass over file, find array dimensions only).
+  The contents of control.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of control.in .
+  -----------------------------------------------------------------------
+  
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file control.in .
+  -----------------------------------------------------------------------
+  
+ *** parse_control: ! No species in control.in.
+ 
+ *** parse_control: ! No species in control.in.
+ 
