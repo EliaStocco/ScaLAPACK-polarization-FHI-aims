@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipc[2187,2267,2275,2285,2298,2334]
+Job start: Sun May 24 18:37:51 CEST 2026
+Job end:   Sun May 24 18:38:50 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/LDA/scalapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/LDA/scalapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9056398           BaTiO3      6          1536                             00:00:59      0:0
+9056398.0     aims.26033      6    768   1536      267.34M      242.36M   00:00:55      0:0
+  
+Maximum memory per node: 35.881222 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 71.2 %
+  
