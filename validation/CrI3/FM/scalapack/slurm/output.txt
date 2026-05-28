@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  CrI3
+Node list: vipl2041
+Job start: Fri May 22 12:17:10 CEST 2026
+Job end:   Fri May 22 12:17:46 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/CrI3/FM/scalapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/CrI3/FM/scalapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9012464             CrI3      1           256                             00:00:36      0:0
+9012464.0     aims.26033      1    128    256      142.73M      127.00M   00:00:32      0:0
+  
+Maximum memory per node: 19.157484 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 75.0 %
+  
