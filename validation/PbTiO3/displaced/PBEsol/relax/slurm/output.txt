@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  PbTiO3
+Node list: vipc2519
+Job start: Thu May 21 17:17:52 CEST 2026
+Job end:   Thu May 21 17:19:23 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/PbTiO3/displaced/relax/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/PbTiO3/displaced/relax/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+8998587           PbTiO3      1           256                             00:01:31      0:0
+8998587.0     aims.26033      1    128    256      247.22M      235.57M   00:01:27      0:0
+  
+Maximum memory per node: 33.180746 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 82.4 %
+  
