@@ -1,0 +1,3 @@
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build//aims.260331.scalapack.mpi.x &> aims.out
+
+cp: 'aims.out' and 'aims.out' are the same file
