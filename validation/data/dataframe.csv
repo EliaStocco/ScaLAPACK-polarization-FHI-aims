@@ -5,8 +5,8 @@ BaTiO3,cubic,PBEsol,none,lapack,BaTiO3/cubic/PBEsol/lapack/aims.out,"[-226.58063
 BaTiO3,cubic,PBEsol,none,scalapack,BaTiO3/cubic/PBEsol/scalapack/aims.out,"[-226.580634, 226.525091, -226.579246]","[[3.98773244, -0.00483692, 0.00511873], [-0.00500707, 3.98771198, -0.00501444], [0.00472714, -0.00482895, 3.98771994]]"
 BaTiO3,cubic,LDA,none,lapack,BaTiO3/cubic/LDA/lapack/aims.out,"[-226.580741, 226.52519900000001, -226.57935400000002]","[[3.98773244, -0.00483692, 0.00511873], [-0.00500707, 3.98771198, -0.00501444], [0.00472714, -0.00482895, 3.98771994]]"
 BaTiO3,cubic,LDA,none,scalapack,BaTiO3/cubic/LDA/scalapack/aims.out,"[-226.580741, 226.52519900000001, -226.57935400000002]","[[3.98773244, -0.00483692, 0.00511873], [-0.00500707, 3.98771198, -0.00501444], [0.00472714, -0.00482895, 3.98771994]]"
-BaTiO3,rhombohedral,HSE06,none,lapack,BaTiO3/rhombohedral/HSE06/lapack/aims.out,,
-BaTiO3,rhombohedral,HSE06,none,scalapack,BaTiO3/rhombohedral/HSE06/scalapack/aims.out,,
+BaTiO3,rhombohedral,HSE06,none,lapack,BaTiO3/rhombohedral/HSE06/lapack/aims.out,"[-224.911699, 220.16843699999998, -224.92447800000002]","[[3.98774, 0.0, 0.0], [0.00984828, 3.98772784, 0.0], [0.00984828, 0.00982398, 3.98771574]]"
+BaTiO3,rhombohedral,HSE06,none,scalapack,BaTiO3/rhombohedral/HSE06/scalapack/aims.out,"[-224.911699, 220.16843699999998, -224.92447800000002]","[[3.98774, 0.0, 0.0], [0.00984828, 3.98772784, 0.0], [0.00984828, 0.00982398, 3.98771574]]"
 BaTiO3,rhombohedral,PBEsol,none,lapack,BaTiO3/rhombohedral/PBEsol/lapack/aims.out,"[-224.91170899999997, 220.168446, -224.924488]","[[3.98774, 0.0, 0.0], [0.00984828, 3.98772784, 0.0], [0.00984828, 0.00982398, 3.98771574]]"
 BaTiO3,rhombohedral,PBEsol,none,scalapack,BaTiO3/rhombohedral/PBEsol/scalapack/aims.out,"[-224.91170899999997, 220.168446, -224.924488]","[[3.98774, 0.0, 0.0], [0.00984828, 3.98772784, 0.0], [0.00984828, 0.00982398, 3.98771574]]"
 BaTiO3,rhombohedral,LDA,none,lapack,BaTiO3/rhombohedral/LDA/lapack/aims.out,"[-224.91171200000002, 220.16845400000003, -224.92449100000002]","[[3.98774, 0.0, 0.0], [0.00984828, 3.98772784, 0.0], [0.00984828, 0.00982398, 3.98771574]]"
