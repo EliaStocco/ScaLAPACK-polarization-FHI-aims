@@ -10,7 +10,7 @@
 #SBATCH --nodes=6
 #SBATCH --ntasks-per-node=128
 #SBATCH --mail-type=NONE
-#SBATCH --time=00:30:00
+#SBATCH --time=01:00:00
 
 ###################################################################
 # Clean slurm folder
@@ -29,7 +29,7 @@ export LD_LIBRARY_PATH="${INTEL_HOME}/compiler/2022.2.1/linux/compiler/lib/intel
 # Programs and paths
 PROGRAMS_DIR="/u/elsto/programs"
 export AIMS_PATH="${PROGRAMS_DIR}/FHIaims-polarization-scalapack/build/"
-export AIMS_EXE="aims.260331.scalapack.mpi.x"
+export AIMS_EXE="aims.260527.scalapack.mpi.x"
 
 ulimit -s unlimited
 
@@ -68,11 +68,8 @@ rm -f "$LOG_FILE"
 echo "# Job ID: $SLURM_JOB_ID" >> "$LOG_FILE"
 echo "# Date and Time: $(date +"%Y-%m-%d %H:%M:%S")" >> "$LOG_FILE"
 
-mkdir -p results
-for n in {4..20..2}; do
-    cat aims.in species.tight.in > control.in
-    sed -i "s/kkk/${n}/g" control.in 
-    AIMS_OUTPUT_FILE="results/aims.k=${n}.out"
-    run_aims
-done
+ln -s ../converge/*.csc .
+AIMS_OUTPUT_FILE="aims.out"
+run_aims
+rm *.csc
 
