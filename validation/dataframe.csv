@@ -1,4 +1,8 @@
 system,state,xc,spin,implementation,file
+BaTiO3,cubic,PBEsol,collinear,lapack,BaTiO3/cubic/PBEsol-spin/lapack/aims.out
+BaTiO3,cubic,PBEsol,collinear,scalapack,BaTiO3/cubic/PBEsol-spin/scalapack/aims.out
+BaTiO3,rhombohedral,PBEsol,collinear,lapack,BaTiO3/rhombohedral/PBEsol-spin/lapack/aims.out
+BaTiO3,rhombohedral,PBEsol,collinear,scalapack,BaTiO3/rhombohedral/PBEsol-spin/scalapack/aims.out
 BaTiO3,cubic,HSE06,none,lapack,BaTiO3/cubic/HSE06/lapack/aims.out
 BaTiO3,cubic,HSE06,none,scalapack,BaTiO3/cubic/HSE06/scalapack/aims.out
 BaTiO3,cubic,PBEsol,none,lapack,BaTiO3/cubic/PBEsol/lapack/aims.out
