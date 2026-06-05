@@ -9,3 +9,10 @@ find . -type f -name "scf.out" | while read -r scf; do
         rm "$scf"
     fi
 done
+cd validation
+find . -type d -name "converge" -exec rm -rf {} +
+find . -type d -name "slurm" -exec rm -rf {} +
+find . -type f -name "aims.in" -delete
+find . -type f -name "log.out" -delete
+find . -type f -name "species.tight.in" -delete
+cd ..
