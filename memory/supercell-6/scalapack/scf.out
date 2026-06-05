@@ -1,0 +1,84 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. If so, please cite them. A partial list of references
+          is written at the end of this file. Thank you for giving credit to the authors
+          of these developments.
+
+          For general information about FHI-aims please find us at
+
+            https://fhi-aims.org
+
+          Online tutorials can be found at
+
+            https://fhi-aims-club.gitlab.io/tutorials/tutorials-overview/
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@ms1p.org and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20260603, Time     :  230422.988
+  Time zero on CPU 1             :   0.219304000000000E+00  s.
+  Internal wall clock time zero  :           549759862.988  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : E0B1411E-D1F0-42C1-ABAB-3C49EF3BFA03
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 260527
+  Commit number         : 59e070fb4
+  CMake host system     : Linux-5.14.0-570.103.1.el9_6.x86_64
+  CMake version         : 3.26.5
+  OS Distribution       : Red Hat Enterprise Linux 9.6 (Plow)
+  Built on              : AMD EPYC 9554 64-Core Processor
+  Fortran compiler      : /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mpi/2021.11/bin/mpiifort (Intel) version 2021.1.0.20231117
+  Fortran compiler flags: -O3 -ip -fp-model precise -diag-disable=10448
+  C compiler            : /mpcdf/soft/RHEL_9/packages/x86_64/intel/2024.0.2/bin/icx (IntelLLVM) version 2024.0.2
+  C compiler flags      : -O3 -std=gnu99
+  C++ compiler          : /mpcdf/soft/RHEL_9/packages/x86_64/intel/2024.0.2/bin/icpx (IntelLLVM) version 2024.0.2
+  C++ compiler flags    : -O3 -std=c++14
+  HIP compiler          :
+  HIP compiler flags    :
+  HIP GPU arch          :
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Using GREENX
+  Linking against: /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_intel_lp64.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_sequential.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_core.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_scalapack_lp64.so
+
+  Using      256 parallel tasks.
+  Task        0 on host vipm2047 reporting.
+  Task        1 on host vipm2047 reporting.
+  Task        2 on host vipm2047 reporting.
+  Task        3 on host vipm2047 reporting.
+  Task        4 on host vipm2047 reporting.

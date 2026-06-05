@@ -1,0 +1,11 @@
+xc                           pbesol
+relativistic                 atomic_zora scalar
+spin                         none
+k_grid                       12 12 12
+sc_accuracy_rho              1d-6
+elsi_restart                 read
+KS_method                    serial
+output                       memory_tracking
+output polarization          3 12 12 120
+
+
