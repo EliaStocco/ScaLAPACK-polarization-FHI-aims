@@ -19,7 +19,7 @@ df["atoms"] = 2*np.power(df["supercell"],3)
 # -----------------------------
 # Plot setup
 # -----------------------------
-fig, ax = plt.subplots(figsize=(4, 2.5))
+fig, ax = plt.subplots(figsize=(3, 2))
 
 colors = {
     "lapack": "#1f77b4",
@@ -42,16 +42,20 @@ for method in ["lapack", "scalapack"]:
     if sub.empty:
         continue
     
+    ax.scatter(
+        sub["atoms"],
+        sub["time"],
+        color=colors[method],
+        label=labels[method],
+    )
     
 
     ax.plot(
         sub["atoms"],
         sub["time"],
-        marker="o",
         linewidth=1.2,
         alpha=0.6,
-        color=colors[method],
-        label=labels[method],
+        color=colors[method]
     )
 
 
@@ -95,4 +99,3 @@ legend.get_frame().set_alpha(1.0)
 # -----------------------------
 plt.tight_layout()
 plt.savefig("comparison.pdf", bbox_inches="tight")
-plt.show()
