@@ -1,0 +1,191 @@
+import json
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
+
+plt.style.use("../../style.mplstyle")
+
+
+MOLECULES = [128, 196]
+MARKERS = ["o", "s"]
+
+XTICKS = [128, 256, 512, 768, 1024]
+
+
+def add_inverse_lines(ax, n_lines, **plot_kwargs):
+    """Add n_lines lines of ideal 1/x scaling."""
+
+    xmin, xmax = sorted(ax.get_xlim())
+    ymin, ymax = sorted(ax.get_ylim())
+
+    constants = np.logspace(
+        np.log10(xmin * ymin),
+        np.log10(xmax * ymax),
+        n_lines,
+    )
+
+    x = np.logspace(np.log10(xmin), np.log10(xmax), 2)
+
+    for c in constants:
+        ax.plot(x, c / x, **plot_kwargs)
+
+    ax.set_xlim(xmin, xmax)
+    ax.set_ylim(ymin, ymax)
+
+
+# Load data
+df = pd.read_csv("dataframe.csv")
+
+# -----------------------------
+# Convert to wide format
+# -----------------------------
+df = pd.read_csv("dataframe.csv")
+
+# no pivot, no calculation column exists
+df = df.sort_values(["molecules", "ncores"])
+
+
+with open("fit.json") as f:
+    fit = json.load(f)
+
+
+# Create figure
+fig, ax = plt.subplots()
+
+for marker, mol in zip(MARKERS, MOLECULES):
+
+    subset = df[df["molecules"] == mol]
+    
+    if subset.empty:
+        continue
+    
+    # IMPORTANT: compute difference here
+    subset = subset.copy()
+
+    subset = subset.sort_values("ncores")
+
+    # Data points
+    ax.scatter(
+        subset["ncores"],
+        subset["time"],
+        marker=marker,
+        label=f"{mol}",
+    )
+
+    # Fit
+    params = fit["linear"][str(mol)]
+
+    x = np.logspace(
+        np.log10(subset["ncores"].min()),
+        np.log10(subset["ncores"].max()),
+        1000,
+    )
+
+    y = params["A"] * x ** params["m"]
+
+    ax.plot(
+        x,
+        y,
+        linestyle="--",
+        alpha=0.5,
+    )
+
+
+# Axes formatting
+#ax.set_title("Liquid water, intermediate basis set, revPBE0+D3")
+
+img = mpimg.imread("water.m=128.png")
+imagebox = OffsetImage(img, zoom=0.04)
+ab = AnnotationBbox(
+    imagebox,
+    (0.1, 0.6),              # position
+    xycoords='axes fraction',  # IMPORTANT: decouples from data limits
+    frameon=False
+)
+ax.add_artist(ab)
+
+img = mpimg.imread("water.m=196.png")
+imagebox = OffsetImage(img, zoom=0.06)
+ab = AnnotationBbox(
+    imagebox,
+    (0.9, 0.76),              # position
+    xycoords='axes fraction',  # IMPORTANT: decouples from data limits
+    frameon=False
+)
+ax.add_artist(ab)
+
+ax.text(
+    0.138, 0.33,
+    r"$y = Ax^{-m}$",
+    transform=ax.transAxes,
+    ha="right",
+    va="top",
+    bbox=dict(
+        boxstyle="round",
+        facecolor="white",
+        edgecolor="black"
+    )
+)
+
+ax.text(
+    0.5, 0.59,
+    r"ideal scaling: $m=1$",
+    transform=ax.transAxes,
+    rotation=-33,      # angle in degrees
+    ha="center",
+    va="center",
+    color="gray"
+)
+
+ax.text(
+    0.5, 0.3,
+    r"$m=0.32$",
+    transform=ax.transAxes,
+    rotation=-15,      # angle in degrees
+    ha="center",
+    va="center",
+    color="#1f77b4"
+)
+
+ax.text(
+    0.5, 0.87,
+    r"$m=0.52$",
+    transform=ax.transAxes,
+    rotation=-20,      # angle in degrees
+    ha="center",
+    va="center",
+    color="#ff7f0e"
+)
+
+ax.set_xscale("log")
+ax.set_yscale("log")
+
+ax.set_xlabel("n. cores")
+ax.set_ylabel("CPU time (s)")
+
+legend = ax.legend(
+    title="n. molecules:",
+    loc="lower left",
+)
+legend._legend_box.align = "left"
+
+ax.xaxis.set_major_locator(FixedLocator(XTICKS))
+ax.xaxis.set_major_formatter(ScalarFormatter())
+ax.xaxis.set_minor_locator(NullLocator())
+
+# Ideal scaling guides
+add_inverse_lines(
+    ax,
+    n_lines=20,
+    color="gray",
+    alpha=0.5,
+    linewidth=0.5,
+    linestyle="--",
+)
+
+plt.tight_layout()
+plt.savefig("water.pdf", bbox_inches="tight")
