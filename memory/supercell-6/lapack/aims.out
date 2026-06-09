@@ -40,12 +40,12 @@
 
 
 
-  Date     :  20260604, Time     :  163032.925
-  Time zero on CPU 1             :   0.216855000000000E+00  s.
-  Internal wall clock time zero  :           549822632.925  s.
+  Date     :  20260606, Time     :  090515.661
+  Time zero on CPU 1             :   0.218706000000000E+00  s.
+  Internal wall clock time zero  :           549968715.661  s.
 
   FHI-aims created a unique identifier for this run for later identification
-  aims_uuid : CDB9CF0B-094E-4CF4-A3BE-738A67F804D7
+  aims_uuid : A73065AE-2E1A-4F23-A4D4-0A291A7DB73D
 
   Build configuration of the current instance of FHI-aims
   -------------------------------------------------------
@@ -77,262 +77,262 @@
                    /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_scalapack_lp64.so
 
   Using      256 parallel tasks.
-  Task        0 on host vipl2004 reporting.
-  Task        1 on host vipl2004 reporting.
-  Task        2 on host vipl2004 reporting.
-  Task        3 on host vipl2004 reporting.
-  Task        4 on host vipl2004 reporting.
-  Task        5 on host vipl2004 reporting.
-  Task        6 on host vipl2004 reporting.
-  Task        7 on host vipl2004 reporting.
-  Task        8 on host vipl2004 reporting.
-  Task        9 on host vipl2004 reporting.
-  Task       10 on host vipl2004 reporting.
-  Task       11 on host vipl2004 reporting.
-  Task       12 on host vipl2004 reporting.
-  Task       13 on host vipl2004 reporting.
-  Task       14 on host vipl2004 reporting.
-  Task       15 on host vipl2004 reporting.
-  Task       16 on host vipl2004 reporting.
-  Task       17 on host vipl2004 reporting.
-  Task       18 on host vipl2004 reporting.
-  Task       19 on host vipl2004 reporting.
-  Task       20 on host vipl2004 reporting.
-  Task       21 on host vipl2004 reporting.
-  Task       22 on host vipl2004 reporting.
-  Task       23 on host vipl2004 reporting.
-  Task       24 on host vipl2004 reporting.
-  Task       25 on host vipl2004 reporting.
-  Task       26 on host vipl2004 reporting.
-  Task       27 on host vipl2004 reporting.
-  Task       28 on host vipl2004 reporting.
-  Task       29 on host vipl2004 reporting.
-  Task       30 on host vipl2004 reporting.
-  Task       31 on host vipl2004 reporting.
-  Task       32 on host vipl2004 reporting.
-  Task       33 on host vipl2004 reporting.
-  Task       34 on host vipl2004 reporting.
-  Task       35 on host vipl2004 reporting.
-  Task       36 on host vipl2004 reporting.
-  Task       37 on host vipl2004 reporting.
-  Task       38 on host vipl2004 reporting.
-  Task       39 on host vipl2004 reporting.
-  Task       40 on host vipl2004 reporting.
-  Task       41 on host vipl2004 reporting.
-  Task       42 on host vipl2004 reporting.
-  Task       43 on host vipl2004 reporting.
-  Task       44 on host vipl2004 reporting.
-  Task       45 on host vipl2004 reporting.
-  Task       46 on host vipl2004 reporting.
-  Task       47 on host vipl2004 reporting.
-  Task       48 on host vipl2004 reporting.
-  Task       49 on host vipl2004 reporting.
-  Task       50 on host vipl2004 reporting.
-  Task       51 on host vipl2004 reporting.
-  Task       52 on host vipl2004 reporting.
-  Task       53 on host vipl2004 reporting.
-  Task       54 on host vipl2004 reporting.
-  Task       55 on host vipl2004 reporting.
-  Task       56 on host vipl2004 reporting.
-  Task       57 on host vipl2004 reporting.
-  Task       58 on host vipl2004 reporting.
-  Task       59 on host vipl2004 reporting.
-  Task       60 on host vipl2004 reporting.
-  Task       61 on host vipl2004 reporting.
-  Task       62 on host vipl2004 reporting.
-  Task       63 on host vipl2004 reporting.
-  Task       64 on host vipl2004 reporting.
-  Task       65 on host vipl2004 reporting.
-  Task       66 on host vipl2004 reporting.
-  Task       67 on host vipl2004 reporting.
-  Task       68 on host vipl2004 reporting.
-  Task       69 on host vipl2004 reporting.
-  Task       70 on host vipl2004 reporting.
-  Task       71 on host vipl2004 reporting.
-  Task       72 on host vipl2004 reporting.
-  Task       73 on host vipl2004 reporting.
-  Task       74 on host vipl2004 reporting.
-  Task       75 on host vipl2004 reporting.
-  Task       76 on host vipl2004 reporting.
-  Task       77 on host vipl2004 reporting.
-  Task       78 on host vipl2004 reporting.
-  Task       79 on host vipl2004 reporting.
-  Task       80 on host vipl2004 reporting.
-  Task       81 on host vipl2004 reporting.
-  Task       82 on host vipl2004 reporting.
-  Task       83 on host vipl2004 reporting.
-  Task       84 on host vipl2004 reporting.
-  Task       85 on host vipl2004 reporting.
-  Task       86 on host vipl2004 reporting.
-  Task       87 on host vipl2004 reporting.
-  Task       88 on host vipl2004 reporting.
-  Task       89 on host vipl2004 reporting.
-  Task       90 on host vipl2004 reporting.
-  Task       91 on host vipl2004 reporting.
-  Task       92 on host vipl2004 reporting.
-  Task       93 on host vipl2004 reporting.
-  Task       94 on host vipl2004 reporting.
-  Task       95 on host vipl2004 reporting.
-  Task       96 on host vipl2004 reporting.
-  Task       97 on host vipl2004 reporting.
-  Task       98 on host vipl2004 reporting.
-  Task       99 on host vipl2004 reporting.
-  Task      100 on host vipl2004 reporting.
-  Task      101 on host vipl2004 reporting.
-  Task      102 on host vipl2004 reporting.
-  Task      103 on host vipl2004 reporting.
-  Task      104 on host vipl2004 reporting.
-  Task      105 on host vipl2004 reporting.
-  Task      106 on host vipl2004 reporting.
-  Task      107 on host vipl2004 reporting.
-  Task      108 on host vipl2004 reporting.
-  Task      109 on host vipl2004 reporting.
-  Task      110 on host vipl2004 reporting.
-  Task      111 on host vipl2004 reporting.
-  Task      112 on host vipl2004 reporting.
-  Task      113 on host vipl2004 reporting.
-  Task      114 on host vipl2004 reporting.
-  Task      115 on host vipl2004 reporting.
-  Task      116 on host vipl2004 reporting.
-  Task      117 on host vipl2004 reporting.
-  Task      118 on host vipl2004 reporting.
-  Task      119 on host vipl2004 reporting.
-  Task      120 on host vipl2004 reporting.
-  Task      121 on host vipl2004 reporting.
-  Task      122 on host vipl2004 reporting.
-  Task      123 on host vipl2004 reporting.
-  Task      124 on host vipl2004 reporting.
-  Task      125 on host vipl2004 reporting.
-  Task      126 on host vipl2004 reporting.
-  Task      127 on host vipl2004 reporting.
-  Task      128 on host vipl2022 reporting.
-  Task      129 on host vipl2022 reporting.
-  Task      130 on host vipl2022 reporting.
-  Task      131 on host vipl2022 reporting.
-  Task      132 on host vipl2022 reporting.
-  Task      133 on host vipl2022 reporting.
-  Task      134 on host vipl2022 reporting.
-  Task      135 on host vipl2022 reporting.
-  Task      136 on host vipl2022 reporting.
-  Task      137 on host vipl2022 reporting.
-  Task      138 on host vipl2022 reporting.
-  Task      139 on host vipl2022 reporting.
-  Task      140 on host vipl2022 reporting.
-  Task      141 on host vipl2022 reporting.
-  Task      142 on host vipl2022 reporting.
-  Task      143 on host vipl2022 reporting.
-  Task      144 on host vipl2022 reporting.
-  Task      145 on host vipl2022 reporting.
-  Task      146 on host vipl2022 reporting.
-  Task      147 on host vipl2022 reporting.
-  Task      148 on host vipl2022 reporting.
-  Task      149 on host vipl2022 reporting.
-  Task      150 on host vipl2022 reporting.
-  Task      151 on host vipl2022 reporting.
-  Task      152 on host vipl2022 reporting.
-  Task      153 on host vipl2022 reporting.
-  Task      154 on host vipl2022 reporting.
-  Task      155 on host vipl2022 reporting.
-  Task      156 on host vipl2022 reporting.
-  Task      157 on host vipl2022 reporting.
-  Task      158 on host vipl2022 reporting.
-  Task      159 on host vipl2022 reporting.
-  Task      160 on host vipl2022 reporting.
-  Task      161 on host vipl2022 reporting.
-  Task      162 on host vipl2022 reporting.
-  Task      163 on host vipl2022 reporting.
-  Task      164 on host vipl2022 reporting.
-  Task      165 on host vipl2022 reporting.
-  Task      166 on host vipl2022 reporting.
-  Task      167 on host vipl2022 reporting.
-  Task      168 on host vipl2022 reporting.
-  Task      169 on host vipl2022 reporting.
-  Task      170 on host vipl2022 reporting.
-  Task      171 on host vipl2022 reporting.
-  Task      172 on host vipl2022 reporting.
-  Task      173 on host vipl2022 reporting.
-  Task      174 on host vipl2022 reporting.
-  Task      175 on host vipl2022 reporting.
-  Task      176 on host vipl2022 reporting.
-  Task      177 on host vipl2022 reporting.
-  Task      178 on host vipl2022 reporting.
-  Task      179 on host vipl2022 reporting.
-  Task      180 on host vipl2022 reporting.
-  Task      181 on host vipl2022 reporting.
-  Task      182 on host vipl2022 reporting.
-  Task      183 on host vipl2022 reporting.
-  Task      184 on host vipl2022 reporting.
-  Task      185 on host vipl2022 reporting.
-  Task      186 on host vipl2022 reporting.
-  Task      187 on host vipl2022 reporting.
-  Task      188 on host vipl2022 reporting.
-  Task      189 on host vipl2022 reporting.
-  Task      190 on host vipl2022 reporting.
-  Task      191 on host vipl2022 reporting.
-  Task      192 on host vipl2022 reporting.
-  Task      193 on host vipl2022 reporting.
-  Task      194 on host vipl2022 reporting.
-  Task      195 on host vipl2022 reporting.
-  Task      196 on host vipl2022 reporting.
-  Task      197 on host vipl2022 reporting.
-  Task      198 on host vipl2022 reporting.
-  Task      199 on host vipl2022 reporting.
-  Task      200 on host vipl2022 reporting.
-  Task      201 on host vipl2022 reporting.
-  Task      202 on host vipl2022 reporting.
-  Task      203 on host vipl2022 reporting.
-  Task      204 on host vipl2022 reporting.
-  Task      205 on host vipl2022 reporting.
-  Task      206 on host vipl2022 reporting.
-  Task      207 on host vipl2022 reporting.
-  Task      208 on host vipl2022 reporting.
-  Task      209 on host vipl2022 reporting.
-  Task      210 on host vipl2022 reporting.
-  Task      211 on host vipl2022 reporting.
-  Task      212 on host vipl2022 reporting.
-  Task      213 on host vipl2022 reporting.
-  Task      214 on host vipl2022 reporting.
-  Task      215 on host vipl2022 reporting.
-  Task      216 on host vipl2022 reporting.
-  Task      217 on host vipl2022 reporting.
-  Task      218 on host vipl2022 reporting.
-  Task      219 on host vipl2022 reporting.
-  Task      220 on host vipl2022 reporting.
-  Task      221 on host vipl2022 reporting.
-  Task      222 on host vipl2022 reporting.
-  Task      223 on host vipl2022 reporting.
-  Task      224 on host vipl2022 reporting.
-  Task      225 on host vipl2022 reporting.
-  Task      226 on host vipl2022 reporting.
-  Task      227 on host vipl2022 reporting.
-  Task      228 on host vipl2022 reporting.
-  Task      229 on host vipl2022 reporting.
-  Task      230 on host vipl2022 reporting.
-  Task      231 on host vipl2022 reporting.
-  Task      232 on host vipl2022 reporting.
-  Task      233 on host vipl2022 reporting.
-  Task      234 on host vipl2022 reporting.
-  Task      235 on host vipl2022 reporting.
-  Task      236 on host vipl2022 reporting.
-  Task      237 on host vipl2022 reporting.
-  Task      238 on host vipl2022 reporting.
-  Task      239 on host vipl2022 reporting.
-  Task      240 on host vipl2022 reporting.
-  Task      241 on host vipl2022 reporting.
-  Task      242 on host vipl2022 reporting.
-  Task      243 on host vipl2022 reporting.
-  Task      244 on host vipl2022 reporting.
-  Task      245 on host vipl2022 reporting.
-  Task      246 on host vipl2022 reporting.
-  Task      247 on host vipl2022 reporting.
-  Task      248 on host vipl2022 reporting.
-  Task      249 on host vipl2022 reporting.
-  Task      250 on host vipl2022 reporting.
-  Task      251 on host vipl2022 reporting.
-  Task      252 on host vipl2022 reporting.
-  Task      253 on host vipl2022 reporting.
-  Task      254 on host vipl2022 reporting.
-  Task      255 on host vipl2022 reporting.
+  Task        0 on host vipm2059 reporting.
+  Task        1 on host vipm2059 reporting.
+  Task        2 on host vipm2059 reporting.
+  Task        3 on host vipm2059 reporting.
+  Task        4 on host vipm2059 reporting.
+  Task        5 on host vipm2059 reporting.
+  Task        6 on host vipm2059 reporting.
+  Task        7 on host vipm2059 reporting.
+  Task        8 on host vipm2059 reporting.
+  Task        9 on host vipm2059 reporting.
+  Task       10 on host vipm2059 reporting.
+  Task       11 on host vipm2059 reporting.
+  Task       12 on host vipm2059 reporting.
+  Task       13 on host vipm2059 reporting.
+  Task       14 on host vipm2059 reporting.
+  Task       15 on host vipm2059 reporting.
+  Task       16 on host vipm2059 reporting.
+  Task       17 on host vipm2059 reporting.
+  Task       18 on host vipm2059 reporting.
+  Task       19 on host vipm2059 reporting.
+  Task       20 on host vipm2059 reporting.
+  Task       21 on host vipm2059 reporting.
+  Task       22 on host vipm2059 reporting.
+  Task       23 on host vipm2059 reporting.
+  Task       24 on host vipm2059 reporting.
+  Task       25 on host vipm2059 reporting.
+  Task       26 on host vipm2059 reporting.
+  Task       27 on host vipm2059 reporting.
+  Task       28 on host vipm2059 reporting.
+  Task       29 on host vipm2059 reporting.
+  Task       30 on host vipm2059 reporting.
+  Task       31 on host vipm2059 reporting.
+  Task       32 on host vipm2059 reporting.
+  Task       33 on host vipm2059 reporting.
+  Task       34 on host vipm2059 reporting.
+  Task       35 on host vipm2059 reporting.
+  Task       36 on host vipm2059 reporting.
+  Task       37 on host vipm2059 reporting.
+  Task       38 on host vipm2059 reporting.
+  Task       39 on host vipm2059 reporting.
+  Task       40 on host vipm2059 reporting.
+  Task       41 on host vipm2059 reporting.
+  Task       42 on host vipm2059 reporting.
+  Task       43 on host vipm2059 reporting.
+  Task       44 on host vipm2059 reporting.
+  Task       45 on host vipm2059 reporting.
+  Task       46 on host vipm2059 reporting.
+  Task       47 on host vipm2059 reporting.
+  Task       48 on host vipm2059 reporting.
+  Task       49 on host vipm2059 reporting.
+  Task       50 on host vipm2059 reporting.
+  Task       51 on host vipm2059 reporting.
+  Task       52 on host vipm2059 reporting.
+  Task       53 on host vipm2059 reporting.
+  Task       54 on host vipm2059 reporting.
+  Task       55 on host vipm2059 reporting.
+  Task       56 on host vipm2059 reporting.
+  Task       57 on host vipm2059 reporting.
+  Task       58 on host vipm2059 reporting.
+  Task       59 on host vipm2059 reporting.
+  Task       60 on host vipm2059 reporting.
+  Task       61 on host vipm2059 reporting.
+  Task       62 on host vipm2059 reporting.
+  Task       63 on host vipm2059 reporting.
+  Task       64 on host vipm2059 reporting.
+  Task       65 on host vipm2059 reporting.
+  Task       66 on host vipm2059 reporting.
+  Task       67 on host vipm2059 reporting.
+  Task       68 on host vipm2059 reporting.
+  Task       69 on host vipm2059 reporting.
+  Task       70 on host vipm2059 reporting.
+  Task       71 on host vipm2059 reporting.
+  Task       72 on host vipm2059 reporting.
+  Task       73 on host vipm2059 reporting.
+  Task       74 on host vipm2059 reporting.
+  Task       75 on host vipm2059 reporting.
+  Task       76 on host vipm2059 reporting.
+  Task       77 on host vipm2059 reporting.
+  Task       78 on host vipm2059 reporting.
+  Task       79 on host vipm2059 reporting.
+  Task       80 on host vipm2059 reporting.
+  Task       81 on host vipm2059 reporting.
+  Task       82 on host vipm2059 reporting.
+  Task       83 on host vipm2059 reporting.
+  Task       84 on host vipm2059 reporting.
+  Task       85 on host vipm2059 reporting.
+  Task       86 on host vipm2059 reporting.
+  Task       87 on host vipm2059 reporting.
+  Task       88 on host vipm2059 reporting.
+  Task       89 on host vipm2059 reporting.
+  Task       90 on host vipm2059 reporting.
+  Task       91 on host vipm2059 reporting.
+  Task       92 on host vipm2059 reporting.
+  Task       93 on host vipm2059 reporting.
+  Task       94 on host vipm2059 reporting.
+  Task       95 on host vipm2059 reporting.
+  Task       96 on host vipm2059 reporting.
+  Task       97 on host vipm2059 reporting.
+  Task       98 on host vipm2059 reporting.
+  Task       99 on host vipm2059 reporting.
+  Task      100 on host vipm2059 reporting.
+  Task      101 on host vipm2059 reporting.
+  Task      102 on host vipm2059 reporting.
+  Task      103 on host vipm2059 reporting.
+  Task      104 on host vipm2059 reporting.
+  Task      105 on host vipm2059 reporting.
+  Task      106 on host vipm2059 reporting.
+  Task      107 on host vipm2059 reporting.
+  Task      108 on host vipm2059 reporting.
+  Task      109 on host vipm2059 reporting.
+  Task      110 on host vipm2059 reporting.
+  Task      111 on host vipm2059 reporting.
+  Task      112 on host vipm2059 reporting.
+  Task      113 on host vipm2059 reporting.
+  Task      114 on host vipm2059 reporting.
+  Task      115 on host vipm2059 reporting.
+  Task      116 on host vipm2059 reporting.
+  Task      117 on host vipm2059 reporting.
+  Task      118 on host vipm2059 reporting.
+  Task      119 on host vipm2059 reporting.
+  Task      120 on host vipm2059 reporting.
+  Task      121 on host vipm2059 reporting.
+  Task      122 on host vipm2059 reporting.
+  Task      123 on host vipm2059 reporting.
+  Task      124 on host vipm2059 reporting.
+  Task      125 on host vipm2059 reporting.
+  Task      126 on host vipm2059 reporting.
+  Task      127 on host vipm2059 reporting.
+  Task      128 on host vipm2080 reporting.
+  Task      129 on host vipm2080 reporting.
+  Task      130 on host vipm2080 reporting.
+  Task      131 on host vipm2080 reporting.
+  Task      132 on host vipm2080 reporting.
+  Task      133 on host vipm2080 reporting.
+  Task      134 on host vipm2080 reporting.
+  Task      135 on host vipm2080 reporting.
+  Task      136 on host vipm2080 reporting.
+  Task      137 on host vipm2080 reporting.
+  Task      138 on host vipm2080 reporting.
+  Task      139 on host vipm2080 reporting.
+  Task      140 on host vipm2080 reporting.
+  Task      141 on host vipm2080 reporting.
+  Task      142 on host vipm2080 reporting.
+  Task      143 on host vipm2080 reporting.
+  Task      144 on host vipm2080 reporting.
+  Task      145 on host vipm2080 reporting.
+  Task      146 on host vipm2080 reporting.
+  Task      147 on host vipm2080 reporting.
+  Task      148 on host vipm2080 reporting.
+  Task      149 on host vipm2080 reporting.
+  Task      150 on host vipm2080 reporting.
+  Task      151 on host vipm2080 reporting.
+  Task      152 on host vipm2080 reporting.
+  Task      153 on host vipm2080 reporting.
+  Task      154 on host vipm2080 reporting.
+  Task      155 on host vipm2080 reporting.
+  Task      156 on host vipm2080 reporting.
+  Task      157 on host vipm2080 reporting.
+  Task      158 on host vipm2080 reporting.
+  Task      159 on host vipm2080 reporting.
+  Task      160 on host vipm2080 reporting.
+  Task      161 on host vipm2080 reporting.
+  Task      162 on host vipm2080 reporting.
+  Task      163 on host vipm2080 reporting.
+  Task      164 on host vipm2080 reporting.
+  Task      165 on host vipm2080 reporting.
+  Task      166 on host vipm2080 reporting.
+  Task      167 on host vipm2080 reporting.
+  Task      168 on host vipm2080 reporting.
+  Task      169 on host vipm2080 reporting.
+  Task      170 on host vipm2080 reporting.
+  Task      171 on host vipm2080 reporting.
+  Task      172 on host vipm2080 reporting.
+  Task      173 on host vipm2080 reporting.
+  Task      174 on host vipm2080 reporting.
+  Task      175 on host vipm2080 reporting.
+  Task      176 on host vipm2080 reporting.
+  Task      177 on host vipm2080 reporting.
+  Task      178 on host vipm2080 reporting.
+  Task      179 on host vipm2080 reporting.
+  Task      180 on host vipm2080 reporting.
+  Task      181 on host vipm2080 reporting.
+  Task      182 on host vipm2080 reporting.
+  Task      183 on host vipm2080 reporting.
+  Task      184 on host vipm2080 reporting.
+  Task      185 on host vipm2080 reporting.
+  Task      186 on host vipm2080 reporting.
+  Task      187 on host vipm2080 reporting.
+  Task      188 on host vipm2080 reporting.
+  Task      189 on host vipm2080 reporting.
+  Task      190 on host vipm2080 reporting.
+  Task      191 on host vipm2080 reporting.
+  Task      192 on host vipm2080 reporting.
+  Task      193 on host vipm2080 reporting.
+  Task      194 on host vipm2080 reporting.
+  Task      195 on host vipm2080 reporting.
+  Task      196 on host vipm2080 reporting.
+  Task      197 on host vipm2080 reporting.
+  Task      198 on host vipm2080 reporting.
+  Task      199 on host vipm2080 reporting.
+  Task      200 on host vipm2080 reporting.
+  Task      201 on host vipm2080 reporting.
+  Task      202 on host vipm2080 reporting.
+  Task      203 on host vipm2080 reporting.
+  Task      204 on host vipm2080 reporting.
+  Task      205 on host vipm2080 reporting.
+  Task      206 on host vipm2080 reporting.
+  Task      207 on host vipm2080 reporting.
+  Task      208 on host vipm2080 reporting.
+  Task      209 on host vipm2080 reporting.
+  Task      210 on host vipm2080 reporting.
+  Task      211 on host vipm2080 reporting.
+  Task      212 on host vipm2080 reporting.
+  Task      213 on host vipm2080 reporting.
+  Task      214 on host vipm2080 reporting.
+  Task      215 on host vipm2080 reporting.
+  Task      216 on host vipm2080 reporting.
+  Task      217 on host vipm2080 reporting.
+  Task      218 on host vipm2080 reporting.
+  Task      219 on host vipm2080 reporting.
+  Task      220 on host vipm2080 reporting.
+  Task      221 on host vipm2080 reporting.
+  Task      222 on host vipm2080 reporting.
+  Task      223 on host vipm2080 reporting.
+  Task      224 on host vipm2080 reporting.
+  Task      225 on host vipm2080 reporting.
+  Task      226 on host vipm2080 reporting.
+  Task      227 on host vipm2080 reporting.
+  Task      228 on host vipm2080 reporting.
+  Task      229 on host vipm2080 reporting.
+  Task      230 on host vipm2080 reporting.
+  Task      231 on host vipm2080 reporting.
+  Task      232 on host vipm2080 reporting.
+  Task      233 on host vipm2080 reporting.
+  Task      234 on host vipm2080 reporting.
+  Task      235 on host vipm2080 reporting.
+  Task      236 on host vipm2080 reporting.
+  Task      237 on host vipm2080 reporting.
+  Task      238 on host vipm2080 reporting.
+  Task      239 on host vipm2080 reporting.
+  Task      240 on host vipm2080 reporting.
+  Task      241 on host vipm2080 reporting.
+  Task      242 on host vipm2080 reporting.
+  Task      243 on host vipm2080 reporting.
+  Task      244 on host vipm2080 reporting.
+  Task      245 on host vipm2080 reporting.
+  Task      246 on host vipm2080 reporting.
+  Task      247 on host vipm2080 reporting.
+  Task      248 on host vipm2080 reporting.
+  Task      249 on host vipm2080 reporting.
+  Task      250 on host vipm2080 reporting.
+  Task      251 on host vipm2080 reporting.
+  Task      252 on host vipm2080 reporting.
+  Task      253 on host vipm2080 reporting.
+  Task      254 on host vipm2080 reporting.
+  Task      255 on host vipm2080 reporting.
 
   Obtaining array dimensions for all initial allocations:
   
@@ -351,7 +351,7 @@
   elsi_restart                 read
   KS_method                    serial
   output                       memory_tracking
-  output polarization          3 4 4 40
+  output polarization          3 4 4 4
   
   
   ################################################################################
@@ -1013,8 +1013,8 @@
   Verbose memory tracking output has been activated.
 
   Polarization directive number:    1
-  | Calculating polarization along reciprocal lattice vector 3 using   40 k-points parallel to this direction.
-  | Full Brillouin zone sampling is thus performed on a     4 x     4 x    40 grid
+  | Calculating polarization along reciprocal lattice vector 3 using    4 k-points parallel to this direction.
+  | Full Brillouin zone sampling is thus performed on a     4 x     4 x     4 grid
  
   Reading configuration options for species Mg                  .
   | Found nuclear charge :  12.0000
@@ -1095,7 +1095,7 @@
   | Precision set to  0.1E-04
   | Number of Operations  : 10368
   | Space group           : 225
-  | International         : Fm-3m   Dv
+  | International         : Fm-3m
   | Schoenflies           : Oh^5
   Input structure read successfully.
   The structure contains      432 atoms,  and a total of       4320.000 electrons.
@@ -2611,7 +2611,7 @@
   * and seems sensible.
 
   | Checks passed.
-  After read_input_data [GB]:   1022.89
+  After read_input_data [GB]:    756.86
 
   Performing system and environment tests:
   | Environment variable OMP_NUM_THREADS correctly set to 1.
@@ -2624,7 +2624,7 @@
   | Running on : AMD EPYC 9554 64-Core Processor
   | Runtime CPU compatibility verified.
   
-  After prepare_system [GB]:   1022.65
+  After prepare_system [GB]:    756.58
 
 ------------------------------------------------------------
           Preparing all fixed parts of the calculation.
@@ -2787,10 +2787,10 @@
   Preparing densities etc. for the partition functions (integrals / Hartree potential).
 
   Preparations completed.
-  max(cpu_time)          :      0.145 s.
-  Wall clock time (cpu1) :      0.200 s.
+  max(cpu_time)          :      0.148 s.
+  Wall clock time (cpu1) :      0.392 s.
 ------------------------------------------------------------
-  After prepare_scf [GB]:   1016.59
+  After prepare_scf [GB]:    750.70
 
   Initializing index lists of integration centers etc. from given atomic structure:
   Mapping all atomic coordinates to central unit cell.
@@ -3085,20 +3085,20 @@
   | Number of super-cells (after PM_index) [n_cells]             :          28
   | Number of super-cells in hamiltonian [n_cells_in_hamiltonian]:          28
   | Size of matrix packed + index [n_hamiltonian_matrix_size]    :    53816401
-  After initialize_bc_dependent_lists [GB]:    991.61
+  After initialize_bc_dependent_lists [GB]:    725.70
 
 ------------------------------------------------------------
           Begin self-consistency loop: Initialization.
 
-          Date     :  20260604, Time     :  163040.679
+          Date     :  20260606, Time     :  090523.890
 ------------------------------------------------------------
-  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:    991.61
+  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:    725.70
   | Estimated reciprocal-space cutoff momentum G_max:         3.44585923 bohr^-1 .
   | Reciprocal lattice points for long-range Hartree potential:   18906
-  Available memory per node after initialize_recip_hartree_potential [GB]:    991.61
-  Available memory per node after initialize_scalapack [GB]:    991.61
-  Available memory per node after aims_elsi_init_scf [GB]:    991.61
-  Available memory per node after initialize_fixed_grids [GB]:    991.62
+  Available memory per node after initialize_recip_hartree_potential [GB]:    725.70
+  Available memory per node after initialize_scalapack [GB]:    725.70
+  Available memory per node after aims_elsi_init_scf [GB]:    725.69
+  Available memory per node after initialize_fixed_grids [GB]:    725.72
   Allocating        0.919 MB for all_coords
     mem          963696 current_memory_estimate       216661748
   Allocating        0.306 MB for point_weight
@@ -3384,7 +3384,7 @@
     mem         2916528 current_memory_estimate       215858668
   Deallocating        0.153 MB for grid_partition
     mem          160616 current_memory_estimate       215698052
-  Available memory per node after partition_grid [GB]:    990.78
+  Available memory per node after partition_grid [GB]:    724.90
   Initializing partition tables, free-atom densities, potentials, etc. across the integration grid (initialize_grid_storage).
   | initialize_grid_storage: Actual outermost partition radius vs. multipole_radius_free
   | (-- VB: in principle, multipole_radius_free should be larger, hence this output)
@@ -3408,7 +3408,7 @@
     mem           29848 current_memory_estimate       215698060
   Deallocating        0.000 MB for atom_atom_tab
     mem               8 current_memory_estimate       215698052
-  Available memory per node after initialize_grid_storage_p1 [GB]:    990.44
+  Available memory per node after initialize_grid_storage_p1 [GB]:    724.61
   Renormalizing the initial density to the exact electron count on the 3D integration grid.
   | Initial density: Formal number of electrons (from input files) :    4320.0000000000
   | Integrated number of electrons on 3D grid     :    4320.2489116162
@@ -3676,7 +3676,7 @@
   | Maximal number of non-zero basis functions:     1918 in task   253
   | Maximal number of non-zero basis functions:     1879 in task   254
   | Maximal number of non-zero basis functions:     1910 in task   255
-  Available memory per node after get_n_compute_maxes_p1 [GB]:    988.38
+  Available memory per node after get_n_compute_maxes_p1 [GB]:    722.39
   Allocating      410.587 MB for overlap_matrix
     mem       430531208 current_memory_estimate       646229260
   Allocating      410.587 MB for hamiltonian
@@ -3691,8 +3691,8 @@
     mem               0 current_memory_estimate      1076760500
   Allocating        0.000 MB for KS_eigenvector
     mem               8 current_memory_estimate      1076760508
-  Available memory per node after allocate_matrices [GB]:    988.35
-  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:    971.55
+  Available memory per node after allocate_matrices [GB]:    722.35
+  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:    704.38
   Integrating Hamiltonian matrix: batch-based integration.
   Allocating        0.043 MB for gradient_basis_wave
     mem           45216 current_memory_estimate      1076805724
@@ -3704,7 +3704,7 @@
     mem         1808640 current_memory_estimate      1108818652
   Allocating        1.725 MB for wave
     mem         1808640 current_memory_estimate      1110627292
-  Time summed over all CPUs for integration: real work     5590.880 s, elapsed     5708.593 s
+  Time summed over all CPUs for integration: real work     4272.806 s, elapsed     4385.023 s
   Deallocating        1.725 MB for H_times_psi
     mem         1808640 current_memory_estimate      1108818652
   Deallocating       27.080 MB for hamiltonian_shell
@@ -3715,23 +3715,23 @@
     mem         1808640 current_memory_estimate      1076805724
   Deallocating        0.043 MB for gradient_basis_wave
     mem           45216 current_memory_estimate      1076760508
-  Available memory per node after integrate hamiltonian matrix [GB]:    912.25
+  Available memory per node after integrate hamiltonian matrix [GB]:    645.19
   Integrating overlap matrix.
-  Time summed over all CPUs for integration: real work     5149.208 s, elapsed     5324.224 s
-  Available memory per node after integrate ovlp matrix [GB]:    857.18
-  Available memory per node after save_overlap_scalapack [GB]:    858.18
-  Available memory per node after advance_KS_solution [GB]:    858.18
+  Time summed over all CPUs for integration: real work     3845.099 s, elapsed     4009.120 s
+  Available memory per node after integrate ovlp matrix [GB]:    589.08
+  Available memory per node after save_overlap_scalapack [GB]:    591.21
+  Available memory per node after advance_KS_solution [GB]:    591.21
   Calculating total energy contributions from superposition of free atom densities.
   Initialize hartree_potential_storage
   Max. number of atoms included in rho_multipole:          432
 
   End scf initialization - timings             :  max(cpu_time)    wall_clock(cpu1)
-  | Time for scf. initialization                :       81.456 s          83.156 s
-  | Boundary condition initialization           :        5.539 s           5.608 s
-  | Integration                                 :       66.101 s          66.608 s
-  | Grid partitioning                           :        6.593 s           6.668 s
-  | Preloading free-atom quantities on grid     :        8.133 s           8.181 s
-  | Free-atom superposition energy              :        0.642 s           0.649 s
+  | Time for scf. initialization                :       69.448 s          72.664 s
+  | Boundary condition initialization           :        5.475 s           5.547 s
+  | Integration                                 :       54.188 s          54.886 s
+  | Grid partitioning                           :        6.558 s           6.659 s
+  | Preloading free-atom quantities on grid     :        8.051 s           8.263 s
+  | Free-atom superposition energy              :        0.648 s           0.655 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -3750,7 +3750,7 @@
   Note:  These values currently only include a subset of arrays which are explicitly tracked.
   The "true" memory usage will be greater.
 ------------------------------------------------------------
-  Available memory after initialize_scf [GB]:    857.33
+  Available memory after initialize_scf [GB]:    590.35
   Allocating        0.238 MB for rho_diff
     mem          250040 current_memory_estimate      1077010548
   Allocating        0.238 MB for delta_rho_KS
@@ -3777,7 +3777,7 @@
     mem               8 current_memory_estimate      1095013452
   Allocating        0.000 MB for previous_kinetic_density_error
     mem               8 current_memory_estimate      1095013460
-  Available memory after allocating mixing [GB]:    856.67
+  Available memory after allocating mixing [GB]:    589.71
   Evaluating new KS density using the density matrix
   Allocating        0.000 MB for density_matrix
     mem               8 current_memory_estimate      1095013468
@@ -3803,7 +3803,7 @@
     mem         1808640 current_memory_estimate      1128835036
   Allocating        5.175 MB for gradient_basis_wave
     mem         5425920 current_memory_estimate      1134260956
-  Time summed over all CPUs for getting density from density matrix: real work     9026.880 s, elapsed     9748.343 s
+  Time summed over all CPUs for getting density from density matrix: real work     7264.477 s, elapsed     7568.043 s
   Deallocating        0.000 MB for density_matrix
     mem               8 current_memory_estimate      1134260948
   Deallocating       27.080 MB for density_matrix_con
@@ -3819,16 +3819,16 @@
   Integration grid: deviation in total charge (<rho> - N_e) =   6.366463E-12
 
   Time for density update prior                :  max(cpu_time)    wall_clock(cpu1)
-  | self-consistency iterative process          :       58.800 s          59.593 s
-  Available memory before start of SCF loop [GB]:    854.87
+  | self-consistency iterative process          :       55.396 s          56.165 s
+  Available memory before start of SCF loop [GB]:    588.09
 
 ------------------------------------------------------------
           Initial SCF-cycle to compute last known
           density from restart information.
 
-  Date     :  20260604, Time     :  163303.432
+  Date     :  20260606, Time     :  090732.725
 ------------------------------------------------------------
-  Available memory per node after mixing [GB]:    854.87
+  Available memory per node after mixing [GB]:    588.09
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    4320.0000000000
   | Integrated number of electrons on 3D grid     :    4320.0000000001
@@ -3841,7 +3841,7 @@
   | Analytical far-field extrapolation by fixed multipoles:
   | Hartree multipole sum: apparent total charge =   0.108090E-10
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        1.326 s, elapsed        1.372 s
+  Time summed over all CPUs for potential: real work        1.315 s, elapsed        1.356 s
   | RMS charge density error from multipole expansion :   0.131275E+00
   | Average real-space part of the electrostatic potential :      0.57516663 eV
 
@@ -3856,7 +3856,7 @@
     mem         1808640 current_memory_estimate      1127071604
   Allocating        1.725 MB for wave
     mem         1808640 current_memory_estimate      1128880244
-  Time summed over all CPUs for integration: real work     5648.925 s, elapsed     5785.006 s
+  Time summed over all CPUs for integration: real work     4313.964 s, elapsed     4462.690 s
   Deallocating        1.725 MB for H_times_psi
     mem         1808640 current_memory_estimate      1127071604
   Deallocating       27.080 MB for hamiltonian_shell
@@ -7404,7 +7404,7 @@
     mem         1808640 current_memory_estimate      1128835036
   Allocating        5.175 MB for gradient_basis_wave
     mem         5425920 current_memory_estimate      1134260956
-  Time summed over all CPUs for getting density from density matrix: real work     9028.499 s, elapsed     9394.683 s
+  Time summed over all CPUs for getting density from density matrix: real work     7220.571 s, elapsed     7542.313 s
   Deallocating        0.000 MB for density_matrix
     mem               8 current_memory_estimate      1134260948
   Deallocating       27.080 MB for density_matrix_con
@@ -7428,13 +7428,13 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     0       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :     1560.689 s        1577.827 s
-  | Charge density update                       :       67.567 s          68.449 s
-  | Density mixing                              :        0.002 s           0.002 s
-  | Hartree multipole update                    :        0.316 s           0.327 s
-  | Hartree multipole summation                 :        1.442 s           1.471 s
-  | Integration                                 :       33.675 s          34.134 s
-  | Solution of K.-S. eqns.                     :     1457.796 s        1473.429 s
+  | Time for this iteration                     :     1702.167 s        1721.188 s
+  | Charge density update                       :       57.171 s          57.898 s
+  | Density mixing                              :        0.001 s           0.001 s
+  | Hartree multipole update                    :        0.324 s           0.337 s
+  | Hartree multipole summation                 :        1.404 s           1.489 s
+  | Integration                                 :       28.028 s          28.336 s
+  | Solution of K.-S. eqns.                     :     1615.372 s        1633.114 s
   | Total energy evaluation                     :        0.003 s           0.003 s
 
   Partial memory accounting:
@@ -7458,10 +7458,10 @@
 ------------------------------------------------------------
           Begin self-consistency iteration #    1
 
-  Date     :  20260604, Time     :  165921.263
+  Date     :  20260606, Time     :  093613.921
 ------------------------------------------------------------
   Pulay mixing of updated and previous charge densities.
-  Available memory per node after mixing [GB]:    747.61
+  Available memory per node after mixing [GB]:    483.86
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    4320.0000000000
   | Integrated number of electrons on 3D grid     :    4320.0000000000
@@ -7474,7 +7474,7 @@
   | Analytical far-field extrapolation by fixed multipoles:
   | Hartree multipole sum: apparent total charge =   0.956975E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        1.319 s, elapsed        1.365 s
+  Time summed over all CPUs for potential: real work        1.313 s, elapsed        1.363 s
   | RMS charge density error from multipole expansion :   0.131275E+00
   | Average real-space part of the electrostatic potential :      0.57516663 eV
 
@@ -7489,7 +7489,7 @@
     mem         1808640 current_memory_estimate      1127071604
   Allocating        1.725 MB for wave
     mem         1808640 current_memory_estimate      1128880244
-  Time summed over all CPUs for integration: real work     5649.605 s, elapsed     5813.359 s
+  Time summed over all CPUs for integration: real work     4320.482 s, elapsed     4576.797 s
   Deallocating        1.725 MB for H_times_psi
     mem         1808640 current_memory_estimate      1127071604
   Deallocating       27.080 MB for hamiltonian_shell
@@ -14502,14 +14502,14 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     1       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :      929.986 s         939.776 s
+  | Time for this iteration                     :     1052.979 s        1063.903 s
   | Charge density update                       :        0.000 s           0.000 s
-  | Density mixing                              :        0.005 s           0.005 s
-  | Hartree multipole update                    :        0.308 s           0.312 s
-  | Hartree multipole summation                 :        1.409 s           1.426 s
-  | Integration                                 :       33.845 s          34.257 s
-  | Solution of K.-S. eqns.                     :      894.436 s         903.760 s
-  | Total energy evaluation                     :        0.003 s           0.002 s
+  | Density mixing                              :        0.004 s           0.005 s
+  | Hartree multipole update                    :        0.325 s           0.329 s
+  | Hartree multipole summation                 :        1.404 s           1.423 s
+  | Integration                                 :       28.518 s          28.906 s
+  | Solution of K.-S. eqns.                     :     1022.728 s        1033.222 s
+  | Total energy evaluation                     :        0.003 s           0.003 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -14576,7 +14576,7 @@
     mem         1808640 current_memory_estimate      1127071620
   Allocating        1.725 MB for wave
     mem         1808640 current_memory_estimate      1128880260
-  Time summed over all CPUs for integration: real work     5645.592 s, elapsed     5908.323 s
+  Time summed over all CPUs for integration: real work     4311.153 s, elapsed     4628.738 s
   Deallocating        1.725 MB for H_times_psi
     mem         1808640 current_memory_estimate      1127071620
   Deallocating       27.080 MB for hamiltonian_shell
@@ -14617,19 +14617,19 @@
     mem             288 current_memory_estimate      2475433576
 
   Number of k-points for which the Wannier centers of charge are calculated for:    16
-  Number of k-points used at each of this k-points to obtain the Wannier center of charge:    40
-  Allocating        0.001 MB for WCC_kpoints
-    mem             960 current_memory_estimate      2475434536
+  Number of k-points used at each of this k-points to obtain the Wannier center of charge:     4
+  Allocating        0.000 MB for WCC_kpoints
+    mem              96 current_memory_estimate      2475433672
   Allocating        0.000 MB for KS_eigenvector_for_WCC
-    mem               0 current_memory_estimate      2475434536
-  Allocating        1.055 MB for WCC_eval
-    mem         1105920 current_memory_estimate      2476540456
+    mem               0 current_memory_estimate      2475433672
+  Allocating        0.105 MB for WCC_eval
+    mem          110592 current_memory_estimate      2475544264
   Allocating        0.264 MB for WCC_imag
-    mem          276480 current_memory_estimate      2476816936
-  Allocating       10.547 MB for WCC_evalue_phase
-    mem        11059200 current_memory_estimate      2487876136
-  Allocating       10.547 MB for WCC_evalue_phase_r
-    mem        11059200 current_memory_estimate      2498935336
+    mem          276480 current_memory_estimate      2475820744
+  Allocating        1.055 MB for WCC_evalue_phase
+    mem         1105920 current_memory_estimate      2476926664
+  Allocating        1.055 MB for WCC_evalue_phase_r
+    mem         1105920 current_memory_estimate      2478032584
   Wannier center evolution is sampled along the reciprocal lattice vector  3 in    16 steps.
   - The Wannier center evoulution is computed along the following     16 strings in k_space:
     Band     1 from k_start = -0.500 -0.500  0.500 to k_end = -0.500 -0.500 -0.500
@@ -14650,319 +14650,220 @@
     Band    16 from k_start =  0.500  0.500  0.500 to k_end =  0.500  0.500 -0.500
 
 
-  Treating all   40 k-points in band plot segment #   1:
+  Treating all    4 k-points in band plot segment #   1:
    Sampling over :
    - k =  -0.500 -0.500  0.500
-   - k =  -0.500 -0.500  0.474
-   - k =  -0.500 -0.500  0.449
-   - k =  -0.500 -0.500  0.423
-   - k =  -0.500 -0.500  0.397
-   - k =  -0.500 -0.500  0.372
-   - k =  -0.500 -0.500  0.346
-   - k =  -0.500 -0.500  0.321
-   - k =  -0.500 -0.500  0.295
-   - k =  -0.500 -0.500  0.269
-   - k =  -0.500 -0.500  0.244
-   - k =  -0.500 -0.500  0.218
-   - k =  -0.500 -0.500  0.192
    - k =  -0.500 -0.500  0.167
-   - k =  -0.500 -0.500  0.141
-   - k =  -0.500 -0.500  0.115
-   - k =  -0.500 -0.500  0.090
-   - k =  -0.500 -0.500  0.064
-   - k =  -0.500 -0.500  0.038
-   - k =  -0.500 -0.500  0.013
-   - k =  -0.500 -0.500 -0.013
-   - k =  -0.500 -0.500 -0.038
-   - k =  -0.500 -0.500 -0.064
-   - k =  -0.500 -0.500 -0.090
-   - k =  -0.500 -0.500 -0.115
-   - k =  -0.500 -0.500 -0.141
    - k =  -0.500 -0.500 -0.167
-   - k =  -0.500 -0.500 -0.192
-   - k =  -0.500 -0.500 -0.218
-   - k =  -0.500 -0.500 -0.244
-   - k =  -0.500 -0.500 -0.269
-   - k =  -0.500 -0.500 -0.295
-   - k =  -0.500 -0.500 -0.321
-   - k =  -0.500 -0.500 -0.346
-   - k =  -0.500 -0.500 -0.372
-   - k =  -0.500 -0.500 -0.397
-   - k =  -0.500 -0.500 -0.423
-   - k =  -0.500 -0.500 -0.449
-   - k =  -0.500 -0.500 -0.474
    - k =  -0.500 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate      2498935336
+    mem               0 current_memory_estimate      2478032584
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate      2498935336
+    mem               0 current_memory_estimate      2478032584
   |-> Computing Wannier center evolution at k-point number:      1
  Using pol_lapack_version = 2
   Allocating      410.587 MB for WCC_dipmat_all_up
-    mem       430531208 current_memory_estimate      2929466544
+    mem       430531208 current_memory_estimate      2908563792
   Allocating      410.587 MB for WCC_dipmat_all_low
-    mem       430531208 current_memory_estimate      3359997752
+    mem       430531208 current_memory_estimate      3339095000
  Calculating dipole matrix along reciprocal lattice vector 3:     0.131     0.131    -0.131
   Integrating dipole matrix.
   Allocating        0.014 MB for ylm_tab
-    mem           15104 current_memory_estimate      3360012856
+    mem           15104 current_memory_estimate      3339110104
   Allocating        0.004 MB for radial_wave
-    mem            4464 current_memory_estimate      3360017320
+    mem            4464 current_memory_estimate      3339114568
   Allocating        1.725 MB for wave
-    mem         1808640 current_memory_estimate      3361825960
+    mem         1808640 current_memory_estimate      3340923208
   Allocating        1.725 MB for dressed_wave
-    mem         1808640 current_memory_estimate      3363634600
+    mem         1808640 current_memory_estimate      3342731848
   Allocating       27.080 MB for dipolemat_shell
-    mem        28395648 current_memory_estimate      3392030248
-  Time summed over all CPUs for integration: real work    10077.459 s, elapsed    10498.243 s
+    mem        28395648 current_memory_estimate      3371127496
+  Time summed over all CPUs for integration: real work     7189.107 s, elapsed     7556.803 s
   Deallocating        0.014 MB for ylm_tab
-    mem           15104 current_memory_estimate      3392015144
+    mem           15104 current_memory_estimate      3371112392
   Deallocating       27.080 MB for dipolemat_shell
-    mem        28395648 current_memory_estimate      3363619496
+    mem        28395648 current_memory_estimate      3342716744
   Deallocating        0.004 MB for radial_wave
-    mem            4464 current_memory_estimate      3363615032
+    mem            4464 current_memory_estimate      3342712280
   Deallocating        1.725 MB for wave
-    mem         1808640 current_memory_estimate      3361806392
+    mem         1808640 current_memory_estimate      3340903640
   Deallocating        1.725 MB for dressed_wave
-    mem         1808640 current_memory_estimate      3359997752
+    mem         1808640 current_memory_estimate      3339095000
  Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
  Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
 
-  Treating all   40 k-points in band plot segment #   2:
+  Treating all    4 k-points in band plot segment #   2:
    Sampling over :
    - k =  -0.500 -0.167  0.500
-   - k =  -0.500 -0.167  0.474
-   - k =  -0.500 -0.167  0.449
-   - k =  -0.500 -0.167  0.423
-   - k =  -0.500 -0.167  0.397
-   - k =  -0.500 -0.167  0.372
-   - k =  -0.500 -0.167  0.346
-   - k =  -0.500 -0.167  0.321
-   - k =  -0.500 -0.167  0.295
-   - k =  -0.500 -0.167  0.269
-   - k =  -0.500 -0.167  0.244
-   - k =  -0.500 -0.167  0.218
-   - k =  -0.500 -0.167  0.192
    - k =  -0.500 -0.167  0.167
-   - k =  -0.500 -0.167  0.141
-   - k =  -0.500 -0.167  0.115
-   - k =  -0.500 -0.167  0.090
-   - k =  -0.500 -0.167  0.064
-   - k =  -0.500 -0.167  0.038
-   - k =  -0.500 -0.167  0.013
-   - k =  -0.500 -0.167 -0.013
-   - k =  -0.500 -0.167 -0.038
-   - k =  -0.500 -0.167 -0.064
-   - k =  -0.500 -0.167 -0.090
-   - k =  -0.500 -0.167 -0.115
-   - k =  -0.500 -0.167 -0.141
    - k =  -0.500 -0.167 -0.167
-   - k =  -0.500 -0.167 -0.192
-   - k =  -0.500 -0.167 -0.218
-   - k =  -0.500 -0.167 -0.244
-   - k =  -0.500 -0.167 -0.269
-   - k =  -0.500 -0.167 -0.295
-   - k =  -0.500 -0.167 -0.321
-   - k =  -0.500 -0.167 -0.346
-   - k =  -0.500 -0.167 -0.372
-   - k =  -0.500 -0.167 -0.397
-   - k =  -0.500 -0.167 -0.423
-   - k =  -0.500 -0.167 -0.449
-   - k =  -0.500 -0.167 -0.474
    - k =  -0.500 -0.167 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate      3359997752
+    mem               0 current_memory_estimate      3339095000
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate      3359997752
-srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
-slurmstepd: error: *** STEP 9502740.0 ON vipl2004 CANCELLED AT 2026-06-04T18:30:51 DUE TO TIME LIMIT ***
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      2
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   3:
+   Sampling over :
+   - k =  -0.500  0.167  0.500
+   - k =  -0.500  0.167  0.167
+   - k =  -0.500  0.167 -0.167
+   - k =  -0.500  0.167 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      3
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   4:
+   Sampling over :
+   - k =  -0.500  0.500  0.500
+   - k =  -0.500  0.500  0.167
+   - k =  -0.500  0.500 -0.167
+   - k =  -0.500  0.500 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      4
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   5:
+   Sampling over :
+   - k =  -0.167 -0.500  0.500
+   - k =  -0.167 -0.500  0.167
+   - k =  -0.167 -0.500 -0.167
+   - k =  -0.167 -0.500 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      5
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   6:
+   Sampling over :
+   - k =  -0.167 -0.167  0.500
+   - k =  -0.167 -0.167  0.167
+   - k =  -0.167 -0.167 -0.167
+   - k =  -0.167 -0.167 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      6
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   7:
+   Sampling over :
+   - k =  -0.167  0.167  0.500
+   - k =  -0.167  0.167  0.167
+   - k =  -0.167  0.167 -0.167
+   - k =  -0.167  0.167 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      7
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   8:
+   Sampling over :
+   - k =  -0.167  0.500  0.500
+   - k =  -0.167  0.500  0.167
+   - k =  -0.167  0.500 -0.167
+   - k =  -0.167  0.500 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      8
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #   9:
+   Sampling over :
+   - k =   0.167 -0.500  0.500
+   - k =   0.167 -0.500  0.167
+   - k =   0.167 -0.500 -0.167
+   - k =   0.167 -0.500 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:      9
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #  10:
+   Sampling over :
+   - k =   0.167 -0.167  0.500
+   - k =   0.167 -0.167  0.167
+   - k =   0.167 -0.167 -0.167
+   - k =   0.167 -0.167 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:     10
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #  11:
+   Sampling over :
+   - k =   0.167  0.167  0.500
+   - k =   0.167  0.167  0.167
+   - k =   0.167  0.167 -0.167
+   - k =   0.167  0.167 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+  |-> Computing Wannier center evolution at k-point number:     11
+ Using pol_lapack_version = 2
+ Calculating Berry  term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+ Calculating dipole term along reciprocal lattice vector 3:     0.131     0.131    -0.131
+
+  Treating all    4 k-points in band plot segment #  12:
+   Sampling over :
+   - k =   0.167  0.500  0.500
+   - k =   0.167  0.500  0.167
+   - k =   0.167  0.500 -0.167
+   - k =   0.167  0.500 -0.500
+
+  Deallocating        0.000 MB for KS_eigenvector_complex,
+    mem               0 current_memory_estimate      3339095000
+  Allocating        0.000 MB for KS_eigenvector_complex
+    mem               0 current_memory_estimate      3339095000
+slurmstepd: error: *** STEP 9544457.0 ON vipm2059 CANCELLED AT 2026-06-06T13:05:33 DUE TO TIME LIMIT ***
 srun: got SIGCONT
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
 srun: forcing job termination
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             

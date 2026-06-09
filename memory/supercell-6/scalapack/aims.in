@@ -6,6 +6,6 @@ sc_accuracy_rho              1d-6
 elsi_restart                 read
 KS_method                    parallel
 output                       memory_tracking
-output polarization          3 4 4 40
+output polarization          3 4 4 4
 
 

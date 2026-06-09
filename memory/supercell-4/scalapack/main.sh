@@ -10,7 +10,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --mail-type=NONE
-#SBATCH --time=02:00:00
+#SBATCH --time=00:30:00
 
 ###################################################################
 # Clean slurm folder
@@ -50,7 +50,7 @@ calculate_elapsed_time() {
 run_aims(){
     echo "Running ${AIMS_OUTPUT_FILE}" >> "$LOG_FILE"
     start_time=$(get_current_date_time)
-    cmd="srun ${AIMS_PATH}/${AIMS_EXE} &> aims.out"
+    cmd="srun -n 128 ${AIMS_PATH}/${AIMS_EXE} &> aims.out"
     echo "$cmd"
     eval "$cmd"
     end_time=$(get_current_date_time)

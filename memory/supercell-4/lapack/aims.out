@@ -40,12 +40,12 @@
 
 
 
-  Date     :  20260603, Time     :  221322.070
-  Time zero on CPU 1             :   0.191248000000000E+00  s.
-  Internal wall clock time zero  :           549756802.070  s.
+  Date     :  20260606, Time     :  212544.864
+  Time zero on CPU 1             :   0.241320000000000E+00  s.
+  Internal wall clock time zero  :           550013144.864  s.
 
   FHI-aims created a unique identifier for this run for later identification
-  aims_uuid : FF50D682-10EE-4F18-A39E-26EB0C8F3B7E
+  aims_uuid : 0E316AF7-1ABC-4641-A6D4-9E5BE56206FF
 
   Build configuration of the current instance of FHI-aims
   -------------------------------------------------------
@@ -77,262 +77,262 @@
                    /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_scalapack_lp64.so
 
   Using      256 parallel tasks.
-  Task        0 on host vipl2016 reporting.
-  Task        1 on host vipl2016 reporting.
-  Task        2 on host vipl2016 reporting.
-  Task        3 on host vipl2016 reporting.
-  Task        4 on host vipl2016 reporting.
-  Task        5 on host vipl2016 reporting.
-  Task        6 on host vipl2016 reporting.
-  Task        7 on host vipl2016 reporting.
-  Task        8 on host vipl2016 reporting.
-  Task        9 on host vipl2016 reporting.
-  Task       10 on host vipl2016 reporting.
-  Task       11 on host vipl2016 reporting.
-  Task       12 on host vipl2016 reporting.
-  Task       13 on host vipl2016 reporting.
-  Task       14 on host vipl2016 reporting.
-  Task       15 on host vipl2016 reporting.
-  Task       16 on host vipl2016 reporting.
-  Task       17 on host vipl2016 reporting.
-  Task       18 on host vipl2016 reporting.
-  Task       19 on host vipl2016 reporting.
-  Task       20 on host vipl2016 reporting.
-  Task       21 on host vipl2016 reporting.
-  Task       22 on host vipl2016 reporting.
-  Task       23 on host vipl2016 reporting.
-  Task       24 on host vipl2016 reporting.
-  Task       25 on host vipl2016 reporting.
-  Task       26 on host vipl2016 reporting.
-  Task       27 on host vipl2016 reporting.
-  Task       28 on host vipl2016 reporting.
-  Task       29 on host vipl2016 reporting.
-  Task       30 on host vipl2016 reporting.
-  Task       31 on host vipl2016 reporting.
-  Task       32 on host vipl2016 reporting.
-  Task       33 on host vipl2016 reporting.
-  Task       34 on host vipl2016 reporting.
-  Task       35 on host vipl2016 reporting.
-  Task       36 on host vipl2016 reporting.
-  Task       37 on host vipl2016 reporting.
-  Task       38 on host vipl2016 reporting.
-  Task       39 on host vipl2016 reporting.
-  Task       40 on host vipl2016 reporting.
-  Task       41 on host vipl2016 reporting.
-  Task       42 on host vipl2016 reporting.
-  Task       43 on host vipl2016 reporting.
-  Task       44 on host vipl2016 reporting.
-  Task       45 on host vipl2016 reporting.
-  Task       46 on host vipl2016 reporting.
-  Task       47 on host vipl2016 reporting.
-  Task       48 on host vipl2016 reporting.
-  Task       49 on host vipl2016 reporting.
-  Task       50 on host vipl2016 reporting.
-  Task       51 on host vipl2016 reporting.
-  Task       52 on host vipl2016 reporting.
-  Task       53 on host vipl2016 reporting.
-  Task       54 on host vipl2016 reporting.
-  Task       55 on host vipl2016 reporting.
-  Task       56 on host vipl2016 reporting.
-  Task       57 on host vipl2016 reporting.
-  Task       58 on host vipl2016 reporting.
-  Task       59 on host vipl2016 reporting.
-  Task       60 on host vipl2016 reporting.
-  Task       61 on host vipl2016 reporting.
-  Task       62 on host vipl2016 reporting.
-  Task       63 on host vipl2016 reporting.
-  Task       64 on host vipl2016 reporting.
-  Task       65 on host vipl2016 reporting.
-  Task       66 on host vipl2016 reporting.
-  Task       67 on host vipl2016 reporting.
-  Task       68 on host vipl2016 reporting.
-  Task       69 on host vipl2016 reporting.
-  Task       70 on host vipl2016 reporting.
-  Task       71 on host vipl2016 reporting.
-  Task       72 on host vipl2016 reporting.
-  Task       73 on host vipl2016 reporting.
-  Task       74 on host vipl2016 reporting.
-  Task       75 on host vipl2016 reporting.
-  Task       76 on host vipl2016 reporting.
-  Task       77 on host vipl2016 reporting.
-  Task       78 on host vipl2016 reporting.
-  Task       79 on host vipl2016 reporting.
-  Task       80 on host vipl2016 reporting.
-  Task       81 on host vipl2016 reporting.
-  Task       82 on host vipl2016 reporting.
-  Task       83 on host vipl2016 reporting.
-  Task       84 on host vipl2016 reporting.
-  Task       85 on host vipl2016 reporting.
-  Task       86 on host vipl2016 reporting.
-  Task       87 on host vipl2016 reporting.
-  Task       88 on host vipl2016 reporting.
-  Task       89 on host vipl2016 reporting.
-  Task       90 on host vipl2016 reporting.
-  Task       91 on host vipl2016 reporting.
-  Task       92 on host vipl2016 reporting.
-  Task       93 on host vipl2016 reporting.
-  Task       94 on host vipl2016 reporting.
-  Task       95 on host vipl2016 reporting.
-  Task       96 on host vipl2016 reporting.
-  Task       97 on host vipl2016 reporting.
-  Task       98 on host vipl2016 reporting.
-  Task       99 on host vipl2016 reporting.
-  Task      100 on host vipl2016 reporting.
-  Task      101 on host vipl2016 reporting.
-  Task      102 on host vipl2016 reporting.
-  Task      103 on host vipl2016 reporting.
-  Task      104 on host vipl2016 reporting.
-  Task      105 on host vipl2016 reporting.
-  Task      106 on host vipl2016 reporting.
-  Task      107 on host vipl2016 reporting.
-  Task      108 on host vipl2016 reporting.
-  Task      109 on host vipl2016 reporting.
-  Task      110 on host vipl2016 reporting.
-  Task      111 on host vipl2016 reporting.
-  Task      112 on host vipl2016 reporting.
-  Task      113 on host vipl2016 reporting.
-  Task      114 on host vipl2016 reporting.
-  Task      115 on host vipl2016 reporting.
-  Task      116 on host vipl2016 reporting.
-  Task      117 on host vipl2016 reporting.
-  Task      118 on host vipl2016 reporting.
-  Task      119 on host vipl2016 reporting.
-  Task      120 on host vipl2016 reporting.
-  Task      121 on host vipl2016 reporting.
-  Task      122 on host vipl2016 reporting.
-  Task      123 on host vipl2016 reporting.
-  Task      124 on host vipl2016 reporting.
-  Task      125 on host vipl2016 reporting.
-  Task      126 on host vipl2016 reporting.
-  Task      127 on host vipl2016 reporting.
-  Task      128 on host vipl2056 reporting.
-  Task      129 on host vipl2056 reporting.
-  Task      130 on host vipl2056 reporting.
-  Task      131 on host vipl2056 reporting.
-  Task      132 on host vipl2056 reporting.
-  Task      133 on host vipl2056 reporting.
-  Task      134 on host vipl2056 reporting.
-  Task      135 on host vipl2056 reporting.
-  Task      136 on host vipl2056 reporting.
-  Task      137 on host vipl2056 reporting.
-  Task      138 on host vipl2056 reporting.
-  Task      139 on host vipl2056 reporting.
-  Task      140 on host vipl2056 reporting.
-  Task      141 on host vipl2056 reporting.
-  Task      142 on host vipl2056 reporting.
-  Task      143 on host vipl2056 reporting.
-  Task      144 on host vipl2056 reporting.
-  Task      145 on host vipl2056 reporting.
-  Task      146 on host vipl2056 reporting.
-  Task      147 on host vipl2056 reporting.
-  Task      148 on host vipl2056 reporting.
-  Task      149 on host vipl2056 reporting.
-  Task      150 on host vipl2056 reporting.
-  Task      151 on host vipl2056 reporting.
-  Task      152 on host vipl2056 reporting.
-  Task      153 on host vipl2056 reporting.
-  Task      154 on host vipl2056 reporting.
-  Task      155 on host vipl2056 reporting.
-  Task      156 on host vipl2056 reporting.
-  Task      157 on host vipl2056 reporting.
-  Task      158 on host vipl2056 reporting.
-  Task      159 on host vipl2056 reporting.
-  Task      160 on host vipl2056 reporting.
-  Task      161 on host vipl2056 reporting.
-  Task      162 on host vipl2056 reporting.
-  Task      163 on host vipl2056 reporting.
-  Task      164 on host vipl2056 reporting.
-  Task      165 on host vipl2056 reporting.
-  Task      166 on host vipl2056 reporting.
-  Task      167 on host vipl2056 reporting.
-  Task      168 on host vipl2056 reporting.
-  Task      169 on host vipl2056 reporting.
-  Task      170 on host vipl2056 reporting.
-  Task      171 on host vipl2056 reporting.
-  Task      172 on host vipl2056 reporting.
-  Task      173 on host vipl2056 reporting.
-  Task      174 on host vipl2056 reporting.
-  Task      175 on host vipl2056 reporting.
-  Task      176 on host vipl2056 reporting.
-  Task      177 on host vipl2056 reporting.
-  Task      178 on host vipl2056 reporting.
-  Task      179 on host vipl2056 reporting.
-  Task      180 on host vipl2056 reporting.
-  Task      181 on host vipl2056 reporting.
-  Task      182 on host vipl2056 reporting.
-  Task      183 on host vipl2056 reporting.
-  Task      184 on host vipl2056 reporting.
-  Task      185 on host vipl2056 reporting.
-  Task      186 on host vipl2056 reporting.
-  Task      187 on host vipl2056 reporting.
-  Task      188 on host vipl2056 reporting.
-  Task      189 on host vipl2056 reporting.
-  Task      190 on host vipl2056 reporting.
-  Task      191 on host vipl2056 reporting.
-  Task      192 on host vipl2056 reporting.
-  Task      193 on host vipl2056 reporting.
-  Task      194 on host vipl2056 reporting.
-  Task      195 on host vipl2056 reporting.
-  Task      196 on host vipl2056 reporting.
-  Task      197 on host vipl2056 reporting.
-  Task      198 on host vipl2056 reporting.
-  Task      199 on host vipl2056 reporting.
-  Task      200 on host vipl2056 reporting.
-  Task      201 on host vipl2056 reporting.
-  Task      202 on host vipl2056 reporting.
-  Task      203 on host vipl2056 reporting.
-  Task      204 on host vipl2056 reporting.
-  Task      205 on host vipl2056 reporting.
-  Task      206 on host vipl2056 reporting.
-  Task      207 on host vipl2056 reporting.
-  Task      208 on host vipl2056 reporting.
-  Task      209 on host vipl2056 reporting.
-  Task      210 on host vipl2056 reporting.
-  Task      211 on host vipl2056 reporting.
-  Task      212 on host vipl2056 reporting.
-  Task      213 on host vipl2056 reporting.
-  Task      214 on host vipl2056 reporting.
-  Task      215 on host vipl2056 reporting.
-  Task      216 on host vipl2056 reporting.
-  Task      217 on host vipl2056 reporting.
-  Task      218 on host vipl2056 reporting.
-  Task      219 on host vipl2056 reporting.
-  Task      220 on host vipl2056 reporting.
-  Task      221 on host vipl2056 reporting.
-  Task      222 on host vipl2056 reporting.
-  Task      223 on host vipl2056 reporting.
-  Task      224 on host vipl2056 reporting.
-  Task      225 on host vipl2056 reporting.
-  Task      226 on host vipl2056 reporting.
-  Task      227 on host vipl2056 reporting.
-  Task      228 on host vipl2056 reporting.
-  Task      229 on host vipl2056 reporting.
-  Task      230 on host vipl2056 reporting.
-  Task      231 on host vipl2056 reporting.
-  Task      232 on host vipl2056 reporting.
-  Task      233 on host vipl2056 reporting.
-  Task      234 on host vipl2056 reporting.
-  Task      235 on host vipl2056 reporting.
-  Task      236 on host vipl2056 reporting.
-  Task      237 on host vipl2056 reporting.
-  Task      238 on host vipl2056 reporting.
-  Task      239 on host vipl2056 reporting.
-  Task      240 on host vipl2056 reporting.
-  Task      241 on host vipl2056 reporting.
-  Task      242 on host vipl2056 reporting.
-  Task      243 on host vipl2056 reporting.
-  Task      244 on host vipl2056 reporting.
-  Task      245 on host vipl2056 reporting.
-  Task      246 on host vipl2056 reporting.
-  Task      247 on host vipl2056 reporting.
-  Task      248 on host vipl2056 reporting.
-  Task      249 on host vipl2056 reporting.
-  Task      250 on host vipl2056 reporting.
-  Task      251 on host vipl2056 reporting.
-  Task      252 on host vipl2056 reporting.
-  Task      253 on host vipl2056 reporting.
-  Task      254 on host vipl2056 reporting.
-  Task      255 on host vipl2056 reporting.
+  Task        0 on host vipl2013 reporting.
+  Task        1 on host vipl2013 reporting.
+  Task        2 on host vipl2013 reporting.
+  Task        3 on host vipl2013 reporting.
+  Task        4 on host vipl2013 reporting.
+  Task        5 on host vipl2013 reporting.
+  Task        6 on host vipl2013 reporting.
+  Task        7 on host vipl2013 reporting.
+  Task        8 on host vipl2013 reporting.
+  Task        9 on host vipl2013 reporting.
+  Task       10 on host vipl2013 reporting.
+  Task       11 on host vipl2013 reporting.
+  Task       12 on host vipl2013 reporting.
+  Task       13 on host vipl2013 reporting.
+  Task       14 on host vipl2013 reporting.
+  Task       15 on host vipl2013 reporting.
+  Task       16 on host vipl2013 reporting.
+  Task       17 on host vipl2013 reporting.
+  Task       18 on host vipl2013 reporting.
+  Task       19 on host vipl2013 reporting.
+  Task       20 on host vipl2013 reporting.
+  Task       21 on host vipl2013 reporting.
+  Task       22 on host vipl2013 reporting.
+  Task       23 on host vipl2013 reporting.
+  Task       24 on host vipl2013 reporting.
+  Task       25 on host vipl2013 reporting.
+  Task       26 on host vipl2013 reporting.
+  Task       27 on host vipl2013 reporting.
+  Task       28 on host vipl2013 reporting.
+  Task       29 on host vipl2013 reporting.
+  Task       30 on host vipl2013 reporting.
+  Task       31 on host vipl2013 reporting.
+  Task       32 on host vipl2013 reporting.
+  Task       33 on host vipl2013 reporting.
+  Task       34 on host vipl2013 reporting.
+  Task       35 on host vipl2013 reporting.
+  Task       36 on host vipl2013 reporting.
+  Task       37 on host vipl2013 reporting.
+  Task       38 on host vipl2013 reporting.
+  Task       39 on host vipl2013 reporting.
+  Task       40 on host vipl2013 reporting.
+  Task       41 on host vipl2013 reporting.
+  Task       42 on host vipl2013 reporting.
+  Task       43 on host vipl2013 reporting.
+  Task       44 on host vipl2013 reporting.
+  Task       45 on host vipl2013 reporting.
+  Task       46 on host vipl2013 reporting.
+  Task       47 on host vipl2013 reporting.
+  Task       48 on host vipl2013 reporting.
+  Task       49 on host vipl2013 reporting.
+  Task       50 on host vipl2013 reporting.
+  Task       51 on host vipl2013 reporting.
+  Task       52 on host vipl2013 reporting.
+  Task       53 on host vipl2013 reporting.
+  Task       54 on host vipl2013 reporting.
+  Task       55 on host vipl2013 reporting.
+  Task       56 on host vipl2013 reporting.
+  Task       57 on host vipl2013 reporting.
+  Task       58 on host vipl2013 reporting.
+  Task       59 on host vipl2013 reporting.
+  Task       60 on host vipl2013 reporting.
+  Task       61 on host vipl2013 reporting.
+  Task       62 on host vipl2013 reporting.
+  Task       63 on host vipl2013 reporting.
+  Task       64 on host vipl2013 reporting.
+  Task       65 on host vipl2013 reporting.
+  Task       66 on host vipl2013 reporting.
+  Task       67 on host vipl2013 reporting.
+  Task       68 on host vipl2013 reporting.
+  Task       69 on host vipl2013 reporting.
+  Task       70 on host vipl2013 reporting.
+  Task       71 on host vipl2013 reporting.
+  Task       72 on host vipl2013 reporting.
+  Task       73 on host vipl2013 reporting.
+  Task       74 on host vipl2013 reporting.
+  Task       75 on host vipl2013 reporting.
+  Task       76 on host vipl2013 reporting.
+  Task       77 on host vipl2013 reporting.
+  Task       78 on host vipl2013 reporting.
+  Task       79 on host vipl2013 reporting.
+  Task       80 on host vipl2013 reporting.
+  Task       81 on host vipl2013 reporting.
+  Task       82 on host vipl2013 reporting.
+  Task       83 on host vipl2013 reporting.
+  Task       84 on host vipl2013 reporting.
+  Task       85 on host vipl2013 reporting.
+  Task       86 on host vipl2013 reporting.
+  Task       87 on host vipl2013 reporting.
+  Task       88 on host vipl2013 reporting.
+  Task       89 on host vipl2013 reporting.
+  Task       90 on host vipl2013 reporting.
+  Task       91 on host vipl2013 reporting.
+  Task       92 on host vipl2013 reporting.
+  Task       93 on host vipl2013 reporting.
+  Task       94 on host vipl2013 reporting.
+  Task       95 on host vipl2013 reporting.
+  Task       96 on host vipl2013 reporting.
+  Task       97 on host vipl2013 reporting.
+  Task       98 on host vipl2013 reporting.
+  Task       99 on host vipl2013 reporting.
+  Task      100 on host vipl2013 reporting.
+  Task      101 on host vipl2013 reporting.
+  Task      102 on host vipl2013 reporting.
+  Task      103 on host vipl2013 reporting.
+  Task      104 on host vipl2013 reporting.
+  Task      105 on host vipl2013 reporting.
+  Task      106 on host vipl2013 reporting.
+  Task      107 on host vipl2013 reporting.
+  Task      108 on host vipl2013 reporting.
+  Task      109 on host vipl2013 reporting.
+  Task      110 on host vipl2013 reporting.
+  Task      111 on host vipl2013 reporting.
+  Task      112 on host vipl2013 reporting.
+  Task      113 on host vipl2013 reporting.
+  Task      114 on host vipl2013 reporting.
+  Task      115 on host vipl2013 reporting.
+  Task      116 on host vipl2013 reporting.
+  Task      117 on host vipl2013 reporting.
+  Task      118 on host vipl2013 reporting.
+  Task      119 on host vipl2013 reporting.
+  Task      120 on host vipl2013 reporting.
+  Task      121 on host vipl2013 reporting.
+  Task      122 on host vipl2013 reporting.
+  Task      123 on host vipl2013 reporting.
+  Task      124 on host vipl2013 reporting.
+  Task      125 on host vipl2013 reporting.
+  Task      126 on host vipl2013 reporting.
+  Task      127 on host vipl2013 reporting.
+  Task      128 on host vipl2017 reporting.
+  Task      129 on host vipl2017 reporting.
+  Task      130 on host vipl2017 reporting.
+  Task      131 on host vipl2017 reporting.
+  Task      132 on host vipl2017 reporting.
+  Task      133 on host vipl2017 reporting.
+  Task      134 on host vipl2017 reporting.
+  Task      135 on host vipl2017 reporting.
+  Task      136 on host vipl2017 reporting.
+  Task      137 on host vipl2017 reporting.
+  Task      138 on host vipl2017 reporting.
+  Task      139 on host vipl2017 reporting.
+  Task      140 on host vipl2017 reporting.
+  Task      141 on host vipl2017 reporting.
+  Task      142 on host vipl2017 reporting.
+  Task      143 on host vipl2017 reporting.
+  Task      144 on host vipl2017 reporting.
+  Task      145 on host vipl2017 reporting.
+  Task      146 on host vipl2017 reporting.
+  Task      147 on host vipl2017 reporting.
+  Task      148 on host vipl2017 reporting.
+  Task      149 on host vipl2017 reporting.
+  Task      150 on host vipl2017 reporting.
+  Task      151 on host vipl2017 reporting.
+  Task      152 on host vipl2017 reporting.
+  Task      153 on host vipl2017 reporting.
+  Task      154 on host vipl2017 reporting.
+  Task      155 on host vipl2017 reporting.
+  Task      156 on host vipl2017 reporting.
+  Task      157 on host vipl2017 reporting.
+  Task      158 on host vipl2017 reporting.
+  Task      159 on host vipl2017 reporting.
+  Task      160 on host vipl2017 reporting.
+  Task      161 on host vipl2017 reporting.
+  Task      162 on host vipl2017 reporting.
+  Task      163 on host vipl2017 reporting.
+  Task      164 on host vipl2017 reporting.
+  Task      165 on host vipl2017 reporting.
+  Task      166 on host vipl2017 reporting.
+  Task      167 on host vipl2017 reporting.
+  Task      168 on host vipl2017 reporting.
+  Task      169 on host vipl2017 reporting.
+  Task      170 on host vipl2017 reporting.
+  Task      171 on host vipl2017 reporting.
+  Task      172 on host vipl2017 reporting.
+  Task      173 on host vipl2017 reporting.
+  Task      174 on host vipl2017 reporting.
+  Task      175 on host vipl2017 reporting.
+  Task      176 on host vipl2017 reporting.
+  Task      177 on host vipl2017 reporting.
+  Task      178 on host vipl2017 reporting.
+  Task      179 on host vipl2017 reporting.
+  Task      180 on host vipl2017 reporting.
+  Task      181 on host vipl2017 reporting.
+  Task      182 on host vipl2017 reporting.
+  Task      183 on host vipl2017 reporting.
+  Task      184 on host vipl2017 reporting.
+  Task      185 on host vipl2017 reporting.
+  Task      186 on host vipl2017 reporting.
+  Task      187 on host vipl2017 reporting.
+  Task      188 on host vipl2017 reporting.
+  Task      189 on host vipl2017 reporting.
+  Task      190 on host vipl2017 reporting.
+  Task      191 on host vipl2017 reporting.
+  Task      192 on host vipl2017 reporting.
+  Task      193 on host vipl2017 reporting.
+  Task      194 on host vipl2017 reporting.
+  Task      195 on host vipl2017 reporting.
+  Task      196 on host vipl2017 reporting.
+  Task      197 on host vipl2017 reporting.
+  Task      198 on host vipl2017 reporting.
+  Task      199 on host vipl2017 reporting.
+  Task      200 on host vipl2017 reporting.
+  Task      201 on host vipl2017 reporting.
+  Task      202 on host vipl2017 reporting.
+  Task      203 on host vipl2017 reporting.
+  Task      204 on host vipl2017 reporting.
+  Task      205 on host vipl2017 reporting.
+  Task      206 on host vipl2017 reporting.
+  Task      207 on host vipl2017 reporting.
+  Task      208 on host vipl2017 reporting.
+  Task      209 on host vipl2017 reporting.
+  Task      210 on host vipl2017 reporting.
+  Task      211 on host vipl2017 reporting.
+  Task      212 on host vipl2017 reporting.
+  Task      213 on host vipl2017 reporting.
+  Task      214 on host vipl2017 reporting.
+  Task      215 on host vipl2017 reporting.
+  Task      216 on host vipl2017 reporting.
+  Task      217 on host vipl2017 reporting.
+  Task      218 on host vipl2017 reporting.
+  Task      219 on host vipl2017 reporting.
+  Task      220 on host vipl2017 reporting.
+  Task      221 on host vipl2017 reporting.
+  Task      222 on host vipl2017 reporting.
+  Task      223 on host vipl2017 reporting.
+  Task      224 on host vipl2017 reporting.
+  Task      225 on host vipl2017 reporting.
+  Task      226 on host vipl2017 reporting.
+  Task      227 on host vipl2017 reporting.
+  Task      228 on host vipl2017 reporting.
+  Task      229 on host vipl2017 reporting.
+  Task      230 on host vipl2017 reporting.
+  Task      231 on host vipl2017 reporting.
+  Task      232 on host vipl2017 reporting.
+  Task      233 on host vipl2017 reporting.
+  Task      234 on host vipl2017 reporting.
+  Task      235 on host vipl2017 reporting.
+  Task      236 on host vipl2017 reporting.
+  Task      237 on host vipl2017 reporting.
+  Task      238 on host vipl2017 reporting.
+  Task      239 on host vipl2017 reporting.
+  Task      240 on host vipl2017 reporting.
+  Task      241 on host vipl2017 reporting.
+  Task      242 on host vipl2017 reporting.
+  Task      243 on host vipl2017 reporting.
+  Task      244 on host vipl2017 reporting.
+  Task      245 on host vipl2017 reporting.
+  Task      246 on host vipl2017 reporting.
+  Task      247 on host vipl2017 reporting.
+  Task      248 on host vipl2017 reporting.
+  Task      249 on host vipl2017 reporting.
+  Task      250 on host vipl2017 reporting.
+  Task      251 on host vipl2017 reporting.
+  Task      252 on host vipl2017 reporting.
+  Task      253 on host vipl2017 reporting.
+  Task      254 on host vipl2017 reporting.
+  Task      255 on host vipl2017 reporting.
 
   Obtaining array dimensions for all initial allocations:
   
@@ -351,7 +351,7 @@
   elsi_restart                 read
   KS_method                    serial
   output                       memory_tracking
-  output polarization          3 6 6 60
+  output polarization          3 6 6 6
   
   
   ################################################################################
@@ -709,8 +709,8 @@
   Verbose memory tracking output has been activated.
 
   Polarization directive number:    1
-  | Calculating polarization along reciprocal lattice vector 3 using   60 k-points parallel to this direction.
-  | Full Brillouin zone sampling is thus performed on a     6 x     6 x    60 grid
+  | Calculating polarization along reciprocal lattice vector 3 using    6 k-points parallel to this direction.
+  | Full Brillouin zone sampling is thus performed on a     6 x     6 x     6 grid
  
   Reading configuration options for species Mg                  .
   | Found nuclear charge :  12.0000
@@ -791,7 +791,7 @@
   | Precision set to  0.1E-04
   | Number of Operations  : 3072
   | Space group           : 225
-  | International         : Fm-3m   Dv
+  | International         : Fm-3m
   | Schoenflies           : Oh^5
   Input structure read successfully.
   The structure contains      128 atoms,  and a total of       1280.000 electrons.
@@ -1699,7 +1699,7 @@
   * and seems sensible.
 
   | Checks passed.
-  After read_input_data [GB]:   1023.30
+  After read_input_data [GB]:   1016.41
 
   Performing system and environment tests:
   | Environment variable OMP_NUM_THREADS correctly set to 1.
@@ -1712,7 +1712,7 @@
   | Running on : AMD EPYC 9554 64-Core Processor
   | Runtime CPU compatibility verified.
   
-  After prepare_system [GB]:   1023.12
+  After prepare_system [GB]:   1016.29
 
 ------------------------------------------------------------
           Preparing all fixed parts of the calculation.
@@ -1875,10 +1875,10 @@
   Preparing densities etc. for the partition functions (integrals / Hartree potential).
 
   Preparations completed.
-  max(cpu_time)          :      0.154 s.
-  Wall clock time (cpu1) :      0.384 s.
+  max(cpu_time)          :      0.147 s.
+  Wall clock time (cpu1) :      0.247 s.
 ------------------------------------------------------------
-  After prepare_scf [GB]:   1017.75
+  After prepare_scf [GB]:   1010.68
 
   Initializing index lists of integration centers etc. from given atomic structure:
   Mapping all atomic coordinates to central unit cell.
@@ -2173,20 +2173,20 @@
   | Number of super-cells (after PM_index) [n_cells]             :          76
   | Number of super-cells in hamiltonian [n_cells_in_hamiltonian]:          76
   | Size of matrix packed + index [n_hamiltonian_matrix_size]    :    15952129
-  After initialize_bc_dependent_lists [GB]:   1010.86
+  After initialize_bc_dependent_lists [GB]:   1003.97
 
 ------------------------------------------------------------
           Begin self-consistency loop: Initialization.
 
-          Date     :  20260603, Time     :  221326.846
+          Date     :  20260606, Time     :  212548.768
 ------------------------------------------------------------
-  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:   1010.86
+  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:   1004.02
   | Estimated reciprocal-space cutoff momentum G_max:         3.44585923 bohr^-1 .
   | Reciprocal lattice points for long-range Hartree potential:    5600
-  Available memory per node after initialize_recip_hartree_potential [GB]:   1010.86
-  Available memory per node after initialize_scalapack [GB]:   1010.86
-  Available memory per node after aims_elsi_init_scf [GB]:   1010.86
-  Available memory per node after initialize_fixed_grids [GB]:   1010.94
+  Available memory per node after initialize_recip_hartree_potential [GB]:   1004.02
+  Available memory per node after initialize_scalapack [GB]:   1004.02
+  Available memory per node after aims_elsi_init_scf [GB]:   1004.02
+  Available memory per node after initialize_fixed_grids [GB]:   1004.50
   Allocating        0.263 MB for all_coords
     mem          275256 current_memory_estimate        64435452
   Allocating        0.088 MB for point_weight
@@ -2472,7 +2472,7 @@
     mem          832824 current_memory_estimate        64206072
   Deallocating        0.044 MB for grid_partition
     mem           45876 current_memory_estimate        64160196
-  Available memory per node after partition_grid [GB]:   1011.12
+  Available memory per node after partition_grid [GB]:   1004.77
   Initializing partition tables, free-atom densities, potentials, etc. across the integration grid (initialize_grid_storage).
   | initialize_grid_storage: Actual outermost partition radius vs. multipole_radius_free
   | (-- VB: in principle, multipole_radius_free should be larger, hence this output)
@@ -2496,7 +2496,7 @@
     mem           18480 current_memory_estimate        64160204
   Deallocating        0.000 MB for atom_atom_tab
     mem               8 current_memory_estimate        64160196
-  Available memory per node after initialize_grid_storage_p1 [GB]:   1011.08
+  Available memory per node after initialize_grid_storage_p1 [GB]:   1004.90
   Renormalizing the initial density to the exact electron count on the 3D integration grid.
   | Initial density: Formal number of electrons (from input files) :    1280.0000000000
   | Integrated number of electrons on 3D grid     :    1280.0737515900
@@ -2764,7 +2764,7 @@
   | Maximal number of non-zero basis functions:     1879 in task   253
   | Maximal number of non-zero basis functions:     1869 in task   254
   | Maximal number of non-zero basis functions:     1874 in task   255
-  Available memory per node after get_n_compute_maxes_p1 [GB]:   1010.25
+  Available memory per node after get_n_compute_maxes_p1 [GB]:   1004.07
   Allocating      121.705 MB for overlap_matrix
     mem       127617032 current_memory_estimate       191777228
   Allocating      121.705 MB for hamiltonian
@@ -2779,8 +2779,8 @@
     mem               0 current_memory_estimate       319394292
   Allocating        0.000 MB for KS_eigenvector
     mem               8 current_memory_estimate       319394300
-  Available memory per node after allocate_matrices [GB]:   1010.16
-  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:   1005.41
+  Available memory per node after allocate_matrices [GB]:   1004.07
+  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:   1004.07
   Integrating Hamiltonian matrix: batch-based integration.
   Allocating        0.043 MB for gradient_basis_wave
     mem           44712 current_memory_estimate       319439012
@@ -2792,7 +2792,7 @@
     mem         1684152 current_memory_estimate       350573468
   Allocating        1.606 MB for wave
     mem         1684152 current_memory_estimate       352257620
-  Time summed over all CPUs for integration: real work     1541.182 s, elapsed     1601.707 s
+  Time summed over all CPUs for integration: real work     1545.239 s, elapsed     1579.729 s
   Deallocating        1.606 MB for H_times_psi
     mem         1684152 current_memory_estimate       350573468
   Deallocating       26.480 MB for hamiltonian_shell
@@ -2803,23 +2803,23 @@
     mem         1684152 current_memory_estimate       319439012
   Deallocating        0.043 MB for gradient_basis_wave
     mem           44712 current_memory_estimate       319394300
-  Available memory per node after integrate hamiltonian matrix [GB]:    981.46
+  Available memory per node after integrate hamiltonian matrix [GB]:    981.54
   Integrating overlap matrix.
-  Time summed over all CPUs for integration: real work     1410.704 s, elapsed     1438.861 s
-  Available memory per node after integrate ovlp matrix [GB]:    964.62
-  Available memory per node after save_overlap_scalapack [GB]:    964.98
-  Available memory per node after advance_KS_solution [GB]:    964.98
+  Time summed over all CPUs for integration: real work     1421.443 s, elapsed     1463.599 s
+  Available memory per node after integrate ovlp matrix [GB]:    964.23
+  Available memory per node after save_overlap_scalapack [GB]:    965.11
+  Available memory per node after advance_KS_solution [GB]:    965.11
   Calculating total energy contributions from superposition of free atom densities.
   Initialize hartree_potential_storage
   Max. number of atoms included in rho_multipole:          128
 
   End scf initialization - timings             :  max(cpu_time)    wall_clock(cpu1)
-  | Time for scf. initialization                :       22.609 s          28.627 s
-  | Boundary condition initialization           :        1.871 s           1.909 s
-  | Integration                                 :       18.771 s          18.904 s
-  | Grid partitioning                           :        1.463 s           1.535 s
-  | Preloading free-atom quantities on grid     :        2.179 s           2.191 s
-  | Free-atom superposition energy              :        0.148 s           0.147 s
+  | Time for scf. initialization                :       22.474 s          26.885 s
+  | Boundary condition initialization           :        1.865 s           1.916 s
+  | Integration                                 :       18.620 s          18.920 s
+  | Grid partitioning                           :        1.444 s           1.523 s
+  | Preloading free-atom quantities on grid     :        2.151 s           2.161 s
+  | Free-atom superposition energy              :        0.192 s           0.194 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -2838,7 +2838,7 @@
   Note:  These values currently only include a subset of arrays which are explicitly tracked.
   The "true" memory usage will be greater.
 ------------------------------------------------------------
-  Available memory after initialize_scf [GB]:    964.68
+  Available memory after initialize_scf [GB]:    964.80
   Allocating        0.071 MB for rho_diff
     mem           74192 current_memory_estimate       319468492
   Allocating        0.071 MB for delta_rho_KS
@@ -2865,7 +2865,7 @@
     mem               8 current_memory_estimate       324810340
   Allocating        0.000 MB for previous_kinetic_density_error
     mem               8 current_memory_estimate       324810348
-  Available memory after allocating mixing [GB]:    964.58
+  Available memory after allocating mixing [GB]:    964.68
   Evaluating new KS density using the density matrix
   Allocating        0.000 MB for density_matrix
     mem               8 current_memory_estimate       324810356
@@ -2891,7 +2891,7 @@
     mem         1684152 current_memory_estimate       357628964
   Allocating        4.818 MB for gradient_basis_wave
     mem         5052456 current_memory_estimate       362681420
-  Time summed over all CPUs for getting density from density matrix: real work     2564.086 s, elapsed     2622.284 s
+  Time summed over all CPUs for getting density from density matrix: real work     2565.398 s, elapsed     2679.651 s
   Deallocating        0.000 MB for density_matrix
     mem               8 current_memory_estimate       362681412
   Deallocating       26.480 MB for density_matrix_con
@@ -2907,16 +2907,16 @@
   Integration grid: deviation in total charge (<rho> - N_e) =   2.955858E-12
 
   Time for density update prior                :  max(cpu_time)    wall_clock(cpu1)
-  | self-consistency iterative process          :       16.376 s          16.565 s
-  Available memory before start of SCF loop [GB]:    963.30
+  | self-consistency iterative process          :       15.816 s          16.037 s
+  Available memory before start of SCF loop [GB]:    963.53
 
 ------------------------------------------------------------
           Initial SCF-cycle to compute last known
           density from restart information.
 
-  Date     :  20260603, Time     :  221412.042
+  Date     :  20260606, Time     :  212631.700
 ------------------------------------------------------------
-  Available memory per node after mixing [GB]:    963.30
+  Available memory per node after mixing [GB]:    963.53
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    1280.0000000000
   | Integrated number of electrons on 3D grid     :    1280.0000000000
@@ -2929,7 +2929,7 @@
   | Analytical far-field extrapolation by fixed multipoles:
   | Hartree multipole sum: apparent total charge =  -0.147463E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        0.338 s, elapsed        0.383 s
+  Time summed over all CPUs for potential: real work        0.338 s, elapsed        0.357 s
   | RMS charge density error from multipole expansion :   0.714572E-01
   | Average real-space part of the electrostatic potential :      0.57516663 eV
 
@@ -2944,7 +2944,7 @@
     mem         1684152 current_memory_estimate       355989516
   Allocating        1.606 MB for wave
     mem         1684152 current_memory_estimate       357673668
-  Time summed over all CPUs for integration: real work     1546.690 s, elapsed     1578.552 s
+  Time summed over all CPUs for integration: real work     1548.718 s, elapsed     1597.010 s
   Deallocating        1.606 MB for H_times_psi
     mem         1684152 current_memory_estimate       355989516
   Deallocating       26.480 MB for hamiltonian_shell
@@ -4060,7 +4060,7 @@
     mem         1684152 current_memory_estimate       357628964
   Allocating        4.818 MB for gradient_basis_wave
     mem         5052456 current_memory_estimate       362681420
-  Time summed over all CPUs for getting density from density matrix: real work     2561.082 s, elapsed     2613.393 s
+  Time summed over all CPUs for getting density from density matrix: real work     2563.546 s, elapsed     2678.052 s
   Deallocating        0.000 MB for density_matrix
     mem               8 current_memory_estimate       362681412
   Deallocating       26.480 MB for density_matrix_con
@@ -4084,13 +4084,13 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     0       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :       65.729 s          66.528 s
-  | Charge density update                       :       14.092 s          14.287 s
-  | Density mixing                              :        0.001 s           0.000 s
-  | Hartree multipole update                    :        0.105 s           0.106 s
-  | Hartree multipole summation                 :        0.417 s           0.424 s
-  | Integration                                 :        9.547 s           9.676 s
-  | Solution of K.-S. eqns.                     :       41.580 s          42.028 s
+  | Time for this iteration                     :       66.253 s          67.124 s
+  | Charge density update                       :       14.442 s          14.641 s
+  | Density mixing                              :        0.004 s           0.001 s
+  | Hartree multipole update                    :        0.116 s           0.117 s
+  | Hartree multipole summation                 :        0.386 s           0.438 s
+  | Integration                                 :        9.602 s           9.730 s
+  | Solution of K.-S. eqns.                     :       41.712 s          42.169 s
   | Total energy evaluation                     :        0.003 s           0.003 s
 
   Partial memory accounting:
@@ -4114,10 +4114,10 @@
 ------------------------------------------------------------
           Begin self-consistency iteration #    1
 
-  Date     :  20260603, Time     :  221518.575
+  Date     :  20260606, Time     :  212738.834
 ------------------------------------------------------------
   Pulay mixing of updated and previous charge densities.
-  Available memory per node after mixing [GB]:    935.82
+  Available memory per node after mixing [GB]:    935.90
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    1280.0000000000
   | Integrated number of electrons on 3D grid     :    1280.0000000000
@@ -4130,7 +4130,7 @@
   | Analytical far-field extrapolation by fixed multipoles:
   | Hartree multipole sum: apparent total charge =  -0.110650E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        0.337 s, elapsed        0.382 s
+  Time summed over all CPUs for potential: real work        0.337 s, elapsed        0.358 s
   | RMS charge density error from multipole expansion :   0.714572E-01
   | Average real-space part of the electrostatic potential :      0.57516663 eV
 
@@ -4145,7 +4145,7 @@
     mem         1684152 current_memory_estimate       355989516
   Allocating        1.606 MB for wave
     mem         1684152 current_memory_estimate       357673668
-  Time summed over all CPUs for integration: real work     1547.448 s, elapsed     1581.528 s
+  Time summed over all CPUs for integration: real work     1549.723 s, elapsed     1593.313 s
   Deallocating        1.606 MB for H_times_psi
     mem         1684152 current_memory_estimate       355989516
   Deallocating       26.480 MB for hamiltonian_shell
@@ -6294,13 +6294,13 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     1       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :       34.232 s          34.617 s
+  | Time for this iteration                     :       34.221 s          34.566 s
   | Charge density update                       :        0.000 s           0.000 s
   | Density mixing                              :        0.002 s           0.002 s
-  | Hartree multipole update                    :        0.101 s           0.103 s
-  | Hartree multipole summation                 :        0.387 s           0.391 s
-  | Integration                                 :        9.539 s           9.674 s
-  | Solution of K.-S. eqns.                     :       24.198 s          24.439 s
+  | Hartree multipole update                    :        0.100 s           0.101 s
+  | Hartree multipole summation                 :        0.366 s           0.371 s
+  | Integration                                 :        9.601 s           9.735 s
+  | Solution of K.-S. eqns.                     :       24.149 s          24.349 s
   | Total energy evaluation                     :        0.003 s           0.003 s
 
   Partial memory accounting:
@@ -6368,7 +6368,7 @@
     mem         1684152 current_memory_estimate       355989532
   Allocating        1.606 MB for wave
     mem         1684152 current_memory_estimate       357673684
-  Time summed over all CPUs for integration: real work     1531.035 s, elapsed     1586.946 s
+  Time summed over all CPUs for integration: real work     1548.523 s, elapsed     1581.223 s
   Deallocating        1.606 MB for H_times_psi
     mem         1684152 current_memory_estimate       355989532
   Deallocating       26.480 MB for hamiltonian_shell
@@ -6409,19 +6409,19 @@
     mem             896 current_memory_estimate       446031456
 
   Number of k-points for which the Wannier centers of charge are calculated for:    36
-  Number of k-points used at each of this k-points to obtain the Wannier center of charge:    60
-  Allocating        0.001 MB for WCC_kpoints
-    mem            1440 current_memory_estimate       446032896
+  Number of k-points used at each of this k-points to obtain the Wannier center of charge:     6
+  Allocating        0.000 MB for WCC_kpoints
+    mem             144 current_memory_estimate       446031600
   Allocating        0.000 MB for KS_eigenvector_for_WCC
-    mem               0 current_memory_estimate       446032896
-  Allocating        0.469 MB for WCC_eval
-    mem          491520 current_memory_estimate       446524416
+    mem               0 current_memory_estimate       446031600
+  Allocating        0.047 MB for WCC_eval
+    mem           49152 current_memory_estimate       446080752
   Allocating        0.176 MB for WCC_imag
-    mem          184320 current_memory_estimate       446708736
-  Allocating       10.547 MB for WCC_evalue_phase
-    mem        11059200 current_memory_estimate       457767936
-  Allocating       10.547 MB for WCC_evalue_phase_r
-    mem        11059200 current_memory_estimate       468827136
+    mem          184320 current_memory_estimate       446265072
+  Allocating        1.055 MB for WCC_evalue_phase
+    mem         1105920 current_memory_estimate       447370992
+  Allocating        1.055 MB for WCC_evalue_phase_r
+    mem         1105920 current_memory_estimate       448476912
   Wannier center evolution is sampled along the reciprocal lattice vector  3 in    36 steps.
   - The Wannier center evoulution is computed along the following     36 strings in k_space:
     Band     1 from k_start = -0.500 -0.500  0.500 to k_end = -0.500 -0.500 -0.500
@@ -6462,2620 +6462,676 @@
     Band    36 from k_start =  0.500  0.500  0.500 to k_end =  0.500  0.500 -0.500
 
 
-  Treating all   60 k-points in band plot segment #   1:
+  Treating all    6 k-points in band plot segment #   1:
    Sampling over :
    - k =  -0.500 -0.500  0.500
-   - k =  -0.500 -0.500  0.483
-   - k =  -0.500 -0.500  0.466
-   - k =  -0.500 -0.500  0.449
-   - k =  -0.500 -0.500  0.432
-   - k =  -0.500 -0.500  0.415
-   - k =  -0.500 -0.500  0.398
-   - k =  -0.500 -0.500  0.381
-   - k =  -0.500 -0.500  0.364
-   - k =  -0.500 -0.500  0.347
-   - k =  -0.500 -0.500  0.331
-   - k =  -0.500 -0.500  0.314
-   - k =  -0.500 -0.500  0.297
-   - k =  -0.500 -0.500  0.280
-   - k =  -0.500 -0.500  0.263
-   - k =  -0.500 -0.500  0.246
-   - k =  -0.500 -0.500  0.229
-   - k =  -0.500 -0.500  0.212
-   - k =  -0.500 -0.500  0.195
-   - k =  -0.500 -0.500  0.178
-   - k =  -0.500 -0.500  0.161
-   - k =  -0.500 -0.500  0.144
-   - k =  -0.500 -0.500  0.127
-   - k =  -0.500 -0.500  0.110
-   - k =  -0.500 -0.500  0.093
-   - k =  -0.500 -0.500  0.076
-   - k =  -0.500 -0.500  0.059
-   - k =  -0.500 -0.500  0.042
-   - k =  -0.500 -0.500  0.025
-   - k =  -0.500 -0.500  0.008
-   - k =  -0.500 -0.500 -0.008
-   - k =  -0.500 -0.500 -0.025
-   - k =  -0.500 -0.500 -0.042
-   - k =  -0.500 -0.500 -0.059
-   - k =  -0.500 -0.500 -0.076
-   - k =  -0.500 -0.500 -0.093
-   - k =  -0.500 -0.500 -0.110
-   - k =  -0.500 -0.500 -0.127
-   - k =  -0.500 -0.500 -0.144
-   - k =  -0.500 -0.500 -0.161
-   - k =  -0.500 -0.500 -0.178
-   - k =  -0.500 -0.500 -0.195
-   - k =  -0.500 -0.500 -0.212
-   - k =  -0.500 -0.500 -0.229
-   - k =  -0.500 -0.500 -0.246
-   - k =  -0.500 -0.500 -0.263
-   - k =  -0.500 -0.500 -0.280
-   - k =  -0.500 -0.500 -0.297
-   - k =  -0.500 -0.500 -0.314
-   - k =  -0.500 -0.500 -0.331
-   - k =  -0.500 -0.500 -0.347
-   - k =  -0.500 -0.500 -0.364
-   - k =  -0.500 -0.500 -0.381
-   - k =  -0.500 -0.500 -0.398
-   - k =  -0.500 -0.500 -0.415
-   - k =  -0.500 -0.500 -0.432
-   - k =  -0.500 -0.500 -0.449
-   - k =  -0.500 -0.500 -0.466
-   - k =  -0.500 -0.500 -0.483
+   - k =  -0.500 -0.500  0.300
+   - k =  -0.500 -0.500  0.100
+   - k =  -0.500 -0.500 -0.100
+   - k =  -0.500 -0.500 -0.300
    - k =  -0.500 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       468827136
+    mem               0 current_memory_estimate       448476912
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       468827136
+    mem               0 current_memory_estimate       448476912
   |-> Computing Wannier center evolution at k-point number:      1
  Using pol_lapack_version = 2
   Allocating      121.705 MB for WCC_dipmat_all_up
-    mem       127617032 current_memory_estimate       596444168
+    mem       127617032 current_memory_estimate       576093944
   Allocating      121.705 MB for WCC_dipmat_all_low
-    mem       127617032 current_memory_estimate       724061200
+    mem       127617032 current_memory_estimate       703710976
  Calculating dipole matrix along reciprocal lattice vector 3:     0.197     0.197    -0.197
   Integrating dipole matrix.
   Allocating        0.014 MB for ylm_tab
-    mem           15104 current_memory_estimate       724076304
+    mem           15104 current_memory_estimate       703726080
   Allocating        0.004 MB for radial_wave
-    mem            4464 current_memory_estimate       724080768
+    mem            4464 current_memory_estimate       703730544
   Allocating        1.606 MB for wave
-    mem         1684152 current_memory_estimate       725764920
+    mem         1684152 current_memory_estimate       705414696
   Allocating        1.606 MB for dressed_wave
-    mem         1684152 current_memory_estimate       727449072
+    mem         1684152 current_memory_estimate       707098848
   Allocating       26.480 MB for dipolemat_shell
-    mem        27766152 current_memory_estimate       755215224
-  Time summed over all CPUs for integration: real work     2830.658 s, elapsed     2904.409 s
+    mem        27766152 current_memory_estimate       734865000
+  Time summed over all CPUs for integration: real work     2830.252 s, elapsed     2907.778 s
   Deallocating        0.014 MB for ylm_tab
-    mem           15104 current_memory_estimate       755200120
+    mem           15104 current_memory_estimate       734849896
   Deallocating       26.480 MB for dipolemat_shell
-    mem        27766152 current_memory_estimate       727433968
+    mem        27766152 current_memory_estimate       707083744
   Deallocating        0.004 MB for radial_wave
-    mem            4464 current_memory_estimate       727429504
+    mem            4464 current_memory_estimate       707079280
   Deallocating        1.606 MB for wave
-    mem         1684152 current_memory_estimate       725745352
+    mem         1684152 current_memory_estimate       705395128
   Deallocating        1.606 MB for dressed_wave
-    mem         1684152 current_memory_estimate       724061200
+    mem         1684152 current_memory_estimate       703710976
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   2:
+  Treating all    6 k-points in band plot segment #   2:
    Sampling over :
    - k =  -0.500 -0.300  0.500
-   - k =  -0.500 -0.300  0.483
-   - k =  -0.500 -0.300  0.466
-   - k =  -0.500 -0.300  0.449
-   - k =  -0.500 -0.300  0.432
-   - k =  -0.500 -0.300  0.415
-   - k =  -0.500 -0.300  0.398
-   - k =  -0.500 -0.300  0.381
-   - k =  -0.500 -0.300  0.364
-   - k =  -0.500 -0.300  0.347
-   - k =  -0.500 -0.300  0.331
-   - k =  -0.500 -0.300  0.314
-   - k =  -0.500 -0.300  0.297
-   - k =  -0.500 -0.300  0.280
-   - k =  -0.500 -0.300  0.263
-   - k =  -0.500 -0.300  0.246
-   - k =  -0.500 -0.300  0.229
-   - k =  -0.500 -0.300  0.212
-   - k =  -0.500 -0.300  0.195
-   - k =  -0.500 -0.300  0.178
-   - k =  -0.500 -0.300  0.161
-   - k =  -0.500 -0.300  0.144
-   - k =  -0.500 -0.300  0.127
-   - k =  -0.500 -0.300  0.110
-   - k =  -0.500 -0.300  0.093
-   - k =  -0.500 -0.300  0.076
-   - k =  -0.500 -0.300  0.059
-   - k =  -0.500 -0.300  0.042
-   - k =  -0.500 -0.300  0.025
-   - k =  -0.500 -0.300  0.008
-   - k =  -0.500 -0.300 -0.008
-   - k =  -0.500 -0.300 -0.025
-   - k =  -0.500 -0.300 -0.042
-   - k =  -0.500 -0.300 -0.059
-   - k =  -0.500 -0.300 -0.076
-   - k =  -0.500 -0.300 -0.093
-   - k =  -0.500 -0.300 -0.110
-   - k =  -0.500 -0.300 -0.127
-   - k =  -0.500 -0.300 -0.144
-   - k =  -0.500 -0.300 -0.161
-   - k =  -0.500 -0.300 -0.178
-   - k =  -0.500 -0.300 -0.195
-   - k =  -0.500 -0.300 -0.212
-   - k =  -0.500 -0.300 -0.229
-   - k =  -0.500 -0.300 -0.246
-   - k =  -0.500 -0.300 -0.263
-   - k =  -0.500 -0.300 -0.280
-   - k =  -0.500 -0.300 -0.297
-   - k =  -0.500 -0.300 -0.314
-   - k =  -0.500 -0.300 -0.331
-   - k =  -0.500 -0.300 -0.347
-   - k =  -0.500 -0.300 -0.364
-   - k =  -0.500 -0.300 -0.381
-   - k =  -0.500 -0.300 -0.398
-   - k =  -0.500 -0.300 -0.415
-   - k =  -0.500 -0.300 -0.432
-   - k =  -0.500 -0.300 -0.449
-   - k =  -0.500 -0.300 -0.466
-   - k =  -0.500 -0.300 -0.483
+   - k =  -0.500 -0.300  0.300
+   - k =  -0.500 -0.300  0.100
+   - k =  -0.500 -0.300 -0.100
+   - k =  -0.500 -0.300 -0.300
    - k =  -0.500 -0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      2
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   3:
+  Treating all    6 k-points in band plot segment #   3:
    Sampling over :
    - k =  -0.500 -0.100  0.500
-   - k =  -0.500 -0.100  0.483
-   - k =  -0.500 -0.100  0.466
-   - k =  -0.500 -0.100  0.449
-   - k =  -0.500 -0.100  0.432
-   - k =  -0.500 -0.100  0.415
-   - k =  -0.500 -0.100  0.398
-   - k =  -0.500 -0.100  0.381
-   - k =  -0.500 -0.100  0.364
-   - k =  -0.500 -0.100  0.347
-   - k =  -0.500 -0.100  0.331
-   - k =  -0.500 -0.100  0.314
-   - k =  -0.500 -0.100  0.297
-   - k =  -0.500 -0.100  0.280
-   - k =  -0.500 -0.100  0.263
-   - k =  -0.500 -0.100  0.246
-   - k =  -0.500 -0.100  0.229
-   - k =  -0.500 -0.100  0.212
-   - k =  -0.500 -0.100  0.195
-   - k =  -0.500 -0.100  0.178
-   - k =  -0.500 -0.100  0.161
-   - k =  -0.500 -0.100  0.144
-   - k =  -0.500 -0.100  0.127
-   - k =  -0.500 -0.100  0.110
-   - k =  -0.500 -0.100  0.093
-   - k =  -0.500 -0.100  0.076
-   - k =  -0.500 -0.100  0.059
-   - k =  -0.500 -0.100  0.042
-   - k =  -0.500 -0.100  0.025
-   - k =  -0.500 -0.100  0.008
-   - k =  -0.500 -0.100 -0.008
-   - k =  -0.500 -0.100 -0.025
-   - k =  -0.500 -0.100 -0.042
-   - k =  -0.500 -0.100 -0.059
-   - k =  -0.500 -0.100 -0.076
-   - k =  -0.500 -0.100 -0.093
-   - k =  -0.500 -0.100 -0.110
-   - k =  -0.500 -0.100 -0.127
-   - k =  -0.500 -0.100 -0.144
-   - k =  -0.500 -0.100 -0.161
-   - k =  -0.500 -0.100 -0.178
-   - k =  -0.500 -0.100 -0.195
-   - k =  -0.500 -0.100 -0.212
-   - k =  -0.500 -0.100 -0.229
-   - k =  -0.500 -0.100 -0.246
-   - k =  -0.500 -0.100 -0.263
-   - k =  -0.500 -0.100 -0.280
-   - k =  -0.500 -0.100 -0.297
-   - k =  -0.500 -0.100 -0.314
-   - k =  -0.500 -0.100 -0.331
-   - k =  -0.500 -0.100 -0.347
-   - k =  -0.500 -0.100 -0.364
-   - k =  -0.500 -0.100 -0.381
-   - k =  -0.500 -0.100 -0.398
-   - k =  -0.500 -0.100 -0.415
-   - k =  -0.500 -0.100 -0.432
-   - k =  -0.500 -0.100 -0.449
-   - k =  -0.500 -0.100 -0.466
-   - k =  -0.500 -0.100 -0.483
+   - k =  -0.500 -0.100  0.300
+   - k =  -0.500 -0.100  0.100
+   - k =  -0.500 -0.100 -0.100
+   - k =  -0.500 -0.100 -0.300
    - k =  -0.500 -0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      3
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   4:
+  Treating all    6 k-points in band plot segment #   4:
    Sampling over :
    - k =  -0.500  0.100  0.500
-   - k =  -0.500  0.100  0.483
-   - k =  -0.500  0.100  0.466
-   - k =  -0.500  0.100  0.449
-   - k =  -0.500  0.100  0.432
-   - k =  -0.500  0.100  0.415
-   - k =  -0.500  0.100  0.398
-   - k =  -0.500  0.100  0.381
-   - k =  -0.500  0.100  0.364
-   - k =  -0.500  0.100  0.347
-   - k =  -0.500  0.100  0.331
-   - k =  -0.500  0.100  0.314
-   - k =  -0.500  0.100  0.297
-   - k =  -0.500  0.100  0.280
-   - k =  -0.500  0.100  0.263
-   - k =  -0.500  0.100  0.246
-   - k =  -0.500  0.100  0.229
-   - k =  -0.500  0.100  0.212
-   - k =  -0.500  0.100  0.195
-   - k =  -0.500  0.100  0.178
-   - k =  -0.500  0.100  0.161
-   - k =  -0.500  0.100  0.144
-   - k =  -0.500  0.100  0.127
-   - k =  -0.500  0.100  0.110
-   - k =  -0.500  0.100  0.093
-   - k =  -0.500  0.100  0.076
-   - k =  -0.500  0.100  0.059
-   - k =  -0.500  0.100  0.042
-   - k =  -0.500  0.100  0.025
-   - k =  -0.500  0.100  0.008
-   - k =  -0.500  0.100 -0.008
-   - k =  -0.500  0.100 -0.025
-   - k =  -0.500  0.100 -0.042
-   - k =  -0.500  0.100 -0.059
-   - k =  -0.500  0.100 -0.076
-   - k =  -0.500  0.100 -0.093
-   - k =  -0.500  0.100 -0.110
-   - k =  -0.500  0.100 -0.127
-   - k =  -0.500  0.100 -0.144
-   - k =  -0.500  0.100 -0.161
-   - k =  -0.500  0.100 -0.178
-   - k =  -0.500  0.100 -0.195
-   - k =  -0.500  0.100 -0.212
-   - k =  -0.500  0.100 -0.229
-   - k =  -0.500  0.100 -0.246
-   - k =  -0.500  0.100 -0.263
-   - k =  -0.500  0.100 -0.280
-   - k =  -0.500  0.100 -0.297
-   - k =  -0.500  0.100 -0.314
-   - k =  -0.500  0.100 -0.331
-   - k =  -0.500  0.100 -0.347
-   - k =  -0.500  0.100 -0.364
-   - k =  -0.500  0.100 -0.381
-   - k =  -0.500  0.100 -0.398
-   - k =  -0.500  0.100 -0.415
-   - k =  -0.500  0.100 -0.432
-   - k =  -0.500  0.100 -0.449
-   - k =  -0.500  0.100 -0.466
-   - k =  -0.500  0.100 -0.483
+   - k =  -0.500  0.100  0.300
+   - k =  -0.500  0.100  0.100
+   - k =  -0.500  0.100 -0.100
+   - k =  -0.500  0.100 -0.300
    - k =  -0.500  0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      4
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   5:
+  Treating all    6 k-points in band plot segment #   5:
    Sampling over :
    - k =  -0.500  0.300  0.500
-   - k =  -0.500  0.300  0.483
-   - k =  -0.500  0.300  0.466
-   - k =  -0.500  0.300  0.449
-   - k =  -0.500  0.300  0.432
-   - k =  -0.500  0.300  0.415
-   - k =  -0.500  0.300  0.398
-   - k =  -0.500  0.300  0.381
-   - k =  -0.500  0.300  0.364
-   - k =  -0.500  0.300  0.347
-   - k =  -0.500  0.300  0.331
-   - k =  -0.500  0.300  0.314
-   - k =  -0.500  0.300  0.297
-   - k =  -0.500  0.300  0.280
-   - k =  -0.500  0.300  0.263
-   - k =  -0.500  0.300  0.246
-   - k =  -0.500  0.300  0.229
-   - k =  -0.500  0.300  0.212
-   - k =  -0.500  0.300  0.195
-   - k =  -0.500  0.300  0.178
-   - k =  -0.500  0.300  0.161
-   - k =  -0.500  0.300  0.144
-   - k =  -0.500  0.300  0.127
-   - k =  -0.500  0.300  0.110
-   - k =  -0.500  0.300  0.093
-   - k =  -0.500  0.300  0.076
-   - k =  -0.500  0.300  0.059
-   - k =  -0.500  0.300  0.042
-   - k =  -0.500  0.300  0.025
-   - k =  -0.500  0.300  0.008
-   - k =  -0.500  0.300 -0.008
-   - k =  -0.500  0.300 -0.025
-   - k =  -0.500  0.300 -0.042
-   - k =  -0.500  0.300 -0.059
-   - k =  -0.500  0.300 -0.076
-   - k =  -0.500  0.300 -0.093
-   - k =  -0.500  0.300 -0.110
-   - k =  -0.500  0.300 -0.127
-   - k =  -0.500  0.300 -0.144
-   - k =  -0.500  0.300 -0.161
-   - k =  -0.500  0.300 -0.178
-   - k =  -0.500  0.300 -0.195
-   - k =  -0.500  0.300 -0.212
-   - k =  -0.500  0.300 -0.229
-   - k =  -0.500  0.300 -0.246
-   - k =  -0.500  0.300 -0.263
-   - k =  -0.500  0.300 -0.280
-   - k =  -0.500  0.300 -0.297
-   - k =  -0.500  0.300 -0.314
-   - k =  -0.500  0.300 -0.331
-   - k =  -0.500  0.300 -0.347
-   - k =  -0.500  0.300 -0.364
-   - k =  -0.500  0.300 -0.381
-   - k =  -0.500  0.300 -0.398
-   - k =  -0.500  0.300 -0.415
-   - k =  -0.500  0.300 -0.432
-   - k =  -0.500  0.300 -0.449
-   - k =  -0.500  0.300 -0.466
-   - k =  -0.500  0.300 -0.483
+   - k =  -0.500  0.300  0.300
+   - k =  -0.500  0.300  0.100
+   - k =  -0.500  0.300 -0.100
+   - k =  -0.500  0.300 -0.300
    - k =  -0.500  0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      5
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   6:
+  Treating all    6 k-points in band plot segment #   6:
    Sampling over :
    - k =  -0.500  0.500  0.500
-   - k =  -0.500  0.500  0.483
-   - k =  -0.500  0.500  0.466
-   - k =  -0.500  0.500  0.449
-   - k =  -0.500  0.500  0.432
-   - k =  -0.500  0.500  0.415
-   - k =  -0.500  0.500  0.398
-   - k =  -0.500  0.500  0.381
-   - k =  -0.500  0.500  0.364
-   - k =  -0.500  0.500  0.347
-   - k =  -0.500  0.500  0.331
-   - k =  -0.500  0.500  0.314
-   - k =  -0.500  0.500  0.297
-   - k =  -0.500  0.500  0.280
-   - k =  -0.500  0.500  0.263
-   - k =  -0.500  0.500  0.246
-   - k =  -0.500  0.500  0.229
-   - k =  -0.500  0.500  0.212
-   - k =  -0.500  0.500  0.195
-   - k =  -0.500  0.500  0.178
-   - k =  -0.500  0.500  0.161
-   - k =  -0.500  0.500  0.144
-   - k =  -0.500  0.500  0.127
-   - k =  -0.500  0.500  0.110
-   - k =  -0.500  0.500  0.093
-   - k =  -0.500  0.500  0.076
-   - k =  -0.500  0.500  0.059
-   - k =  -0.500  0.500  0.042
-   - k =  -0.500  0.500  0.025
-   - k =  -0.500  0.500  0.008
-   - k =  -0.500  0.500 -0.008
-   - k =  -0.500  0.500 -0.025
-   - k =  -0.500  0.500 -0.042
-   - k =  -0.500  0.500 -0.059
-   - k =  -0.500  0.500 -0.076
-   - k =  -0.500  0.500 -0.093
-   - k =  -0.500  0.500 -0.110
-   - k =  -0.500  0.500 -0.127
-   - k =  -0.500  0.500 -0.144
-   - k =  -0.500  0.500 -0.161
-   - k =  -0.500  0.500 -0.178
-   - k =  -0.500  0.500 -0.195
-   - k =  -0.500  0.500 -0.212
-   - k =  -0.500  0.500 -0.229
-   - k =  -0.500  0.500 -0.246
-   - k =  -0.500  0.500 -0.263
-   - k =  -0.500  0.500 -0.280
-   - k =  -0.500  0.500 -0.297
-   - k =  -0.500  0.500 -0.314
-   - k =  -0.500  0.500 -0.331
-   - k =  -0.500  0.500 -0.347
-   - k =  -0.500  0.500 -0.364
-   - k =  -0.500  0.500 -0.381
-   - k =  -0.500  0.500 -0.398
-   - k =  -0.500  0.500 -0.415
-   - k =  -0.500  0.500 -0.432
-   - k =  -0.500  0.500 -0.449
-   - k =  -0.500  0.500 -0.466
-   - k =  -0.500  0.500 -0.483
+   - k =  -0.500  0.500  0.300
+   - k =  -0.500  0.500  0.100
+   - k =  -0.500  0.500 -0.100
+   - k =  -0.500  0.500 -0.300
    - k =  -0.500  0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      6
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   7:
+  Treating all    6 k-points in band plot segment #   7:
    Sampling over :
    - k =  -0.300 -0.500  0.500
-   - k =  -0.300 -0.500  0.483
-   - k =  -0.300 -0.500  0.466
-   - k =  -0.300 -0.500  0.449
-   - k =  -0.300 -0.500  0.432
-   - k =  -0.300 -0.500  0.415
-   - k =  -0.300 -0.500  0.398
-   - k =  -0.300 -0.500  0.381
-   - k =  -0.300 -0.500  0.364
-   - k =  -0.300 -0.500  0.347
-   - k =  -0.300 -0.500  0.331
-   - k =  -0.300 -0.500  0.314
-   - k =  -0.300 -0.500  0.297
-   - k =  -0.300 -0.500  0.280
-   - k =  -0.300 -0.500  0.263
-   - k =  -0.300 -0.500  0.246
-   - k =  -0.300 -0.500  0.229
-   - k =  -0.300 -0.500  0.212
-   - k =  -0.300 -0.500  0.195
-   - k =  -0.300 -0.500  0.178
-   - k =  -0.300 -0.500  0.161
-   - k =  -0.300 -0.500  0.144
-   - k =  -0.300 -0.500  0.127
-   - k =  -0.300 -0.500  0.110
-   - k =  -0.300 -0.500  0.093
-   - k =  -0.300 -0.500  0.076
-   - k =  -0.300 -0.500  0.059
-   - k =  -0.300 -0.500  0.042
-   - k =  -0.300 -0.500  0.025
-   - k =  -0.300 -0.500  0.008
-   - k =  -0.300 -0.500 -0.008
-   - k =  -0.300 -0.500 -0.025
-   - k =  -0.300 -0.500 -0.042
-   - k =  -0.300 -0.500 -0.059
-   - k =  -0.300 -0.500 -0.076
-   - k =  -0.300 -0.500 -0.093
-   - k =  -0.300 -0.500 -0.110
-   - k =  -0.300 -0.500 -0.127
-   - k =  -0.300 -0.500 -0.144
-   - k =  -0.300 -0.500 -0.161
-   - k =  -0.300 -0.500 -0.178
-   - k =  -0.300 -0.500 -0.195
-   - k =  -0.300 -0.500 -0.212
-   - k =  -0.300 -0.500 -0.229
-   - k =  -0.300 -0.500 -0.246
-   - k =  -0.300 -0.500 -0.263
-   - k =  -0.300 -0.500 -0.280
-   - k =  -0.300 -0.500 -0.297
-   - k =  -0.300 -0.500 -0.314
-   - k =  -0.300 -0.500 -0.331
-   - k =  -0.300 -0.500 -0.347
-   - k =  -0.300 -0.500 -0.364
-   - k =  -0.300 -0.500 -0.381
-   - k =  -0.300 -0.500 -0.398
-   - k =  -0.300 -0.500 -0.415
-   - k =  -0.300 -0.500 -0.432
-   - k =  -0.300 -0.500 -0.449
-   - k =  -0.300 -0.500 -0.466
-   - k =  -0.300 -0.500 -0.483
+   - k =  -0.300 -0.500  0.300
+   - k =  -0.300 -0.500  0.100
+   - k =  -0.300 -0.500 -0.100
+   - k =  -0.300 -0.500 -0.300
    - k =  -0.300 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      7
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   8:
+  Treating all    6 k-points in band plot segment #   8:
    Sampling over :
    - k =  -0.300 -0.300  0.500
-   - k =  -0.300 -0.300  0.483
-   - k =  -0.300 -0.300  0.466
-   - k =  -0.300 -0.300  0.449
-   - k =  -0.300 -0.300  0.432
-   - k =  -0.300 -0.300  0.415
-   - k =  -0.300 -0.300  0.398
-   - k =  -0.300 -0.300  0.381
-   - k =  -0.300 -0.300  0.364
-   - k =  -0.300 -0.300  0.347
-   - k =  -0.300 -0.300  0.331
-   - k =  -0.300 -0.300  0.314
-   - k =  -0.300 -0.300  0.297
-   - k =  -0.300 -0.300  0.280
-   - k =  -0.300 -0.300  0.263
-   - k =  -0.300 -0.300  0.246
-   - k =  -0.300 -0.300  0.229
-   - k =  -0.300 -0.300  0.212
-   - k =  -0.300 -0.300  0.195
-   - k =  -0.300 -0.300  0.178
-   - k =  -0.300 -0.300  0.161
-   - k =  -0.300 -0.300  0.144
-   - k =  -0.300 -0.300  0.127
-   - k =  -0.300 -0.300  0.110
-   - k =  -0.300 -0.300  0.093
-   - k =  -0.300 -0.300  0.076
-   - k =  -0.300 -0.300  0.059
-   - k =  -0.300 -0.300  0.042
-   - k =  -0.300 -0.300  0.025
-   - k =  -0.300 -0.300  0.008
-   - k =  -0.300 -0.300 -0.008
-   - k =  -0.300 -0.300 -0.025
-   - k =  -0.300 -0.300 -0.042
-   - k =  -0.300 -0.300 -0.059
-   - k =  -0.300 -0.300 -0.076
-   - k =  -0.300 -0.300 -0.093
-   - k =  -0.300 -0.300 -0.110
-   - k =  -0.300 -0.300 -0.127
-   - k =  -0.300 -0.300 -0.144
-   - k =  -0.300 -0.300 -0.161
-   - k =  -0.300 -0.300 -0.178
-   - k =  -0.300 -0.300 -0.195
-   - k =  -0.300 -0.300 -0.212
-   - k =  -0.300 -0.300 -0.229
-   - k =  -0.300 -0.300 -0.246
-   - k =  -0.300 -0.300 -0.263
-   - k =  -0.300 -0.300 -0.280
-   - k =  -0.300 -0.300 -0.297
-   - k =  -0.300 -0.300 -0.314
-   - k =  -0.300 -0.300 -0.331
-   - k =  -0.300 -0.300 -0.347
-   - k =  -0.300 -0.300 -0.364
-   - k =  -0.300 -0.300 -0.381
-   - k =  -0.300 -0.300 -0.398
-   - k =  -0.300 -0.300 -0.415
-   - k =  -0.300 -0.300 -0.432
-   - k =  -0.300 -0.300 -0.449
-   - k =  -0.300 -0.300 -0.466
-   - k =  -0.300 -0.300 -0.483
+   - k =  -0.300 -0.300  0.300
+   - k =  -0.300 -0.300  0.100
+   - k =  -0.300 -0.300 -0.100
+   - k =  -0.300 -0.300 -0.300
    - k =  -0.300 -0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      8
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #   9:
+  Treating all    6 k-points in band plot segment #   9:
    Sampling over :
    - k =  -0.300 -0.100  0.500
-   - k =  -0.300 -0.100  0.483
-   - k =  -0.300 -0.100  0.466
-   - k =  -0.300 -0.100  0.449
-   - k =  -0.300 -0.100  0.432
-   - k =  -0.300 -0.100  0.415
-   - k =  -0.300 -0.100  0.398
-   - k =  -0.300 -0.100  0.381
-   - k =  -0.300 -0.100  0.364
-   - k =  -0.300 -0.100  0.347
-   - k =  -0.300 -0.100  0.331
-   - k =  -0.300 -0.100  0.314
-   - k =  -0.300 -0.100  0.297
-   - k =  -0.300 -0.100  0.280
-   - k =  -0.300 -0.100  0.263
-   - k =  -0.300 -0.100  0.246
-   - k =  -0.300 -0.100  0.229
-   - k =  -0.300 -0.100  0.212
-   - k =  -0.300 -0.100  0.195
-   - k =  -0.300 -0.100  0.178
-   - k =  -0.300 -0.100  0.161
-   - k =  -0.300 -0.100  0.144
-   - k =  -0.300 -0.100  0.127
-   - k =  -0.300 -0.100  0.110
-   - k =  -0.300 -0.100  0.093
-   - k =  -0.300 -0.100  0.076
-   - k =  -0.300 -0.100  0.059
-   - k =  -0.300 -0.100  0.042
-   - k =  -0.300 -0.100  0.025
-   - k =  -0.300 -0.100  0.008
-   - k =  -0.300 -0.100 -0.008
-   - k =  -0.300 -0.100 -0.025
-   - k =  -0.300 -0.100 -0.042
-   - k =  -0.300 -0.100 -0.059
-   - k =  -0.300 -0.100 -0.076
-   - k =  -0.300 -0.100 -0.093
-   - k =  -0.300 -0.100 -0.110
-   - k =  -0.300 -0.100 -0.127
-   - k =  -0.300 -0.100 -0.144
-   - k =  -0.300 -0.100 -0.161
-   - k =  -0.300 -0.100 -0.178
-   - k =  -0.300 -0.100 -0.195
-   - k =  -0.300 -0.100 -0.212
-   - k =  -0.300 -0.100 -0.229
-   - k =  -0.300 -0.100 -0.246
-   - k =  -0.300 -0.100 -0.263
-   - k =  -0.300 -0.100 -0.280
-   - k =  -0.300 -0.100 -0.297
-   - k =  -0.300 -0.100 -0.314
-   - k =  -0.300 -0.100 -0.331
-   - k =  -0.300 -0.100 -0.347
-   - k =  -0.300 -0.100 -0.364
-   - k =  -0.300 -0.100 -0.381
-   - k =  -0.300 -0.100 -0.398
-   - k =  -0.300 -0.100 -0.415
-   - k =  -0.300 -0.100 -0.432
-   - k =  -0.300 -0.100 -0.449
-   - k =  -0.300 -0.100 -0.466
-   - k =  -0.300 -0.100 -0.483
+   - k =  -0.300 -0.100  0.300
+   - k =  -0.300 -0.100  0.100
+   - k =  -0.300 -0.100 -0.100
+   - k =  -0.300 -0.100 -0.300
    - k =  -0.300 -0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:      9
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  10:
+  Treating all    6 k-points in band plot segment #  10:
    Sampling over :
    - k =  -0.300  0.100  0.500
-   - k =  -0.300  0.100  0.483
-   - k =  -0.300  0.100  0.466
-   - k =  -0.300  0.100  0.449
-   - k =  -0.300  0.100  0.432
-   - k =  -0.300  0.100  0.415
-   - k =  -0.300  0.100  0.398
-   - k =  -0.300  0.100  0.381
-   - k =  -0.300  0.100  0.364
-   - k =  -0.300  0.100  0.347
-   - k =  -0.300  0.100  0.331
-   - k =  -0.300  0.100  0.314
-   - k =  -0.300  0.100  0.297
-   - k =  -0.300  0.100  0.280
-   - k =  -0.300  0.100  0.263
-   - k =  -0.300  0.100  0.246
-   - k =  -0.300  0.100  0.229
-   - k =  -0.300  0.100  0.212
-   - k =  -0.300  0.100  0.195
-   - k =  -0.300  0.100  0.178
-   - k =  -0.300  0.100  0.161
-   - k =  -0.300  0.100  0.144
-   - k =  -0.300  0.100  0.127
-   - k =  -0.300  0.100  0.110
-   - k =  -0.300  0.100  0.093
-   - k =  -0.300  0.100  0.076
-   - k =  -0.300  0.100  0.059
-   - k =  -0.300  0.100  0.042
-   - k =  -0.300  0.100  0.025
-   - k =  -0.300  0.100  0.008
-   - k =  -0.300  0.100 -0.008
-   - k =  -0.300  0.100 -0.025
-   - k =  -0.300  0.100 -0.042
-   - k =  -0.300  0.100 -0.059
-   - k =  -0.300  0.100 -0.076
-   - k =  -0.300  0.100 -0.093
-   - k =  -0.300  0.100 -0.110
-   - k =  -0.300  0.100 -0.127
-   - k =  -0.300  0.100 -0.144
-   - k =  -0.300  0.100 -0.161
-   - k =  -0.300  0.100 -0.178
-   - k =  -0.300  0.100 -0.195
-   - k =  -0.300  0.100 -0.212
-   - k =  -0.300  0.100 -0.229
-   - k =  -0.300  0.100 -0.246
-   - k =  -0.300  0.100 -0.263
-   - k =  -0.300  0.100 -0.280
-   - k =  -0.300  0.100 -0.297
-   - k =  -0.300  0.100 -0.314
-   - k =  -0.300  0.100 -0.331
-   - k =  -0.300  0.100 -0.347
-   - k =  -0.300  0.100 -0.364
-   - k =  -0.300  0.100 -0.381
-   - k =  -0.300  0.100 -0.398
-   - k =  -0.300  0.100 -0.415
-   - k =  -0.300  0.100 -0.432
-   - k =  -0.300  0.100 -0.449
-   - k =  -0.300  0.100 -0.466
-   - k =  -0.300  0.100 -0.483
+   - k =  -0.300  0.100  0.300
+   - k =  -0.300  0.100  0.100
+   - k =  -0.300  0.100 -0.100
+   - k =  -0.300  0.100 -0.300
    - k =  -0.300  0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     10
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  11:
+  Treating all    6 k-points in band plot segment #  11:
    Sampling over :
    - k =  -0.300  0.300  0.500
-   - k =  -0.300  0.300  0.483
-   - k =  -0.300  0.300  0.466
-   - k =  -0.300  0.300  0.449
-   - k =  -0.300  0.300  0.432
-   - k =  -0.300  0.300  0.415
-   - k =  -0.300  0.300  0.398
-   - k =  -0.300  0.300  0.381
-   - k =  -0.300  0.300  0.364
-   - k =  -0.300  0.300  0.347
-   - k =  -0.300  0.300  0.331
-   - k =  -0.300  0.300  0.314
-   - k =  -0.300  0.300  0.297
-   - k =  -0.300  0.300  0.280
-   - k =  -0.300  0.300  0.263
-   - k =  -0.300  0.300  0.246
-   - k =  -0.300  0.300  0.229
-   - k =  -0.300  0.300  0.212
-   - k =  -0.300  0.300  0.195
-   - k =  -0.300  0.300  0.178
-   - k =  -0.300  0.300  0.161
-   - k =  -0.300  0.300  0.144
-   - k =  -0.300  0.300  0.127
-   - k =  -0.300  0.300  0.110
-   - k =  -0.300  0.300  0.093
-   - k =  -0.300  0.300  0.076
-   - k =  -0.300  0.300  0.059
-   - k =  -0.300  0.300  0.042
-   - k =  -0.300  0.300  0.025
-   - k =  -0.300  0.300  0.008
-   - k =  -0.300  0.300 -0.008
-   - k =  -0.300  0.300 -0.025
-   - k =  -0.300  0.300 -0.042
-   - k =  -0.300  0.300 -0.059
-   - k =  -0.300  0.300 -0.076
-   - k =  -0.300  0.300 -0.093
-   - k =  -0.300  0.300 -0.110
-   - k =  -0.300  0.300 -0.127
-   - k =  -0.300  0.300 -0.144
-   - k =  -0.300  0.300 -0.161
-   - k =  -0.300  0.300 -0.178
-   - k =  -0.300  0.300 -0.195
-   - k =  -0.300  0.300 -0.212
-   - k =  -0.300  0.300 -0.229
-   - k =  -0.300  0.300 -0.246
-   - k =  -0.300  0.300 -0.263
-   - k =  -0.300  0.300 -0.280
-   - k =  -0.300  0.300 -0.297
-   - k =  -0.300  0.300 -0.314
-   - k =  -0.300  0.300 -0.331
-   - k =  -0.300  0.300 -0.347
-   - k =  -0.300  0.300 -0.364
-   - k =  -0.300  0.300 -0.381
-   - k =  -0.300  0.300 -0.398
-   - k =  -0.300  0.300 -0.415
-   - k =  -0.300  0.300 -0.432
-   - k =  -0.300  0.300 -0.449
-   - k =  -0.300  0.300 -0.466
-   - k =  -0.300  0.300 -0.483
+   - k =  -0.300  0.300  0.300
+   - k =  -0.300  0.300  0.100
+   - k =  -0.300  0.300 -0.100
+   - k =  -0.300  0.300 -0.300
    - k =  -0.300  0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     11
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  12:
+  Treating all    6 k-points in band plot segment #  12:
    Sampling over :
    - k =  -0.300  0.500  0.500
-   - k =  -0.300  0.500  0.483
-   - k =  -0.300  0.500  0.466
-   - k =  -0.300  0.500  0.449
-   - k =  -0.300  0.500  0.432
-   - k =  -0.300  0.500  0.415
-   - k =  -0.300  0.500  0.398
-   - k =  -0.300  0.500  0.381
-   - k =  -0.300  0.500  0.364
-   - k =  -0.300  0.500  0.347
-   - k =  -0.300  0.500  0.331
-   - k =  -0.300  0.500  0.314
-   - k =  -0.300  0.500  0.297
-   - k =  -0.300  0.500  0.280
-   - k =  -0.300  0.500  0.263
-   - k =  -0.300  0.500  0.246
-   - k =  -0.300  0.500  0.229
-   - k =  -0.300  0.500  0.212
-   - k =  -0.300  0.500  0.195
-   - k =  -0.300  0.500  0.178
-   - k =  -0.300  0.500  0.161
-   - k =  -0.300  0.500  0.144
-   - k =  -0.300  0.500  0.127
-   - k =  -0.300  0.500  0.110
-   - k =  -0.300  0.500  0.093
-   - k =  -0.300  0.500  0.076
-   - k =  -0.300  0.500  0.059
-   - k =  -0.300  0.500  0.042
-   - k =  -0.300  0.500  0.025
-   - k =  -0.300  0.500  0.008
-   - k =  -0.300  0.500 -0.008
-   - k =  -0.300  0.500 -0.025
-   - k =  -0.300  0.500 -0.042
-   - k =  -0.300  0.500 -0.059
-   - k =  -0.300  0.500 -0.076
-   - k =  -0.300  0.500 -0.093
-   - k =  -0.300  0.500 -0.110
-   - k =  -0.300  0.500 -0.127
-   - k =  -0.300  0.500 -0.144
-   - k =  -0.300  0.500 -0.161
-   - k =  -0.300  0.500 -0.178
-   - k =  -0.300  0.500 -0.195
-   - k =  -0.300  0.500 -0.212
-   - k =  -0.300  0.500 -0.229
-   - k =  -0.300  0.500 -0.246
-   - k =  -0.300  0.500 -0.263
-   - k =  -0.300  0.500 -0.280
-   - k =  -0.300  0.500 -0.297
-   - k =  -0.300  0.500 -0.314
-   - k =  -0.300  0.500 -0.331
-   - k =  -0.300  0.500 -0.347
-   - k =  -0.300  0.500 -0.364
-   - k =  -0.300  0.500 -0.381
-   - k =  -0.300  0.500 -0.398
-   - k =  -0.300  0.500 -0.415
-   - k =  -0.300  0.500 -0.432
-   - k =  -0.300  0.500 -0.449
-   - k =  -0.300  0.500 -0.466
-   - k =  -0.300  0.500 -0.483
+   - k =  -0.300  0.500  0.300
+   - k =  -0.300  0.500  0.100
+   - k =  -0.300  0.500 -0.100
+   - k =  -0.300  0.500 -0.300
    - k =  -0.300  0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     12
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  13:
+  Treating all    6 k-points in band plot segment #  13:
    Sampling over :
    - k =  -0.100 -0.500  0.500
-   - k =  -0.100 -0.500  0.483
-   - k =  -0.100 -0.500  0.466
-   - k =  -0.100 -0.500  0.449
-   - k =  -0.100 -0.500  0.432
-   - k =  -0.100 -0.500  0.415
-   - k =  -0.100 -0.500  0.398
-   - k =  -0.100 -0.500  0.381
-   - k =  -0.100 -0.500  0.364
-   - k =  -0.100 -0.500  0.347
-   - k =  -0.100 -0.500  0.331
-   - k =  -0.100 -0.500  0.314
-   - k =  -0.100 -0.500  0.297
-   - k =  -0.100 -0.500  0.280
-   - k =  -0.100 -0.500  0.263
-   - k =  -0.100 -0.500  0.246
-   - k =  -0.100 -0.500  0.229
-   - k =  -0.100 -0.500  0.212
-   - k =  -0.100 -0.500  0.195
-   - k =  -0.100 -0.500  0.178
-   - k =  -0.100 -0.500  0.161
-   - k =  -0.100 -0.500  0.144
-   - k =  -0.100 -0.500  0.127
-   - k =  -0.100 -0.500  0.110
-   - k =  -0.100 -0.500  0.093
-   - k =  -0.100 -0.500  0.076
-   - k =  -0.100 -0.500  0.059
-   - k =  -0.100 -0.500  0.042
-   - k =  -0.100 -0.500  0.025
-   - k =  -0.100 -0.500  0.008
-   - k =  -0.100 -0.500 -0.008
-   - k =  -0.100 -0.500 -0.025
-   - k =  -0.100 -0.500 -0.042
-   - k =  -0.100 -0.500 -0.059
-   - k =  -0.100 -0.500 -0.076
-   - k =  -0.100 -0.500 -0.093
-   - k =  -0.100 -0.500 -0.110
-   - k =  -0.100 -0.500 -0.127
-   - k =  -0.100 -0.500 -0.144
-   - k =  -0.100 -0.500 -0.161
-   - k =  -0.100 -0.500 -0.178
-   - k =  -0.100 -0.500 -0.195
-   - k =  -0.100 -0.500 -0.212
-   - k =  -0.100 -0.500 -0.229
-   - k =  -0.100 -0.500 -0.246
-   - k =  -0.100 -0.500 -0.263
-   - k =  -0.100 -0.500 -0.280
-   - k =  -0.100 -0.500 -0.297
-   - k =  -0.100 -0.500 -0.314
-   - k =  -0.100 -0.500 -0.331
-   - k =  -0.100 -0.500 -0.347
-   - k =  -0.100 -0.500 -0.364
-   - k =  -0.100 -0.500 -0.381
-   - k =  -0.100 -0.500 -0.398
-   - k =  -0.100 -0.500 -0.415
-   - k =  -0.100 -0.500 -0.432
-   - k =  -0.100 -0.500 -0.449
-   - k =  -0.100 -0.500 -0.466
-   - k =  -0.100 -0.500 -0.483
+   - k =  -0.100 -0.500  0.300
+   - k =  -0.100 -0.500  0.100
+   - k =  -0.100 -0.500 -0.100
+   - k =  -0.100 -0.500 -0.300
    - k =  -0.100 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     13
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  14:
+  Treating all    6 k-points in band plot segment #  14:
    Sampling over :
    - k =  -0.100 -0.300  0.500
-   - k =  -0.100 -0.300  0.483
-   - k =  -0.100 -0.300  0.466
-   - k =  -0.100 -0.300  0.449
-   - k =  -0.100 -0.300  0.432
-   - k =  -0.100 -0.300  0.415
-   - k =  -0.100 -0.300  0.398
-   - k =  -0.100 -0.300  0.381
-   - k =  -0.100 -0.300  0.364
-   - k =  -0.100 -0.300  0.347
-   - k =  -0.100 -0.300  0.331
-   - k =  -0.100 -0.300  0.314
-   - k =  -0.100 -0.300  0.297
-   - k =  -0.100 -0.300  0.280
-   - k =  -0.100 -0.300  0.263
-   - k =  -0.100 -0.300  0.246
-   - k =  -0.100 -0.300  0.229
-   - k =  -0.100 -0.300  0.212
-   - k =  -0.100 -0.300  0.195
-   - k =  -0.100 -0.300  0.178
-   - k =  -0.100 -0.300  0.161
-   - k =  -0.100 -0.300  0.144
-   - k =  -0.100 -0.300  0.127
-   - k =  -0.100 -0.300  0.110
-   - k =  -0.100 -0.300  0.093
-   - k =  -0.100 -0.300  0.076
-   - k =  -0.100 -0.300  0.059
-   - k =  -0.100 -0.300  0.042
-   - k =  -0.100 -0.300  0.025
-   - k =  -0.100 -0.300  0.008
-   - k =  -0.100 -0.300 -0.008
-   - k =  -0.100 -0.300 -0.025
-   - k =  -0.100 -0.300 -0.042
-   - k =  -0.100 -0.300 -0.059
-   - k =  -0.100 -0.300 -0.076
-   - k =  -0.100 -0.300 -0.093
-   - k =  -0.100 -0.300 -0.110
-   - k =  -0.100 -0.300 -0.127
-   - k =  -0.100 -0.300 -0.144
-   - k =  -0.100 -0.300 -0.161
-   - k =  -0.100 -0.300 -0.178
-   - k =  -0.100 -0.300 -0.195
-   - k =  -0.100 -0.300 -0.212
-   - k =  -0.100 -0.300 -0.229
-   - k =  -0.100 -0.300 -0.246
-   - k =  -0.100 -0.300 -0.263
-   - k =  -0.100 -0.300 -0.280
-   - k =  -0.100 -0.300 -0.297
-   - k =  -0.100 -0.300 -0.314
-   - k =  -0.100 -0.300 -0.331
-   - k =  -0.100 -0.300 -0.347
-   - k =  -0.100 -0.300 -0.364
-   - k =  -0.100 -0.300 -0.381
-   - k =  -0.100 -0.300 -0.398
-   - k =  -0.100 -0.300 -0.415
-   - k =  -0.100 -0.300 -0.432
-   - k =  -0.100 -0.300 -0.449
-   - k =  -0.100 -0.300 -0.466
-   - k =  -0.100 -0.300 -0.483
+   - k =  -0.100 -0.300  0.300
+   - k =  -0.100 -0.300  0.100
+   - k =  -0.100 -0.300 -0.100
+   - k =  -0.100 -0.300 -0.300
    - k =  -0.100 -0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     14
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  15:
+  Treating all    6 k-points in band plot segment #  15:
    Sampling over :
    - k =  -0.100 -0.100  0.500
-   - k =  -0.100 -0.100  0.483
-   - k =  -0.100 -0.100  0.466
-   - k =  -0.100 -0.100  0.449
-   - k =  -0.100 -0.100  0.432
-   - k =  -0.100 -0.100  0.415
-   - k =  -0.100 -0.100  0.398
-   - k =  -0.100 -0.100  0.381
-   - k =  -0.100 -0.100  0.364
-   - k =  -0.100 -0.100  0.347
-   - k =  -0.100 -0.100  0.331
-   - k =  -0.100 -0.100  0.314
-   - k =  -0.100 -0.100  0.297
-   - k =  -0.100 -0.100  0.280
-   - k =  -0.100 -0.100  0.263
-   - k =  -0.100 -0.100  0.246
-   - k =  -0.100 -0.100  0.229
-   - k =  -0.100 -0.100  0.212
-   - k =  -0.100 -0.100  0.195
-   - k =  -0.100 -0.100  0.178
-   - k =  -0.100 -0.100  0.161
-   - k =  -0.100 -0.100  0.144
-   - k =  -0.100 -0.100  0.127
-   - k =  -0.100 -0.100  0.110
-   - k =  -0.100 -0.100  0.093
-   - k =  -0.100 -0.100  0.076
-   - k =  -0.100 -0.100  0.059
-   - k =  -0.100 -0.100  0.042
-   - k =  -0.100 -0.100  0.025
-   - k =  -0.100 -0.100  0.008
-   - k =  -0.100 -0.100 -0.008
-   - k =  -0.100 -0.100 -0.025
-   - k =  -0.100 -0.100 -0.042
-   - k =  -0.100 -0.100 -0.059
-   - k =  -0.100 -0.100 -0.076
-   - k =  -0.100 -0.100 -0.093
-   - k =  -0.100 -0.100 -0.110
-   - k =  -0.100 -0.100 -0.127
-   - k =  -0.100 -0.100 -0.144
-   - k =  -0.100 -0.100 -0.161
-   - k =  -0.100 -0.100 -0.178
-   - k =  -0.100 -0.100 -0.195
-   - k =  -0.100 -0.100 -0.212
-   - k =  -0.100 -0.100 -0.229
-   - k =  -0.100 -0.100 -0.246
-   - k =  -0.100 -0.100 -0.263
-   - k =  -0.100 -0.100 -0.280
-   - k =  -0.100 -0.100 -0.297
-   - k =  -0.100 -0.100 -0.314
-   - k =  -0.100 -0.100 -0.331
-   - k =  -0.100 -0.100 -0.347
-   - k =  -0.100 -0.100 -0.364
-   - k =  -0.100 -0.100 -0.381
-   - k =  -0.100 -0.100 -0.398
-   - k =  -0.100 -0.100 -0.415
-   - k =  -0.100 -0.100 -0.432
-   - k =  -0.100 -0.100 -0.449
-   - k =  -0.100 -0.100 -0.466
-   - k =  -0.100 -0.100 -0.483
+   - k =  -0.100 -0.100  0.300
+   - k =  -0.100 -0.100  0.100
+   - k =  -0.100 -0.100 -0.100
+   - k =  -0.100 -0.100 -0.300
    - k =  -0.100 -0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     15
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  16:
+  Treating all    6 k-points in band plot segment #  16:
    Sampling over :
    - k =  -0.100  0.100  0.500
-   - k =  -0.100  0.100  0.483
-   - k =  -0.100  0.100  0.466
-   - k =  -0.100  0.100  0.449
-   - k =  -0.100  0.100  0.432
-   - k =  -0.100  0.100  0.415
-   - k =  -0.100  0.100  0.398
-   - k =  -0.100  0.100  0.381
-   - k =  -0.100  0.100  0.364
-   - k =  -0.100  0.100  0.347
-   - k =  -0.100  0.100  0.331
-   - k =  -0.100  0.100  0.314
-   - k =  -0.100  0.100  0.297
-   - k =  -0.100  0.100  0.280
-   - k =  -0.100  0.100  0.263
-   - k =  -0.100  0.100  0.246
-   - k =  -0.100  0.100  0.229
-   - k =  -0.100  0.100  0.212
-   - k =  -0.100  0.100  0.195
-   - k =  -0.100  0.100  0.178
-   - k =  -0.100  0.100  0.161
-   - k =  -0.100  0.100  0.144
-   - k =  -0.100  0.100  0.127
-   - k =  -0.100  0.100  0.110
-   - k =  -0.100  0.100  0.093
-   - k =  -0.100  0.100  0.076
-   - k =  -0.100  0.100  0.059
-   - k =  -0.100  0.100  0.042
-   - k =  -0.100  0.100  0.025
-   - k =  -0.100  0.100  0.008
-   - k =  -0.100  0.100 -0.008
-   - k =  -0.100  0.100 -0.025
-   - k =  -0.100  0.100 -0.042
-   - k =  -0.100  0.100 -0.059
-   - k =  -0.100  0.100 -0.076
-   - k =  -0.100  0.100 -0.093
-   - k =  -0.100  0.100 -0.110
-   - k =  -0.100  0.100 -0.127
-   - k =  -0.100  0.100 -0.144
-   - k =  -0.100  0.100 -0.161
-   - k =  -0.100  0.100 -0.178
-   - k =  -0.100  0.100 -0.195
-   - k =  -0.100  0.100 -0.212
-   - k =  -0.100  0.100 -0.229
-   - k =  -0.100  0.100 -0.246
-   - k =  -0.100  0.100 -0.263
-   - k =  -0.100  0.100 -0.280
-   - k =  -0.100  0.100 -0.297
-   - k =  -0.100  0.100 -0.314
-   - k =  -0.100  0.100 -0.331
-   - k =  -0.100  0.100 -0.347
-   - k =  -0.100  0.100 -0.364
-   - k =  -0.100  0.100 -0.381
-   - k =  -0.100  0.100 -0.398
-   - k =  -0.100  0.100 -0.415
-   - k =  -0.100  0.100 -0.432
-   - k =  -0.100  0.100 -0.449
-   - k =  -0.100  0.100 -0.466
-   - k =  -0.100  0.100 -0.483
+   - k =  -0.100  0.100  0.300
+   - k =  -0.100  0.100  0.100
+   - k =  -0.100  0.100 -0.100
+   - k =  -0.100  0.100 -0.300
    - k =  -0.100  0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     16
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  17:
+  Treating all    6 k-points in band plot segment #  17:
    Sampling over :
    - k =  -0.100  0.300  0.500
-   - k =  -0.100  0.300  0.483
-   - k =  -0.100  0.300  0.466
-   - k =  -0.100  0.300  0.449
-   - k =  -0.100  0.300  0.432
-   - k =  -0.100  0.300  0.415
-   - k =  -0.100  0.300  0.398
-   - k =  -0.100  0.300  0.381
-   - k =  -0.100  0.300  0.364
-   - k =  -0.100  0.300  0.347
-   - k =  -0.100  0.300  0.331
-   - k =  -0.100  0.300  0.314
-   - k =  -0.100  0.300  0.297
-   - k =  -0.100  0.300  0.280
-   - k =  -0.100  0.300  0.263
-   - k =  -0.100  0.300  0.246
-   - k =  -0.100  0.300  0.229
-   - k =  -0.100  0.300  0.212
-   - k =  -0.100  0.300  0.195
-   - k =  -0.100  0.300  0.178
-   - k =  -0.100  0.300  0.161
-   - k =  -0.100  0.300  0.144
-   - k =  -0.100  0.300  0.127
-   - k =  -0.100  0.300  0.110
-   - k =  -0.100  0.300  0.093
-   - k =  -0.100  0.300  0.076
-   - k =  -0.100  0.300  0.059
-   - k =  -0.100  0.300  0.042
-   - k =  -0.100  0.300  0.025
-   - k =  -0.100  0.300  0.008
-   - k =  -0.100  0.300 -0.008
-   - k =  -0.100  0.300 -0.025
-   - k =  -0.100  0.300 -0.042
-   - k =  -0.100  0.300 -0.059
-   - k =  -0.100  0.300 -0.076
-   - k =  -0.100  0.300 -0.093
-   - k =  -0.100  0.300 -0.110
-   - k =  -0.100  0.300 -0.127
-   - k =  -0.100  0.300 -0.144
-   - k =  -0.100  0.300 -0.161
-   - k =  -0.100  0.300 -0.178
-   - k =  -0.100  0.300 -0.195
-   - k =  -0.100  0.300 -0.212
-   - k =  -0.100  0.300 -0.229
-   - k =  -0.100  0.300 -0.246
-   - k =  -0.100  0.300 -0.263
-   - k =  -0.100  0.300 -0.280
-   - k =  -0.100  0.300 -0.297
-   - k =  -0.100  0.300 -0.314
-   - k =  -0.100  0.300 -0.331
-   - k =  -0.100  0.300 -0.347
-   - k =  -0.100  0.300 -0.364
-   - k =  -0.100  0.300 -0.381
-   - k =  -0.100  0.300 -0.398
-   - k =  -0.100  0.300 -0.415
-   - k =  -0.100  0.300 -0.432
-   - k =  -0.100  0.300 -0.449
-   - k =  -0.100  0.300 -0.466
-   - k =  -0.100  0.300 -0.483
+   - k =  -0.100  0.300  0.300
+   - k =  -0.100  0.300  0.100
+   - k =  -0.100  0.300 -0.100
+   - k =  -0.100  0.300 -0.300
    - k =  -0.100  0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     17
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  18:
+  Treating all    6 k-points in band plot segment #  18:
    Sampling over :
    - k =  -0.100  0.500  0.500
-   - k =  -0.100  0.500  0.483
-   - k =  -0.100  0.500  0.466
-   - k =  -0.100  0.500  0.449
-   - k =  -0.100  0.500  0.432
-   - k =  -0.100  0.500  0.415
-   - k =  -0.100  0.500  0.398
-   - k =  -0.100  0.500  0.381
-   - k =  -0.100  0.500  0.364
-   - k =  -0.100  0.500  0.347
-   - k =  -0.100  0.500  0.331
-   - k =  -0.100  0.500  0.314
-   - k =  -0.100  0.500  0.297
-   - k =  -0.100  0.500  0.280
-   - k =  -0.100  0.500  0.263
-   - k =  -0.100  0.500  0.246
-   - k =  -0.100  0.500  0.229
-   - k =  -0.100  0.500  0.212
-   - k =  -0.100  0.500  0.195
-   - k =  -0.100  0.500  0.178
-   - k =  -0.100  0.500  0.161
-   - k =  -0.100  0.500  0.144
-   - k =  -0.100  0.500  0.127
-   - k =  -0.100  0.500  0.110
-   - k =  -0.100  0.500  0.093
-   - k =  -0.100  0.500  0.076
-   - k =  -0.100  0.500  0.059
-   - k =  -0.100  0.500  0.042
-   - k =  -0.100  0.500  0.025
-   - k =  -0.100  0.500  0.008
-   - k =  -0.100  0.500 -0.008
-   - k =  -0.100  0.500 -0.025
-   - k =  -0.100  0.500 -0.042
-   - k =  -0.100  0.500 -0.059
-   - k =  -0.100  0.500 -0.076
-   - k =  -0.100  0.500 -0.093
-   - k =  -0.100  0.500 -0.110
-   - k =  -0.100  0.500 -0.127
-   - k =  -0.100  0.500 -0.144
-   - k =  -0.100  0.500 -0.161
-   - k =  -0.100  0.500 -0.178
-   - k =  -0.100  0.500 -0.195
-   - k =  -0.100  0.500 -0.212
-   - k =  -0.100  0.500 -0.229
-   - k =  -0.100  0.500 -0.246
-   - k =  -0.100  0.500 -0.263
-   - k =  -0.100  0.500 -0.280
-   - k =  -0.100  0.500 -0.297
-   - k =  -0.100  0.500 -0.314
-   - k =  -0.100  0.500 -0.331
-   - k =  -0.100  0.500 -0.347
-   - k =  -0.100  0.500 -0.364
-   - k =  -0.100  0.500 -0.381
-   - k =  -0.100  0.500 -0.398
-   - k =  -0.100  0.500 -0.415
-   - k =  -0.100  0.500 -0.432
-   - k =  -0.100  0.500 -0.449
-   - k =  -0.100  0.500 -0.466
-   - k =  -0.100  0.500 -0.483
+   - k =  -0.100  0.500  0.300
+   - k =  -0.100  0.500  0.100
+   - k =  -0.100  0.500 -0.100
+   - k =  -0.100  0.500 -0.300
    - k =  -0.100  0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     18
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  19:
+  Treating all    6 k-points in band plot segment #  19:
    Sampling over :
    - k =   0.100 -0.500  0.500
-   - k =   0.100 -0.500  0.483
-   - k =   0.100 -0.500  0.466
-   - k =   0.100 -0.500  0.449
-   - k =   0.100 -0.500  0.432
-   - k =   0.100 -0.500  0.415
-   - k =   0.100 -0.500  0.398
-   - k =   0.100 -0.500  0.381
-   - k =   0.100 -0.500  0.364
-   - k =   0.100 -0.500  0.347
-   - k =   0.100 -0.500  0.331
-   - k =   0.100 -0.500  0.314
-   - k =   0.100 -0.500  0.297
-   - k =   0.100 -0.500  0.280
-   - k =   0.100 -0.500  0.263
-   - k =   0.100 -0.500  0.246
-   - k =   0.100 -0.500  0.229
-   - k =   0.100 -0.500  0.212
-   - k =   0.100 -0.500  0.195
-   - k =   0.100 -0.500  0.178
-   - k =   0.100 -0.500  0.161
-   - k =   0.100 -0.500  0.144
-   - k =   0.100 -0.500  0.127
-   - k =   0.100 -0.500  0.110
-   - k =   0.100 -0.500  0.093
-   - k =   0.100 -0.500  0.076
-   - k =   0.100 -0.500  0.059
-   - k =   0.100 -0.500  0.042
-   - k =   0.100 -0.500  0.025
-   - k =   0.100 -0.500  0.008
-   - k =   0.100 -0.500 -0.008
-   - k =   0.100 -0.500 -0.025
-   - k =   0.100 -0.500 -0.042
-   - k =   0.100 -0.500 -0.059
-   - k =   0.100 -0.500 -0.076
-   - k =   0.100 -0.500 -0.093
-   - k =   0.100 -0.500 -0.110
-   - k =   0.100 -0.500 -0.127
-   - k =   0.100 -0.500 -0.144
-   - k =   0.100 -0.500 -0.161
-   - k =   0.100 -0.500 -0.178
-   - k =   0.100 -0.500 -0.195
-   - k =   0.100 -0.500 -0.212
-   - k =   0.100 -0.500 -0.229
-   - k =   0.100 -0.500 -0.246
-   - k =   0.100 -0.500 -0.263
-   - k =   0.100 -0.500 -0.280
-   - k =   0.100 -0.500 -0.297
-   - k =   0.100 -0.500 -0.314
-   - k =   0.100 -0.500 -0.331
-   - k =   0.100 -0.500 -0.347
-   - k =   0.100 -0.500 -0.364
-   - k =   0.100 -0.500 -0.381
-   - k =   0.100 -0.500 -0.398
-   - k =   0.100 -0.500 -0.415
-   - k =   0.100 -0.500 -0.432
-   - k =   0.100 -0.500 -0.449
-   - k =   0.100 -0.500 -0.466
-   - k =   0.100 -0.500 -0.483
+   - k =   0.100 -0.500  0.300
+   - k =   0.100 -0.500  0.100
+   - k =   0.100 -0.500 -0.100
+   - k =   0.100 -0.500 -0.300
    - k =   0.100 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     19
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  20:
+  Treating all    6 k-points in band plot segment #  20:
    Sampling over :
    - k =   0.100 -0.300  0.500
-   - k =   0.100 -0.300  0.483
-   - k =   0.100 -0.300  0.466
-   - k =   0.100 -0.300  0.449
-   - k =   0.100 -0.300  0.432
-   - k =   0.100 -0.300  0.415
-   - k =   0.100 -0.300  0.398
-   - k =   0.100 -0.300  0.381
-   - k =   0.100 -0.300  0.364
-   - k =   0.100 -0.300  0.347
-   - k =   0.100 -0.300  0.331
-   - k =   0.100 -0.300  0.314
-   - k =   0.100 -0.300  0.297
-   - k =   0.100 -0.300  0.280
-   - k =   0.100 -0.300  0.263
-   - k =   0.100 -0.300  0.246
-   - k =   0.100 -0.300  0.229
-   - k =   0.100 -0.300  0.212
-   - k =   0.100 -0.300  0.195
-   - k =   0.100 -0.300  0.178
-   - k =   0.100 -0.300  0.161
-   - k =   0.100 -0.300  0.144
-   - k =   0.100 -0.300  0.127
-   - k =   0.100 -0.300  0.110
-   - k =   0.100 -0.300  0.093
-   - k =   0.100 -0.300  0.076
-   - k =   0.100 -0.300  0.059
-   - k =   0.100 -0.300  0.042
-   - k =   0.100 -0.300  0.025
-   - k =   0.100 -0.300  0.008
-   - k =   0.100 -0.300 -0.008
-   - k =   0.100 -0.300 -0.025
-   - k =   0.100 -0.300 -0.042
-   - k =   0.100 -0.300 -0.059
-   - k =   0.100 -0.300 -0.076
-   - k =   0.100 -0.300 -0.093
-   - k =   0.100 -0.300 -0.110
-   - k =   0.100 -0.300 -0.127
-   - k =   0.100 -0.300 -0.144
-   - k =   0.100 -0.300 -0.161
-   - k =   0.100 -0.300 -0.178
-   - k =   0.100 -0.300 -0.195
-   - k =   0.100 -0.300 -0.212
-   - k =   0.100 -0.300 -0.229
-   - k =   0.100 -0.300 -0.246
-   - k =   0.100 -0.300 -0.263
-   - k =   0.100 -0.300 -0.280
-   - k =   0.100 -0.300 -0.297
-   - k =   0.100 -0.300 -0.314
-   - k =   0.100 -0.300 -0.331
-   - k =   0.100 -0.300 -0.347
-   - k =   0.100 -0.300 -0.364
-   - k =   0.100 -0.300 -0.381
-   - k =   0.100 -0.300 -0.398
-   - k =   0.100 -0.300 -0.415
-   - k =   0.100 -0.300 -0.432
-   - k =   0.100 -0.300 -0.449
-   - k =   0.100 -0.300 -0.466
-   - k =   0.100 -0.300 -0.483
+   - k =   0.100 -0.300  0.300
+   - k =   0.100 -0.300  0.100
+   - k =   0.100 -0.300 -0.100
+   - k =   0.100 -0.300 -0.300
    - k =   0.100 -0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     20
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  21:
+  Treating all    6 k-points in band plot segment #  21:
    Sampling over :
    - k =   0.100 -0.100  0.500
-   - k =   0.100 -0.100  0.483
-   - k =   0.100 -0.100  0.466
-   - k =   0.100 -0.100  0.449
-   - k =   0.100 -0.100  0.432
-   - k =   0.100 -0.100  0.415
-   - k =   0.100 -0.100  0.398
-   - k =   0.100 -0.100  0.381
-   - k =   0.100 -0.100  0.364
-   - k =   0.100 -0.100  0.347
-   - k =   0.100 -0.100  0.331
-   - k =   0.100 -0.100  0.314
-   - k =   0.100 -0.100  0.297
-   - k =   0.100 -0.100  0.280
-   - k =   0.100 -0.100  0.263
-   - k =   0.100 -0.100  0.246
-   - k =   0.100 -0.100  0.229
-   - k =   0.100 -0.100  0.212
-   - k =   0.100 -0.100  0.195
-   - k =   0.100 -0.100  0.178
-   - k =   0.100 -0.100  0.161
-   - k =   0.100 -0.100  0.144
-   - k =   0.100 -0.100  0.127
-   - k =   0.100 -0.100  0.110
-   - k =   0.100 -0.100  0.093
-   - k =   0.100 -0.100  0.076
-   - k =   0.100 -0.100  0.059
-   - k =   0.100 -0.100  0.042
-   - k =   0.100 -0.100  0.025
-   - k =   0.100 -0.100  0.008
-   - k =   0.100 -0.100 -0.008
-   - k =   0.100 -0.100 -0.025
-   - k =   0.100 -0.100 -0.042
-   - k =   0.100 -0.100 -0.059
-   - k =   0.100 -0.100 -0.076
-   - k =   0.100 -0.100 -0.093
-   - k =   0.100 -0.100 -0.110
-   - k =   0.100 -0.100 -0.127
-   - k =   0.100 -0.100 -0.144
-   - k =   0.100 -0.100 -0.161
-   - k =   0.100 -0.100 -0.178
-   - k =   0.100 -0.100 -0.195
-   - k =   0.100 -0.100 -0.212
-   - k =   0.100 -0.100 -0.229
-   - k =   0.100 -0.100 -0.246
-   - k =   0.100 -0.100 -0.263
-   - k =   0.100 -0.100 -0.280
-   - k =   0.100 -0.100 -0.297
-   - k =   0.100 -0.100 -0.314
-   - k =   0.100 -0.100 -0.331
-   - k =   0.100 -0.100 -0.347
-   - k =   0.100 -0.100 -0.364
-   - k =   0.100 -0.100 -0.381
-   - k =   0.100 -0.100 -0.398
-   - k =   0.100 -0.100 -0.415
-   - k =   0.100 -0.100 -0.432
-   - k =   0.100 -0.100 -0.449
-   - k =   0.100 -0.100 -0.466
-   - k =   0.100 -0.100 -0.483
+   - k =   0.100 -0.100  0.300
+   - k =   0.100 -0.100  0.100
+   - k =   0.100 -0.100 -0.100
+   - k =   0.100 -0.100 -0.300
    - k =   0.100 -0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     21
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  22:
+  Treating all    6 k-points in band plot segment #  22:
    Sampling over :
    - k =   0.100  0.100  0.500
-   - k =   0.100  0.100  0.483
-   - k =   0.100  0.100  0.466
-   - k =   0.100  0.100  0.449
-   - k =   0.100  0.100  0.432
-   - k =   0.100  0.100  0.415
-   - k =   0.100  0.100  0.398
-   - k =   0.100  0.100  0.381
-   - k =   0.100  0.100  0.364
-   - k =   0.100  0.100  0.347
-   - k =   0.100  0.100  0.331
-   - k =   0.100  0.100  0.314
-   - k =   0.100  0.100  0.297
-   - k =   0.100  0.100  0.280
-   - k =   0.100  0.100  0.263
-   - k =   0.100  0.100  0.246
-   - k =   0.100  0.100  0.229
-   - k =   0.100  0.100  0.212
-   - k =   0.100  0.100  0.195
-   - k =   0.100  0.100  0.178
-   - k =   0.100  0.100  0.161
-   - k =   0.100  0.100  0.144
-   - k =   0.100  0.100  0.127
-   - k =   0.100  0.100  0.110
-   - k =   0.100  0.100  0.093
-   - k =   0.100  0.100  0.076
-   - k =   0.100  0.100  0.059
-   - k =   0.100  0.100  0.042
-   - k =   0.100  0.100  0.025
-   - k =   0.100  0.100  0.008
-   - k =   0.100  0.100 -0.008
-   - k =   0.100  0.100 -0.025
-   - k =   0.100  0.100 -0.042
-   - k =   0.100  0.100 -0.059
-   - k =   0.100  0.100 -0.076
-   - k =   0.100  0.100 -0.093
-   - k =   0.100  0.100 -0.110
-   - k =   0.100  0.100 -0.127
-   - k =   0.100  0.100 -0.144
-   - k =   0.100  0.100 -0.161
-   - k =   0.100  0.100 -0.178
-   - k =   0.100  0.100 -0.195
-   - k =   0.100  0.100 -0.212
-   - k =   0.100  0.100 -0.229
-   - k =   0.100  0.100 -0.246
-   - k =   0.100  0.100 -0.263
-   - k =   0.100  0.100 -0.280
-   - k =   0.100  0.100 -0.297
-   - k =   0.100  0.100 -0.314
-   - k =   0.100  0.100 -0.331
-   - k =   0.100  0.100 -0.347
-   - k =   0.100  0.100 -0.364
-   - k =   0.100  0.100 -0.381
-   - k =   0.100  0.100 -0.398
-   - k =   0.100  0.100 -0.415
-   - k =   0.100  0.100 -0.432
-   - k =   0.100  0.100 -0.449
-   - k =   0.100  0.100 -0.466
-   - k =   0.100  0.100 -0.483
+   - k =   0.100  0.100  0.300
+   - k =   0.100  0.100  0.100
+   - k =   0.100  0.100 -0.100
+   - k =   0.100  0.100 -0.300
    - k =   0.100  0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     22
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  23:
+  Treating all    6 k-points in band plot segment #  23:
    Sampling over :
    - k =   0.100  0.300  0.500
-   - k =   0.100  0.300  0.483
-   - k =   0.100  0.300  0.466
-   - k =   0.100  0.300  0.449
-   - k =   0.100  0.300  0.432
-   - k =   0.100  0.300  0.415
-   - k =   0.100  0.300  0.398
-   - k =   0.100  0.300  0.381
-   - k =   0.100  0.300  0.364
-   - k =   0.100  0.300  0.347
-   - k =   0.100  0.300  0.331
-   - k =   0.100  0.300  0.314
-   - k =   0.100  0.300  0.297
-   - k =   0.100  0.300  0.280
-   - k =   0.100  0.300  0.263
-   - k =   0.100  0.300  0.246
-   - k =   0.100  0.300  0.229
-   - k =   0.100  0.300  0.212
-   - k =   0.100  0.300  0.195
-   - k =   0.100  0.300  0.178
-   - k =   0.100  0.300  0.161
-   - k =   0.100  0.300  0.144
-   - k =   0.100  0.300  0.127
-   - k =   0.100  0.300  0.110
-   - k =   0.100  0.300  0.093
-   - k =   0.100  0.300  0.076
-   - k =   0.100  0.300  0.059
-   - k =   0.100  0.300  0.042
-   - k =   0.100  0.300  0.025
-   - k =   0.100  0.300  0.008
-   - k =   0.100  0.300 -0.008
-   - k =   0.100  0.300 -0.025
-   - k =   0.100  0.300 -0.042
-   - k =   0.100  0.300 -0.059
-   - k =   0.100  0.300 -0.076
-   - k =   0.100  0.300 -0.093
-   - k =   0.100  0.300 -0.110
-   - k =   0.100  0.300 -0.127
-   - k =   0.100  0.300 -0.144
-   - k =   0.100  0.300 -0.161
-   - k =   0.100  0.300 -0.178
-   - k =   0.100  0.300 -0.195
-   - k =   0.100  0.300 -0.212
-   - k =   0.100  0.300 -0.229
-   - k =   0.100  0.300 -0.246
-   - k =   0.100  0.300 -0.263
-   - k =   0.100  0.300 -0.280
-   - k =   0.100  0.300 -0.297
-   - k =   0.100  0.300 -0.314
-   - k =   0.100  0.300 -0.331
-   - k =   0.100  0.300 -0.347
-   - k =   0.100  0.300 -0.364
-   - k =   0.100  0.300 -0.381
-   - k =   0.100  0.300 -0.398
-   - k =   0.100  0.300 -0.415
-   - k =   0.100  0.300 -0.432
-   - k =   0.100  0.300 -0.449
-   - k =   0.100  0.300 -0.466
-   - k =   0.100  0.300 -0.483
+   - k =   0.100  0.300  0.300
+   - k =   0.100  0.300  0.100
+   - k =   0.100  0.300 -0.100
+   - k =   0.100  0.300 -0.300
    - k =   0.100  0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     23
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  24:
+  Treating all    6 k-points in band plot segment #  24:
    Sampling over :
    - k =   0.100  0.500  0.500
-   - k =   0.100  0.500  0.483
-   - k =   0.100  0.500  0.466
-   - k =   0.100  0.500  0.449
-   - k =   0.100  0.500  0.432
-   - k =   0.100  0.500  0.415
-   - k =   0.100  0.500  0.398
-   - k =   0.100  0.500  0.381
-   - k =   0.100  0.500  0.364
-   - k =   0.100  0.500  0.347
-   - k =   0.100  0.500  0.331
-   - k =   0.100  0.500  0.314
-   - k =   0.100  0.500  0.297
-   - k =   0.100  0.500  0.280
-   - k =   0.100  0.500  0.263
-   - k =   0.100  0.500  0.246
-   - k =   0.100  0.500  0.229
-   - k =   0.100  0.500  0.212
-   - k =   0.100  0.500  0.195
-   - k =   0.100  0.500  0.178
-   - k =   0.100  0.500  0.161
-   - k =   0.100  0.500  0.144
-   - k =   0.100  0.500  0.127
-   - k =   0.100  0.500  0.110
-   - k =   0.100  0.500  0.093
-   - k =   0.100  0.500  0.076
-   - k =   0.100  0.500  0.059
-   - k =   0.100  0.500  0.042
-   - k =   0.100  0.500  0.025
-   - k =   0.100  0.500  0.008
-   - k =   0.100  0.500 -0.008
-   - k =   0.100  0.500 -0.025
-   - k =   0.100  0.500 -0.042
-   - k =   0.100  0.500 -0.059
-   - k =   0.100  0.500 -0.076
-   - k =   0.100  0.500 -0.093
-   - k =   0.100  0.500 -0.110
-   - k =   0.100  0.500 -0.127
-   - k =   0.100  0.500 -0.144
-   - k =   0.100  0.500 -0.161
-   - k =   0.100  0.500 -0.178
-   - k =   0.100  0.500 -0.195
-   - k =   0.100  0.500 -0.212
-   - k =   0.100  0.500 -0.229
-   - k =   0.100  0.500 -0.246
-   - k =   0.100  0.500 -0.263
-   - k =   0.100  0.500 -0.280
-   - k =   0.100  0.500 -0.297
-   - k =   0.100  0.500 -0.314
-   - k =   0.100  0.500 -0.331
-   - k =   0.100  0.500 -0.347
-   - k =   0.100  0.500 -0.364
-   - k =   0.100  0.500 -0.381
-   - k =   0.100  0.500 -0.398
-   - k =   0.100  0.500 -0.415
-   - k =   0.100  0.500 -0.432
-   - k =   0.100  0.500 -0.449
-   - k =   0.100  0.500 -0.466
-   - k =   0.100  0.500 -0.483
+   - k =   0.100  0.500  0.300
+   - k =   0.100  0.500  0.100
+   - k =   0.100  0.500 -0.100
+   - k =   0.100  0.500 -0.300
    - k =   0.100  0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     24
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  25:
+  Treating all    6 k-points in band plot segment #  25:
    Sampling over :
    - k =   0.300 -0.500  0.500
-   - k =   0.300 -0.500  0.483
-   - k =   0.300 -0.500  0.466
-   - k =   0.300 -0.500  0.449
-   - k =   0.300 -0.500  0.432
-   - k =   0.300 -0.500  0.415
-   - k =   0.300 -0.500  0.398
-   - k =   0.300 -0.500  0.381
-   - k =   0.300 -0.500  0.364
-   - k =   0.300 -0.500  0.347
-   - k =   0.300 -0.500  0.331
-   - k =   0.300 -0.500  0.314
-   - k =   0.300 -0.500  0.297
-   - k =   0.300 -0.500  0.280
-   - k =   0.300 -0.500  0.263
-   - k =   0.300 -0.500  0.246
-   - k =   0.300 -0.500  0.229
-   - k =   0.300 -0.500  0.212
-   - k =   0.300 -0.500  0.195
-   - k =   0.300 -0.500  0.178
-   - k =   0.300 -0.500  0.161
-   - k =   0.300 -0.500  0.144
-   - k =   0.300 -0.500  0.127
-   - k =   0.300 -0.500  0.110
-   - k =   0.300 -0.500  0.093
-   - k =   0.300 -0.500  0.076
-   - k =   0.300 -0.500  0.059
-   - k =   0.300 -0.500  0.042
-   - k =   0.300 -0.500  0.025
-   - k =   0.300 -0.500  0.008
-   - k =   0.300 -0.500 -0.008
-   - k =   0.300 -0.500 -0.025
-   - k =   0.300 -0.500 -0.042
-   - k =   0.300 -0.500 -0.059
-   - k =   0.300 -0.500 -0.076
-   - k =   0.300 -0.500 -0.093
-   - k =   0.300 -0.500 -0.110
-   - k =   0.300 -0.500 -0.127
-   - k =   0.300 -0.500 -0.144
-   - k =   0.300 -0.500 -0.161
-   - k =   0.300 -0.500 -0.178
-   - k =   0.300 -0.500 -0.195
-   - k =   0.300 -0.500 -0.212
-   - k =   0.300 -0.500 -0.229
-   - k =   0.300 -0.500 -0.246
-   - k =   0.300 -0.500 -0.263
-   - k =   0.300 -0.500 -0.280
-   - k =   0.300 -0.500 -0.297
-   - k =   0.300 -0.500 -0.314
-   - k =   0.300 -0.500 -0.331
-   - k =   0.300 -0.500 -0.347
-   - k =   0.300 -0.500 -0.364
-   - k =   0.300 -0.500 -0.381
-   - k =   0.300 -0.500 -0.398
-   - k =   0.300 -0.500 -0.415
-   - k =   0.300 -0.500 -0.432
-   - k =   0.300 -0.500 -0.449
-   - k =   0.300 -0.500 -0.466
-   - k =   0.300 -0.500 -0.483
+   - k =   0.300 -0.500  0.300
+   - k =   0.300 -0.500  0.100
+   - k =   0.300 -0.500 -0.100
+   - k =   0.300 -0.500 -0.300
    - k =   0.300 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     25
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  26:
+  Treating all    6 k-points in band plot segment #  26:
    Sampling over :
    - k =   0.300 -0.300  0.500
-   - k =   0.300 -0.300  0.483
-   - k =   0.300 -0.300  0.466
-   - k =   0.300 -0.300  0.449
-   - k =   0.300 -0.300  0.432
-   - k =   0.300 -0.300  0.415
-   - k =   0.300 -0.300  0.398
-   - k =   0.300 -0.300  0.381
-   - k =   0.300 -0.300  0.364
-   - k =   0.300 -0.300  0.347
-   - k =   0.300 -0.300  0.331
-   - k =   0.300 -0.300  0.314
-   - k =   0.300 -0.300  0.297
-   - k =   0.300 -0.300  0.280
-   - k =   0.300 -0.300  0.263
-   - k =   0.300 -0.300  0.246
-   - k =   0.300 -0.300  0.229
-   - k =   0.300 -0.300  0.212
-   - k =   0.300 -0.300  0.195
-   - k =   0.300 -0.300  0.178
-   - k =   0.300 -0.300  0.161
-   - k =   0.300 -0.300  0.144
-   - k =   0.300 -0.300  0.127
-   - k =   0.300 -0.300  0.110
-   - k =   0.300 -0.300  0.093
-   - k =   0.300 -0.300  0.076
-   - k =   0.300 -0.300  0.059
-   - k =   0.300 -0.300  0.042
-   - k =   0.300 -0.300  0.025
-   - k =   0.300 -0.300  0.008
-   - k =   0.300 -0.300 -0.008
-   - k =   0.300 -0.300 -0.025
-   - k =   0.300 -0.300 -0.042
-   - k =   0.300 -0.300 -0.059
-   - k =   0.300 -0.300 -0.076
-   - k =   0.300 -0.300 -0.093
-   - k =   0.300 -0.300 -0.110
-   - k =   0.300 -0.300 -0.127
-   - k =   0.300 -0.300 -0.144
-   - k =   0.300 -0.300 -0.161
-   - k =   0.300 -0.300 -0.178
-   - k =   0.300 -0.300 -0.195
-   - k =   0.300 -0.300 -0.212
-   - k =   0.300 -0.300 -0.229
-   - k =   0.300 -0.300 -0.246
-   - k =   0.300 -0.300 -0.263
-   - k =   0.300 -0.300 -0.280
-   - k =   0.300 -0.300 -0.297
-   - k =   0.300 -0.300 -0.314
-   - k =   0.300 -0.300 -0.331
-   - k =   0.300 -0.300 -0.347
-   - k =   0.300 -0.300 -0.364
-   - k =   0.300 -0.300 -0.381
-   - k =   0.300 -0.300 -0.398
-   - k =   0.300 -0.300 -0.415
-   - k =   0.300 -0.300 -0.432
-   - k =   0.300 -0.300 -0.449
-   - k =   0.300 -0.300 -0.466
-   - k =   0.300 -0.300 -0.483
+   - k =   0.300 -0.300  0.300
+   - k =   0.300 -0.300  0.100
+   - k =   0.300 -0.300 -0.100
+   - k =   0.300 -0.300 -0.300
    - k =   0.300 -0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     26
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  27:
+  Treating all    6 k-points in band plot segment #  27:
    Sampling over :
    - k =   0.300 -0.100  0.500
-   - k =   0.300 -0.100  0.483
-   - k =   0.300 -0.100  0.466
-   - k =   0.300 -0.100  0.449
-   - k =   0.300 -0.100  0.432
-   - k =   0.300 -0.100  0.415
-   - k =   0.300 -0.100  0.398
-   - k =   0.300 -0.100  0.381
-   - k =   0.300 -0.100  0.364
-   - k =   0.300 -0.100  0.347
-   - k =   0.300 -0.100  0.331
-   - k =   0.300 -0.100  0.314
-   - k =   0.300 -0.100  0.297
-   - k =   0.300 -0.100  0.280
-   - k =   0.300 -0.100  0.263
-   - k =   0.300 -0.100  0.246
-   - k =   0.300 -0.100  0.229
-   - k =   0.300 -0.100  0.212
-   - k =   0.300 -0.100  0.195
-   - k =   0.300 -0.100  0.178
-   - k =   0.300 -0.100  0.161
-   - k =   0.300 -0.100  0.144
-   - k =   0.300 -0.100  0.127
-   - k =   0.300 -0.100  0.110
-   - k =   0.300 -0.100  0.093
-   - k =   0.300 -0.100  0.076
-   - k =   0.300 -0.100  0.059
-   - k =   0.300 -0.100  0.042
-   - k =   0.300 -0.100  0.025
-   - k =   0.300 -0.100  0.008
-   - k =   0.300 -0.100 -0.008
-   - k =   0.300 -0.100 -0.025
-   - k =   0.300 -0.100 -0.042
-   - k =   0.300 -0.100 -0.059
-   - k =   0.300 -0.100 -0.076
-   - k =   0.300 -0.100 -0.093
-   - k =   0.300 -0.100 -0.110
-   - k =   0.300 -0.100 -0.127
-   - k =   0.300 -0.100 -0.144
-   - k =   0.300 -0.100 -0.161
-   - k =   0.300 -0.100 -0.178
-   - k =   0.300 -0.100 -0.195
-   - k =   0.300 -0.100 -0.212
-   - k =   0.300 -0.100 -0.229
-   - k =   0.300 -0.100 -0.246
-   - k =   0.300 -0.100 -0.263
-   - k =   0.300 -0.100 -0.280
-   - k =   0.300 -0.100 -0.297
-   - k =   0.300 -0.100 -0.314
-   - k =   0.300 -0.100 -0.331
-   - k =   0.300 -0.100 -0.347
-   - k =   0.300 -0.100 -0.364
-   - k =   0.300 -0.100 -0.381
-   - k =   0.300 -0.100 -0.398
-   - k =   0.300 -0.100 -0.415
-   - k =   0.300 -0.100 -0.432
-   - k =   0.300 -0.100 -0.449
-   - k =   0.300 -0.100 -0.466
-   - k =   0.300 -0.100 -0.483
+   - k =   0.300 -0.100  0.300
+   - k =   0.300 -0.100  0.100
+   - k =   0.300 -0.100 -0.100
+   - k =   0.300 -0.100 -0.300
    - k =   0.300 -0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     27
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  28:
+  Treating all    6 k-points in band plot segment #  28:
    Sampling over :
    - k =   0.300  0.100  0.500
-   - k =   0.300  0.100  0.483
-   - k =   0.300  0.100  0.466
-   - k =   0.300  0.100  0.449
-   - k =   0.300  0.100  0.432
-   - k =   0.300  0.100  0.415
-   - k =   0.300  0.100  0.398
-   - k =   0.300  0.100  0.381
-   - k =   0.300  0.100  0.364
-   - k =   0.300  0.100  0.347
-   - k =   0.300  0.100  0.331
-   - k =   0.300  0.100  0.314
-   - k =   0.300  0.100  0.297
-   - k =   0.300  0.100  0.280
-   - k =   0.300  0.100  0.263
-   - k =   0.300  0.100  0.246
-   - k =   0.300  0.100  0.229
-   - k =   0.300  0.100  0.212
-   - k =   0.300  0.100  0.195
-   - k =   0.300  0.100  0.178
-   - k =   0.300  0.100  0.161
-   - k =   0.300  0.100  0.144
-   - k =   0.300  0.100  0.127
-   - k =   0.300  0.100  0.110
-   - k =   0.300  0.100  0.093
-   - k =   0.300  0.100  0.076
-   - k =   0.300  0.100  0.059
-   - k =   0.300  0.100  0.042
-   - k =   0.300  0.100  0.025
-   - k =   0.300  0.100  0.008
-   - k =   0.300  0.100 -0.008
-   - k =   0.300  0.100 -0.025
-   - k =   0.300  0.100 -0.042
-   - k =   0.300  0.100 -0.059
-   - k =   0.300  0.100 -0.076
-   - k =   0.300  0.100 -0.093
-   - k =   0.300  0.100 -0.110
-   - k =   0.300  0.100 -0.127
-   - k =   0.300  0.100 -0.144
-   - k =   0.300  0.100 -0.161
-   - k =   0.300  0.100 -0.178
-   - k =   0.300  0.100 -0.195
-   - k =   0.300  0.100 -0.212
-   - k =   0.300  0.100 -0.229
-   - k =   0.300  0.100 -0.246
-   - k =   0.300  0.100 -0.263
-   - k =   0.300  0.100 -0.280
-   - k =   0.300  0.100 -0.297
-   - k =   0.300  0.100 -0.314
-   - k =   0.300  0.100 -0.331
-   - k =   0.300  0.100 -0.347
-   - k =   0.300  0.100 -0.364
-   - k =   0.300  0.100 -0.381
-   - k =   0.300  0.100 -0.398
-   - k =   0.300  0.100 -0.415
-   - k =   0.300  0.100 -0.432
-   - k =   0.300  0.100 -0.449
-   - k =   0.300  0.100 -0.466
-   - k =   0.300  0.100 -0.483
+   - k =   0.300  0.100  0.300
+   - k =   0.300  0.100  0.100
+   - k =   0.300  0.100 -0.100
+   - k =   0.300  0.100 -0.300
    - k =   0.300  0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     28
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  29:
+  Treating all    6 k-points in band plot segment #  29:
    Sampling over :
    - k =   0.300  0.300  0.500
-   - k =   0.300  0.300  0.483
-   - k =   0.300  0.300  0.466
-   - k =   0.300  0.300  0.449
-   - k =   0.300  0.300  0.432
-   - k =   0.300  0.300  0.415
-   - k =   0.300  0.300  0.398
-   - k =   0.300  0.300  0.381
-   - k =   0.300  0.300  0.364
-   - k =   0.300  0.300  0.347
-   - k =   0.300  0.300  0.331
-   - k =   0.300  0.300  0.314
-   - k =   0.300  0.300  0.297
-   - k =   0.300  0.300  0.280
-   - k =   0.300  0.300  0.263
-   - k =   0.300  0.300  0.246
-   - k =   0.300  0.300  0.229
-   - k =   0.300  0.300  0.212
-   - k =   0.300  0.300  0.195
-   - k =   0.300  0.300  0.178
-   - k =   0.300  0.300  0.161
-   - k =   0.300  0.300  0.144
-   - k =   0.300  0.300  0.127
-   - k =   0.300  0.300  0.110
-   - k =   0.300  0.300  0.093
-   - k =   0.300  0.300  0.076
-   - k =   0.300  0.300  0.059
-   - k =   0.300  0.300  0.042
-   - k =   0.300  0.300  0.025
-   - k =   0.300  0.300  0.008
-   - k =   0.300  0.300 -0.008
-   - k =   0.300  0.300 -0.025
-   - k =   0.300  0.300 -0.042
-   - k =   0.300  0.300 -0.059
-   - k =   0.300  0.300 -0.076
-   - k =   0.300  0.300 -0.093
-   - k =   0.300  0.300 -0.110
-   - k =   0.300  0.300 -0.127
-   - k =   0.300  0.300 -0.144
-   - k =   0.300  0.300 -0.161
-   - k =   0.300  0.300 -0.178
-   - k =   0.300  0.300 -0.195
-   - k =   0.300  0.300 -0.212
-   - k =   0.300  0.300 -0.229
-   - k =   0.300  0.300 -0.246
-   - k =   0.300  0.300 -0.263
-   - k =   0.300  0.300 -0.280
-   - k =   0.300  0.300 -0.297
-   - k =   0.300  0.300 -0.314
-   - k =   0.300  0.300 -0.331
-   - k =   0.300  0.300 -0.347
-   - k =   0.300  0.300 -0.364
-   - k =   0.300  0.300 -0.381
-   - k =   0.300  0.300 -0.398
-   - k =   0.300  0.300 -0.415
-   - k =   0.300  0.300 -0.432
-   - k =   0.300  0.300 -0.449
-   - k =   0.300  0.300 -0.466
-   - k =   0.300  0.300 -0.483
+   - k =   0.300  0.300  0.300
+   - k =   0.300  0.300  0.100
+   - k =   0.300  0.300 -0.100
+   - k =   0.300  0.300 -0.300
    - k =   0.300  0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     29
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  30:
+  Treating all    6 k-points in band plot segment #  30:
    Sampling over :
    - k =   0.300  0.500  0.500
-   - k =   0.300  0.500  0.483
-   - k =   0.300  0.500  0.466
-   - k =   0.300  0.500  0.449
-   - k =   0.300  0.500  0.432
-   - k =   0.300  0.500  0.415
-   - k =   0.300  0.500  0.398
-   - k =   0.300  0.500  0.381
-   - k =   0.300  0.500  0.364
-   - k =   0.300  0.500  0.347
-   - k =   0.300  0.500  0.331
-   - k =   0.300  0.500  0.314
-   - k =   0.300  0.500  0.297
-   - k =   0.300  0.500  0.280
-   - k =   0.300  0.500  0.263
-   - k =   0.300  0.500  0.246
-   - k =   0.300  0.500  0.229
-   - k =   0.300  0.500  0.212
-   - k =   0.300  0.500  0.195
-   - k =   0.300  0.500  0.178
-   - k =   0.300  0.500  0.161
-   - k =   0.300  0.500  0.144
-   - k =   0.300  0.500  0.127
-   - k =   0.300  0.500  0.110
-   - k =   0.300  0.500  0.093
-   - k =   0.300  0.500  0.076
-   - k =   0.300  0.500  0.059
-   - k =   0.300  0.500  0.042
-   - k =   0.300  0.500  0.025
-   - k =   0.300  0.500  0.008
-   - k =   0.300  0.500 -0.008
-   - k =   0.300  0.500 -0.025
-   - k =   0.300  0.500 -0.042
-   - k =   0.300  0.500 -0.059
-   - k =   0.300  0.500 -0.076
-   - k =   0.300  0.500 -0.093
-   - k =   0.300  0.500 -0.110
-   - k =   0.300  0.500 -0.127
-   - k =   0.300  0.500 -0.144
-   - k =   0.300  0.500 -0.161
-   - k =   0.300  0.500 -0.178
-   - k =   0.300  0.500 -0.195
-   - k =   0.300  0.500 -0.212
-   - k =   0.300  0.500 -0.229
-   - k =   0.300  0.500 -0.246
-   - k =   0.300  0.500 -0.263
-   - k =   0.300  0.500 -0.280
-   - k =   0.300  0.500 -0.297
-   - k =   0.300  0.500 -0.314
-   - k =   0.300  0.500 -0.331
-   - k =   0.300  0.500 -0.347
-   - k =   0.300  0.500 -0.364
-   - k =   0.300  0.500 -0.381
-   - k =   0.300  0.500 -0.398
-   - k =   0.300  0.500 -0.415
-   - k =   0.300  0.500 -0.432
-   - k =   0.300  0.500 -0.449
-   - k =   0.300  0.500 -0.466
-   - k =   0.300  0.500 -0.483
+   - k =   0.300  0.500  0.300
+   - k =   0.300  0.500  0.100
+   - k =   0.300  0.500 -0.100
+   - k =   0.300  0.500 -0.300
    - k =   0.300  0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     30
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  31:
+  Treating all    6 k-points in band plot segment #  31:
    Sampling over :
    - k =   0.500 -0.500  0.500
-   - k =   0.500 -0.500  0.483
-   - k =   0.500 -0.500  0.466
-   - k =   0.500 -0.500  0.449
-   - k =   0.500 -0.500  0.432
-   - k =   0.500 -0.500  0.415
-   - k =   0.500 -0.500  0.398
-   - k =   0.500 -0.500  0.381
-   - k =   0.500 -0.500  0.364
-   - k =   0.500 -0.500  0.347
-   - k =   0.500 -0.500  0.331
-   - k =   0.500 -0.500  0.314
-   - k =   0.500 -0.500  0.297
-   - k =   0.500 -0.500  0.280
-   - k =   0.500 -0.500  0.263
-   - k =   0.500 -0.500  0.246
-   - k =   0.500 -0.500  0.229
-   - k =   0.500 -0.500  0.212
-   - k =   0.500 -0.500  0.195
-   - k =   0.500 -0.500  0.178
-   - k =   0.500 -0.500  0.161
-   - k =   0.500 -0.500  0.144
-   - k =   0.500 -0.500  0.127
-   - k =   0.500 -0.500  0.110
-   - k =   0.500 -0.500  0.093
-   - k =   0.500 -0.500  0.076
-   - k =   0.500 -0.500  0.059
-   - k =   0.500 -0.500  0.042
-   - k =   0.500 -0.500  0.025
-   - k =   0.500 -0.500  0.008
-   - k =   0.500 -0.500 -0.008
-   - k =   0.500 -0.500 -0.025
-   - k =   0.500 -0.500 -0.042
-   - k =   0.500 -0.500 -0.059
-   - k =   0.500 -0.500 -0.076
-   - k =   0.500 -0.500 -0.093
-   - k =   0.500 -0.500 -0.110
-   - k =   0.500 -0.500 -0.127
-   - k =   0.500 -0.500 -0.144
-   - k =   0.500 -0.500 -0.161
-   - k =   0.500 -0.500 -0.178
-   - k =   0.500 -0.500 -0.195
-   - k =   0.500 -0.500 -0.212
-   - k =   0.500 -0.500 -0.229
-   - k =   0.500 -0.500 -0.246
-   - k =   0.500 -0.500 -0.263
-   - k =   0.500 -0.500 -0.280
-   - k =   0.500 -0.500 -0.297
-   - k =   0.500 -0.500 -0.314
-   - k =   0.500 -0.500 -0.331
-   - k =   0.500 -0.500 -0.347
-   - k =   0.500 -0.500 -0.364
-   - k =   0.500 -0.500 -0.381
-   - k =   0.500 -0.500 -0.398
-   - k =   0.500 -0.500 -0.415
-   - k =   0.500 -0.500 -0.432
-   - k =   0.500 -0.500 -0.449
-   - k =   0.500 -0.500 -0.466
-   - k =   0.500 -0.500 -0.483
+   - k =   0.500 -0.500  0.300
+   - k =   0.500 -0.500  0.100
+   - k =   0.500 -0.500 -0.100
+   - k =   0.500 -0.500 -0.300
    - k =   0.500 -0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     31
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  32:
+  Treating all    6 k-points in band plot segment #  32:
    Sampling over :
    - k =   0.500 -0.300  0.500
-   - k =   0.500 -0.300  0.483
-   - k =   0.500 -0.300  0.466
-   - k =   0.500 -0.300  0.449
-   - k =   0.500 -0.300  0.432
-   - k =   0.500 -0.300  0.415
-   - k =   0.500 -0.300  0.398
-   - k =   0.500 -0.300  0.381
-   - k =   0.500 -0.300  0.364
-   - k =   0.500 -0.300  0.347
-   - k =   0.500 -0.300  0.331
-   - k =   0.500 -0.300  0.314
-   - k =   0.500 -0.300  0.297
-   - k =   0.500 -0.300  0.280
-   - k =   0.500 -0.300  0.263
-   - k =   0.500 -0.300  0.246
-   - k =   0.500 -0.300  0.229
-   - k =   0.500 -0.300  0.212
-   - k =   0.500 -0.300  0.195
-   - k =   0.500 -0.300  0.178
-   - k =   0.500 -0.300  0.161
-   - k =   0.500 -0.300  0.144
-   - k =   0.500 -0.300  0.127
-   - k =   0.500 -0.300  0.110
-   - k =   0.500 -0.300  0.093
-   - k =   0.500 -0.300  0.076
-   - k =   0.500 -0.300  0.059
-   - k =   0.500 -0.300  0.042
-   - k =   0.500 -0.300  0.025
-   - k =   0.500 -0.300  0.008
-   - k =   0.500 -0.300 -0.008
-   - k =   0.500 -0.300 -0.025
-   - k =   0.500 -0.300 -0.042
-   - k =   0.500 -0.300 -0.059
-   - k =   0.500 -0.300 -0.076
-   - k =   0.500 -0.300 -0.093
-   - k =   0.500 -0.300 -0.110
-   - k =   0.500 -0.300 -0.127
-   - k =   0.500 -0.300 -0.144
-   - k =   0.500 -0.300 -0.161
-   - k =   0.500 -0.300 -0.178
-   - k =   0.500 -0.300 -0.195
-   - k =   0.500 -0.300 -0.212
-   - k =   0.500 -0.300 -0.229
-   - k =   0.500 -0.300 -0.246
-   - k =   0.500 -0.300 -0.263
-   - k =   0.500 -0.300 -0.280
-   - k =   0.500 -0.300 -0.297
-   - k =   0.500 -0.300 -0.314
-   - k =   0.500 -0.300 -0.331
-   - k =   0.500 -0.300 -0.347
-   - k =   0.500 -0.300 -0.364
-   - k =   0.500 -0.300 -0.381
-   - k =   0.500 -0.300 -0.398
-   - k =   0.500 -0.300 -0.415
-   - k =   0.500 -0.300 -0.432
-   - k =   0.500 -0.300 -0.449
-   - k =   0.500 -0.300 -0.466
-   - k =   0.500 -0.300 -0.483
+   - k =   0.500 -0.300  0.300
+   - k =   0.500 -0.300  0.100
+   - k =   0.500 -0.300 -0.100
+   - k =   0.500 -0.300 -0.300
    - k =   0.500 -0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     32
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  33:
+  Treating all    6 k-points in band plot segment #  33:
    Sampling over :
    - k =   0.500 -0.100  0.500
-   - k =   0.500 -0.100  0.483
-   - k =   0.500 -0.100  0.466
-   - k =   0.500 -0.100  0.449
-   - k =   0.500 -0.100  0.432
-   - k =   0.500 -0.100  0.415
-   - k =   0.500 -0.100  0.398
-   - k =   0.500 -0.100  0.381
-   - k =   0.500 -0.100  0.364
-   - k =   0.500 -0.100  0.347
-   - k =   0.500 -0.100  0.331
-   - k =   0.500 -0.100  0.314
-   - k =   0.500 -0.100  0.297
-   - k =   0.500 -0.100  0.280
-   - k =   0.500 -0.100  0.263
-   - k =   0.500 -0.100  0.246
-   - k =   0.500 -0.100  0.229
-   - k =   0.500 -0.100  0.212
-   - k =   0.500 -0.100  0.195
-   - k =   0.500 -0.100  0.178
-   - k =   0.500 -0.100  0.161
-   - k =   0.500 -0.100  0.144
-   - k =   0.500 -0.100  0.127
-   - k =   0.500 -0.100  0.110
-   - k =   0.500 -0.100  0.093
-   - k =   0.500 -0.100  0.076
-   - k =   0.500 -0.100  0.059
-   - k =   0.500 -0.100  0.042
-   - k =   0.500 -0.100  0.025
-   - k =   0.500 -0.100  0.008
-   - k =   0.500 -0.100 -0.008
-   - k =   0.500 -0.100 -0.025
-   - k =   0.500 -0.100 -0.042
-   - k =   0.500 -0.100 -0.059
-   - k =   0.500 -0.100 -0.076
-   - k =   0.500 -0.100 -0.093
-   - k =   0.500 -0.100 -0.110
-   - k =   0.500 -0.100 -0.127
-   - k =   0.500 -0.100 -0.144
-   - k =   0.500 -0.100 -0.161
-   - k =   0.500 -0.100 -0.178
-   - k =   0.500 -0.100 -0.195
-   - k =   0.500 -0.100 -0.212
-   - k =   0.500 -0.100 -0.229
-   - k =   0.500 -0.100 -0.246
-   - k =   0.500 -0.100 -0.263
-   - k =   0.500 -0.100 -0.280
-   - k =   0.500 -0.100 -0.297
-   - k =   0.500 -0.100 -0.314
-   - k =   0.500 -0.100 -0.331
-   - k =   0.500 -0.100 -0.347
-   - k =   0.500 -0.100 -0.364
-   - k =   0.500 -0.100 -0.381
-   - k =   0.500 -0.100 -0.398
-   - k =   0.500 -0.100 -0.415
-   - k =   0.500 -0.100 -0.432
-   - k =   0.500 -0.100 -0.449
-   - k =   0.500 -0.100 -0.466
-   - k =   0.500 -0.100 -0.483
+   - k =   0.500 -0.100  0.300
+   - k =   0.500 -0.100  0.100
+   - k =   0.500 -0.100 -0.100
+   - k =   0.500 -0.100 -0.300
    - k =   0.500 -0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     33
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  34:
+  Treating all    6 k-points in band plot segment #  34:
    Sampling over :
    - k =   0.500  0.100  0.500
-   - k =   0.500  0.100  0.483
-   - k =   0.500  0.100  0.466
-   - k =   0.500  0.100  0.449
-   - k =   0.500  0.100  0.432
-   - k =   0.500  0.100  0.415
-   - k =   0.500  0.100  0.398
-   - k =   0.500  0.100  0.381
-   - k =   0.500  0.100  0.364
-   - k =   0.500  0.100  0.347
-   - k =   0.500  0.100  0.331
-   - k =   0.500  0.100  0.314
-   - k =   0.500  0.100  0.297
-   - k =   0.500  0.100  0.280
-   - k =   0.500  0.100  0.263
-   - k =   0.500  0.100  0.246
-   - k =   0.500  0.100  0.229
-   - k =   0.500  0.100  0.212
-   - k =   0.500  0.100  0.195
-   - k =   0.500  0.100  0.178
-   - k =   0.500  0.100  0.161
-   - k =   0.500  0.100  0.144
-   - k =   0.500  0.100  0.127
-   - k =   0.500  0.100  0.110
-   - k =   0.500  0.100  0.093
-   - k =   0.500  0.100  0.076
-   - k =   0.500  0.100  0.059
-   - k =   0.500  0.100  0.042
-   - k =   0.500  0.100  0.025
-   - k =   0.500  0.100  0.008
-   - k =   0.500  0.100 -0.008
-   - k =   0.500  0.100 -0.025
-   - k =   0.500  0.100 -0.042
-   - k =   0.500  0.100 -0.059
-   - k =   0.500  0.100 -0.076
-   - k =   0.500  0.100 -0.093
-   - k =   0.500  0.100 -0.110
-   - k =   0.500  0.100 -0.127
-   - k =   0.500  0.100 -0.144
-   - k =   0.500  0.100 -0.161
-   - k =   0.500  0.100 -0.178
-   - k =   0.500  0.100 -0.195
-   - k =   0.500  0.100 -0.212
-   - k =   0.500  0.100 -0.229
-   - k =   0.500  0.100 -0.246
-   - k =   0.500  0.100 -0.263
-   - k =   0.500  0.100 -0.280
-   - k =   0.500  0.100 -0.297
-   - k =   0.500  0.100 -0.314
-   - k =   0.500  0.100 -0.331
-   - k =   0.500  0.100 -0.347
-   - k =   0.500  0.100 -0.364
-   - k =   0.500  0.100 -0.381
-   - k =   0.500  0.100 -0.398
-   - k =   0.500  0.100 -0.415
-   - k =   0.500  0.100 -0.432
-   - k =   0.500  0.100 -0.449
-   - k =   0.500  0.100 -0.466
-   - k =   0.500  0.100 -0.483
+   - k =   0.500  0.100  0.300
+   - k =   0.500  0.100  0.100
+   - k =   0.500  0.100 -0.100
+   - k =   0.500  0.100 -0.300
    - k =   0.500  0.100 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     34
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  35:
+  Treating all    6 k-points in band plot segment #  35:
    Sampling over :
    - k =   0.500  0.300  0.500
-   - k =   0.500  0.300  0.483
-   - k =   0.500  0.300  0.466
-   - k =   0.500  0.300  0.449
-   - k =   0.500  0.300  0.432
-   - k =   0.500  0.300  0.415
-   - k =   0.500  0.300  0.398
-   - k =   0.500  0.300  0.381
-   - k =   0.500  0.300  0.364
-   - k =   0.500  0.300  0.347
-   - k =   0.500  0.300  0.331
-   - k =   0.500  0.300  0.314
-   - k =   0.500  0.300  0.297
-   - k =   0.500  0.300  0.280
-   - k =   0.500  0.300  0.263
-   - k =   0.500  0.300  0.246
-   - k =   0.500  0.300  0.229
-   - k =   0.500  0.300  0.212
-   - k =   0.500  0.300  0.195
-   - k =   0.500  0.300  0.178
-   - k =   0.500  0.300  0.161
-   - k =   0.500  0.300  0.144
-   - k =   0.500  0.300  0.127
-   - k =   0.500  0.300  0.110
-   - k =   0.500  0.300  0.093
-   - k =   0.500  0.300  0.076
-   - k =   0.500  0.300  0.059
-   - k =   0.500  0.300  0.042
-   - k =   0.500  0.300  0.025
-   - k =   0.500  0.300  0.008
-   - k =   0.500  0.300 -0.008
-   - k =   0.500  0.300 -0.025
-   - k =   0.500  0.300 -0.042
-   - k =   0.500  0.300 -0.059
-   - k =   0.500  0.300 -0.076
-   - k =   0.500  0.300 -0.093
-   - k =   0.500  0.300 -0.110
-   - k =   0.500  0.300 -0.127
-   - k =   0.500  0.300 -0.144
-   - k =   0.500  0.300 -0.161
-   - k =   0.500  0.300 -0.178
-   - k =   0.500  0.300 -0.195
-   - k =   0.500  0.300 -0.212
-   - k =   0.500  0.300 -0.229
-   - k =   0.500  0.300 -0.246
-   - k =   0.500  0.300 -0.263
-   - k =   0.500  0.300 -0.280
-   - k =   0.500  0.300 -0.297
-   - k =   0.500  0.300 -0.314
-   - k =   0.500  0.300 -0.331
-   - k =   0.500  0.300 -0.347
-   - k =   0.500  0.300 -0.364
-   - k =   0.500  0.300 -0.381
-   - k =   0.500  0.300 -0.398
-   - k =   0.500  0.300 -0.415
-   - k =   0.500  0.300 -0.432
-   - k =   0.500  0.300 -0.449
-   - k =   0.500  0.300 -0.466
-   - k =   0.500  0.300 -0.483
+   - k =   0.500  0.300  0.300
+   - k =   0.500  0.300  0.100
+   - k =   0.500  0.300 -0.100
+   - k =   0.500  0.300 -0.300
    - k =   0.500  0.300 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     35
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
  Calculating dipole term along reciprocal lattice vector 3:     0.197     0.197    -0.197
 
-  Treating all   60 k-points in band plot segment #  36:
+  Treating all    6 k-points in band plot segment #  36:
    Sampling over :
    - k =   0.500  0.500  0.500
-   - k =   0.500  0.500  0.483
-   - k =   0.500  0.500  0.466
-   - k =   0.500  0.500  0.449
-   - k =   0.500  0.500  0.432
-   - k =   0.500  0.500  0.415
-   - k =   0.500  0.500  0.398
-   - k =   0.500  0.500  0.381
-   - k =   0.500  0.500  0.364
-   - k =   0.500  0.500  0.347
-   - k =   0.500  0.500  0.331
-   - k =   0.500  0.500  0.314
-   - k =   0.500  0.500  0.297
-   - k =   0.500  0.500  0.280
-   - k =   0.500  0.500  0.263
-   - k =   0.500  0.500  0.246
-   - k =   0.500  0.500  0.229
-   - k =   0.500  0.500  0.212
-   - k =   0.500  0.500  0.195
-   - k =   0.500  0.500  0.178
-   - k =   0.500  0.500  0.161
-   - k =   0.500  0.500  0.144
-   - k =   0.500  0.500  0.127
-   - k =   0.500  0.500  0.110
-   - k =   0.500  0.500  0.093
-   - k =   0.500  0.500  0.076
-   - k =   0.500  0.500  0.059
-   - k =   0.500  0.500  0.042
-   - k =   0.500  0.500  0.025
-   - k =   0.500  0.500  0.008
-   - k =   0.500  0.500 -0.008
-   - k =   0.500  0.500 -0.025
-   - k =   0.500  0.500 -0.042
-   - k =   0.500  0.500 -0.059
-   - k =   0.500  0.500 -0.076
-   - k =   0.500  0.500 -0.093
-   - k =   0.500  0.500 -0.110
-   - k =   0.500  0.500 -0.127
-   - k =   0.500  0.500 -0.144
-   - k =   0.500  0.500 -0.161
-   - k =   0.500  0.500 -0.178
-   - k =   0.500  0.500 -0.195
-   - k =   0.500  0.500 -0.212
-   - k =   0.500  0.500 -0.229
-   - k =   0.500  0.500 -0.246
-   - k =   0.500  0.500 -0.263
-   - k =   0.500  0.500 -0.280
-   - k =   0.500  0.500 -0.297
-   - k =   0.500  0.500 -0.314
-   - k =   0.500  0.500 -0.331
-   - k =   0.500  0.500 -0.347
-   - k =   0.500  0.500 -0.364
-   - k =   0.500  0.500 -0.381
-   - k =   0.500  0.500 -0.398
-   - k =   0.500  0.500 -0.415
-   - k =   0.500  0.500 -0.432
-   - k =   0.500  0.500 -0.449
-   - k =   0.500  0.500 -0.466
-   - k =   0.500  0.500 -0.483
+   - k =   0.500  0.500  0.300
+   - k =   0.500  0.500  0.100
+   - k =   0.500  0.500 -0.100
+   - k =   0.500  0.500 -0.300
    - k =   0.500  0.500 -0.500
 
   Deallocating        0.000 MB for KS_eigenvector_complex,
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Allocating        0.000 MB for KS_eigenvector_complex
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   |-> Computing Wannier center evolution at k-point number:     36
  Using pol_lapack_version = 2
  Calculating Berry  term along reciprocal lattice vector 3:     0.197     0.197    -0.197
@@ -9085,96 +7141,96 @@
    - Ionic      polarization along rec. latt. vec.    3 is:       74.751429E-12 C/m^2
    - Berry term: Preliminary Electronic polarization along rec. latt. vec.    3 is:     -129.803677E-03 C/m^2 before branch-mapping
    --> Detailed listing before/after branch mapping in terms of the polarization quantum P0=     -129.803677E-03 C/m^2
-     | k-string    1 :         1.000000E+00 /      -192.812927E-12 P0
-     | k-string    2 :         1.000000E+00 /      -189.174998E-12 P0
-     | k-string    3 :         1.000000E+00 /      -180.080102E-12 P0
-     | k-string    4 :         1.000000E+00 /      -183.718020E-12 P0
-     | k-string    5 :         1.000000E+00 /      -189.174927E-12 P0
-     | k-string    6 :         1.000000E+00 /      -187.355988E-12 P0
-     | k-string    7 :         1.000000E+00 /      -183.718059E-12 P0
-     | k-string    8 :         1.000000E+00 /      -189.174967E-12 P0
-     | k-string    9 :         1.000000E+00 /      -183.718049E-12 P0
-     | k-string   10 :         1.000000E+00 /      -180.079898E-12 P0
-     | k-string   11 :         1.000000E+00 /      -185.536917E-12 P0
-     | k-string   12 :         1.000000E+00 /      -181.898988E-12 P0
-     | k-string   13 :         1.000000E+00 /      -181.899038E-12 P0
-     | k-string   14 :         1.000000E+00 /      -183.717967E-12 P0
-     | k-string   15 :         1.000000E+00 /      -189.174986E-12 P0
-     | k-string   16 :         1.000000E+00 /      -181.899078E-12 P0
-     | k-string   17 :         1.000000E+00 /      -180.079917E-12 P0
-     | k-string   18 :         1.000000E+00 /      -183.717946E-12 P0
-     | k-string   19 :         1.000000E+00 /      -180.080017E-12 P0
-     | k-string   20 :         1.000000E+00 /      -181.898946E-12 P0
-     | k-string   21 :         1.000000E+00 /      -185.536975E-12 P0
-     | k-string   22 :         1.000000E+00 /      -183.718036E-12 P0
-     | k-string   23 :         1.000000E+00 /      -181.899097E-12 P0
-     | k-string   24 :         1.000000E+00 /      -183.718025E-12 P0
-     | k-string   25 :         1.000000E+00 /      -185.536954E-12 P0
-     | k-string   26 :         1.000000E+00 /      -183.718015E-12 P0
-     | k-string   27 :         1.000000E+00 /      -181.899076E-12 P0
-     | k-string   28 :         1.000000E+00 /      -183.718004E-12 P0
-     | k-string   29 :         1.000000E+00 /      -189.174912E-12 P0
-     | k-string   30 :         1.000000E+00 /      -183.717994E-12 P0
-     | k-string   31 :         1.000000E+00 /      -187.355912E-12 P0
-     | k-string   32 :         1.000000E+00 /      -183.717983E-12 P0
-     | k-string   33 :         1.000000E+00 /      -181.899044E-12 P0
-     | k-string   34 :         1.000000E+00 /      -187.355952E-12 P0
-     | k-string   35 :         1.000000E+00 /      -185.537012E-12 P0
-     | k-string   36 :         1.000000E+00 /      -187.355941E-12 P0
-   - Berry term: Electronic polarization along rec. latt. vec.    3 is:       23.915744E-12 C/m^2 after branch-mapping
+     | k-string    1 :         1.000000E+00 /      -191.334998E-12 P0
+     | k-string    2 :         1.000000E+00 /      -189.913963E-12 P0
+     | k-string    3 :         1.000000E+00 /      -186.787625E-12 P0
+     | k-string    4 :         1.000000E+00 /      -186.616923E-12 P0
+     | k-string    5 :         1.000000E+00 /      -189.714940E-12 P0
+     | k-string    6 :         1.000000E+00 /      -191.505558E-12 P0
+     | k-string    7 :         1.000000E+00 /      -189.416612E-12 P0
+     | k-string    8 :         1.000000E+00 /      -190.823426E-12 P0
+     | k-string    9 :         1.000000E+00 /      -188.691848E-12 P0
+     | k-string   10 :         1.000000E+00 /      -185.991614E-12 P0
+     | k-string   11 :         1.000000E+00 /      -186.446411E-12 P0
+     | k-string   12 :         1.000000E+00 /      -189.089681E-12 P0
+     | k-string   13 :         1.000000E+00 /      -185.451752E-12 P0
+     | k-string   14 :         1.000000E+00 /      -187.782272E-12 P0
+     | k-string   15 :         1.000000E+00 /      -189.061299E-12 P0
+     | k-string   16 :         1.000000E+00 /      -187.412890E-12 P0
+     | k-string   17 :         1.000000E+00 /      -185.138981E-12 P0
+     | k-string   18 :         1.000000E+00 /      -185.281140E-12 P0
+     | k-string   19 :         1.000000E+00 /      -185.338034E-12 P0
+     | k-string   20 :         1.000000E+00 /      -185.110710E-12 P0
+     | k-string   21 :         1.000000E+00 /      -187.412808E-12 P0
+     | k-string   22 :         1.000000E+00 /      -188.890676E-12 P0
+     | k-string   23 :         1.000000E+00 /      -187.697015E-12 P0
+     | k-string   24 :         1.000000E+00 /      -185.252798E-12 P0
+     | k-string   25 :         1.000000E+00 /      -189.288620E-12 P0
+     | k-string   26 :         1.000000E+00 /      -186.389656E-12 P0
+     | k-string   27 :         1.000000E+00 /      -186.048645E-12 P0
+     | k-string   28 :         1.000000E+00 /      -188.521273E-12 P0
+     | k-string   29 :         1.000000E+00 /      -190.624419E-12 P0
+     | k-string   30 :         1.000000E+00 /      -189.317071E-12 P0
+     | k-string   31 :         1.000000E+00 /      -191.505482E-12 P0
+     | k-string   32 :         1.000000E+00 /      -189.814440E-12 P0
+     | k-string   33 :         1.000000E+00 /      -186.858633E-12 P0
+     | k-string   34 :         1.000000E+00 /      -186.560255E-12 P0
+     | k-string   35 :         1.000000E+00 /      -189.615528E-12 P0
+     | k-string   36 :         1.000000E+00 /      -191.448667E-12 P0
+   - Berry term: Electronic polarization along rec. latt. vec.    3 is:       24.380517E-12 C/m^2 after branch-mapping
 
-   - Dipole term: Preliminary Electronic polarization along rec. latt. vec.    3 is:      -24.988875E-12 C/m^2 before branch-mapping
+   - Dipole term: Preliminary Electronic polarization along rec. latt. vec.    3 is:      -24.984122E-12 C/m^2 before branch-mapping
    --> Detailed listing before/after branch mapping in terms of the polarization quantum P0=     -129.803677E-03 C/m^2
-     | k-string    1 :       194.949180E-12 /       194.949180E-12 P0
-     | k-string    2 :       193.585930E-12 /       193.585930E-12 P0
-     | k-string    3 :       191.489145E-12 /       191.489145E-12 P0
-     | k-string    4 :       191.460788E-12 /       191.460788E-12 P0
-     | k-string    5 :       193.572919E-12 /       193.572919E-12 P0
-     | k-string    6 :       194.939084E-12 /       194.939084E-12 P0
-     | k-string    7 :       193.198648E-12 /       193.198648E-12 P0
-     | k-string    8 :       194.423799E-12 /       194.423799E-12 P0
-     | k-string    9 :       193.057669E-12 /       193.057669E-12 P0
-     | k-string   10 :       190.960920E-12 /       190.960920E-12 P0
-     | k-string   11 :       191.074638E-12 /       191.074638E-12 P0
-     | k-string   12 :       193.203069E-12 /       193.203069E-12 P0
-     | k-string   13 :       190.366287E-12 /       190.366287E-12 P0
-     | k-string   14 :       192.377160E-12 /       192.377160E-12 P0
-     | k-string   15 :       193.600021E-12 /       193.600021E-12 P0
-     | k-string   16 :       192.282024E-12 /       192.282024E-12 P0
-     | k-string   17 :       190.313214E-12 /       190.313214E-12 P0
-     | k-string   18 :       190.373749E-12 /       190.373749E-12 P0
-     | k-string   19 :       190.347656E-12 /       190.347656E-12 P0
-     | k-string   20 :       190.312678E-12 /       190.312678E-12 P0
-     | k-string   21 :       192.282091E-12 /       192.282091E-12 P0
-     | k-string   22 :       193.612230E-12 /       193.612230E-12 P0
-     | k-string   23 :       192.356613E-12 /       192.356613E-12 P0
-     | k-string   24 :       190.351852E-12 /       190.351852E-12 P0
-     | k-string   25 :       193.193670E-12 /       193.193670E-12 P0
-     | k-string   26 :       191.085898E-12 /       191.085898E-12 P0
-     | k-string   27 :       190.990199E-12 /       190.990199E-12 P0
-     | k-string   28 :       193.069752E-12 /       193.069752E-12 P0
-     | k-string   29 :       194.458082E-12 /       194.458082E-12 P0
-     | k-string   30 :       193.188450E-12 /       193.188450E-12 P0
-     | k-string   31 :       194.953445E-12 /       194.953445E-12 P0
-     | k-string   32 :       193.574471E-12 /       193.574471E-12 P0
-     | k-string   33 :       191.463520E-12 /       191.463520E-12 P0
-     | k-string   34 :       191.453160E-12 /       191.453160E-12 P0
-     | k-string   35 :       193.574607E-12 /       193.574607E-12 P0
-     | k-string   36 :       194.965641E-12 /       194.965641E-12 P0
-   - Dipole term: Electronic polarization along rec. latt. vec.    3 is:      -24.965954E-12 C/m^2 after branch-mapping
+     | k-string    1 :       194.733837E-12 /       194.733837E-12 P0
+     | k-string    2 :       193.522445E-12 /       193.522445E-12 P0
+     | k-string    3 :       191.432068E-12 /       191.432068E-12 P0
+     | k-string    4 :       191.395478E-12 /       191.395478E-12 P0
+     | k-string    5 :       193.487552E-12 /       193.487552E-12 P0
+     | k-string    6 :       194.817029E-12 /       194.817029E-12 P0
+     | k-string    7 :       193.264081E-12 /       193.264081E-12 P0
+     | k-string    8 :       194.373354E-12 /       194.373354E-12 P0
+     | k-string    9 :       192.928802E-12 /       192.928802E-12 P0
+     | k-string   10 :       190.971600E-12 /       190.971600E-12 P0
+     | k-string   11 :       191.156499E-12 /       191.156499E-12 P0
+     | k-string   12 :       193.171151E-12 /       193.171151E-12 P0
+     | k-string   13 :       190.377351E-12 /       190.377351E-12 P0
+     | k-string   14 :       192.359491E-12 /       192.359491E-12 P0
+     | k-string   15 :       193.508458E-12 /       193.508458E-12 P0
+     | k-string   16 :       192.297293E-12 /       192.297293E-12 P0
+     | k-string   17 :       190.363316E-12 /       190.363316E-12 P0
+     | k-string   18 :       190.342702E-12 /       190.342702E-12 P0
+     | k-string   19 :       190.459590E-12 /       190.459590E-12 P0
+     | k-string   20 :       190.289479E-12 /       190.289479E-12 P0
+     | k-string   21 :       192.267271E-12 /       192.267271E-12 P0
+     | k-string   22 :       193.502379E-12 /       193.502379E-12 P0
+     | k-string   23 :       192.308997E-12 /       192.308997E-12 P0
+     | k-string   24 :       190.373944E-12 /       190.373944E-12 P0
+     | k-string   25 :       193.239113E-12 /       193.239113E-12 P0
+     | k-string   26 :       191.030878E-12 /       191.030878E-12 P0
+     | k-string   27 :       191.033581E-12 /       191.033581E-12 P0
+     | k-string   28 :       192.939753E-12 /       192.939753E-12 P0
+     | k-string   29 :       194.407223E-12 /       194.407223E-12 P0
+     | k-string   30 :       193.234994E-12 /       193.234994E-12 P0
+     | k-string   31 :       194.835286E-12 /       194.835286E-12 P0
+     | k-string   32 :       193.500783E-12 /       193.500783E-12 P0
+     | k-string   33 :       191.515244E-12 /       191.515244E-12 P0
+     | k-string   34 :       191.421615E-12 /       191.421615E-12 P0
+     | k-string   35 :       193.469192E-12 /       193.469192E-12 P0
+     | k-string   36 :       194.812399E-12 /       194.812399E-12 P0
+   - Dipole term: Electronic polarization along rec. latt. vec.    3 is:      -24.961976E-12 C/m^2 after branch-mapping
 
   Deallocating        0.000 MB for KS_eigenvector_for_WCC
-    mem               0 current_memory_estimate       724061200
+    mem               0 current_memory_estimate       703710976
   Deallocating        0.176 MB for WCC_imag
-    mem          184320 current_memory_estimate       723876880
-  Deallocating        0.469 MB for WCC_eval
-    mem          491520 current_memory_estimate       723385360
-  Deallocating       10.547 MB for WCC_evalue_phase
-    mem        11059200 current_memory_estimate       712326160
-  Deallocating       10.547 MB for WCC_evalue_phase_r
-    mem        11059200 current_memory_estimate       701266960
-  Deallocating        0.001 MB for WCC_kpoints
-    mem            1440 current_memory_estimate       701265520
+    mem          184320 current_memory_estimate       703526656
+  Deallocating        0.047 MB for WCC_eval
+    mem           49152 current_memory_estimate       703477504
+  Deallocating        1.055 MB for WCC_evalue_phase
+    mem         1105920 current_memory_estimate       702371584
+  Deallocating        1.055 MB for WCC_evalue_phase_r
+    mem         1105920 current_memory_estimate       701265664
+  Deallocating        0.000 MB for WCC_kpoints
+    mem             144 current_memory_estimate       701265520
   Deallocating      121.705 MB for WCC_dipmat_all_up
     mem       127617032 current_memory_estimate       573648488
   Deallocating      121.705 MB for WCC_dipmat_all_low
@@ -9218,7 +7274,7 @@
     mem              16 current_memory_estimate       324810332
 
   Wannier center evolution                                :  max(cpu_time) wall_clock(cpu1)
-  | Total Time                                            :       1720.009         1740.449
+  | Total Time                                            :       1044.399         1056.792
 ------------------------------------------------------------
 
   Summary for all Polarization Directives:
@@ -9226,11 +7282,11 @@
   * Ionic Polarization along rec. latt. vecs. is (C/m^2):        83.033776E-12      232.540327E-12       74.751429E-12
   * Electronic Contributions:
     Summarizing all directives:
-    - Directive    1 in direction of rec. latt. vec.  3 yields the electronic polarization (Berry term):          23.915744E-12 (C/m^2)
-    - Directive    1 in direction of rec. latt. vec.  3 yields the electronic polarization (Dipole term):        -24.965954E-12 (C/m^2)
+    - Directive    1 in direction of rec. latt. vec.  3 yields the electronic polarization (Berry term):          24.380517E-12 (C/m^2)
+    - Directive    1 in direction of rec. latt. vec.  3 yields the electronic polarization (Dipole term):        -24.961976E-12 (C/m^2)
   * Full Polarizations (Electron + Ions):
     Summarizing all directives:
-    - Directive    1 in direction of rec. latt. vec.  3 yields the full polarization      :        73.701220E-12 (C/m^2)
+    - Directive    1 in direction of rec. latt. vec.  3 yields the full polarization      :        74.169970E-12 (C/m^2)
 
 ------------------------------------------------------------
 
@@ -9374,36 +7430,36 @@ At least    0 warnings were raised during execution.
 
 ------------------------------------------------------------
           Leaving FHI-aims.
-          Date     :  20260603, Time     :  224453.671
+          Date     :  20260606, Time     :  214550.393
 
           Computational steps:
           | Number of self-consistency cycles          :            1
           | Number of SCF (re)initializations          :            1
 
           Detailed time accounting                     :  max(cpu_time)    wall_clock(cpu1)
-          | Total time                                  :     1864.801 s        1891.601 s
-          | Preparation time                            :        0.154 s           0.384 s
-          | Boundary condition initalization            :        1.871 s           1.909 s
-          | Grid partitioning                           :        1.463 s           1.535 s
-          | Preloading free-atom quantities on grid     :        2.179 s           2.191 s
-          | Free-atom superposition energy              :        0.148 s           0.147 s
-          | Total time for integrations                 :       37.857 s          38.254 s
-          | Total time for solution of K.-S. equations  :       65.784 s          66.478 s
-          | Total time for density update               :       30.468 s          30.852 s
-          | Total time for mixing                       :        0.003 s           0.002 s
-          | Total time for Hartree multipole update     :        0.206 s           0.209 s
-          | Total time for Hartree multipole sum        :        0.804 s           0.815 s
-          | Total time for total energy evaluation      :        0.006 s           0.006 s
+          | Total time                                  :     1185.694 s        1205.529 s
+          | Preparation time                            :        0.147 s           0.247 s
+          | Boundary condition initalization            :        1.865 s           1.916 s
+          | Grid partitioning                           :        1.444 s           1.523 s
+          | Preloading free-atom quantities on grid     :        2.151 s           2.161 s
+          | Free-atom superposition energy              :        0.192 s           0.194 s
+          | Total time for integrations                 :       37.823 s          38.385 s
+          | Total time for solution of K.-S. equations  :       65.870 s          66.527 s
+          | Total time for density update               :       30.258 s          30.678 s
+          | Total time for mixing                       :        0.006 s           0.003 s
+          | Total time for Hartree multipole update     :        0.216 s           0.218 s
+          | Total time for Hartree multipole sum        :        0.752 s           0.809 s
+          | Total time for total energy evaluation      :        0.007 s           0.009 s
           | Total time for scaled ZORA corrections      :        0.000 s           0.000 s
-          | Total time for matrix I/O                   :        0.263 s           0.000 s
-          | Total time for Wannier Center Evolution     :     1721.927 s        1740.449 s
+          | Total time for matrix I/O                   :        0.244 s           0.000 s
+          | Total time for Wannier Center Evolution     :     1045.033 s        1056.792 s
 
           Partial memory accounting:
           | Residual value for overall tracked memory usage across tasks:     0.000000 MB (should be 0.000000 MB)
           | Peak values for overall tracked memory usage:
-          |   Minimum:      719.688 MB (on task 136 after allocating dipolemat_shell)
-          |   Maximum:     1123.566 MB (on task  30 after allocating eval_tmp)
-          |   Average:      834.279 MB
+          |   Minimum:      700.281 MB (on task 136 after allocating dipolemat_shell)
+          |   Maximum:     1104.156 MB (on task   6 after allocating eval_tmp)
+          |   Average:      757.840 MB
           | Largest tracked array allocation:
           |   Minimum:      121.705 MB (overlap_matrix on task   0)
           |   Maximum:      121.705 MB (overlap_matrix on task   0)
