@@ -19,7 +19,9 @@ ax.text(
     ha="left", va="top"
 )
 ax.set_xlim(0,None)
-ax.set_ylim(0,None)
+# ax.set_ylim(0,None)
+ax.set_yscale("log")
+# ax.set_xscale(0,None)
 
 ax = axes[1]
 ax.scatter(df["atoms"],df["time"],color="blue",s=10)
@@ -33,7 +35,8 @@ ax.text(
     ha="left", va="top"
 )
 ax.set_xlim(0,None)
-ax.set_ylim(0,None)
+# ax.set_ylim(0,None)
+ax.set_yscale("log")
 
 # fig.subplots_adjust(hspace=0)
 plt.tight_layout()

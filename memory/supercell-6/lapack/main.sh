@@ -10,7 +10,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --mail-type=NONE
-#SBATCH --time=08:00:00
+#SBATCH --time=24:00:00
 
 ###################################################################
 # Clean slurm folder
