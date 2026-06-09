@@ -1,0 +1,9 @@
+supercell,calculation,ncores,time
+4,dipole,128,1411.809
+4,dipole,256,715.423
+4,dipole,512,384.573
+4,dipole,1024,394.825
+4,scf,128,6.844
+4,scf,256,2.595
+4,scf,512,2.617
+4,scf,1024,1.956
