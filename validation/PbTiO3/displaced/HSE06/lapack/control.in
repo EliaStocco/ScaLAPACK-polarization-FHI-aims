@@ -11,8 +11,6 @@ output polarization          1 80  8  8
 output polarization          2  8 80  8
 output polarization          3  8  8 80
 
-
-
 ################################################################################
 #
 #  FHI-aims code project
