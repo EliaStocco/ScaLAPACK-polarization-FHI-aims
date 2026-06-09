@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  intermediate
+Node list: vipc[2551-2552,2554-2555,2568,2572-2574]
+Job start: Mon Jun  8 12:22:10 CEST 2026
+Job end:   Mon Jun  8 12:23:45 CEST 2026
+Work dir:  /viper/ptmp/elsto/works/ScaLAPACK-performance/BaTiO3/time-vs-basis/intermediate/scf/./
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-performance/BaTiO3/time-vs-basis/intermediate/scf/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9625423       intermedia      8          2048                             00:01:35      0:0
+9625423.0     aims.26052      8   1024   2048      546.17M      488.37M   00:01:31      0:0
+  
+Maximum memory per node: 73.306210 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 80.0 %
+  
