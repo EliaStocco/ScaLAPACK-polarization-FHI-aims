@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  water-tight
+Node list: vipm2024
+Job start: Mon Jun  8 19:21:18 CEST 2026
+Job end:   Mon Jun  8 19:30:30 CEST 2026
+Work dir:  /viper/ptmp/elsto/works/ScaLAPACK-performance/BaTiO3/time-vs-basis/tight/scf/./
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-performance/BaTiO3/time-vs-basis/tight/scf/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9633502       water-tigh      1           256                             00:09:12      0:0
+9633502.0     aims.26052      1    128    256     2464.87M     2156.02M   00:09:06      0:0
+  
+Maximum memory per node: 330.828743 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 96.2 %
+  
