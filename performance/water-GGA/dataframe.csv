@@ -1,0 +1,9 @@
+molecules,calculation,ncores,time
+128,dipole,128,127.816
+128,dipole,256,85.083
+128,dipole,512,54.252
+128,dipole,1024,41.859
+128,scf,128,0.656
+128,scf,256,0.678
+128,scf,512,0.81
+128,scf,1024,0.566
