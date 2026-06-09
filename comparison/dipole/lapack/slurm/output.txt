@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc[2551-2552,2554-2555,2568,2572-2574]
+Job start: Mon Jun  8 12:24:40 CEST 2026
+Job end:   Mon Jun  8 12:44:18 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-memory/MgO-supercell-4/lapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-memory/MgO-supercell-4/lapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9625326       MgO-lapack      8          2048                             00:19:38      0:0
+9625326.0     aims.26052      8   1024   2048     1908.81M      853.85M   00:19:33      0:0
+  
+Maximum memory per node: 256.196739 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 97.5 %
+  
