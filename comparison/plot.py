@@ -48,7 +48,7 @@ colors = {
     "ScaLAPACK": "#ff7f0e"
 }
 
-plt.figure(figsize=(4, 2.3))
+plt.figure(figsize=(3, 3))
 ax = plt.gca()
 
 for method in pivot["method"].unique():
@@ -73,13 +73,15 @@ for method in pivot["method"].unique():
 # ---- PNG image ----
 img = mpimg.imread("MgO.png")
 
-imagebox = OffsetImage(img, zoom=0.07)
+imagebox = OffsetImage(img, zoom=0.06)
 ab = AnnotationBbox(imagebox, (900, 600), frameon=False)
 ax.add_artist(ab)
 
 # ---- Log scales ----
+# ax.set_xlim(64,None)
 ax.set_xscale("log", base=2)
 ax.set_yscale("log")
+ax.set_ylim(250,None)
 
 ax.set_xlabel("n. cores")
 ax.set_ylabel("CPU time (s)")
@@ -88,6 +90,17 @@ ax.set_ylabel("CPU time (s)")
 ax.xaxis.set_major_locator(mticker.FixedLocator([128, 256, 512, 1024, 2024]))
 ax.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
 
+# ---- Y axis (log scale ticks FIXED) ----
+yticks = [300, 600, 1000]
+
+ax.set_yscale("log")
+
+ax.yaxis.set_major_locator(mticker.FixedLocator(yticks))
+ax.yaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
+
+# IMPORTANT: kill automatic minor ticks
+ax.yaxis.set_minor_locator(mticker.NullLocator())
+ax.yaxis.set_minor_formatter(mticker.NullFormatter())
 # ---- SECONDARY (minor) x ticks ----
 # ax.xaxis.set_minor_locator(mticker.LogLocator(base=2, subs=np.linspace(1.1, 1.9, 5), numticks=100))
 # ax.xaxis.set_minor_formatter(mticker.NullFormatter())
@@ -101,7 +114,7 @@ ax.text(
     0.28, 0.6,
     r"ideal scaling",
     transform=ax.transAxes,
-    rotation=-50,      # angle in degrees
+    rotation=-65,      # angle in degrees
     ha="center",
     fontsize=8,
     va="center",
@@ -109,7 +122,7 @@ ax.text(
 )
 
 # Legend styling
-legend = plt.legend()
+legend = plt.legend(loc="lower left")
 legend.get_frame().set_facecolor("white")
 legend.get_frame().set_edgecolor("black")
 legend.get_frame().set_alpha(1.0)
