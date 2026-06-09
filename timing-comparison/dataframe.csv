@@ -1,0 +1,6 @@
+supercell,method,time
+2,lapack,58.734
+3,lapack,226.152
+4,lapack,1205.529
+4,scalapack,468.868
+6,scalapack,1456.719
