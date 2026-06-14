@@ -108,17 +108,17 @@ img = mpimg.imread("water.m=128.png")
 imagebox = OffsetImage(img, zoom=0.04)
 ab = AnnotationBbox(
     imagebox,
-    (0.1, 0.73),              # position
+    (0.1, 0.8),              # position
     xycoords='axes fraction',  # IMPORTANT: decouples from data limits
     frameon=False
 )
 ax.add_artist(ab)
 
 img = mpimg.imread("water.m=196.png")
-imagebox = OffsetImage(img, zoom=0.06)
+imagebox = OffsetImage(img, zoom=0.055)
 ab = AnnotationBbox(
     imagebox,
-    (0.9, 0.75),              # position
+    (0.9, 0.8),              # position
     xycoords='axes fraction',  # IMPORTANT: decouples from data limits
     frameon=False
 )
@@ -148,7 +148,7 @@ ax.text(
 )
 
 ax.text(
-    0.5, 0.35,
+    0.5, 0.37,
     r"$m=0.46$",
     transform=ax.transAxes,
     rotation=-15,      # angle in degrees
@@ -158,8 +158,8 @@ ax.text(
 )
 
 ax.text(
-    0.5, 0.86,
-    r"$m=0.63$",
+    0.5, 0.88,
+    r"$m=0.55$",
     transform=ax.transAxes,
     rotation=-20,      # angle in degrees
     ha="center",
@@ -182,6 +182,12 @@ legend._legend_box.align = "left"
 ax.xaxis.set_major_locator(FixedLocator(XTICKS))
 ax.xaxis.set_major_formatter(ScalarFormatter())
 ax.xaxis.set_minor_locator(NullLocator())
+
+YTICKS = [50, 100, 200]
+
+ax.yaxis.set_major_locator(FixedLocator(YTICKS))
+ax.yaxis.set_major_formatter(ScalarFormatter())
+ax.yaxis.set_minor_locator(NullLocator())
 
 # Ideal scaling guides
 add_inverse_lines(
