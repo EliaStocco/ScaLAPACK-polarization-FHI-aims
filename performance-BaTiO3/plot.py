@@ -10,10 +10,10 @@ from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
 plt.style.use("../style.mplstyle")
 
 
-MOLECULES = [4]
+MOLECULES = [4,8]
 MARKERS = ["o", "s"]
 
-XTICKS = [128, 256, 512, 768, 1024]
+XTICKS = [128, 256, 512, 768, 1024,2048]
 
 
 def add_inverse_lines(ax, n_lines, **plot_kwargs):
@@ -52,7 +52,7 @@ df_wide = df.pivot(
 # -----------------------------
 # Compute difference
 # -----------------------------
-df_wide["time"] = df_wide["dipole"] # - df_wide["scf"]
+df_wide["time"] = df_wide["dipole"] - df_wide["scf"]
 
 with open("fit.json") as f:
     fit = json.load(f)
@@ -70,7 +70,7 @@ for marker, mol in zip(MARKERS, MOLECULES):
     
     # IMPORTANT: compute difference here
     subset = subset.copy()
-    subset["time"] = subset["dipole"] - subset["scf"]
+    subset["time"] = subset["dipole"] # - subset["scf"]
 
     subset = subset.sort_values("ncores")
 
@@ -79,7 +79,7 @@ for marker, mol in zip(MARKERS, MOLECULES):
         subset["ncores"],
         subset["time"],
         marker=marker,
-        label=f"{mol}",
+        label=f"{mol}x{mol}x{mol}",
     )
 
     # Fit
@@ -174,7 +174,7 @@ ax.set_xlabel("n. cores")
 ax.set_ylabel("CPU time (s)")
 
 legend = ax.legend(
-    title="n. molecules:",
+    title="Supercell:",
     loc="lower left",
 )
 legend._legend_box.align = "left"
@@ -194,4 +194,4 @@ add_inverse_lines(
 )
 
 plt.tight_layout()
-plt.savefig("water.pdf", bbox_inches="tight")
+plt.savefig("time-vs-cores.pdf", bbox_inches="tight")
