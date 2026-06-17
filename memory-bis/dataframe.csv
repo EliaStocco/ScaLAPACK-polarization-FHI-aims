@@ -1,0 +1,8 @@
+supercell,method,time_s,memory_mb
+1,lapack,9.891,24.481235
+2,lapack,24.45,34.23889
+3,lapack,197.452,80.233103
+3,scalapack,49.132,70.269534
+4,lapack,1150.669,257.120928
+4,scalapack,718.426,179.053953
+6,scalapack,647.705,321.198752
