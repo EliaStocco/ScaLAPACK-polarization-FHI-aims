@@ -87,7 +87,7 @@ ax.set_xlabel("n. cores")
 ax.set_ylabel("CPU time (s)")
 
 # ---- PRIMARY x ticks ----
-ax.xaxis.set_major_locator(mticker.FixedLocator([128, 256, 512, 1024, 2024]))
+ax.xaxis.set_major_locator(mticker.FixedLocator([128, 256, 512, 1024, 2048]))
 ax.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
 
 # ---- Y axis (log scale ticks FIXED) ----
