@@ -1,0 +1,1 @@
+rsync -av --exclude='*.csc' viper:/viper/ptmp/elsto/works/ScaLAPACK-BEC/ .
