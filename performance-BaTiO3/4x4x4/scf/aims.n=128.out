@@ -40,12 +40,12 @@
 
 
 
-  Date     :  20260603, Time     :  125057.212
-  Time zero on CPU 1             :   0.383912000000000E+00  s.
-  Internal wall clock time zero  :           549723057.212  s.
+  Date     :  20260609, Time     :  152729.732
+  Time zero on CPU 1             :   0.342288000000000E+00  s.
+  Internal wall clock time zero  :           550250849.732  s.
 
   FHI-aims created a unique identifier for this run for later identification
-  aims_uuid : 25A78071-3FEB-42EE-A69D-CABA109A1F17
+  aims_uuid : 326ADD89-5875-4398-A48D-69856BB9C20D
 
   Build configuration of the current instance of FHI-aims
   -------------------------------------------------------
@@ -77,134 +77,134 @@
                    /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_scalapack_lp64.so
 
   Using      128 parallel tasks.
-  Task        0 on host vipc2299 reporting.
-  Task        1 on host vipc2299 reporting.
-  Task        2 on host vipc2299 reporting.
-  Task        3 on host vipc2299 reporting.
-  Task        4 on host vipc2299 reporting.
-  Task        5 on host vipc2299 reporting.
-  Task        6 on host vipc2299 reporting.
-  Task        7 on host vipc2299 reporting.
-  Task        8 on host vipc2299 reporting.
-  Task        9 on host vipc2299 reporting.
-  Task       10 on host vipc2299 reporting.
-  Task       11 on host vipc2299 reporting.
-  Task       12 on host vipc2299 reporting.
-  Task       13 on host vipc2299 reporting.
-  Task       14 on host vipc2299 reporting.
-  Task       15 on host vipc2299 reporting.
-  Task       16 on host vipc2299 reporting.
-  Task       17 on host vipc2299 reporting.
-  Task       18 on host vipc2299 reporting.
-  Task       19 on host vipc2299 reporting.
-  Task       20 on host vipc2299 reporting.
-  Task       21 on host vipc2299 reporting.
-  Task       22 on host vipc2299 reporting.
-  Task       23 on host vipc2299 reporting.
-  Task       24 on host vipc2299 reporting.
-  Task       25 on host vipc2299 reporting.
-  Task       26 on host vipc2299 reporting.
-  Task       27 on host vipc2299 reporting.
-  Task       28 on host vipc2299 reporting.
-  Task       29 on host vipc2299 reporting.
-  Task       30 on host vipc2299 reporting.
-  Task       31 on host vipc2299 reporting.
-  Task       32 on host vipc2299 reporting.
-  Task       33 on host vipc2299 reporting.
-  Task       34 on host vipc2299 reporting.
-  Task       35 on host vipc2299 reporting.
-  Task       36 on host vipc2299 reporting.
-  Task       37 on host vipc2299 reporting.
-  Task       38 on host vipc2299 reporting.
-  Task       39 on host vipc2299 reporting.
-  Task       40 on host vipc2299 reporting.
-  Task       41 on host vipc2299 reporting.
-  Task       42 on host vipc2299 reporting.
-  Task       43 on host vipc2299 reporting.
-  Task       44 on host vipc2299 reporting.
-  Task       45 on host vipc2299 reporting.
-  Task       46 on host vipc2299 reporting.
-  Task       47 on host vipc2299 reporting.
-  Task       48 on host vipc2299 reporting.
-  Task       49 on host vipc2299 reporting.
-  Task       50 on host vipc2299 reporting.
-  Task       51 on host vipc2299 reporting.
-  Task       52 on host vipc2299 reporting.
-  Task       53 on host vipc2299 reporting.
-  Task       54 on host vipc2299 reporting.
-  Task       55 on host vipc2299 reporting.
-  Task       56 on host vipc2299 reporting.
-  Task       57 on host vipc2299 reporting.
-  Task       58 on host vipc2299 reporting.
-  Task       59 on host vipc2299 reporting.
-  Task       60 on host vipc2299 reporting.
-  Task       61 on host vipc2299 reporting.
-  Task       62 on host vipc2299 reporting.
-  Task       63 on host vipc2299 reporting.
-  Task       64 on host vipc2299 reporting.
-  Task       65 on host vipc2299 reporting.
-  Task       66 on host vipc2299 reporting.
-  Task       67 on host vipc2299 reporting.
-  Task       68 on host vipc2299 reporting.
-  Task       69 on host vipc2299 reporting.
-  Task       70 on host vipc2299 reporting.
-  Task       71 on host vipc2299 reporting.
-  Task       72 on host vipc2299 reporting.
-  Task       73 on host vipc2299 reporting.
-  Task       74 on host vipc2299 reporting.
-  Task       75 on host vipc2299 reporting.
-  Task       76 on host vipc2299 reporting.
-  Task       77 on host vipc2299 reporting.
-  Task       78 on host vipc2299 reporting.
-  Task       79 on host vipc2299 reporting.
-  Task       80 on host vipc2299 reporting.
-  Task       81 on host vipc2299 reporting.
-  Task       82 on host vipc2299 reporting.
-  Task       83 on host vipc2299 reporting.
-  Task       84 on host vipc2299 reporting.
-  Task       85 on host vipc2299 reporting.
-  Task       86 on host vipc2299 reporting.
-  Task       87 on host vipc2299 reporting.
-  Task       88 on host vipc2299 reporting.
-  Task       89 on host vipc2299 reporting.
-  Task       90 on host vipc2299 reporting.
-  Task       91 on host vipc2299 reporting.
-  Task       92 on host vipc2299 reporting.
-  Task       93 on host vipc2299 reporting.
-  Task       94 on host vipc2299 reporting.
-  Task       95 on host vipc2299 reporting.
-  Task       96 on host vipc2299 reporting.
-  Task       97 on host vipc2299 reporting.
-  Task       98 on host vipc2299 reporting.
-  Task       99 on host vipc2299 reporting.
-  Task      100 on host vipc2299 reporting.
-  Task      101 on host vipc2299 reporting.
-  Task      102 on host vipc2299 reporting.
-  Task      103 on host vipc2299 reporting.
-  Task      104 on host vipc2299 reporting.
-  Task      105 on host vipc2299 reporting.
-  Task      106 on host vipc2299 reporting.
-  Task      107 on host vipc2299 reporting.
-  Task      108 on host vipc2299 reporting.
-  Task      109 on host vipc2299 reporting.
-  Task      110 on host vipc2299 reporting.
-  Task      111 on host vipc2299 reporting.
-  Task      112 on host vipc2299 reporting.
-  Task      113 on host vipc2299 reporting.
-  Task      114 on host vipc2299 reporting.
-  Task      115 on host vipc2299 reporting.
-  Task      116 on host vipc2299 reporting.
-  Task      117 on host vipc2299 reporting.
-  Task      118 on host vipc2299 reporting.
-  Task      119 on host vipc2299 reporting.
-  Task      120 on host vipc2299 reporting.
-  Task      121 on host vipc2299 reporting.
-  Task      122 on host vipc2299 reporting.
-  Task      123 on host vipc2299 reporting.
-  Task      124 on host vipc2299 reporting.
-  Task      125 on host vipc2299 reporting.
-  Task      126 on host vipc2299 reporting.
-  Task      127 on host vipc2299 reporting.
+  Task        0 on host vipc2268 reporting.
+  Task        1 on host vipc2268 reporting.
+  Task        2 on host vipc2268 reporting.
+  Task        3 on host vipc2268 reporting.
+  Task        4 on host vipc2268 reporting.
+  Task        5 on host vipc2268 reporting.
+  Task        6 on host vipc2268 reporting.
+  Task        7 on host vipc2268 reporting.
+  Task        8 on host vipc2268 reporting.
+  Task        9 on host vipc2268 reporting.
+  Task       10 on host vipc2268 reporting.
+  Task       11 on host vipc2268 reporting.
+  Task       12 on host vipc2268 reporting.
+  Task       13 on host vipc2268 reporting.
+  Task       14 on host vipc2268 reporting.
+  Task       15 on host vipc2268 reporting.
+  Task       16 on host vipc2268 reporting.
+  Task       17 on host vipc2268 reporting.
+  Task       18 on host vipc2268 reporting.
+  Task       19 on host vipc2268 reporting.
+  Task       20 on host vipc2268 reporting.
+  Task       21 on host vipc2268 reporting.
+  Task       22 on host vipc2268 reporting.
+  Task       23 on host vipc2268 reporting.
+  Task       24 on host vipc2268 reporting.
+  Task       25 on host vipc2268 reporting.
+  Task       26 on host vipc2268 reporting.
+  Task       27 on host vipc2268 reporting.
+  Task       28 on host vipc2268 reporting.
+  Task       29 on host vipc2268 reporting.
+  Task       30 on host vipc2268 reporting.
+  Task       31 on host vipc2268 reporting.
+  Task       32 on host vipc2268 reporting.
+  Task       33 on host vipc2268 reporting.
+  Task       34 on host vipc2268 reporting.
+  Task       35 on host vipc2268 reporting.
+  Task       36 on host vipc2268 reporting.
+  Task       37 on host vipc2268 reporting.
+  Task       38 on host vipc2268 reporting.
+  Task       39 on host vipc2268 reporting.
+  Task       40 on host vipc2268 reporting.
+  Task       41 on host vipc2268 reporting.
+  Task       42 on host vipc2268 reporting.
+  Task       43 on host vipc2268 reporting.
+  Task       44 on host vipc2268 reporting.
+  Task       45 on host vipc2268 reporting.
+  Task       46 on host vipc2268 reporting.
+  Task       47 on host vipc2268 reporting.
+  Task       48 on host vipc2268 reporting.
+  Task       49 on host vipc2268 reporting.
+  Task       50 on host vipc2268 reporting.
+  Task       51 on host vipc2268 reporting.
+  Task       52 on host vipc2268 reporting.
+  Task       53 on host vipc2268 reporting.
+  Task       54 on host vipc2268 reporting.
+  Task       55 on host vipc2268 reporting.
+  Task       56 on host vipc2268 reporting.
+  Task       57 on host vipc2268 reporting.
+  Task       58 on host vipc2268 reporting.
+  Task       59 on host vipc2268 reporting.
+  Task       60 on host vipc2268 reporting.
+  Task       61 on host vipc2268 reporting.
+  Task       62 on host vipc2268 reporting.
+  Task       63 on host vipc2268 reporting.
+  Task       64 on host vipc2268 reporting.
+  Task       65 on host vipc2268 reporting.
+  Task       66 on host vipc2268 reporting.
+  Task       67 on host vipc2268 reporting.
+  Task       68 on host vipc2268 reporting.
+  Task       69 on host vipc2268 reporting.
+  Task       70 on host vipc2268 reporting.
+  Task       71 on host vipc2268 reporting.
+  Task       72 on host vipc2268 reporting.
+  Task       73 on host vipc2268 reporting.
+  Task       74 on host vipc2268 reporting.
+  Task       75 on host vipc2268 reporting.
+  Task       76 on host vipc2268 reporting.
+  Task       77 on host vipc2268 reporting.
+  Task       78 on host vipc2268 reporting.
+  Task       79 on host vipc2268 reporting.
+  Task       80 on host vipc2268 reporting.
+  Task       81 on host vipc2268 reporting.
+  Task       82 on host vipc2268 reporting.
+  Task       83 on host vipc2268 reporting.
+  Task       84 on host vipc2268 reporting.
+  Task       85 on host vipc2268 reporting.
+  Task       86 on host vipc2268 reporting.
+  Task       87 on host vipc2268 reporting.
+  Task       88 on host vipc2268 reporting.
+  Task       89 on host vipc2268 reporting.
+  Task       90 on host vipc2268 reporting.
+  Task       91 on host vipc2268 reporting.
+  Task       92 on host vipc2268 reporting.
+  Task       93 on host vipc2268 reporting.
+  Task       94 on host vipc2268 reporting.
+  Task       95 on host vipc2268 reporting.
+  Task       96 on host vipc2268 reporting.
+  Task       97 on host vipc2268 reporting.
+  Task       98 on host vipc2268 reporting.
+  Task       99 on host vipc2268 reporting.
+  Task      100 on host vipc2268 reporting.
+  Task      101 on host vipc2268 reporting.
+  Task      102 on host vipc2268 reporting.
+  Task      103 on host vipc2268 reporting.
+  Task      104 on host vipc2268 reporting.
+  Task      105 on host vipc2268 reporting.
+  Task      106 on host vipc2268 reporting.
+  Task      107 on host vipc2268 reporting.
+  Task      108 on host vipc2268 reporting.
+  Task      109 on host vipc2268 reporting.
+  Task      110 on host vipc2268 reporting.
+  Task      111 on host vipc2268 reporting.
+  Task      112 on host vipc2268 reporting.
+  Task      113 on host vipc2268 reporting.
+  Task      114 on host vipc2268 reporting.
+  Task      115 on host vipc2268 reporting.
+  Task      116 on host vipc2268 reporting.
+  Task      117 on host vipc2268 reporting.
+  Task      118 on host vipc2268 reporting.
+  Task      119 on host vipc2268 reporting.
+  Task      120 on host vipc2268 reporting.
+  Task      121 on host vipc2268 reporting.
+  Task      122 on host vipc2268 reporting.
+  Task      123 on host vipc2268 reporting.
+  Task      124 on host vipc2268 reporting.
+  Task      125 on host vipc2268 reporting.
+  Task      126 on host vipc2268 reporting.
+  Task      127 on host vipc2268 reporting.
 
   Obtaining array dimensions for all initial allocations:
   
@@ -218,8 +218,9 @@
   xc                           pw-lda
   relativistic                 atomic_zora scalar
   k_grid                       4 4 4
-  sc_accuracy_rho              1d-6
+  sc_accuracy_rho              1d-4
   elsi_restart                 read
+  use_alltoall                 .false.
   force_complex_eigenvectors  .true.
   
   ################################################################################
@@ -841,9 +842,10 @@
   XC: Using Perdew-Wang parametrisation of Ceperley-Alder LDA.
   Scalar relativistic treatment of kinetic energy: on-site free-atom approximation to ZORA.
   Found k-point grid:         4         4         4
-  Convergence accuracy of self-consistent charge density:  0.1000E-05
+  Convergence accuracy of self-consistent charge density:  0.1000E-03
   Using elsi_restart infrastructure.
   Restarting calculation from saved density matrices.
+  Usage of alltoall communication explicitly disabled.
   Forcing the eigenvectors in the calculation to be COMPLEX.
  
   Reading configuration options for species Ba                  .
@@ -1987,7 +1989,7 @@
   * and seems sensible.
 
   | Checks passed.
-  After read_input_data [GB]:    496.16
+  After read_input_data [GB]:    503.47
 
   Performing system and environment tests:
   | Environment variable OMP_NUM_THREADS correctly set to 1.
@@ -2000,7 +2002,7 @@
   | Running on : AMD EPYC 9554 64-Core Processor
   | Runtime CPU compatibility verified.
   
-  After prepare_system [GB]:    495.81
+  After prepare_system [GB]:    503.11
 
 ------------------------------------------------------------
           Preparing all fixed parts of the calculation.
@@ -2248,10 +2250,10 @@
   Preparing densities etc. for the partition functions (integrals / Hartree potential).
 
   Preparations completed.
-  max(cpu_time)          :      0.341 s.
-  Wall clock time (cpu1) :      0.506 s.
+  max(cpu_time)          :      0.336 s.
+  Wall clock time (cpu1) :      0.338 s.
 ------------------------------------------------------------
-  After prepare_scf [GB]:    488.37
+  After prepare_scf [GB]:    494.57
 
   Initializing index lists of integration centers etc. from given atomic structure:
   Mapping all atomic coordinates to central unit cell.
@@ -2276,148 +2278,148 @@
   | Number of super-cells (after PM_index) [n_cells]             :          28
   | Number of super-cells in hamiltonian [n_cells_in_hamiltonian]:          28
   | Size of matrix packed + index [n_hamiltonian_matrix_size]    :    18106561
-  After initialize_bc_dependent_lists [GB]:    487.79
+  After initialize_bc_dependent_lists [GB]:    494.01
 
 ------------------------------------------------------------
           Begin self-consistency loop: Initialization.
 
-          Date     :  20260603, Time     :  125100.078
+          Date     :  20260609, Time     :  152730.977
 ------------------------------------------------------------
-  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:    487.78
+  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:    494.01
   | Estimated reciprocal-space cutoff momentum G_max:         2.91122268 bohr^-1 .
   | Reciprocal lattice points for long-range Hartree potential:   11058
-  Available memory per node after initialize_recip_hartree_potential [GB]:    487.78
+  Available memory per node after initialize_recip_hartree_potential [GB]:    494.01
   Using simple linear distribution as default method for k-point parallelism.
   * Using 128 tasks for Scalapack Eigenvalue solver.
   Detailed listing of tasks and assigned k-points:
-   Task     0 k-point     1 on vipc2299
-   Task     1 k-point     1 on vipc2299
-   Task     2 k-point     1 on vipc2299
-   Task     3 k-point     1 on vipc2299
-   Task     4 k-point     2 on vipc2299
-   Task     5 k-point     2 on vipc2299
-   Task     6 k-point     2 on vipc2299
-   Task     7 k-point     2 on vipc2299
-   Task     8 k-point     3 on vipc2299
-   Task     9 k-point     3 on vipc2299
-   Task    10 k-point     3 on vipc2299
-   Task    11 k-point     4 on vipc2299
-   Task    12 k-point     4 on vipc2299
-   Task    13 k-point     4 on vipc2299
-   Task    14 k-point     4 on vipc2299
-   Task    15 k-point     5 on vipc2299
-   Task    16 k-point     5 on vipc2299
-   Task    17 k-point     5 on vipc2299
-   Task    18 k-point     6 on vipc2299
-   Task    19 k-point     6 on vipc2299
-   Task    20 k-point     6 on vipc2299
-   Task    21 k-point     6 on vipc2299
-   Task    22 k-point     7 on vipc2299
-   Task    23 k-point     7 on vipc2299
-   Task    24 k-point     7 on vipc2299
-   Task    25 k-point     8 on vipc2299
-   Task    26 k-point     8 on vipc2299
-   Task    27 k-point     8 on vipc2299
-   Task    28 k-point     8 on vipc2299
-   Task    29 k-point     9 on vipc2299
-   Task    30 k-point     9 on vipc2299
-   Task    31 k-point     9 on vipc2299
-   Task    32 k-point    10 on vipc2299
-   Task    33 k-point    10 on vipc2299
-   Task    34 k-point    10 on vipc2299
-   Task    35 k-point    10 on vipc2299
-   Task    36 k-point    11 on vipc2299
-   Task    37 k-point    11 on vipc2299
-   Task    38 k-point    11 on vipc2299
-   Task    39 k-point    11 on vipc2299
-   Task    40 k-point    12 on vipc2299
-   Task    41 k-point    12 on vipc2299
-   Task    42 k-point    12 on vipc2299
-   Task    43 k-point    13 on vipc2299
-   Task    44 k-point    13 on vipc2299
-   Task    45 k-point    13 on vipc2299
-   Task    46 k-point    13 on vipc2299
-   Task    47 k-point    14 on vipc2299
-   Task    48 k-point    14 on vipc2299
-   Task    49 k-point    14 on vipc2299
-   Task    50 k-point    15 on vipc2299
-   Task    51 k-point    15 on vipc2299
-   Task    52 k-point    15 on vipc2299
-   Task    53 k-point    15 on vipc2299
-   Task    54 k-point    16 on vipc2299
-   Task    55 k-point    16 on vipc2299
-   Task    56 k-point    16 on vipc2299
-   Task    57 k-point    17 on vipc2299
-   Task    58 k-point    17 on vipc2299
-   Task    59 k-point    17 on vipc2299
-   Task    60 k-point    17 on vipc2299
-   Task    61 k-point    18 on vipc2299
-   Task    62 k-point    18 on vipc2299
-   Task    63 k-point    18 on vipc2299
-   Task    64 k-point    19 on vipc2299
-   Task    65 k-point    19 on vipc2299
-   Task    66 k-point    19 on vipc2299
-   Task    67 k-point    19 on vipc2299
-   Task    68 k-point    20 on vipc2299
-   Task    69 k-point    20 on vipc2299
-   Task    70 k-point    20 on vipc2299
-   Task    71 k-point    20 on vipc2299
-   Task    72 k-point    21 on vipc2299
-   Task    73 k-point    21 on vipc2299
-   Task    74 k-point    21 on vipc2299
-   Task    75 k-point    22 on vipc2299
-   Task    76 k-point    22 on vipc2299
-   Task    77 k-point    22 on vipc2299
-   Task    78 k-point    22 on vipc2299
-   Task    79 k-point    23 on vipc2299
-   Task    80 k-point    23 on vipc2299
-   Task    81 k-point    23 on vipc2299
-   Task    82 k-point    24 on vipc2299
-   Task    83 k-point    24 on vipc2299
-   Task    84 k-point    24 on vipc2299
-   Task    85 k-point    24 on vipc2299
-   Task    86 k-point    25 on vipc2299
-   Task    87 k-point    25 on vipc2299
-   Task    88 k-point    25 on vipc2299
-   Task    89 k-point    26 on vipc2299
-   Task    90 k-point    26 on vipc2299
-   Task    91 k-point    26 on vipc2299
-   Task    92 k-point    26 on vipc2299
-   Task    93 k-point    27 on vipc2299
-   Task    94 k-point    27 on vipc2299
-   Task    95 k-point    27 on vipc2299
-   Task    96 k-point    28 on vipc2299
-   Task    97 k-point    28 on vipc2299
-   Task    98 k-point    28 on vipc2299
-   Task    99 k-point    28 on vipc2299
-   Task   100 k-point    29 on vipc2299
-   Task   101 k-point    29 on vipc2299
-   Task   102 k-point    29 on vipc2299
-   Task   103 k-point    29 on vipc2299
-   Task   104 k-point    30 on vipc2299
-   Task   105 k-point    30 on vipc2299
-   Task   106 k-point    30 on vipc2299
-   Task   107 k-point    31 on vipc2299
-   Task   108 k-point    31 on vipc2299
-   Task   109 k-point    31 on vipc2299
-   Task   110 k-point    31 on vipc2299
-   Task   111 k-point    32 on vipc2299
-   Task   112 k-point    32 on vipc2299
-   Task   113 k-point    32 on vipc2299
-   Task   114 k-point    33 on vipc2299
-   Task   115 k-point    33 on vipc2299
-   Task   116 k-point    33 on vipc2299
-   Task   117 k-point    33 on vipc2299
-   Task   118 k-point    34 on vipc2299
-   Task   119 k-point    34 on vipc2299
-   Task   120 k-point    34 on vipc2299
-   Task   121 k-point    35 on vipc2299
-   Task   122 k-point    35 on vipc2299
-   Task   123 k-point    35 on vipc2299
-   Task   124 k-point    35 on vipc2299
-   Task   125 k-point    36 on vipc2299
-   Task   126 k-point    36 on vipc2299
-   Task   127 k-point    36 on vipc2299
+   Task     0 k-point     1 on vipc2268
+   Task     1 k-point     1 on vipc2268
+   Task     2 k-point     1 on vipc2268
+   Task     3 k-point     1 on vipc2268
+   Task     4 k-point     2 on vipc2268
+   Task     5 k-point     2 on vipc2268
+   Task     6 k-point     2 on vipc2268
+   Task     7 k-point     2 on vipc2268
+   Task     8 k-point     3 on vipc2268
+   Task     9 k-point     3 on vipc2268
+   Task    10 k-point     3 on vipc2268
+   Task    11 k-point     4 on vipc2268
+   Task    12 k-point     4 on vipc2268
+   Task    13 k-point     4 on vipc2268
+   Task    14 k-point     4 on vipc2268
+   Task    15 k-point     5 on vipc2268
+   Task    16 k-point     5 on vipc2268
+   Task    17 k-point     5 on vipc2268
+   Task    18 k-point     6 on vipc2268
+   Task    19 k-point     6 on vipc2268
+   Task    20 k-point     6 on vipc2268
+   Task    21 k-point     6 on vipc2268
+   Task    22 k-point     7 on vipc2268
+   Task    23 k-point     7 on vipc2268
+   Task    24 k-point     7 on vipc2268
+   Task    25 k-point     8 on vipc2268
+   Task    26 k-point     8 on vipc2268
+   Task    27 k-point     8 on vipc2268
+   Task    28 k-point     8 on vipc2268
+   Task    29 k-point     9 on vipc2268
+   Task    30 k-point     9 on vipc2268
+   Task    31 k-point     9 on vipc2268
+   Task    32 k-point    10 on vipc2268
+   Task    33 k-point    10 on vipc2268
+   Task    34 k-point    10 on vipc2268
+   Task    35 k-point    10 on vipc2268
+   Task    36 k-point    11 on vipc2268
+   Task    37 k-point    11 on vipc2268
+   Task    38 k-point    11 on vipc2268
+   Task    39 k-point    11 on vipc2268
+   Task    40 k-point    12 on vipc2268
+   Task    41 k-point    12 on vipc2268
+   Task    42 k-point    12 on vipc2268
+   Task    43 k-point    13 on vipc2268
+   Task    44 k-point    13 on vipc2268
+   Task    45 k-point    13 on vipc2268
+   Task    46 k-point    13 on vipc2268
+   Task    47 k-point    14 on vipc2268
+   Task    48 k-point    14 on vipc2268
+   Task    49 k-point    14 on vipc2268
+   Task    50 k-point    15 on vipc2268
+   Task    51 k-point    15 on vipc2268
+   Task    52 k-point    15 on vipc2268
+   Task    53 k-point    15 on vipc2268
+   Task    54 k-point    16 on vipc2268
+   Task    55 k-point    16 on vipc2268
+   Task    56 k-point    16 on vipc2268
+   Task    57 k-point    17 on vipc2268
+   Task    58 k-point    17 on vipc2268
+   Task    59 k-point    17 on vipc2268
+   Task    60 k-point    17 on vipc2268
+   Task    61 k-point    18 on vipc2268
+   Task    62 k-point    18 on vipc2268
+   Task    63 k-point    18 on vipc2268
+   Task    64 k-point    19 on vipc2268
+   Task    65 k-point    19 on vipc2268
+   Task    66 k-point    19 on vipc2268
+   Task    67 k-point    19 on vipc2268
+   Task    68 k-point    20 on vipc2268
+   Task    69 k-point    20 on vipc2268
+   Task    70 k-point    20 on vipc2268
+   Task    71 k-point    20 on vipc2268
+   Task    72 k-point    21 on vipc2268
+   Task    73 k-point    21 on vipc2268
+   Task    74 k-point    21 on vipc2268
+   Task    75 k-point    22 on vipc2268
+   Task    76 k-point    22 on vipc2268
+   Task    77 k-point    22 on vipc2268
+   Task    78 k-point    22 on vipc2268
+   Task    79 k-point    23 on vipc2268
+   Task    80 k-point    23 on vipc2268
+   Task    81 k-point    23 on vipc2268
+   Task    82 k-point    24 on vipc2268
+   Task    83 k-point    24 on vipc2268
+   Task    84 k-point    24 on vipc2268
+   Task    85 k-point    24 on vipc2268
+   Task    86 k-point    25 on vipc2268
+   Task    87 k-point    25 on vipc2268
+   Task    88 k-point    25 on vipc2268
+   Task    89 k-point    26 on vipc2268
+   Task    90 k-point    26 on vipc2268
+   Task    91 k-point    26 on vipc2268
+   Task    92 k-point    26 on vipc2268
+   Task    93 k-point    27 on vipc2268
+   Task    94 k-point    27 on vipc2268
+   Task    95 k-point    27 on vipc2268
+   Task    96 k-point    28 on vipc2268
+   Task    97 k-point    28 on vipc2268
+   Task    98 k-point    28 on vipc2268
+   Task    99 k-point    28 on vipc2268
+   Task   100 k-point    29 on vipc2268
+   Task   101 k-point    29 on vipc2268
+   Task   102 k-point    29 on vipc2268
+   Task   103 k-point    29 on vipc2268
+   Task   104 k-point    30 on vipc2268
+   Task   105 k-point    30 on vipc2268
+   Task   106 k-point    30 on vipc2268
+   Task   107 k-point    31 on vipc2268
+   Task   108 k-point    31 on vipc2268
+   Task   109 k-point    31 on vipc2268
+   Task   110 k-point    31 on vipc2268
+   Task   111 k-point    32 on vipc2268
+   Task   112 k-point    32 on vipc2268
+   Task   113 k-point    32 on vipc2268
+   Task   114 k-point    33 on vipc2268
+   Task   115 k-point    33 on vipc2268
+   Task   116 k-point    33 on vipc2268
+   Task   117 k-point    33 on vipc2268
+   Task   118 k-point    34 on vipc2268
+   Task   119 k-point    34 on vipc2268
+   Task   120 k-point    34 on vipc2268
+   Task   121 k-point    35 on vipc2268
+   Task   122 k-point    35 on vipc2268
+   Task   123 k-point    35 on vipc2268
+   Task   124 k-point    35 on vipc2268
+   Task   125 k-point    36 on vipc2268
+   Task   126 k-point    36 on vipc2268
+   Task   127 k-point    36 on vipc2268
   K-point:     1 Tasks:     4 split into      2 X      2 BLACS grid
   Calculating block size based on n_basis =         7360  max_nprow =            3  max_npcol =            2
   ScaLAPACK block size set to:           16
@@ -2425,9 +2427,9 @@
   Allocating      206.641 MB for ham_complex
   Allocating      206.641 MB for eigenvec_complex
   Required Scalapack workspace - INTEGER:            1  REAL:             1  COMPLEX:            1
-  Available memory per node after initialize_scalapack [GB]:    402.76
-  Available memory per node after aims_elsi_init_scf [GB]:    402.76
-  Available memory per node after initialize_fixed_grids [GB]:    402.73
+  Available memory per node after initialize_scalapack [GB]:    405.63
+  Available memory per node after aims_elsi_init_scf [GB]:    405.63
+  Available memory per node after initialize_fixed_grids [GB]:    405.61
   Partitioning the integration grid into batches with parallel hashing+maxmin method.
   | Number of batches:    25600
   | Maximal batch size:     121
@@ -2565,7 +2567,7 @@
   Task    125 has      14325 integration points.
   Task    126 has      14389 integration points.
   Task    127 has      14325 integration points.
-  Available memory per node after partition_grid [GB]:    402.32
+  Available memory per node after partition_grid [GB]:    405.27
   Initializing partition tables, free-atom densities, potentials, etc. across the integration grid (initialize_grid_storage).
   | initialize_grid_storage: Actual outermost partition radius vs. multipole_radius_free
   | (-- VB: in principle, multipole_radius_free should be larger, hence this output)
@@ -2579,7 +2581,7 @@
   | Net number of integration points:  1837696
   | of which are non-zero points    :  1565376
   | Numerical average free-atom electrostatic potential    :    -23.40104909 eV
-  Available memory per node after initialize_grid_storage_p1 [GB]:    401.97
+  Available memory per node after initialize_grid_storage_p1 [GB]:    404.89
   Renormalizing the initial density to the exact electron count on the 3D integration grid.
   | Initial density: Formal number of electrons (from input files) :    6528.0000000000
   | Integrated number of electrons on 3D grid     :    6528.7597115808
@@ -2719,8 +2721,8 @@
   | Maximal number of non-zero basis functions:      991 in task   125
   | Maximal number of non-zero basis functions:      965 in task   126
   | Maximal number of non-zero basis functions:      991 in task   127
-  Available memory per node after get_n_compute_maxes_p1 [GB]:    398.67
-  Available memory per node after allocate_matrices [GB]:    398.67
+  Available memory per node after get_n_compute_maxes_p1 [GB]:    401.51
+  Available memory per node after allocate_matrices [GB]:    401.51
   use_local_index: Max. local matrix size =      2233715
   Task:     0 matrix size:    2232759
   Task:     1 matrix size:    2233715
@@ -2850,28 +2852,28 @@
   Task:   125 matrix size:    2224310
   Task:   126 matrix size:    2210646
   Task:   127 matrix size:    2224310
-  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:    307.24
+  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:    309.71
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      267.345 s, elapsed      318.930 s
-  | Time get_set_sparse_local_matrix_scalapack:     3.001717 s
-  Available memory per node after integrate hamiltonian matrix [GB]:    303.90
+  Time summed over all CPUs for integration: real work      263.805 s, elapsed      328.938 s
+  | Time get_set_sparse_local_matrix_scalapack:     3.004954 s
+  Available memory per node after integrate hamiltonian matrix [GB]:    305.79
   Integrating overlap matrix.
-  Time summed over all CPUs for integration: real work      233.767 s, elapsed      278.073 s
-  | Time get_set_sparse_local_matrix_scalapack:     3.116556 s
-  Available memory per node after integrate ovlp matrix [GB]:    303.15
-  Available memory per node after save_overlap_scalapack [GB]:    303.15
-  Available memory per node after advance_KS_solution [GB]:    303.15
+  Time summed over all CPUs for integration: real work      233.635 s, elapsed      259.912 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.998636 s
+  Available memory per node after integrate ovlp matrix [GB]:    305.24
+  Available memory per node after save_overlap_scalapack [GB]:    305.24
+  Available memory per node after advance_KS_solution [GB]:    305.24
   Calculating total energy contributions from superposition of free atom densities.
   Initialize hartree_potential_storage
   Max. number of atoms included in rho_multipole:          320
 
   End scf initialization - timings             :  max(cpu_time)    wall_clock(cpu1)
-  | Time for scf. initialization                :       18.782 s          19.220 s
-  | Boundary condition initialization           :        0.091 s           0.103 s
-  | Integration                                 :       10.780 s          10.828 s
-  | Grid partitioning                           :        0.537 s           0.548 s
-  | Preloading free-atom quantities on grid     :        1.224 s           1.287 s
-  | Free-atom superposition energy              :        0.259 s           0.320 s
+  | Time for scf. initialization                :       18.449 s          18.657 s
+  | Boundary condition initialization           :        0.102 s           0.102 s
+  | Integration                                 :       10.598 s          10.649 s
+  | Grid partitioning                           :        0.534 s           0.535 s
+  | Preloading free-atom quantities on grid     :        1.191 s           1.197 s
+  | Free-atom superposition energy              :        0.261 s           0.262 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -2889,28 +2891,28 @@
   Note:  These values currently only include a subset of arrays which are explicitly tracked.
   The "true" memory usage will be greater.
 ------------------------------------------------------------
-  Available memory after initialize_scf [GB]:    303.60
-  Available memory after allocating mixing [GB]:    303.60
+  Available memory after initialize_scf [GB]:    305.58
+  Available memory after allocating mixing [GB]:    305.61
   Evaluating new KS density using the density matrix
   Evaluating density matrix
-  | Time get_set_sparse_local_matrix_scalapack:     2.925764 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.810088 s
   Finished reading density matrices from file
-  | Time :     12.658 s
+  | Time :      8.219 s
 
-  Time summed over all CPUs for getting density from density matrix: real work      277.484 s, elapsed      309.117 s
+  Time summed over all CPUs for getting density from density matrix: real work      280.313 s, elapsed      330.578 s
   Integration grid: deviation in total charge (<rho> - N_e) =   1.637090E-11
 
   Time for density update prior                :  max(cpu_time)    wall_clock(cpu1)
-  | self-consistency iterative process          :       12.922 s          18.037 s
-  Available memory before start of SCF loop [GB]:    253.83
+  | self-consistency iterative process          :       11.170 s          13.647 s
+  Available memory before start of SCF loop [GB]:    268.89
 
 ------------------------------------------------------------
           Initial SCF-cycle to compute last known
           density from restart information.
 
-  Date     :  20260603, Time     :  125137.374
+  Date     :  20260609, Time     :  152803.282
 ------------------------------------------------------------
-  Available memory per node after mixing [GB]:    253.83
+  Available memory per node after mixing [GB]:    268.89
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    6528.0000000000
   | Integrated number of electrons on 3D grid     :    6528.0000000000
@@ -2923,29 +2925,29 @@
   | Analytical far-field extrapolation by fixed multipoles:
   | Hartree multipole sum: apparent total charge =   0.964271E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        0.322 s, elapsed        0.467 s
+  Time summed over all CPUs for potential: real work        0.325 s, elapsed        0.339 s
   | RMS charge density error from multipole expansion :   0.177078E+00
   | Average real-space part of the electrostatic potential :      0.60209994 eV
 
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      264.470 s, elapsed      290.289 s
-  | Time get_set_sparse_local_matrix_scalapack:     3.009695 s
+  Time summed over all CPUs for integration: real work      266.617 s, elapsed      292.503 s
+  | Time get_set_sparse_local_matrix_scalapack:     3.025893 s
 
   Updating Kohn-Sham eigenvalues and eigenvectors using ELSI and the ELPA eigensolver.
   Singularity check in k-point 1 (analysis for other k-points may follow below):
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1003E-02,  0.9097E+01
   Finished singularity check of overlap matrix
-  | Time :    38.260 s
+  | Time :    30.954 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    19.784 s
+  | Time :    19.826 s
   Finished transformation to standard eigenproblem
-  | Time :    12.718 s
+  | Time :    12.537 s
   Finished solving standard eigenproblem
-  | Time :    67.559 s
+  | Time :    65.367 s
   Finished back-transformation of eigenvectors
-  | Time :     7.413 s
+  | Time :     6.791 s
 
   Obtaining occupation numbers and electronic chemical potential using ELSI.
   | Note that, for insulating systems, the printed 'chemical potential' value is not uniquely defined.
@@ -7545,9 +7547,9 @@
   Selected method: ELPA_AT_A (preferred and supported)
   Using optimized A^T*A routine
   Finished density matrix calculation
-  | Time :     6.758 s
-  | Time get_set_sparse_local_matrix_scalapack:     6.492983 s
-  Time summed over all CPUs for getting density from density matrix: real work      281.494 s, elapsed      314.464 s
+  | Time :     6.240 s
+  | Time get_set_sparse_local_matrix_scalapack:     5.829814 s
+  Time summed over all CPUs for getting density from density matrix: real work      281.991 s, elapsed      310.219 s
   Integration grid: deviation in total charge (<rho> - N_e) =   3.365130E-11
 
   Self-consistency convergence accuracy:
@@ -7559,13 +7561,13 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     0       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :      211.593 s         214.387 s
-  | Charge density update                       :       15.854 s          16.060 s
-  | Density mixing                              :        0.001 s           0.000 s
-  | Hartree multipole update                    :        0.011 s           0.014 s
-  | Hartree multipole summation                 :        0.496 s           0.610 s
-  | Integration                                 :        2.276 s           2.288 s
-  | Solution of K.-S. eqns.                     :      192.948 s         195.347 s
+  | Time for this iteration                     :      189.967 s         192.531 s
+  | Charge density update                       :       14.471 s          14.661 s
+  | Density mixing                              :        0.000 s           0.000 s
+  | Hartree multipole update                    :        0.010 s           0.010 s
+  | Hartree multipole summation                 :        0.355 s           0.359 s
+  | Integration                                 :        2.275 s           2.305 s
+  | Solution of K.-S. eqns.                     :      172.841 s         175.181 s
   | Total energy evaluation                     :        0.005 s           0.003 s
 
   Partial memory accounting:
@@ -7588,10 +7590,10 @@
 ------------------------------------------------------------
           Begin self-consistency iteration #    1
 
-  Date     :  20260603, Time     :  125511.762
+  Date     :  20260609, Time     :  153115.814
 ------------------------------------------------------------
   Pulay mixing of updated and previous charge densities.
-  Available memory per node after mixing [GB]:    238.82
+  Available memory per node after mixing [GB]:    249.70
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    6528.0000000000
   | Integrated number of electrons on 3D grid     :    6528.0000000000
@@ -7604,22 +7606,22 @@
   | Analytical far-field extrapolation by fixed multipoles:
   | Hartree multipole sum: apparent total charge =   0.292777E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        0.325 s, elapsed        0.469 s
+  Time summed over all CPUs for potential: real work        0.324 s, elapsed        0.338 s
   | RMS charge density error from multipole expansion :   0.177078E+00
   | Average real-space part of the electrostatic potential :      0.60209994 eV
 
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      268.828 s, elapsed      308.389 s
-  | Time get_set_sparse_local_matrix_scalapack:     3.166265 s
+  Time summed over all CPUs for integration: real work      266.834 s, elapsed      292.352 s
+  | Time get_set_sparse_local_matrix_scalapack:     3.143530 s
 
   Updating Kohn-Sham eigenvalues and eigenvectors using ELSI and the ELPA eigensolver.
   Starting ELPA eigensolver
   Finished transformation to standard eigenproblem
-  | Time :    13.035 s
+  | Time :    12.586 s
   Finished solving standard eigenproblem
-  | Time :    68.088 s
+  | Time :    65.568 s
   Finished back-transformation of eigenvectors
-  | Time :     7.099 s
+  | Time :     6.731 s
 
   Obtaining occupation numbers and electronic chemical potential using ELSI.
   | Note that, for insulating systems, the printed 'chemical potential' value is not uniquely defined.
@@ -16796,14 +16798,14 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     1       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :      134.352 s         135.987 s
+  | Time for this iteration                     :      124.527 s         126.035 s
   | Charge density update                       :        0.000 s           0.000 s
   | Density mixing                              :        0.001 s           0.001 s
   | Hartree multipole update                    :        0.010 s           0.010 s
-  | Hartree multipole summation                 :        0.491 s           0.497 s
-  | Integration                                 :        2.422 s           2.456 s
-  | Solution of K.-S. eqns.                     :      131.406 s         133.002 s
-  | Total energy evaluation                     :        0.004 s           0.004 s
+  | Hartree multipole summation                 :        0.352 s           0.356 s
+  | Integration                                 :        2.293 s           2.324 s
+  | Solution of K.-S. eqns.                     :      121.849 s         123.323 s
+  | Total energy evaluation                     :        0.004 s           0.003 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -16933,28 +16935,28 @@ At least    0 warnings were raised during execution.
 
 ------------------------------------------------------------
           Leaving FHI-aims.
-          Date     :  20260603, Time     :  125728.099
+          Date     :  20260609, Time     :  153321.948
 
           Computational steps:
           | Number of self-consistency cycles          :            1
           | Number of SCF (re)initializations          :            1
 
           Detailed time accounting                     :  max(cpu_time)    wall_clock(cpu1)
-          | Total time                                  :      378.434 s         390.887 s
-          | Preparation time                            :        0.341 s           0.506 s
-          | Boundary condition initalization            :        0.091 s           0.103 s
-          | Grid partitioning                           :        0.537 s           0.548 s
-          | Preloading free-atom quantities on grid     :        1.224 s           1.287 s
-          | Free-atom superposition energy              :        0.259 s           0.320 s
-          | Total time for integrations                 :       15.478 s          15.572 s
-          | Total time for solution of K.-S. equations  :      324.355 s         328.350 s
-          | Total time for density update               :       28.776 s          34.097 s
+          | Total time                                  :      344.706 s         352.216 s
+          | Preparation time                            :        0.336 s           0.338 s
+          | Boundary condition initalization            :        0.102 s           0.102 s
+          | Grid partitioning                           :        0.534 s           0.535 s
+          | Preloading free-atom quantities on grid     :        1.191 s           1.197 s
+          | Free-atom superposition energy              :        0.261 s           0.262 s
+          | Total time for integrations                 :       15.166 s          15.278 s
+          | Total time for solution of K.-S. equations  :      294.691 s         298.504 s
+          | Total time for density update               :       25.641 s          28.308 s
           | Total time for mixing                       :        0.001 s           0.001 s
-          | Total time for Hartree multipole update     :        0.021 s           0.024 s
-          | Total time for Hartree multipole sum        :        0.986 s           1.107 s
-          | Total time for total energy evaluation      :        0.009 s           0.008 s
+          | Total time for Hartree multipole update     :        0.020 s           0.020 s
+          | Total time for Hartree multipole sum        :        0.706 s           0.715 s
+          | Total time for total energy evaluation      :        0.009 s           0.006 s
           | Total time for scaled ZORA corrections      :        0.000 s           0.000 s
-          | Total time for matrix I/O                   :        6.844 s          12.658 s
+          | Total time for matrix I/O                   :        4.514 s           8.219 s
 
           Partial memory accounting:
           | Residual value for overall tracked memory usage across tasks:     0.000000 MB (should be 0.000000 MB)

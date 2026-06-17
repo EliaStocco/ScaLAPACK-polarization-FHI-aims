@@ -20,7 +20,7 @@ df = df.pivot(
 ).reset_index()
 
 # compute target quantity
-df["time"] = df["dipole"] - df["scf"]
+df["time"] = df["dipole"]  - df["scf"]
 
 
 # -----------------------------
@@ -36,7 +36,7 @@ results = {
 }
 
 
-supercell = [4]
+supercell = [4,8]
 
 
 # -----------------------------
@@ -48,6 +48,9 @@ for mol in supercell:
 
     x = sub_df["ncores"].to_numpy()
     y = sub_df["time"].to_numpy()
+    
+    print(x)
+    print(y)
 
     # -------------------------
     # log-log fit

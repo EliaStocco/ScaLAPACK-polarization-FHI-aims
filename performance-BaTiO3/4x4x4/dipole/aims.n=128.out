@@ -40,12 +40,12 @@
 
 
 
-  Date     :  20260607, Time     :  044125.928
-  Time zero on CPU 1             :   0.378232000000000E+00  s.
-  Internal wall clock time zero  :           550039285.928  s.
+  Date     :  20260612, Time     :  183721.618
+  Time zero on CPU 1             :   0.153887000000000E+00  s.
+  Internal wall clock time zero  :           550521441.618  s.
 
   FHI-aims created a unique identifier for this run for later identification
-  aims_uuid : 4435D0EB-B5F3-4990-ACE3-C4E5513D406B
+  aims_uuid : 03117B37-B82F-446C-A9B0-D8E9156847C1
 
   Build configuration of the current instance of FHI-aims
   -------------------------------------------------------
@@ -77,134 +77,134 @@
                    /mpcdf/soft/RHEL_9/packages/x86_64/intel_oneapi/2024.0/mkl/latest/lib/libmkl_scalapack_lp64.so
 
   Using      128 parallel tasks.
-  Task        0 on host vipm2076 reporting.
-  Task        1 on host vipm2076 reporting.
-  Task        2 on host vipm2076 reporting.
-  Task        3 on host vipm2076 reporting.
-  Task        4 on host vipm2076 reporting.
-  Task        5 on host vipm2076 reporting.
-  Task        6 on host vipm2076 reporting.
-  Task        7 on host vipm2076 reporting.
-  Task        8 on host vipm2076 reporting.
-  Task        9 on host vipm2076 reporting.
-  Task       10 on host vipm2076 reporting.
-  Task       11 on host vipm2076 reporting.
-  Task       12 on host vipm2076 reporting.
-  Task       13 on host vipm2076 reporting.
-  Task       14 on host vipm2076 reporting.
-  Task       15 on host vipm2076 reporting.
-  Task       16 on host vipm2076 reporting.
-  Task       17 on host vipm2076 reporting.
-  Task       18 on host vipm2076 reporting.
-  Task       19 on host vipm2076 reporting.
-  Task       20 on host vipm2076 reporting.
-  Task       21 on host vipm2076 reporting.
-  Task       22 on host vipm2076 reporting.
-  Task       23 on host vipm2076 reporting.
-  Task       24 on host vipm2076 reporting.
-  Task       25 on host vipm2076 reporting.
-  Task       26 on host vipm2076 reporting.
-  Task       27 on host vipm2076 reporting.
-  Task       28 on host vipm2076 reporting.
-  Task       29 on host vipm2076 reporting.
-  Task       30 on host vipm2076 reporting.
-  Task       31 on host vipm2076 reporting.
-  Task       32 on host vipm2076 reporting.
-  Task       33 on host vipm2076 reporting.
-  Task       34 on host vipm2076 reporting.
-  Task       35 on host vipm2076 reporting.
-  Task       36 on host vipm2076 reporting.
-  Task       37 on host vipm2076 reporting.
-  Task       38 on host vipm2076 reporting.
-  Task       39 on host vipm2076 reporting.
-  Task       40 on host vipm2076 reporting.
-  Task       41 on host vipm2076 reporting.
-  Task       42 on host vipm2076 reporting.
-  Task       43 on host vipm2076 reporting.
-  Task       44 on host vipm2076 reporting.
-  Task       45 on host vipm2076 reporting.
-  Task       46 on host vipm2076 reporting.
-  Task       47 on host vipm2076 reporting.
-  Task       48 on host vipm2076 reporting.
-  Task       49 on host vipm2076 reporting.
-  Task       50 on host vipm2076 reporting.
-  Task       51 on host vipm2076 reporting.
-  Task       52 on host vipm2076 reporting.
-  Task       53 on host vipm2076 reporting.
-  Task       54 on host vipm2076 reporting.
-  Task       55 on host vipm2076 reporting.
-  Task       56 on host vipm2076 reporting.
-  Task       57 on host vipm2076 reporting.
-  Task       58 on host vipm2076 reporting.
-  Task       59 on host vipm2076 reporting.
-  Task       60 on host vipm2076 reporting.
-  Task       61 on host vipm2076 reporting.
-  Task       62 on host vipm2076 reporting.
-  Task       63 on host vipm2076 reporting.
-  Task       64 on host vipm2076 reporting.
-  Task       65 on host vipm2076 reporting.
-  Task       66 on host vipm2076 reporting.
-  Task       67 on host vipm2076 reporting.
-  Task       68 on host vipm2076 reporting.
-  Task       69 on host vipm2076 reporting.
-  Task       70 on host vipm2076 reporting.
-  Task       71 on host vipm2076 reporting.
-  Task       72 on host vipm2076 reporting.
-  Task       73 on host vipm2076 reporting.
-  Task       74 on host vipm2076 reporting.
-  Task       75 on host vipm2076 reporting.
-  Task       76 on host vipm2076 reporting.
-  Task       77 on host vipm2076 reporting.
-  Task       78 on host vipm2076 reporting.
-  Task       79 on host vipm2076 reporting.
-  Task       80 on host vipm2076 reporting.
-  Task       81 on host vipm2076 reporting.
-  Task       82 on host vipm2076 reporting.
-  Task       83 on host vipm2076 reporting.
-  Task       84 on host vipm2076 reporting.
-  Task       85 on host vipm2076 reporting.
-  Task       86 on host vipm2076 reporting.
-  Task       87 on host vipm2076 reporting.
-  Task       88 on host vipm2076 reporting.
-  Task       89 on host vipm2076 reporting.
-  Task       90 on host vipm2076 reporting.
-  Task       91 on host vipm2076 reporting.
-  Task       92 on host vipm2076 reporting.
-  Task       93 on host vipm2076 reporting.
-  Task       94 on host vipm2076 reporting.
-  Task       95 on host vipm2076 reporting.
-  Task       96 on host vipm2076 reporting.
-  Task       97 on host vipm2076 reporting.
-  Task       98 on host vipm2076 reporting.
-  Task       99 on host vipm2076 reporting.
-  Task      100 on host vipm2076 reporting.
-  Task      101 on host vipm2076 reporting.
-  Task      102 on host vipm2076 reporting.
-  Task      103 on host vipm2076 reporting.
-  Task      104 on host vipm2076 reporting.
-  Task      105 on host vipm2076 reporting.
-  Task      106 on host vipm2076 reporting.
-  Task      107 on host vipm2076 reporting.
-  Task      108 on host vipm2076 reporting.
-  Task      109 on host vipm2076 reporting.
-  Task      110 on host vipm2076 reporting.
-  Task      111 on host vipm2076 reporting.
-  Task      112 on host vipm2076 reporting.
-  Task      113 on host vipm2076 reporting.
-  Task      114 on host vipm2076 reporting.
-  Task      115 on host vipm2076 reporting.
-  Task      116 on host vipm2076 reporting.
-  Task      117 on host vipm2076 reporting.
-  Task      118 on host vipm2076 reporting.
-  Task      119 on host vipm2076 reporting.
-  Task      120 on host vipm2076 reporting.
-  Task      121 on host vipm2076 reporting.
-  Task      122 on host vipm2076 reporting.
-  Task      123 on host vipm2076 reporting.
-  Task      124 on host vipm2076 reporting.
-  Task      125 on host vipm2076 reporting.
-  Task      126 on host vipm2076 reporting.
-  Task      127 on host vipm2076 reporting.
+  Task        0 on host vipc2559 reporting.
+  Task        1 on host vipc2559 reporting.
+  Task        2 on host vipc2559 reporting.
+  Task        3 on host vipc2559 reporting.
+  Task        4 on host vipc2559 reporting.
+  Task        5 on host vipc2559 reporting.
+  Task        6 on host vipc2559 reporting.
+  Task        7 on host vipc2559 reporting.
+  Task        8 on host vipc2559 reporting.
+  Task        9 on host vipc2559 reporting.
+  Task       10 on host vipc2559 reporting.
+  Task       11 on host vipc2559 reporting.
+  Task       12 on host vipc2559 reporting.
+  Task       13 on host vipc2559 reporting.
+  Task       14 on host vipc2559 reporting.
+  Task       15 on host vipc2559 reporting.
+  Task       16 on host vipc2559 reporting.
+  Task       17 on host vipc2559 reporting.
+  Task       18 on host vipc2559 reporting.
+  Task       19 on host vipc2559 reporting.
+  Task       20 on host vipc2559 reporting.
+  Task       21 on host vipc2559 reporting.
+  Task       22 on host vipc2559 reporting.
+  Task       23 on host vipc2559 reporting.
+  Task       24 on host vipc2559 reporting.
+  Task       25 on host vipc2559 reporting.
+  Task       26 on host vipc2559 reporting.
+  Task       27 on host vipc2559 reporting.
+  Task       28 on host vipc2559 reporting.
+  Task       29 on host vipc2559 reporting.
+  Task       30 on host vipc2559 reporting.
+  Task       31 on host vipc2559 reporting.
+  Task       32 on host vipc2559 reporting.
+  Task       33 on host vipc2559 reporting.
+  Task       34 on host vipc2559 reporting.
+  Task       35 on host vipc2559 reporting.
+  Task       36 on host vipc2559 reporting.
+  Task       37 on host vipc2559 reporting.
+  Task       38 on host vipc2559 reporting.
+  Task       39 on host vipc2559 reporting.
+  Task       40 on host vipc2559 reporting.
+  Task       41 on host vipc2559 reporting.
+  Task       42 on host vipc2559 reporting.
+  Task       43 on host vipc2559 reporting.
+  Task       44 on host vipc2559 reporting.
+  Task       45 on host vipc2559 reporting.
+  Task       46 on host vipc2559 reporting.
+  Task       47 on host vipc2559 reporting.
+  Task       48 on host vipc2559 reporting.
+  Task       49 on host vipc2559 reporting.
+  Task       50 on host vipc2559 reporting.
+  Task       51 on host vipc2559 reporting.
+  Task       52 on host vipc2559 reporting.
+  Task       53 on host vipc2559 reporting.
+  Task       54 on host vipc2559 reporting.
+  Task       55 on host vipc2559 reporting.
+  Task       56 on host vipc2559 reporting.
+  Task       57 on host vipc2559 reporting.
+  Task       58 on host vipc2559 reporting.
+  Task       59 on host vipc2559 reporting.
+  Task       60 on host vipc2559 reporting.
+  Task       61 on host vipc2559 reporting.
+  Task       62 on host vipc2559 reporting.
+  Task       63 on host vipc2559 reporting.
+  Task       64 on host vipc2561 reporting.
+  Task       65 on host vipc2561 reporting.
+  Task       66 on host vipc2561 reporting.
+  Task       67 on host vipc2561 reporting.
+  Task       68 on host vipc2561 reporting.
+  Task       69 on host vipc2561 reporting.
+  Task       70 on host vipc2561 reporting.
+  Task       71 on host vipc2561 reporting.
+  Task       72 on host vipc2561 reporting.
+  Task       73 on host vipc2561 reporting.
+  Task       74 on host vipc2561 reporting.
+  Task       75 on host vipc2561 reporting.
+  Task       76 on host vipc2561 reporting.
+  Task       77 on host vipc2561 reporting.
+  Task       78 on host vipc2561 reporting.
+  Task       79 on host vipc2561 reporting.
+  Task       80 on host vipc2561 reporting.
+  Task       81 on host vipc2561 reporting.
+  Task       82 on host vipc2561 reporting.
+  Task       83 on host vipc2561 reporting.
+  Task       84 on host vipc2561 reporting.
+  Task       85 on host vipc2561 reporting.
+  Task       86 on host vipc2561 reporting.
+  Task       87 on host vipc2561 reporting.
+  Task       88 on host vipc2561 reporting.
+  Task       89 on host vipc2561 reporting.
+  Task       90 on host vipc2561 reporting.
+  Task       91 on host vipc2561 reporting.
+  Task       92 on host vipc2561 reporting.
+  Task       93 on host vipc2561 reporting.
+  Task       94 on host vipc2561 reporting.
+  Task       95 on host vipc2561 reporting.
+  Task       96 on host vipc2561 reporting.
+  Task       97 on host vipc2561 reporting.
+  Task       98 on host vipc2561 reporting.
+  Task       99 on host vipc2561 reporting.
+  Task      100 on host vipc2561 reporting.
+  Task      101 on host vipc2561 reporting.
+  Task      102 on host vipc2561 reporting.
+  Task      103 on host vipc2561 reporting.
+  Task      104 on host vipc2561 reporting.
+  Task      105 on host vipc2561 reporting.
+  Task      106 on host vipc2561 reporting.
+  Task      107 on host vipc2561 reporting.
+  Task      108 on host vipc2561 reporting.
+  Task      109 on host vipc2561 reporting.
+  Task      110 on host vipc2561 reporting.
+  Task      111 on host vipc2561 reporting.
+  Task      112 on host vipc2561 reporting.
+  Task      113 on host vipc2561 reporting.
+  Task      114 on host vipc2561 reporting.
+  Task      115 on host vipc2561 reporting.
+  Task      116 on host vipc2561 reporting.
+  Task      117 on host vipc2561 reporting.
+  Task      118 on host vipc2561 reporting.
+  Task      119 on host vipc2561 reporting.
+  Task      120 on host vipc2561 reporting.
+  Task      121 on host vipc2561 reporting.
+  Task      122 on host vipc2561 reporting.
+  Task      123 on host vipc2561 reporting.
+  Task      124 on host vipc2561 reporting.
+  Task      125 on host vipc2561 reporting.
+  Task      126 on host vipc2561 reporting.
+  Task      127 on host vipc2561 reporting.
 
   Obtaining array dimensions for all initial allocations:
   
@@ -218,9 +218,11 @@
   xc                           pw-lda
   relativistic                 atomic_zora scalar
   k_grid                       4 4 4
-  sc_accuracy_rho              1d-6
+  sc_accuracy_rho              1d-4
   elsi_restart                 read
   force_complex_eigenvectors  .true.
+  use_alltoall                .false.
+  # symmetry_reduced_k_grid     .false.
   output polarization          3 4 4 6
   
   ################################################################################
@@ -842,10 +844,11 @@
   XC: Using Perdew-Wang parametrisation of Ceperley-Alder LDA.
   Scalar relativistic treatment of kinetic energy: on-site free-atom approximation to ZORA.
   Found k-point grid:         4         4         4
-  Convergence accuracy of self-consistent charge density:  0.1000E-05
+  Convergence accuracy of self-consistent charge density:  0.1000E-03
   Using elsi_restart infrastructure.
   Restarting calculation from saved density matrices.
   Forcing the eigenvectors in the calculation to be COMPLEX.
+  Usage of alltoall communication explicitly disabled.
 
   Polarization directive number:    1
   | Calculating polarization along reciprocal lattice vector 3 using    6 k-points parallel to this direction.
@@ -1995,7 +1998,7 @@
   * and seems sensible.
 
   | Checks passed.
-  After read_input_data [GB]:    768.39
+  After read_input_data [GB]:    502.09
 
   Performing system and environment tests:
   | Environment variable OMP_NUM_THREADS correctly set to 1.
@@ -2008,7 +2011,7 @@
   | Running on : AMD EPYC 9554 64-Core Processor
   | Runtime CPU compatibility verified.
   
-  After prepare_system [GB]:    768.02
+  After prepare_system [GB]:    502.00
 
 ------------------------------------------------------------
           Preparing all fixed parts of the calculation.
@@ -2256,10 +2259,10 @@
   Preparing densities etc. for the partition functions (integrals / Hartree potential).
 
   Preparations completed.
-  max(cpu_time)          :      0.325 s.
-  Wall clock time (cpu1) :      0.384 s.
+  max(cpu_time)          :      0.327 s.
+  Wall clock time (cpu1) :      0.364 s.
 ------------------------------------------------------------
-  After prepare_scf [GB]:    759.54
+  After prepare_scf [GB]:    497.80
 
   Initializing index lists of integration centers etc. from given atomic structure:
   Mapping all atomic coordinates to central unit cell.
@@ -2284,148 +2287,148 @@
   | Number of super-cells (after PM_index) [n_cells]             :          28
   | Number of super-cells in hamiltonian [n_cells_in_hamiltonian]:          28
   | Size of matrix packed + index [n_hamiltonian_matrix_size]    :    18106561
-  After initialize_bc_dependent_lists [GB]:    758.95
+  After initialize_bc_dependent_lists [GB]:    497.52
 
 ------------------------------------------------------------
           Begin self-consistency loop: Initialization.
 
-          Date     :  20260607, Time     :  044128.044
+          Date     :  20260612, Time     :  183722.569
 ------------------------------------------------------------
-  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:    758.94
+  Available memory per node after initialize_hartree_non_periodic_ewald [GB]:    497.52
   | Estimated reciprocal-space cutoff momentum G_max:         2.91122268 bohr^-1 .
   | Reciprocal lattice points for long-range Hartree potential:   11058
-  Available memory per node after initialize_recip_hartree_potential [GB]:    758.94
+  Available memory per node after initialize_recip_hartree_potential [GB]:    497.52
   Using simple linear distribution as default method for k-point parallelism.
   * Using 128 tasks for Scalapack Eigenvalue solver.
   Detailed listing of tasks and assigned k-points:
-   Task     0 k-point     1 on vipm2076
-   Task     1 k-point     1 on vipm2076
-   Task     2 k-point     1 on vipm2076
-   Task     3 k-point     1 on vipm2076
-   Task     4 k-point     2 on vipm2076
-   Task     5 k-point     2 on vipm2076
-   Task     6 k-point     2 on vipm2076
-   Task     7 k-point     2 on vipm2076
-   Task     8 k-point     3 on vipm2076
-   Task     9 k-point     3 on vipm2076
-   Task    10 k-point     3 on vipm2076
-   Task    11 k-point     4 on vipm2076
-   Task    12 k-point     4 on vipm2076
-   Task    13 k-point     4 on vipm2076
-   Task    14 k-point     4 on vipm2076
-   Task    15 k-point     5 on vipm2076
-   Task    16 k-point     5 on vipm2076
-   Task    17 k-point     5 on vipm2076
-   Task    18 k-point     6 on vipm2076
-   Task    19 k-point     6 on vipm2076
-   Task    20 k-point     6 on vipm2076
-   Task    21 k-point     6 on vipm2076
-   Task    22 k-point     7 on vipm2076
-   Task    23 k-point     7 on vipm2076
-   Task    24 k-point     7 on vipm2076
-   Task    25 k-point     8 on vipm2076
-   Task    26 k-point     8 on vipm2076
-   Task    27 k-point     8 on vipm2076
-   Task    28 k-point     8 on vipm2076
-   Task    29 k-point     9 on vipm2076
-   Task    30 k-point     9 on vipm2076
-   Task    31 k-point     9 on vipm2076
-   Task    32 k-point    10 on vipm2076
-   Task    33 k-point    10 on vipm2076
-   Task    34 k-point    10 on vipm2076
-   Task    35 k-point    10 on vipm2076
-   Task    36 k-point    11 on vipm2076
-   Task    37 k-point    11 on vipm2076
-   Task    38 k-point    11 on vipm2076
-   Task    39 k-point    11 on vipm2076
-   Task    40 k-point    12 on vipm2076
-   Task    41 k-point    12 on vipm2076
-   Task    42 k-point    12 on vipm2076
-   Task    43 k-point    13 on vipm2076
-   Task    44 k-point    13 on vipm2076
-   Task    45 k-point    13 on vipm2076
-   Task    46 k-point    13 on vipm2076
-   Task    47 k-point    14 on vipm2076
-   Task    48 k-point    14 on vipm2076
-   Task    49 k-point    14 on vipm2076
-   Task    50 k-point    15 on vipm2076
-   Task    51 k-point    15 on vipm2076
-   Task    52 k-point    15 on vipm2076
-   Task    53 k-point    15 on vipm2076
-   Task    54 k-point    16 on vipm2076
-   Task    55 k-point    16 on vipm2076
-   Task    56 k-point    16 on vipm2076
-   Task    57 k-point    17 on vipm2076
-   Task    58 k-point    17 on vipm2076
-   Task    59 k-point    17 on vipm2076
-   Task    60 k-point    17 on vipm2076
-   Task    61 k-point    18 on vipm2076
-   Task    62 k-point    18 on vipm2076
-   Task    63 k-point    18 on vipm2076
-   Task    64 k-point    19 on vipm2076
-   Task    65 k-point    19 on vipm2076
-   Task    66 k-point    19 on vipm2076
-   Task    67 k-point    19 on vipm2076
-   Task    68 k-point    20 on vipm2076
-   Task    69 k-point    20 on vipm2076
-   Task    70 k-point    20 on vipm2076
-   Task    71 k-point    20 on vipm2076
-   Task    72 k-point    21 on vipm2076
-   Task    73 k-point    21 on vipm2076
-   Task    74 k-point    21 on vipm2076
-   Task    75 k-point    22 on vipm2076
-   Task    76 k-point    22 on vipm2076
-   Task    77 k-point    22 on vipm2076
-   Task    78 k-point    22 on vipm2076
-   Task    79 k-point    23 on vipm2076
-   Task    80 k-point    23 on vipm2076
-   Task    81 k-point    23 on vipm2076
-   Task    82 k-point    24 on vipm2076
-   Task    83 k-point    24 on vipm2076
-   Task    84 k-point    24 on vipm2076
-   Task    85 k-point    24 on vipm2076
-   Task    86 k-point    25 on vipm2076
-   Task    87 k-point    25 on vipm2076
-   Task    88 k-point    25 on vipm2076
-   Task    89 k-point    26 on vipm2076
-   Task    90 k-point    26 on vipm2076
-   Task    91 k-point    26 on vipm2076
-   Task    92 k-point    26 on vipm2076
-   Task    93 k-point    27 on vipm2076
-   Task    94 k-point    27 on vipm2076
-   Task    95 k-point    27 on vipm2076
-   Task    96 k-point    28 on vipm2076
-   Task    97 k-point    28 on vipm2076
-   Task    98 k-point    28 on vipm2076
-   Task    99 k-point    28 on vipm2076
-   Task   100 k-point    29 on vipm2076
-   Task   101 k-point    29 on vipm2076
-   Task   102 k-point    29 on vipm2076
-   Task   103 k-point    29 on vipm2076
-   Task   104 k-point    30 on vipm2076
-   Task   105 k-point    30 on vipm2076
-   Task   106 k-point    30 on vipm2076
-   Task   107 k-point    31 on vipm2076
-   Task   108 k-point    31 on vipm2076
-   Task   109 k-point    31 on vipm2076
-   Task   110 k-point    31 on vipm2076
-   Task   111 k-point    32 on vipm2076
-   Task   112 k-point    32 on vipm2076
-   Task   113 k-point    32 on vipm2076
-   Task   114 k-point    33 on vipm2076
-   Task   115 k-point    33 on vipm2076
-   Task   116 k-point    33 on vipm2076
-   Task   117 k-point    33 on vipm2076
-   Task   118 k-point    34 on vipm2076
-   Task   119 k-point    34 on vipm2076
-   Task   120 k-point    34 on vipm2076
-   Task   121 k-point    35 on vipm2076
-   Task   122 k-point    35 on vipm2076
-   Task   123 k-point    35 on vipm2076
-   Task   124 k-point    35 on vipm2076
-   Task   125 k-point    36 on vipm2076
-   Task   126 k-point    36 on vipm2076
-   Task   127 k-point    36 on vipm2076
+   Task     0 k-point     1 on vipc2559
+   Task     1 k-point     1 on vipc2559
+   Task     2 k-point     1 on vipc2559
+   Task     3 k-point     1 on vipc2559
+   Task     4 k-point     2 on vipc2559
+   Task     5 k-point     2 on vipc2559
+   Task     6 k-point     2 on vipc2559
+   Task     7 k-point     2 on vipc2559
+   Task     8 k-point     3 on vipc2559
+   Task     9 k-point     3 on vipc2559
+   Task    10 k-point     3 on vipc2559
+   Task    11 k-point     4 on vipc2559
+   Task    12 k-point     4 on vipc2559
+   Task    13 k-point     4 on vipc2559
+   Task    14 k-point     4 on vipc2559
+   Task    15 k-point     5 on vipc2559
+   Task    16 k-point     5 on vipc2559
+   Task    17 k-point     5 on vipc2559
+   Task    18 k-point     6 on vipc2559
+   Task    19 k-point     6 on vipc2559
+   Task    20 k-point     6 on vipc2559
+   Task    21 k-point     6 on vipc2559
+   Task    22 k-point     7 on vipc2559
+   Task    23 k-point     7 on vipc2559
+   Task    24 k-point     7 on vipc2559
+   Task    25 k-point     8 on vipc2559
+   Task    26 k-point     8 on vipc2559
+   Task    27 k-point     8 on vipc2559
+   Task    28 k-point     8 on vipc2559
+   Task    29 k-point     9 on vipc2559
+   Task    30 k-point     9 on vipc2559
+   Task    31 k-point     9 on vipc2559
+   Task    32 k-point    10 on vipc2559
+   Task    33 k-point    10 on vipc2559
+   Task    34 k-point    10 on vipc2559
+   Task    35 k-point    10 on vipc2559
+   Task    36 k-point    11 on vipc2559
+   Task    37 k-point    11 on vipc2559
+   Task    38 k-point    11 on vipc2559
+   Task    39 k-point    11 on vipc2559
+   Task    40 k-point    12 on vipc2559
+   Task    41 k-point    12 on vipc2559
+   Task    42 k-point    12 on vipc2559
+   Task    43 k-point    13 on vipc2559
+   Task    44 k-point    13 on vipc2559
+   Task    45 k-point    13 on vipc2559
+   Task    46 k-point    13 on vipc2559
+   Task    47 k-point    14 on vipc2559
+   Task    48 k-point    14 on vipc2559
+   Task    49 k-point    14 on vipc2559
+   Task    50 k-point    15 on vipc2559
+   Task    51 k-point    15 on vipc2559
+   Task    52 k-point    15 on vipc2559
+   Task    53 k-point    15 on vipc2559
+   Task    54 k-point    16 on vipc2559
+   Task    55 k-point    16 on vipc2559
+   Task    56 k-point    16 on vipc2559
+   Task    57 k-point    17 on vipc2559
+   Task    58 k-point    17 on vipc2559
+   Task    59 k-point    17 on vipc2559
+   Task    60 k-point    17 on vipc2559
+   Task    61 k-point    18 on vipc2559
+   Task    62 k-point    18 on vipc2559
+   Task    63 k-point    18 on vipc2559
+   Task    64 k-point    19 on vipc2561
+   Task    65 k-point    19 on vipc2561
+   Task    66 k-point    19 on vipc2561
+   Task    67 k-point    19 on vipc2561
+   Task    68 k-point    20 on vipc2561
+   Task    69 k-point    20 on vipc2561
+   Task    70 k-point    20 on vipc2561
+   Task    71 k-point    20 on vipc2561
+   Task    72 k-point    21 on vipc2561
+   Task    73 k-point    21 on vipc2561
+   Task    74 k-point    21 on vipc2561
+   Task    75 k-point    22 on vipc2561
+   Task    76 k-point    22 on vipc2561
+   Task    77 k-point    22 on vipc2561
+   Task    78 k-point    22 on vipc2561
+   Task    79 k-point    23 on vipc2561
+   Task    80 k-point    23 on vipc2561
+   Task    81 k-point    23 on vipc2561
+   Task    82 k-point    24 on vipc2561
+   Task    83 k-point    24 on vipc2561
+   Task    84 k-point    24 on vipc2561
+   Task    85 k-point    24 on vipc2561
+   Task    86 k-point    25 on vipc2561
+   Task    87 k-point    25 on vipc2561
+   Task    88 k-point    25 on vipc2561
+   Task    89 k-point    26 on vipc2561
+   Task    90 k-point    26 on vipc2561
+   Task    91 k-point    26 on vipc2561
+   Task    92 k-point    26 on vipc2561
+   Task    93 k-point    27 on vipc2561
+   Task    94 k-point    27 on vipc2561
+   Task    95 k-point    27 on vipc2561
+   Task    96 k-point    28 on vipc2561
+   Task    97 k-point    28 on vipc2561
+   Task    98 k-point    28 on vipc2561
+   Task    99 k-point    28 on vipc2561
+   Task   100 k-point    29 on vipc2561
+   Task   101 k-point    29 on vipc2561
+   Task   102 k-point    29 on vipc2561
+   Task   103 k-point    29 on vipc2561
+   Task   104 k-point    30 on vipc2561
+   Task   105 k-point    30 on vipc2561
+   Task   106 k-point    30 on vipc2561
+   Task   107 k-point    31 on vipc2561
+   Task   108 k-point    31 on vipc2561
+   Task   109 k-point    31 on vipc2561
+   Task   110 k-point    31 on vipc2561
+   Task   111 k-point    32 on vipc2561
+   Task   112 k-point    32 on vipc2561
+   Task   113 k-point    32 on vipc2561
+   Task   114 k-point    33 on vipc2561
+   Task   115 k-point    33 on vipc2561
+   Task   116 k-point    33 on vipc2561
+   Task   117 k-point    33 on vipc2561
+   Task   118 k-point    34 on vipc2561
+   Task   119 k-point    34 on vipc2561
+   Task   120 k-point    34 on vipc2561
+   Task   121 k-point    35 on vipc2561
+   Task   122 k-point    35 on vipc2561
+   Task   123 k-point    35 on vipc2561
+   Task   124 k-point    35 on vipc2561
+   Task   125 k-point    36 on vipc2561
+   Task   126 k-point    36 on vipc2561
+   Task   127 k-point    36 on vipc2561
   K-point:     1 Tasks:     4 split into      2 X      2 BLACS grid
   Calculating block size based on n_basis =         7360  max_nprow =            3  max_npcol =            2
   ScaLAPACK block size set to:           16
@@ -2433,9 +2436,9 @@
   Allocating      206.641 MB for ham_complex
   Allocating      206.641 MB for eigenvec_complex
   Required Scalapack workspace - INTEGER:            1  REAL:             1  COMPLEX:            1
-  Available memory per node after initialize_scalapack [GB]:    670.57
-  Available memory per node after aims_elsi_init_scf [GB]:    670.56
-  Available memory per node after initialize_fixed_grids [GB]:    670.51
+  Available memory per node after initialize_scalapack [GB]:    453.34
+  Available memory per node after aims_elsi_init_scf [GB]:    453.34
+  Available memory per node after initialize_fixed_grids [GB]:    453.32
   Partitioning the integration grid into batches with parallel hashing+maxmin method.
   | Number of batches:    25600
   | Maximal batch size:     121
@@ -2573,7 +2576,7 @@
   Task    125 has      14325 integration points.
   Task    126 has      14389 integration points.
   Task    127 has      14325 integration points.
-  Available memory per node after partition_grid [GB]:    670.12
+  Available memory per node after partition_grid [GB]:    453.12
   Initializing partition tables, free-atom densities, potentials, etc. across the integration grid (initialize_grid_storage).
   | initialize_grid_storage: Actual outermost partition radius vs. multipole_radius_free
   | (-- VB: in principle, multipole_radius_free should be larger, hence this output)
@@ -2587,7 +2590,7 @@
   | Net number of integration points:  1837696
   | of which are non-zero points    :  1565376
   | Numerical average free-atom electrostatic potential    :    -23.40104909 eV
-  Available memory per node after initialize_grid_storage_p1 [GB]:    669.74
+  Available memory per node after initialize_grid_storage_p1 [GB]:    452.98
   Renormalizing the initial density to the exact electron count on the 3D integration grid.
   | Initial density: Formal number of electrons (from input files) :    6528.0000000000
   | Integrated number of electrons on 3D grid     :    6528.7597115808
@@ -2727,8 +2730,8 @@
   | Maximal number of non-zero basis functions:      991 in task   125
   | Maximal number of non-zero basis functions:      965 in task   126
   | Maximal number of non-zero basis functions:      991 in task   127
-  Available memory per node after get_n_compute_maxes_p1 [GB]:    666.39
-  Available memory per node after allocate_matrices [GB]:    666.39
+  Available memory per node after get_n_compute_maxes_p1 [GB]:    451.36
+  Available memory per node after allocate_matrices [GB]:    451.36
   use_local_index: Max. local matrix size =      2233715
   Task:     0 matrix size:    2232759
   Task:     1 matrix size:    2233715
@@ -2858,28 +2861,28 @@
   Task:   125 matrix size:    2224310
   Task:   126 matrix size:    2210646
   Task:   127 matrix size:    2224310
-  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:    574.49
+  Available memory per node after init_comm_sparse_local_matrix_scalapack [GB]:    407.80
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      211.444 s, elapsed      239.094 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.299943 s
-  Available memory per node after integrate hamiltonian matrix [GB]:    570.61
+  Time summed over all CPUs for integration: real work      263.372 s, elapsed      291.147 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.610941 s
+  Available memory per node after integrate hamiltonian matrix [GB]:    406.54
   Integrating overlap matrix.
-  Time summed over all CPUs for integration: real work      180.204 s, elapsed      205.061 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.307494 s
-  Available memory per node after integrate ovlp matrix [GB]:    570.12
-  Available memory per node after save_overlap_scalapack [GB]:    515.77
-  Available memory per node after advance_KS_solution [GB]:    513.54
+  Time summed over all CPUs for integration: real work      233.026 s, elapsed      262.258 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.600436 s
+  Available memory per node after integrate ovlp matrix [GB]:    406.25
+  Available memory per node after save_overlap_scalapack [GB]:    379.77
+  Available memory per node after advance_KS_solution [GB]:    380.33
   Calculating total energy contributions from superposition of free atom densities.
   Initialize hartree_potential_storage
   Max. number of atoms included in rho_multipole:          320
 
   End scf initialization - timings             :  max(cpu_time)    wall_clock(cpu1)
-  | Time for scf. initialization                :       16.546 s          17.060 s
-  | Boundary condition initialization           :        0.086 s           0.089 s
-  | Integration                                 :        8.053 s           8.103 s
-  | Grid partitioning                           :        0.524 s           0.569 s
-  | Preloading free-atom quantities on grid     :        1.034 s           1.091 s
-  | Free-atom superposition energy              :        0.259 s           0.347 s
+  | Time for scf. initialization                :       17.905 s          18.856 s
+  | Boundary condition initialization           :        0.165 s           0.178 s
+  | Integration                                 :        9.581 s           9.580 s
+  | Grid partitioning                           :        0.593 s           0.600 s
+  | Preloading free-atom quantities on grid     :        1.040 s           1.044 s
+  | Free-atom superposition energy              :        0.169 s           0.170 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -2897,28 +2900,28 @@
   Note:  These values currently only include a subset of arrays which are explicitly tracked.
   The "true" memory usage will be greater.
 ------------------------------------------------------------
-  Available memory after initialize_scf [GB]:    516.51
-  Available memory after allocating mixing [GB]:    516.57
+  Available memory after initialize_scf [GB]:    381.52
+  Available memory after allocating mixing [GB]:    381.51
   Evaluating new KS density using the density matrix
   Evaluating density matrix
-  | Time get_set_sparse_local_matrix_scalapack:     2.305963 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.405904 s
   Finished reading density matrices from file
-  | Time :      9.017 s
+  | Time :      6.910 s
 
-  Time summed over all CPUs for getting density from density matrix: real work      211.974 s, elapsed      236.385 s
+  Time summed over all CPUs for getting density from density matrix: real work      277.091 s, elapsed      308.354 s
   Integration grid: deviation in total charge (<rho> - N_e) =   1.637090E-11
 
   Time for density update prior                :  max(cpu_time)    wall_clock(cpu1)
-  | self-consistency iterative process          :        9.402 s          13.200 s
-  Available memory before start of SCF loop [GB]:    485.25
+  | self-consistency iterative process          :        9.273 s          11.746 s
+  Available memory before start of SCF loop [GB]:    365.29
 
 ------------------------------------------------------------
           Initial SCF-cycle to compute last known
           density from restart information.
 
-  Date     :  20260607, Time     :  044158.309
+  Date     :  20260612, Time     :  183753.172
 ------------------------------------------------------------
-  Available memory per node after mixing [GB]:    485.25
+  Available memory per node after mixing [GB]:    365.29
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    6528.0000000000
   | Integrated number of electrons on 3D grid     :    6528.0000000000
@@ -2926,34 +2929,34 @@
   | Normalization factor for density and gradient :       1.0000000000
 
   Evaluating partitioned Hartree potential by multipole expansion.
-  | Original multipole sum: apparent total charge =   0.967719E-11
+  | Original multipole sum: apparent total charge =   0.748426E-11
   | Sum of charges compensated after spline to logarithmic grids =   0.109628E-02
   | Analytical far-field extrapolation by fixed multipoles:
-  | Hartree multipole sum: apparent total charge =   0.964271E-11
+  | Hartree multipole sum: apparent total charge =   0.746290E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        0.322 s, elapsed        0.339 s
+  Time summed over all CPUs for potential: real work        0.320 s, elapsed        0.339 s
   | RMS charge density error from multipole expansion :   0.177078E+00
   | Average real-space part of the electrostatic potential :      0.60209994 eV
 
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      210.982 s, elapsed      236.728 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.336681 s
+  Time summed over all CPUs for integration: real work      263.367 s, elapsed      294.808 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.600002 s
 
   Updating Kohn-Sham eigenvalues and eigenvectors using ELSI and the ELPA eigensolver.
   Singularity check in k-point 1 (analysis for other k-points may follow below):
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1003E-02,  0.9097E+01
   Finished singularity check of overlap matrix
-  | Time :    27.128 s
+  | Time :    31.080 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.132 s
+  | Time :    20.040 s
   Finished transformation to standard eigenproblem
-  | Time :    10.872 s
+  | Time :    12.892 s
   Finished solving standard eigenproblem
-  | Time :    61.748 s
+  | Time :    66.098 s
   Finished back-transformation of eigenvectors
-  | Time :     6.184 s
+  | Time :     6.897 s
 
   Obtaining occupation numbers and electronic chemical potential using ELSI.
   | Note that, for insulating systems, the printed 'chemical potential' value is not uniquely defined.
@@ -7531,17 +7534,17 @@
   | Sum of eigenvalues            :     -371557.84993702 Ha   -10110603.51862951 eV
   | XC energy correction          :      -16479.81630007 Ha     -448438.61783056 eV
   | XC potential correction       :       21838.98927809 Ha      594269.13433736 eV
-  | Free-atom electrostatic energy:     -232059.91353628 Ha    -6314671.53427257 eV
+  | Free-atom electrostatic energy:     -232059.91353628 Ha    -6314671.53427258 eV
   | Hartree energy correction     :          66.65033230 Ha        1813.64781937 eV
   | Entropy correction            :           0.00000000 Ha           0.00000000 eV
   | ---------------------------
-  | Total energy                  :     -598191.94016298 Ha   -16277630.88857591 eV
-  | Total energy, T -> 0          :     -598191.94016298 Ha   -16277630.88857591 eV  <-- do not rely on this value for anything but (periodic) metals
-  | Electronic free energy        :     -598191.94016298 Ha   -16277630.88857591 eV
+  | Total energy                  :     -598191.94016298 Ha   -16277630.88857592 eV
+  | Total energy, T -> 0          :     -598191.94016298 Ha   -16277630.88857592 eV  <-- do not rely on this value for anything but (periodic) metals
+  | Electronic free energy        :     -598191.94016298 Ha   -16277630.88857592 eV
 
   Derived energy quantities:
-  | Kinetic energy                :      628294.65929937 Ha    17096767.55349166 eV
-  | Electrostatic energy          :    -1210006.78316228 Ha   -32925959.82423701 eV
+  | Kinetic energy                :      628294.65929937 Ha    17096767.55349172 eV
+  | Electrostatic energy          :    -1210006.78316229 Ha   -32925959.82423709 eV
   | Energy correction for multipole
   | error in Hartree potential    :           0.01360968 Ha           0.37033820 eV
   | Sum of eigenvalues per atom                           :      -31595.63599572 eV
@@ -7553,10 +7556,10 @@
   Selected method: ELPA_AT_A (preferred and supported)
   Using optimized A^T*A routine
   Finished density matrix calculation
-  | Time :     5.355 s
-  | Time get_set_sparse_local_matrix_scalapack:     4.998597 s
-  Time summed over all CPUs for getting density from density matrix: real work      215.395 s, elapsed      239.708 s
-  Integration grid: deviation in total charge (<rho> - N_e) =   3.365130E-11
+  | Time :     6.272 s
+  | Time get_set_sparse_local_matrix_scalapack:     5.281126 s
+  Time summed over all CPUs for getting density from density matrix: real work      280.262 s, elapsed      308.771 s
+  Integration grid: deviation in total charge (<rho> - N_e) =   3.092282E-11
 
   Self-consistency convergence accuracy:
   | Change of charge density      :  0.1513E+01
@@ -7567,14 +7570,14 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     0       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :      172.598 s         174.863 s
-  | Charge density update                       :       12.168 s          12.321 s
-  | Density mixing                              :        0.000 s           0.000 s
-  | Hartree multipole update                    :        0.010 s           0.010 s
-  | Hartree multipole summation                 :        0.362 s           0.411 s
-  | Integration                                 :        1.850 s           1.863 s
-  | Solution of K.-S. eqns.                     :      158.198 s         160.244 s
-  | Total energy evaluation                     :        0.006 s           0.003 s
+  | Time for this iteration                     :      185.817 s         188.698 s
+  | Charge density update                       :       13.905 s          14.112 s
+  | Density mixing                              :        0.001 s           0.000 s
+  | Hartree multipole update                    :        0.052 s           0.052 s
+  | Hartree multipole summation                 :        0.360 s           0.364 s
+  | Integration                                 :        2.313 s           2.324 s
+  | Solution of K.-S. eqns.                     :      169.197 s         171.788 s
+  | Total energy evaluation                     :        0.005 s           0.003 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -7596,10 +7599,10 @@
 ------------------------------------------------------------
           Begin self-consistency iteration #    1
 
-  Date     :  20260607, Time     :  044453.174
+  Date     :  20260612, Time     :  184101.871
 ------------------------------------------------------------
   Pulay mixing of updated and previous charge densities.
-  Available memory per node after mixing [GB]:    483.75
+  Available memory per node after mixing [GB]:    363.14
   Renormalizing the density to the exact electron count on the 3D integration grid.
   | Formal number of electrons (from input files) :    6528.0000000000
   | Integrated number of electrons on 3D grid     :    6528.0000000000
@@ -7607,27 +7610,27 @@
   | Normalization factor for density and gradient :       1.0000000000
 
   Evaluating partitioned Hartree potential by multipole expansion.
-  | Original multipole sum: apparent total charge =   0.293761E-11
+  | Original multipole sum: apparent total charge =   0.372616E-11
   | Sum of charges compensated after spline to logarithmic grids =   0.109628E-02
   | Analytical far-field extrapolation by fixed multipoles:
-  | Hartree multipole sum: apparent total charge =   0.292777E-11
+  | Hartree multipole sum: apparent total charge =   0.372779E-11
   Summing up the Hartree potential.
-  Time summed over all CPUs for potential: real work        0.323 s, elapsed        0.337 s
+  Time summed over all CPUs for potential: real work        0.323 s, elapsed        0.338 s
   | RMS charge density error from multipole expansion :   0.177078E+00
   | Average real-space part of the electrostatic potential :      0.60209994 eV
 
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      214.371 s, elapsed      261.095 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.430605 s
+  Time summed over all CPUs for integration: real work      266.364 s, elapsed      292.585 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.610759 s
 
   Updating Kohn-Sham eigenvalues and eigenvectors using ELSI and the ELPA eigensolver.
   Starting ELPA eigensolver
   Finished transformation to standard eigenproblem
-  | Time :    11.044 s
+  | Time :    12.964 s
   Finished solving standard eigenproblem
-  | Time :    61.759 s
+  | Time :    66.362 s
   Finished back-transformation of eigenvectors
-  | Time :     6.288 s
+  | Time :     6.871 s
 
   Obtaining occupation numbers and electronic chemical potential using ELSI.
   | Note that, for insulating systems, the printed 'chemical potential' value is not uniquely defined.
@@ -12205,17 +12208,17 @@
   | Sum of eigenvalues            :     -371557.84993702 Ha   -10110603.51862966 eV
   | XC energy correction          :      -16479.81630007 Ha     -448438.61783058 eV
   | XC potential correction       :       21838.98927809 Ha      594269.13433738 eV
-  | Free-atom electrostatic energy:     -232059.91353628 Ha    -6314671.53427257 eV
+  | Free-atom electrostatic energy:     -232059.91353628 Ha    -6314671.53427258 eV
   | Hartree energy correction     :          66.65033231 Ha        1813.64781948 eV
   | Entropy correction            :           0.00000000 Ha           0.00000000 eV
   | ---------------------------
-  | Total energy                  :     -598191.94016298 Ha   -16277630.88857594 eV
-  | Total energy, T -> 0          :     -598191.94016298 Ha   -16277630.88857594 eV  <-- do not rely on this value for anything but (periodic) metals
-  | Electronic free energy        :     -598191.94016298 Ha   -16277630.88857594 eV
+  | Total energy                  :     -598191.94016298 Ha   -16277630.88857597 eV
+  | Total energy, T -> 0          :     -598191.94016298 Ha   -16277630.88857597 eV  <-- do not rely on this value for anything but (periodic) metals
+  | Electronic free energy        :     -598191.94016298 Ha   -16277630.88857597 eV
 
   Derived energy quantities:
-  | Kinetic energy                :      628294.65929937 Ha    17096767.55349167 eV
-  | Electrostatic energy          :    -1210006.78316228 Ha   -32925959.82423704 eV
+  | Kinetic energy                :      628294.65929937 Ha    17096767.55349172 eV
+  | Electrostatic energy          :    -1210006.78316229 Ha   -32925959.82423710 eV
   | Energy correction for multipole
   | error in Hartree potential    :           0.01360968 Ha           0.37033820 eV
   | Sum of eigenvalues per atom                           :      -31595.63599572 eV
@@ -12225,8 +12228,8 @@
   Self-consistency convergence accuracy:
   | Change of charge density      :  0.1430E-08
   | Change of unmixed KS density  :  0.1431E-08
-  | Change of sum of eigenvalues  : -0.1505E-06 eV
-  | Change of total energy        : -0.3801E-07 eV
+  | Change of sum of eigenvalues  : -0.1568E-06 eV
+  | Change of total energy        : -0.4118E-07 eV
 
   Writing Kohn-Sham eigenvalues.
   K-point:       1 at    0.000000    0.000000    0.000000 (in units of recip. lattice)
@@ -16804,14 +16807,14 @@
 
 ------------------------------------------------------------
   End self-consistency iteration #     1       :  max(cpu_time)    wall_clock(cpu1)
-  | Time for this iteration                     :      117.502 s         118.890 s
+  | Time for this iteration                     :      117.523 s         119.164 s
   | Charge density update                       :        0.000 s           0.000 s
-  | Density mixing                              :        0.001 s           0.000 s
-  | Hartree multipole update                    :        0.009 s           0.009 s
-  | Hartree multipole summation                 :        0.352 s           0.356 s
-  | Integration                                 :        2.028 s           2.055 s
-  | Solution of K.-S. eqns.                     :      115.098 s         116.449 s
-  | Total energy evaluation                     :        0.005 s           0.003 s
+  | Density mixing                              :        0.001 s           0.001 s
+  | Hartree multipole update                    :        0.050 s           0.051 s
+  | Hartree multipole summation                 :        0.357 s           0.360 s
+  | Integration                                 :        2.276 s           2.306 s
+  | Solution of K.-S. eqns.                     :      114.826 s         116.410 s
+  | Total energy evaluation                     :        0.004 s           0.003 s
 
   Partial memory accounting:
   | Current value for overall tracked memory usage:
@@ -16831,9 +16834,9 @@
 ------------------------------------------------------------
 
   Energy and forces in a compact form:
-  | Total energy uncorrected      :         -0.162776308885759E+08 eV
-  | Total energy corrected        :         -0.162776308885759E+08 eV  <-- do not rely on this value for anything but (periodic) metals
-  | Electronic free energy        :         -0.162776308885759E+08 eV
+  | Total energy uncorrected      :         -0.162776308885760E+08 eV
+  | Total energy corrected        :         -0.162776308885760E+08 eV  <-- do not rely on this value for anything but (periodic) metals
+  | Electronic free energy        :         -0.162776308885760E+08 eV
 
   ------------------------------------ 
   Start decomposition of the XC Energy 
@@ -16885,9 +16888,9 @@
 
 
   Integrating Hamiltonian matrix: batch-based integration.
-  Time summed over all CPUs for integration: real work      213.696 s, elapsed      236.389 s
+  Time summed over all CPUs for integration: real work      266.640 s, elapsed      292.245 s
   Integrating overlap matrix.
-  Time summed over all CPUs for integration: real work      183.637 s, elapsed      222.514 s
+  Time summed over all CPUs for integration: real work      234.952 s, elapsed      261.943 s
   Initializing polarization subroutine with:
   - n. of k-points: 6
   - n. of physical bands: 16
@@ -16895,23 +16898,23 @@
   Calculating dipole matrix along reciprocal lattice vector 3:     0.000     0.000     0.209
   Using atomic phases =   T
   Integrating dipole matrix.
-  Time summed over all CPUs for integration: real work      304.425 s, elapsed      343.413 s
+  Time summed over all CPUs for integration: real work      390.941 s, elapsed      427.557 s
   Calculating k-points    1 to   36
-  | Time get_set_sparse_local_matrix_scalapack:     2.381016 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.316172 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.629591 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.601560 s
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1041E-02,  0.9009E+01
   Finished singularity check of overlap matrix
-  | Time :    27.652 s
+  | Time :    31.652 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.205 s
+  | Time :    20.105 s
   Finished transformation to standard eigenproblem
-  | Time :    10.844 s
+  | Time :    12.870 s
   Finished solving standard eigenproblem
-  | Time :    61.610 s
+  | Time :    66.095 s
   Finished back-transformation of eigenvectors
-  | Time :     6.237 s
+  | Time :     6.765 s
    Detailed listing of bands and assigned k-points in polarization calculation:
    Task      0 band        1 (effectively band     1) with k-point 1/6 ( -0.500 -0.500  0.500) -->  useful
    Task      1 band        1 (effectively band     1) with k-point 1/6 ( -0.500 -0.500  0.500) -->  useful
@@ -17048,21 +17051,21 @@
   | Energy difference      :       1.91948969 eV
 
   Calculating k-points   37 to   72
-  | Time get_set_sparse_local_matrix_scalapack:     2.433222 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.436628 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.619413 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.602313 s
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1033E-02,  0.9058E+01
   Finished singularity check of overlap matrix
-  | Time :    28.861 s
+  | Time :    31.749 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.224 s
+  | Time :    19.959 s
   Finished transformation to standard eigenproblem
-  | Time :    10.883 s
+  | Time :    13.024 s
   Finished solving standard eigenproblem
-  | Time :    62.532 s
+  | Time :    67.188 s
   Finished back-transformation of eigenvectors
-  | Time :     6.290 s
+  | Time :     6.648 s
    Detailed listing of bands and assigned k-points in polarization calculation:
    Task      0 band        1 (effectively band     1) with k-point 2/6 ( -0.500 -0.500  0.300) -->  useful
    Task      1 band        1 (effectively band     1) with k-point 2/6 ( -0.500 -0.500  0.300) -->  useful
@@ -17192,8 +17195,8 @@
    Task    125 band       36 (effectively band    16) with k-point 2/6 (  0.500  0.500  0.300) -->  useless
    Task    126 band       36 (effectively band    16) with k-point 2/6 (  0.500  0.500  0.300) -->  useless
    Task    127 band       36 (effectively band    16) with k-point 2/6 (  0.500  0.500  0.300) -->  useless
-  | Time set_sparse_local_matrix_scalapack_generic:     2.260063 s
-  | Time set_sparse_local_matrix_scalapack_generic:     2.300989 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.504145 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.495097 s
 
   "Band gap" along reciprocal space direction number:    1
   | Lowest unoccupied state:      -8.85270333 eV
@@ -17201,21 +17204,21 @@
   | Energy difference      :       1.90518764 eV
 
   Calculating k-points   73 to  108
-  | Time get_set_sparse_local_matrix_scalapack:     2.413338 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.409182 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.614895 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.599168 s
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1029E-02,  0.9082E+01
   Finished singularity check of overlap matrix
-  | Time :    28.755 s
+  | Time :    33.780 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.192 s
+  | Time :    20.445 s
   Finished transformation to standard eigenproblem
-  | Time :    11.005 s
+  | Time :    12.894 s
   Finished solving standard eigenproblem
-  | Time :    62.343 s
+  | Time :    68.144 s
   Finished back-transformation of eigenvectors
-  | Time :     6.176 s
+  | Time :     6.823 s
    Detailed listing of bands and assigned k-points in polarization calculation:
    Task      0 band        1 (effectively band     1) with k-point 3/6 ( -0.500 -0.500  0.100) -->  useful
    Task      1 band        1 (effectively band     1) with k-point 3/6 ( -0.500 -0.500  0.100) -->  useful
@@ -17345,8 +17348,8 @@
    Task    125 band       36 (effectively band    16) with k-point 3/6 (  0.500  0.500  0.100) -->  useless
    Task    126 band       36 (effectively band    16) with k-point 3/6 (  0.500  0.500  0.100) -->  useless
    Task    127 band       36 (effectively band    16) with k-point 3/6 (  0.500  0.500  0.100) -->  useless
-  | Time set_sparse_local_matrix_scalapack_generic:     2.279459 s
-  | Time set_sparse_local_matrix_scalapack_generic:     2.353619 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.515445 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.484227 s
 
   "Band gap" along reciprocal space direction number:    1
   | Lowest unoccupied state:      -8.85912731 eV
@@ -17354,21 +17357,21 @@
   | Energy difference      :       1.89993149 eV
 
   Calculating k-points  109 to  144
-  | Time get_set_sparse_local_matrix_scalapack:     2.423600 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.355544 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.607065 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.588498 s
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1029E-02,  0.9082E+01
   Finished singularity check of overlap matrix
-  | Time :    29.101 s
+  | Time :    32.879 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.160 s
+  | Time :    20.287 s
   Finished transformation to standard eigenproblem
-  | Time :    10.903 s
+  | Time :    13.020 s
   Finished solving standard eigenproblem
-  | Time :    62.912 s
+  | Time :    68.488 s
   Finished back-transformation of eigenvectors
-  | Time :     6.202 s
+  | Time :     6.883 s
    Detailed listing of bands and assigned k-points in polarization calculation:
    Task      0 band        1 (effectively band     1) with k-point 4/6 ( -0.500 -0.500 -0.100) -->  useful
    Task      1 band        1 (effectively band     1) with k-point 4/6 ( -0.500 -0.500 -0.100) -->  useful
@@ -17498,8 +17501,8 @@
    Task    125 band       36 (effectively band    16) with k-point 4/6 (  0.500  0.500 -0.100) -->  useless
    Task    126 band       36 (effectively band    16) with k-point 4/6 (  0.500  0.500 -0.100) -->  useless
    Task    127 band       36 (effectively band    16) with k-point 4/6 (  0.500  0.500 -0.100) -->  useless
-  | Time set_sparse_local_matrix_scalapack_generic:     2.342512 s
-  | Time set_sparse_local_matrix_scalapack_generic:     2.357457 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.518303 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.490452 s
 
   "Band gap" along reciprocal space direction number:    1
   | Lowest unoccupied state:      -8.85912731 eV
@@ -17507,21 +17510,21 @@
   | Energy difference      :       1.89993149 eV
 
   Calculating k-points  145 to  180
-  | Time get_set_sparse_local_matrix_scalapack:     2.331645 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.344656 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.612211 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.595782 s
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1033E-02,  0.9058E+01
   Finished singularity check of overlap matrix
-  | Time :    29.170 s
+  | Time :    32.400 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.227 s
+  | Time :    20.421 s
   Finished transformation to standard eigenproblem
-  | Time :    10.963 s
+  | Time :    12.947 s
   Finished solving standard eigenproblem
-  | Time :    63.035 s
+  | Time :    67.963 s
   Finished back-transformation of eigenvectors
-  | Time :     6.129 s
+  | Time :     6.921 s
    Detailed listing of bands and assigned k-points in polarization calculation:
    Task      0 band        1 (effectively band     1) with k-point 5/6 ( -0.500 -0.500 -0.300) -->  useful
    Task      1 band        1 (effectively band     1) with k-point 5/6 ( -0.500 -0.500 -0.300) -->  useful
@@ -17651,8 +17654,8 @@
    Task    125 band       36 (effectively band    16) with k-point 5/6 (  0.500  0.500 -0.300) -->  useless
    Task    126 band       36 (effectively band    16) with k-point 5/6 (  0.500  0.500 -0.300) -->  useless
    Task    127 band       36 (effectively band    16) with k-point 5/6 (  0.500  0.500 -0.300) -->  useless
-  | Time set_sparse_local_matrix_scalapack_generic:     2.258422 s
-  | Time set_sparse_local_matrix_scalapack_generic:     2.252534 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.511037 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.492577 s
 
   "Band gap" along reciprocal space direction number:    1
   | Lowest unoccupied state:      -8.85270333 eV
@@ -17660,21 +17663,21 @@
   | Energy difference      :       1.90518764 eV
 
   Calculating k-points  181 to  216
-  | Time get_set_sparse_local_matrix_scalapack:     2.380702 s
-  | Time get_set_sparse_local_matrix_scalapack:     2.422388 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.610592 s
+  | Time get_set_sparse_local_matrix_scalapack:     2.597413 s
   Overlap matrix is not singular
   | Lowest and highest eigenvalues :  0.1041E-02,  0.9009E+01
   Finished singularity check of overlap matrix
-  | Time :    27.844 s
+  | Time :    32.374 s
   Starting ELPA eigensolver
   Finished Cholesky decomposition
-  | Time :    14.249 s
+  | Time :    20.322 s
   Finished transformation to standard eigenproblem
-  | Time :    10.889 s
+  | Time :    13.041 s
   Finished solving standard eigenproblem
-  | Time :    63.015 s
+  | Time :    68.395 s
   Finished back-transformation of eigenvectors
-  | Time :     6.169 s
+  | Time :     6.753 s
    Detailed listing of bands and assigned k-points in polarization calculation:
    Task      0 band        1 (effectively band     1) with k-point 6/6 ( -0.500 -0.500 -0.500) -->  useful
    Task      1 band        1 (effectively band     1) with k-point 6/6 ( -0.500 -0.500 -0.500) -->  useful
@@ -17804,8 +17807,8 @@
    Task    125 band       36 (effectively band    16) with k-point 6/6 (  0.500  0.500 -0.500) -->  useless
    Task    126 band       36 (effectively band    16) with k-point 6/6 (  0.500  0.500 -0.500) -->  useless
    Task    127 band       36 (effectively band    16) with k-point 6/6 (  0.500  0.500 -0.500) -->  useless
-  | Time set_sparse_local_matrix_scalapack_generic:     2.255973 s
-  | Time set_sparse_local_matrix_scalapack_generic:     2.281214 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.515068 s
+  | Time set_sparse_local_matrix_scalapack_generic:     2.495224 s
 
   "Band gap" along reciprocal space direction number:    1
   | Lowest unoccupied state:      -8.84011009 eV
@@ -17855,10 +17858,10 @@
 
 
   Polarization calculation                                 :  max(cpu_time) wall_clock(cpu1)
-  | Total Time                                             :        646.928          656.364
-  | Total Time for dipole matrix                           :         26.768           27.103
-  | Total Time for dipole term                             :        153.877          156.971
-  | Total Time for berry term                              :        150.262          153.044
+  | Total Time                                             :        783.009          795.395
+  | Total Time for dipole matrix                           :         30.082           30.688
+  | Total Time for dipole term                             :        210.219          214.718
+  | Total Time for berry term                              :        200.173          204.185
 ------------------------------------------------------------
 
   "Band gap" of total set of bands:
@@ -17868,8 +17871,8 @@
 
 
   Wannier center evolution                                :  max(cpu_time) wall_clock(cpu1)
-  | Total Time                                            :       1411.165         1431.840
-  | Total Time for Fourier interpolated EV solution       :        760.638          771.824
+  | Total Time                                            :       1657.905         1684.819
+  | Total Time for Fourier interpolated EV solution       :        870.488          884.941
 ------------------------------------------------------------
 
   Summary for all Polarization Directives:
@@ -17892,8 +17895,8 @@
   The following output summarizes some interesting total energy values
   at the end of a run (AFTER all relaxation, molecular dynamics, etc.).
 
-  | Total energy of the DFT / Hartree-Fock s.c.f. calculation      :      -16277630.888575943 eV
-  | Final zero-broadening corrected energy (caution - metals only) :      -16277630.888575943 eV
+  | Total energy of the DFT / Hartree-Fock s.c.f. calculation      :      -16277630.888575966 eV
+  | Final zero-broadening corrected energy (caution - metals only) :      -16277630.888575966 eV
   | For reference only, the value of 1 Hartree used in FHI-aims is :             27.211384500 eV
   | For reference only, the overall average (free atom contribution
   | + realspace contribution) of the electrostatic potential after
@@ -17973,29 +17976,29 @@ At least    0 warnings were raised during execution.
 
 ------------------------------------------------------------
           Leaving FHI-aims.
-          Date     :  20260607, Time     :  051044.106
+          Date     :  20260612, Time     :  191106.134
 
           Computational steps:
           | Number of self-consistency cycles          :            1
           | Number of SCF (re)initializations          :            1
 
           Detailed time accounting                     :  max(cpu_time)    wall_clock(cpu1)
-          | Total time                                  :     1728.316 s        1758.178 s
-          | Preparation time                            :        0.325 s           0.384 s
-          | Boundary condition initalization            :        0.086 s           0.089 s
-          | Grid partitioning                           :        0.524 s           0.569 s
-          | Preloading free-atom quantities on grid     :        1.034 s           1.091 s
-          | Free-atom superposition energy              :        0.259 s           0.347 s
-          | Total time for integrations                 :       11.930 s          12.021 s
-          | Total time for solution of K.-S. equations  :      274.042 s         277.429 s
-          | Total time for density update               :       21.570 s          25.521 s
-          | Total time for mixing                       :        0.001 s           0.000 s
-          | Total time for Hartree multipole update     :        0.018 s           0.019 s
-          | Total time for Hartree multipole sum        :        0.714 s           0.767 s
-          | Total time for total energy evaluation      :        0.012 s           0.007 s
+          | Total time                                  :     1990.611 s        2024.516 s
+          | Preparation time                            :        0.327 s           0.364 s
+          | Boundary condition initalization            :        0.165 s           0.178 s
+          | Grid partitioning                           :        0.593 s           0.600 s
+          | Preloading free-atom quantities on grid     :        1.040 s           1.044 s
+          | Free-atom superposition energy              :        0.169 s           0.170 s
+          | Total time for integrations                 :       14.169 s          14.210 s
+          | Total time for solution of K.-S. equations  :      284.878 s         289.043 s
+          | Total time for density update               :       23.178 s          25.858 s
+          | Total time for mixing                       :        0.001 s           0.001 s
+          | Total time for Hartree multipole update     :        0.102 s           0.103 s
+          | Total time for Hartree multipole sum        :        0.717 s           0.724 s
+          | Total time for total energy evaluation      :        0.009 s           0.006 s
           | Total time for scaled ZORA corrections      :        0.000 s           0.000 s
-          | Total time for matrix I/O                   :        4.150 s           9.017 s
-          | Total time for Wannier Center Evolution     :     1411.809 s        1431.840 s
+          | Total time for matrix I/O                   :        3.596 s           6.910 s
+          | Total time for Wannier Center Evolution     :     1660.258 s        1684.819 s
 
           Partial memory accounting:
           | Residual value for overall tracked memory usage across tasks:     0.000000 MB (should be 0.000000 MB)
