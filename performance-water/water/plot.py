@@ -148,8 +148,8 @@ ax.text(
 )
 
 ax.text(
-    0.5, 0.37,
-    r"$m=0.46$",
+    0.5, 0.38,
+    r"$m=0.53$",
     transform=ax.transAxes,
     rotation=-15,      # angle in degrees
     ha="center",
@@ -159,9 +159,9 @@ ax.text(
 
 ax.text(
     0.5, 0.88,
-    r"$m=0.55$",
+    r"$m=0.48$",
     transform=ax.transAxes,
-    rotation=-20,      # angle in degrees
+    rotation=-15,      # angle in degrees
     ha="center",
     va="center",
     color="#ff7f0e"
