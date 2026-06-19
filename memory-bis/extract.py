@@ -6,7 +6,7 @@ import pandas as pd
 
 # Regex for timing
 time_pattern = re.compile(
-    r"\|\s*Total time\s*:\s*([\d.]+)\s*s",
+    r"\|\s*| Total time                                  :\s*:\s*([\d.]+)\s*s",
     re.IGNORECASE
 )
 

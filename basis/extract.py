@@ -15,7 +15,7 @@ def extract_time(filepath):
     """
     with open(filepath, "r") as f:
         for line in f:
-            if "Total time" in line:
+            if "| Total time                                  :" in line:
                 match = re.search(r"([\d.]+)", line)
                 if match:
                     return float(match.group(1))
