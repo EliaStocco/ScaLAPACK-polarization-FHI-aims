@@ -13,3 +13,5 @@ molecules,calculation,ncores,time
 196,scf,512,345.208
 196,scf,768,304.297
 196,scf,1024,229.641
+128,dipole,256,364.14
+128,scf,256,295.401
