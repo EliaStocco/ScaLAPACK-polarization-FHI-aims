@@ -13,7 +13,7 @@ for outfile in Path(".").glob("*/**/aims.n=*.out"):
 
     with open(outfile) as f:
         for line in f:
-            if "Total time" in line:
+            if "| Total time                                  :" in line:
                 match = re.search(r'([\d.]+)\s*(?:s|seconds)', line)
                 if match:
                     runtime = float(match.group(1))
