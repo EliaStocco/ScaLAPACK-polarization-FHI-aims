@@ -189,7 +189,7 @@ ax.yaxis.set_major_locator(FixedLocator(YTICKS))
 ax.yaxis.set_major_formatter(ScalarFormatter())
 ax.yaxis.set_minor_locator(NullLocator())
 
-ax.set_ylim(None,300)
+ax.set_ylim(None,320)
 
 # Ideal scaling guides
 add_inverse_lines(
