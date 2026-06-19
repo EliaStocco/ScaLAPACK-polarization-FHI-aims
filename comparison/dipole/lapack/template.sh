@@ -7,10 +7,10 @@
 # Job Name:
 #SBATCH -J MgO-lapack
 
-#SBATCH --nodes=16
+#SBATCH --nodes=NNODES
 #SBATCH --ntasks-per-node=128
 #SBATCH --mail-type=NONE
-#SBATCH --time=00:30:00
+#SBATCH --time=01:00:00
 
 ###################################################################
 # Clean slurm folder
@@ -50,14 +50,14 @@ calculate_elapsed_time() {
 run_aims(){
     echo "Running ${AIMS_OUTPUT_FILE}" >> "$LOG_FILE"
     start_time=$(get_current_date_time)
-    cmd="srun ${AIMS_PATH}/${AIMS_EXE} &> aims.out"
+    cmd="srun -n NUM_CORES ${AIMS_PATH}/${AIMS_EXE} &> aims.NUM_CORES.out"
     echo "$cmd"
     eval "$cmd"
     end_time=$(get_current_date_time)
     echo "# End Time: $end_time" >> "$LOG_FILE"
     echo "# Elapsed Time: $(calculate_elapsed_time "$start_time" "$end_time")" >> "$LOG_FILE"
     echo ""
-    cp aims.out ${AIMS_OUTPUT_FILE}
+    cp aims.NUM_CORES.out ${AIMS_OUTPUT_FILE}
 }
 
 #-----------------------------------#
@@ -69,8 +69,7 @@ echo "# Date and Time: $(date +"%Y-%m-%d %H:%M:%S")" >> "$LOG_FILE"
 
 # Prepare control.in
 mkdir -p results
-TOTAL_CORES=$((SLURM_NNODES * SLURM_NTASKS_PER_NODE))
-AIMS_OUTPUT_FILE="results/aims.n=${TOTAL_CORES}.out"
+AIMS_OUTPUT_FILE="results/aims.n=NUM_CORES.out"
 ln -s ../../converge/*.csc .
 run_aims
 rm *.csc

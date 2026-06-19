@@ -1,2 +1,2 @@
-srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x &> aims.out
+srun -n 1024 /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x &> aims.1024.out
 

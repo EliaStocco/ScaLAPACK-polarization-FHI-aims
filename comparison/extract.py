@@ -11,32 +11,43 @@ import pandas as pd
 # =============================================================================
 
 TIMING_REGEX = re.compile(
-    r"Total time\s*:\s*([\d.]+)\s*s"
+    r"^\s*\|\s*Total time\s*:\s*"
+    r"([\d.]+)\s*s\s+"
+    r"([\d.]+)\s*s\s*$",
+    re.MULTILINE,
 )
 
-# Examples:
-#
-# TIMING_REGEX = re.compile(
-#     r"\|\s*Total time\s*:\s*([\d.]+)\s*s"
-# )
-#
-# TIMING_REGEX = re.compile(
-#     r"Total wall clock time\s*:\s*([\d.]+)"
-# )
+MEMORY_REGEX = re.compile(
+    r"\|\s*Maximum:\s*([\d.]+)\s*MB",
+    re.MULTILINE,
+)
 
-
-def extract_time(outfile):
-    """Extract total time from an aims output file."""
+def extract_peak_memory(outfile):
+    """Extract the maximum peak memory (MB) across all tasks."""
 
     with open(outfile, "r") as f:
         text = f.read()
 
-    matches = TIMING_REGEX.findall(text)
+    matches = MEMORY_REGEX.findall(text)
 
     if not matches:
-        raise ValueError(f"Could not find timing in {outfile}")
+        return None  # or raise if you prefer strict behavior
 
-    return float(matches[-1])
+    return max(float(m) for m in matches)
+
+def extract_time(outfile):
+    """Extract the wall-clock total time from an FHI-aims output file."""
+
+    with open(outfile, "r") as f:
+        text = f.read()
+
+    match = TIMING_REGEX.search(text)
+
+    if not match:
+        raise ValueError(f"Could not find total timing in {outfile}")
+
+    cpu_time, wall_time = map(float, match.groups())
+    return wall_time
 
 
 def extract_ncores(filename):
@@ -71,13 +82,20 @@ def main():
                 try:
                     ncores = extract_ncores(outfile.name)
                     time = extract_time(outfile)
+                    memory = extract_peak_memory(outfile)
 
+                    if method == "lapack":
+                        method = "LAPACK"
+                    if method == "scalapack":
+                        method = "ScaLAPACK"
+                    
                     records.append(
                         {
                             "calculation": calculation,
                             "method": method,
                             "ncores": ncores,
                             "time": time,
+                            "peak_memory_mb": memory,
                         }
                     )
 

@@ -1,131 +1,227 @@
-import pandas as pd
-import numpy as np
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import numpy as np
+import pandas as pd
 import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
-def add_inverse_lines(ax, n_lines, **plot_kwargs):
+
+def add_inverse_lines(ax, n_lines=20, **kwargs):
     """
-    Add exactly n_lines of y = C/x, filling the plot from corner to corner.
+    Add n_lines of y = C / x guide curves (ideal inverse scaling)
+    and restore axis limits at the end.
     """
-    xmin, xmax = ax.get_xlim()
-    ymin, ymax = ax.get_ylim()
 
-    xmin, xmax = min(xmin, xmax), max(xmin, xmax)
-    ymin, ymax = min(ymin, ymax), max(ymin, ymax)
+    xmin, xmax = sorted(ax.get_xlim())
+    ymin, ymax = sorted(ax.get_ylim())
+    
+    print(xmin, xmax)
+    print(ymin, ymax)
 
-    # Corner-touching limits (this is the key correction)
-    C_min = ymin*xmin
-    C_max = ymax*xmax
+    # safety for log plots
+    # if xmin <= 0 or ymin <= 0:
+    #     return
 
-    # Log-spaced constants to evenly fill the plot
-    C_values = np.logspace(np.log10(C_min), np.log10(C_max), n_lines)
+    # save original limits
+    xlim = (xmin, xmax)
+    ylim = (ymin, ymax)
 
-    x = np.logspace(np.log10(xmin), np.log10(xmax), 2)
+    x = np.logspace(np.log10(xmin), np.log10(xmax), 200)
 
-    for C in C_values:
-        y = C/x
-        ax.plot(x, y, **plot_kwargs)
-        
-    ax.set_xlim(xmin, xmax)
-    ax.set_ylim(ymin, ymax)
+    c_min = xmin * ymin
+    c_max = xmax * ymax
 
-plt.style.use("../style.mplstyle")
+    for c in np.logspace(np.log10(c_min), np.log10(c_max), n_lines):
+        ax.plot(x, c / x, **kwargs)
 
-df = pd.read_csv("dataframe.csv")
+    # restore limits (important after plotting)
+    ax.set_xlim(xlim)
+    ax.set_ylim(ylim)
+    
+# -----------------------------
+# Settings
+# -----------------------------
+STYLE_FILE = "../style.mplstyle"
+DATA_FILE = "dataframe.csv"
+IMAGE_FILE = "MgO.png"
+OUTPUT_FILE = "scaling.pdf"
 
-pivot = df.pivot_table(
-    index=["ncores", "method"],
-    columns="calculation",
-    values="time"
-).reset_index()
-
-pivot["diff"] = pivot["dipole"] - pivot["scf"]
-
-colors = {
+COLORS = {
     "LAPACK": "#1f77b4",
-    "ScaLAPACK": "#ff7f0e"
+    "ScaLAPACK": "#ff7f0e",
 }
 
-plt.figure(figsize=(3, 3))
-ax = plt.gca()
 
-for method in pivot["method"].unique():
-    sub = pivot[pivot["method"] == method].sort_values("ncores")
+# -----------------------------
+# Load data
+# -----------------------------
+def load_data(path):
+    df = pd.read_csv(path)
 
-    ax.plot(
-        sub["ncores"],
-        sub["diff"],
-        color=colors.get(method, "black"),
-        linewidth=1.0,
-        alpha=0.5
+    required = {"calculation", "method", "ncores", "time", "peak_memory_mb"}
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"Missing columns: {missing}")
+
+    df = df.sort_values(["method", "calculation", "ncores"])
+    return df
+
+
+# -----------------------------
+# Optional image overlay
+# -----------------------------
+def add_image(ax, path, xy=(160, 800), zoom=0.06):
+    path = Path(path)
+    if not path.exists():
+        return
+
+    img = mpimg.imread(path)
+    ax.add_artist(
+        AnnotationBbox(OffsetImage(img, zoom=zoom), xy, frameon=False)
     )
 
-    ax.scatter(
-        sub["ncores"],
-        sub["diff"],
-        color=colors.get(method, "black"),
-        label=method,
-        zorder=3
+
+# -----------------------------
+# Plot
+# -----------------------------
+def plot(df):
+    fig, (ax1, ax2) = plt.subplots(
+        2,
+        1,
+        figsize=(3, 4),
+        sharex=True,
+        gridspec_kw={"height_ratios": [2, 1]},
     )
 
-# ---- PNG image ----
-img = mpimg.imread("MgO.png")
+    df = df[df["ncores"] <= 512]
 
-imagebox = OffsetImage(img, zoom=0.06)
-ab = AnnotationBbox(imagebox, (900, 600), frameon=False)
-ax.add_artist(ab)
+    # =========================================================
+    # TOP: CPU time (dipole only, as before: dipole - scf)
+    # =========================================================
+    dip = df[df["calculation"] == "dipole"].set_index(["method", "ncores"])
+    scf = df[df["calculation"] == "scf"].set_index(["method", "ncores"])
 
-# ---- Log scales ----
-# ax.set_xlim(64,None)
-ax.set_xscale("log", base=2)
-ax.set_yscale("log")
-ax.set_ylim(250,None)
+    common = dip.index.intersection(scf.index)
 
-ax.set_xlabel("n. cores")
-ax.set_ylabel("CPU time (s)")
+    dip = dip.loc[common]
+    scf = scf.loc[common]
 
-# ---- PRIMARY x ticks ----
-ax.xaxis.set_major_locator(mticker.FixedLocator([128, 256, 512, 1024, 2048]))
-ax.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
+    diff = dip["time"] - scf["time"]
 
-# ---- Y axis (log scale ticks FIXED) ----
-yticks = [300, 600, 1000]
+    diff = diff.reset_index()
 
-ax.set_yscale("log")
+    for method, sub in diff.groupby("method"):
+        sub = sub.sort_values("ncores")
 
-ax.yaxis.set_major_locator(mticker.FixedLocator(yticks))
-ax.yaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
+        ax1.plot(
+            sub["ncores"],
+            sub["time"],
+            color=COLORS.get(method, "black"),
+            alpha=0.7,
+        )
 
-# IMPORTANT: kill automatic minor ticks
-ax.yaxis.set_minor_locator(mticker.NullLocator())
-ax.yaxis.set_minor_formatter(mticker.NullFormatter())
-# ---- SECONDARY (minor) x ticks ----
-# ax.xaxis.set_minor_locator(mticker.LogLocator(base=2, subs=np.linspace(1.1, 1.9, 5), numticks=100))
-# ax.xaxis.set_minor_formatter(mticker.NullFormatter())
+        ax1.scatter(
+            sub["ncores"],
+            sub["time"],
+            color=COLORS.get(method, "black"),
+            label=method,
+            zorder=3,
+        )
 
-ax.tick_params(axis="x", which="minor", length=3)
-ax.tick_params(axis="x", which="major", length=4)
+    ax1.set_yscale("log")
+    ax1.set_ylabel("CPU time (s)")
+    ax1.legend(loc="lower left", framealpha=1.0)
 
-add_inverse_lines(ax,20,**{"color":"gray","alpha":0.5,"linewidth":0.5,"linestyle":"--"})
+    ax1.text(
+        0.13,
+        0.25,
+        "ideal scaling",
+        transform=ax1.transAxes,
+        rotation=-60,
+        fontsize=8,
+        color="gray",
+    )
+    
+    ax1.set_xlim(7,576)
+    xticks = [8, 16, 32, 64, 128, 256, 512]
+    ax1.xaxis.set_major_locator(mticker.FixedLocator(xticks))
+    ax1.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
+    
+    yticks = [500, 1000]
 
-ax.text(
-    0.28, 0.6,
-    r"ideal scaling",
-    transform=ax.transAxes,
-    rotation=-65,      # angle in degrees
-    ha="center",
-    fontsize=8,
-    va="center",
-    color="gray"
+    ax1.yaxis.set_major_locator(mticker.FixedLocator(yticks))
+    ax1.yaxis.set_major_formatter(mticker.ScalarFormatter())
+
+    add_inverse_lines(
+        ax1,
+        n_lines=20,
+        color="gray",
+        alpha=0.5,
+        linewidth=0.5,
+        linestyle="--",
+    )
+
+    # =========================================================
+    # BOTTOM: dipole peak memory ONLY
+    # =========================================================
+    mem = df[df["calculation"] == "dipole"]
+
+    for method, sub in mem.groupby("method"):
+        sub = sub.sort_values("ncores")
+
+        ax2.plot(
+            sub["ncores"],
+            sub["peak_memory_mb"]/1000,
+            color=COLORS.get(method, "black"),
+            alpha=0.7,
+        )
+
+        ax2.scatter(
+            sub["ncores"],
+            sub["peak_memory_mb"]/1000,
+            color=COLORS.get(method, "black"),
+            zorder=3,
+        )
+
+    ax2.set_xscale("log", base=2)
+    ax2.set_xlabel("n. cores")
+    ax2.set_ylabel("peak memory (GB)")
+
+    xticks = [8, 16, 32, 64, 128, 256, 512]
+    ax2.xaxis.set_major_locator(mticker.FixedLocator(xticks))
+    ax2.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
+    
+    ax2.set_ylim(0,None)
+    
+    ax2.grid(
+    True,
+    color="gray",
+    alpha=0.5,
+    linewidth=0.5,
+    linestyle="--",
 )
 
-# Legend styling
-legend = plt.legend(loc="lower left")
-legend.get_frame().set_facecolor("white")
-legend.get_frame().set_edgecolor("black")
-legend.get_frame().set_alpha(1.0)
+    fig.tight_layout()
+    return fig
 
-plt.tight_layout()
-plt.savefig("scaling.pdf", bbox_inches="tight")
+
+# -----------------------------
+# Main
+# -----------------------------
+def main():
+    if Path(STYLE_FILE).exists():
+        plt.style.use(STYLE_FILE)
+
+    df = load_data(DATA_FILE)
+
+    fig = plot(df)
+
+    add_image(fig.axes[0], IMAGE_FILE)
+
+    fig.savefig(OUTPUT_FILE, bbox_inches="tight")
+
+
+if __name__ == "__main__":
+    main()
