@@ -4,12 +4,12 @@ Global information about the job:
 ================================= 
   
 Job owner: elsto(84651)
-Job name:  MgO-lapack
-Node list: vipc[2175,2178,2183,2215,2225,2228,2407,2415,2421,2469,2471,2477,2480,2577,2603,2605]
-Job start: Mon Jun  8 19:54:28 CEST 2026
-Job end:   Mon Jun  8 19:57:23 CEST 2026
-Work dir:  /u/elsto/works/ScaLAPACK-memory/MgO-supercell-4/scf/scalapack/./
-Command:   /viper/u1/elsto/works/ScaLAPACK-memory/MgO-supercell-4/scf/scalapack/main.sh
+Job name:  MgO-scalapack
+Node list: vipc[2150-2152,2157-2158,2160,2162,2168]
+Job start: Fri Jun 19 02:09:16 CEST 2026
+Job end:   Fri Jun 19 02:10:11 CEST 2026
+Work dir:  /viper/ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/scf/scalapack/./
+Command:   (null)
   
   
   
@@ -20,9 +20,9 @@ tasks of the per-task memory high-water marks; cf. "man sacct"):
   
 JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
 ------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
-9633393       MgO-lapack     16          4096                             00:02:55      0:0
-9633393.0     aims.26052     16   2048   4096     2813.69M     2416.82M   00:02:47      0:0
+9961760       MgO-scalap      8          2048                             00:00:55      0:0
+9961760.0     aims.26052      8   1024   2048      380.75M      345.87M   00:00:50      0:0
   
-Maximum memory per node: 377.647006 GB (defined as MaxRSS*Ntasks/NNodes)
-CPU utilization: 77.1 %
+Maximum memory per node: 51.103531 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 50.9 %
   

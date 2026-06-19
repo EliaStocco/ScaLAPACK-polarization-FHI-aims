@@ -1,11 +1,2 @@
-rsync -av --exclude='*.csc' viper:/u/elsto/works/ScaLAPACK-memory/MgO-supercell-4/ .
-
-find . -type f -name "scf.out" | while read -r scf; do
-    dir=$(dirname "$scf")
-    aims="$dir/aims.out"
-
-    if [ -f "$aims" ] && cmp -s "$scf" "$aims"; then
-        echo "Removing identical file: $scf"
-        rm "$scf"
-    fi
-done
+rsync -av --exclude='*.csc' viper:/viper/ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole .
+rsync -av --exclude='*.csc' viper:/viper/ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/scf .
