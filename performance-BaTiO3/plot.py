@@ -49,6 +49,8 @@ df_wide = df.pivot(
     values="time"
 ).reset_index()
 
+df_wide = df_wide.dropna(subset=["dipole", "scf"])
+
 # -----------------------------
 # Compute difference
 # -----------------------------
@@ -70,7 +72,7 @@ for marker, mol in zip(MARKERS, MOLECULES):
     
     # IMPORTANT: compute difference here
     subset = subset.copy()
-    subset["time"] = subset["dipole"] # - subset["scf"]
+    subset["time"] = subset["dipole"] - subset["scf"]
 
     subset = subset.sort_values("ncores")
 
