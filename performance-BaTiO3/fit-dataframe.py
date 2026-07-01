@@ -19,6 +19,9 @@ df = df.pivot(
     values="time"
 ).reset_index()
 
+# keep only complete pairs
+df = df.dropna(subset=["dipole", "scf"])
+
 # compute target quantity
 df["time"] = df["dipole"]  - df["scf"]
 
