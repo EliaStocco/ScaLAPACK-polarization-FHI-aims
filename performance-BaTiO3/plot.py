@@ -106,68 +106,68 @@ for marker, mol in zip(MARKERS, MOLECULES):
 # Axes formatting
 #ax.set_title("Liquid water, intermediate basis set, revPBE0+D3")
 
-# img = mpimg.imread("water.m=128.png")
-# imagebox = OffsetImage(img, zoom=0.04)
-# ab = AnnotationBbox(
-#     imagebox,
-#     (0.1, 0.73),              # position
-#     xycoords='axes fraction',  # IMPORTANT: decouples from data limits
-#     frameon=False
-# )
-# ax.add_artist(ab)
+img = mpimg.imread("BaTiO3.4x4x4.png")
+imagebox = OffsetImage(img, zoom=0.04)
+ab = AnnotationBbox(
+    imagebox,
+    (0.1, 0.65),              # position
+    xycoords='axes fraction',  # IMPORTANT: decouples from data limits
+    frameon=False
+)
+ax.add_artist(ab)
 
-# img = mpimg.imread("water.m=196.png")
-# imagebox = OffsetImage(img, zoom=0.06)
-# ab = AnnotationBbox(
-#     imagebox,
-#     (0.9, 0.75),              # position
-#     xycoords='axes fraction',  # IMPORTANT: decouples from data limits
-#     frameon=False
-# )
-# ax.add_artist(ab)
+img = mpimg.imread("BaTiO3.8x8x8.png")
+imagebox = OffsetImage(img, zoom=0.08)
+ab = AnnotationBbox(
+    imagebox,
+    (0.85, 0.6),              # position
+    xycoords='axes fraction',  # IMPORTANT: decouples from data limits
+    frameon=False
+)
+ax.add_artist(ab)
 
-# ax.text(
-#     0.138, 0.33,
-#     r"$y = Ax^{-m}$",
-#     transform=ax.transAxes,
-#     ha="right",
-#     va="top",
-#     bbox=dict(
-#         boxstyle="round",
-#         facecolor="white",
-#         edgecolor="black"
-#     )
-# )
+ax.text(
+    0.132, 0.33,
+    r"$y = Ax^{-m}$",
+    transform=ax.transAxes,
+    ha="right",
+    va="top",
+    bbox=dict(
+        boxstyle="round",
+        facecolor="white",
+        edgecolor="black"
+    )
+)
 
-# ax.text(
-#     0.5, 0.59,
-#     r"ideal scaling: $m=1$",
-#     transform=ax.transAxes,
-#     rotation=-33,      # angle in degrees
-#     ha="center",
-#     va="center",
-#     color="gray"
-# )
+ax.text(
+    0.5, 0.48,
+    r"ideal scaling: $m=1$",
+    transform=ax.transAxes,
+    rotation=-18,      # angle in degrees
+    ha="center",
+    va="center",
+    color="gray"
+)
 
-# ax.text(
-#     0.5, 0.35,
-#     r"$m=0.46$",
-#     transform=ax.transAxes,
-#     rotation=-15,      # angle in degrees
-#     ha="center",
-#     va="center",
-#     color="#1f77b4"
-# )
+ax.text(
+    0.4, 0.31,
+    r"$m=0.94$",
+    transform=ax.transAxes,
+    rotation=-18,      # angle in degrees
+    ha="center",
+    va="center",
+    color="#1f77b4"
+)
 
-# ax.text(
-#     0.5, 0.86,
-#     r"$m=0.63$",
-#     transform=ax.transAxes,
-#     rotation=-20,      # angle in degrees
-#     ha="center",
-#     va="center",
-#     color="#ff7f0e"
-# )
+ax.text(
+    0.85, 0.92,
+    r"$m=0.95$",
+    transform=ax.transAxes,
+    rotation=-18,      # angle in degrees
+    ha="center",
+    va="center",
+    color="#ff7f0e"
+)
 
 ax.set_xscale("log")
 ax.set_yscale("log")
@@ -196,4 +196,4 @@ add_inverse_lines(
 )
 
 plt.tight_layout()
-plt.savefig("time-vs-cores.pdf", bbox_inches="tight")
+plt.savefig("BaTiO3.supercell.pdf", bbox_inches="tight")
