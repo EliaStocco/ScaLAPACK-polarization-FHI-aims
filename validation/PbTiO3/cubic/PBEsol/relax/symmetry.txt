@@ -1,0 +1,74 @@
+@------------------------------
+script file         : information-and-primitive.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/inspect/information-and-primitive.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/PbTiO3/cubic/PBEsol/relax
+VScode debugging    : "args" : ["-i", "geometry.in"] 
+running script as   : information-and-primitive.py  -i geometry.in
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10574353
+PID                 : 504145
+start date          : 2026-07-13
+start time          : 12:51:29
+@------------------------------
+
+	 Show general information of a given atomic structure and find its primitive cell structure.
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	            threshold: 0.001
+	               rotate: True
+	                shift: False
+	       show_positions: False
+	           conversion: None
+	               output: None
+	        output_format: None
+
+
+	----------------------------------------------------------------------------------------------------
+	Reading atomic structure from input file 'geometry.in' ... done
+	Rotating the lattice vectors of the atomic structure such that they will be in upper triangular form ... done
+
+	Computing general information of the atomic structure ... done
+	Warning:
+	the positions are assumed to be stored in angstrom in the input file
+	
+	Original structure information:
+	--------------
+	Number of atoms               : 5
+	Chemical formula              : O3PbTi
+	(a, b, c, α, β, γ) [ang,deg]  : 3.914015013457 3.914015013457 3.914015013457 90.0 90.0 90.0 
+	Bravais Lattice               : primitive cubic CUB(a=3.91402)
+	Symmetry Threshold            : 0.001
+	Spacegroup number             : 221
+	Hall symbol                   : -P 4 2 3
+	Occupied Wyckoff positions    : a b c 
+	Unique equivalent atoms       : 1 2 3 
+	Is primitive cell?            : True
+	
+	Additional information:
+	volume [ang^3]                : 59.960805937918586
+	volume [au^3]                 : 404.6355592159955
+	density [g/cm^3]              : 8.392974859310264
+
+	Cell:
+	|-----------------------------------|
+	|   |    1         2         3      |
+	|-----------------------------------|
+	| x |    3.9140    0.0000    0.0000 |
+	| y |    0.0000    3.9140    0.0000 |
+	| z |    0.0000    0.0000    3.9140 |
+	|-----------------------------------|
+
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-13
+end time: 12:51:29s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+

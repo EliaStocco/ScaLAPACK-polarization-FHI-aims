@@ -1,0 +1,89 @@
+@------------------------------
+script file         : optimize.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/PbTiO3/displaced/LDA/relax
+VScode debugging    : "args" : ["-i", "geometry.in", "-u", "false", "-p", "9008", "-f", "1e-6", "-cs", "true", "-rc", "true"] 
+running script as   : optimize.py  -i geometry.in -u false -p 9008 -f 1e-6 -cs true -rc true
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10574368
+PID                 : 3992907
+start date          : 2026-07-13
+start time          : 12:49:11
+@------------------------------
+
+	 Run an ASE optimizer with constrained symmetries.
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	                 port: 9008
+	              address: None
+	                 unix: False
+	                 fmax: 1e-06
+	              opt_par: None
+	           trajectory: minimization-trajectory.extxyz
+	              restart: None
+	              maxstep: 100
+	   constrain_symmetry: True
+	              symprec: 0.01
+	           relax_cell: True
+	               output: final.extxyz
+	        output_format: None
+
+	Reading the first atomic structure from file 'geometry.in' ... done
+	n. of atoms:  5
+	Setting constraints for preserving symmetries ... 
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+	Preparing filter to relax the cell ... done
+	Allocating BFGS optimizer  ... done
+	unitsocket: None
+	port: 9008
+	Running BFGS optimizer  ... 
+      Step     Time          Energy          fmax
+BFGS:    0 12:50:03  -619175.920755        0.336510
+BFGS:    1 12:50:42  -619175.925651        0.292660
+BFGS:    2 12:51:23  -619175.938991        0.230033
+BFGS:    3 12:52:03  -619175.939895        0.161804
+BFGS:    4 12:52:44  -619175.940777        0.098612
+BFGS:    5 12:53:23  -619175.941041        0.092791
+BFGS:    6 12:54:03  -619175.941557        0.062399
+BFGS:    7 12:54:44  -619175.941760        0.050223
+BFGS:    8 12:55:24  -619175.941913        0.053623
+BFGS:    9 12:56:03  -619175.942069        0.080316
+BFGS:   10 12:56:43  -619175.942338        0.089926
+BFGS:   11 12:57:24  -619175.942640        0.064606
+BFGS:   12 12:58:04  -619175.942885        0.046291
+BFGS:   13 12:58:57  -619175.943119        0.051163
+BFGS:   14 12:59:37  -619175.943436        0.084120
+BFGS:   15 13:00:18  -619175.943915        0.116106
+BFGS:   16 13:00:58  -619175.944400        0.105589
+BFGS:   17 13:01:39  -619175.944698        0.054916
+BFGS:   18 13:02:20  -619175.944782        0.008028
+BFGS:   19 13:02:57  -619175.944788        0.000937
+BFGS:   20 13:03:33  -619175.944788        0.000108
+BFGS:   21 13:04:08  -619175.944788        0.000012
+BFGS:   22 13:04:42  -619175.944788        0.000006
+BFGS:   23 13:05:16  -619175.944788        0.000012
+BFGS:   24 13:05:49  -619175.944788        0.000005
+BFGS:   25 13:06:21  -619175.944788        0.000006
+BFGS:   26 13:06:56  -619175.944788        0.000027
+BFGS:   27 13:07:29  -619175.944788        0.000009
+BFGS:   28 13:08:03  -619175.944788        0.000008
+BFGS:   29 13:08:36  -619175.944788        0.000001
+	Finished running BFGS optimizer
+	Saving the relaxed atomic structure and optimizer state to file 'final.extxyz' ... done
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-13
+end time: 13:08:36s 
+elapsed seconds: 1165s
+elapsed time: 00:19:25
+------------------------------@
+

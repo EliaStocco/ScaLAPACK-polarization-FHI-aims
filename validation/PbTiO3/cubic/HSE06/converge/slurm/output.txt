@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  PbTiO3
+Node list: vipc2023
+Job start: Wed Jul 15 01:22:01 CEST 2026
+Job end:   Wed Jul 15 01:47:58 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/PbTiO3/cubic/HSE06/converge/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/PbTiO3/cubic/HSE06/converge/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+10589023          PbTiO3      1           256                             00:25:57      0:0
+10589023.0    aims.26062      1    128    256     1518.90M      996.41M   00:25:52      0:0
+  
+Maximum memory per node: 203.863359 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 97.9 %
+  
