@@ -1,0 +1,29 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  PbTiO3
+Node list: vipc2562
+Job start: Mon Jul 13 12:48:53 CEST 2026
+Job end:   Mon Jul 13 12:53:24 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/PbTiO3/cubic/LDA/relax/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/PbTiO3/cubic/LDA/relax/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+10574354          PbTiO3      1           256                             00:04:31      0:0
+10574354.0    aims.26052      1    128    256      275.48M      253.27M   00:03:19      0:0
+10574354.1    aims.26052      1    128    256      253.10M      239.59M   00:00:53      0:0
+  
+Maximum memory per node: 36.973838 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 86.3 %
+  

@@ -5,9 +5,9 @@ Global information about the job:
   
 Job owner: elsto(84651)
 Job name:  PbTiO3
-Node list: vipl2020
-Job start: Sat Jun  6 22:07:19 CEST 2026
-Job end:   Sat Jun  6 22:08:09 CEST 2026
+Node list: vipc2173
+Job start: Mon Jul 13 16:53:09 CEST 2026
+Job end:   Mon Jul 13 16:54:01 CEST 2026
 Work dir:  /u/elsto/works/ScaLAPACK-validation/PbTiO3/displaced/LDA/converge/./
 Command:   /viper/u1/elsto/works/ScaLAPACK-validation/PbTiO3/displaced/LDA/converge/main.sh
   
@@ -20,9 +20,9 @@ tasks of the per-task memory high-water marks; cf. "man sacct"):
   
 JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
 ------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
-9579796           PbTiO3      1           256                             00:00:50      0:0
-9579796.0     aims.26052      1    128    256      330.41M      234.45M   00:00:47      0:0
+10577558          PbTiO3      1           256                             00:00:52      0:0
+10577558.0    aims.26062      1    128    256      359.50M      243.99M   00:00:49      0:0
   
-Maximum memory per node: 44.346769 GB (defined as MaxRSS*Ntasks/NNodes)
-CPU utilization: 76.0 %
+Maximum memory per node: 48.250880 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 73.1 %
   

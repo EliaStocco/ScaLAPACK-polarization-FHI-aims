@@ -1,0 +1,10 @@
+xc                           hse06 0.11
+hse_unit                     bohr
+hybrid_xc_coeff              0.25
+relativistic                 atomic_zora scalar
+k_grid                       8 8 8
+# include_spin_orbit           non_self_consistent
+sc_accuracy_rho              1e-8   
+elsi_restart                 write scf_converged 
+
+
