@@ -1,0 +1,21 @@
+Wrote 6 rows to PbTiO3.csv
+cubic        HSE06   match
+cubic        LDA     match
+cubic        PBEsol  mismatch
+displaced    HSE06   not_compared_missing_value
+displaced    LDA     match
+displaced    PBEsol  match
+
+LAPACK full polarization along periodic directions (C/m^2):
+cubic        HSE06   P1=-2.41084203e-07  P2=5.11850266e-07  P3=-1.2955022e-07
+cubic        LDA     P1=-3.4545144e-08  P2=4.51465826e-07  P3=-2.0860453e-08
+cubic        PBEsol  P1=8.5272628e-08  P2=3.26537197e-07  P3=5.4375428e-08
+displaced    HSE06   P1=5.14206264e-07  P2=-6.84421841e-07  P3=0.145566724
+displaced    LDA     P1=1.006395e-06  P2=-1.006775e-06  P3=-0.266654875
+displaced    PBEsol  P1=5.49272415e-07  P2=-8.49124223e-07  P3=-0.167179551
+
+displaced minus cubic LAPACK full polarization (C/m^2):
+HSE06   ΔP1=7.55290467e-07  ΔP2=-1.19627211e-06  ΔP3=0.145566854
+LDA     ΔP1=1.04094014e-06  ΔP2=-1.45824083e-06  ΔP3=-0.266654854
+PBEsol  ΔP1=4.63999787e-07  ΔP2=-1.17566142e-06  ΔP3=-0.167179605
+Mismatch found: LAPACK and ScaLAPACK do not agree for every complete pair.

@@ -1,0 +1,21 @@
+Wrote 6 rows to BaTiO3.csv
+cubic        HSE06   not_compared_missing_value
+cubic        LDA     match
+cubic        PBEsol  match
+rhombohedral HSE06   not_compared_missing_value
+rhombohedral LDA     match
+rhombohedral PBEsol  match
+
+LAPACK full polarization along periodic directions (C/m^2):
+cubic        HSE06   missing_aims.out
+cubic        LDA     P1=-1.077364e-09  P2=-1.077402e-09  P3=-1.077414e-09
+cubic        PBEsol  P1=5.97288707e-10  P2=5.97235049e-10  P3=5.97216411e-10
+rhombohedral HSE06   P1=0.277849493  P2=0.277849524  P3=0.277849484
+rhombohedral LDA     P1=0.177390094  P2=0.177390003  P3=0.177389936
+rhombohedral PBEsol  P1=0.225997307  P2=0.225997169  P3=0.225996999
+
+rhombohedral minus cubic LAPACK full polarization (C/m^2):
+HSE06   not available (missing_aims.out; ok)
+LDA     ΔP1=0.177390095  ΔP2=0.177390004  ΔP3=0.177389937
+PBEsol  ΔP1=0.225997306  ΔP2=0.225997168  ΔP3=0.225996998
+Everything is okay: LAPACK and ScaLAPACK return the same values.

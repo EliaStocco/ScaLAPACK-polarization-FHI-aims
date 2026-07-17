@@ -1,0 +1,7 @@
+structure,functional,lapack_px_C_m2,lapack_py_C_m2,lapack_pz_C_m2,lapack_status,scalapack_px_C_m2,scalapack_py_C_m2,scalapack_pz_C_m2,scalapack_status,max_abs_difference_C_m2,comparison
+cubic,HSE06,-2.41084203e-07,5.11850266e-07,-1.2955022e-07,ok,-2.41084215e-07,5.11850319e-07,-1.29550256e-07,ok,5.29999999804989e-14,match
+cubic,LDA,-3.4545144e-08,4.51465826e-07,-2.0860453e-08,ok,-3.4545167e-08,4.51465843e-07,-2.0860483e-08,ok,2.9999999999637e-14,match
+cubic,PBEsol,8.5272628e-08,3.26537197e-07,5.4375428e-08,ok,8.5142e-08,3.2652954e-07,5.4222951e-08,ok,1.52476999999997e-10,mismatch
+displaced,HSE06,5.14206264e-07,-6.84421841e-07,0.145566724,ok,,,,missing_aims.out,,not_compared_missing_value
+displaced,LDA,1.006395e-06,-1.006775e-06,-0.266654875,ok,1.006395e-06,-1.006775e-06,-0.266654875,ok,0,match
+displaced,PBEsol,5.49272415e-07,-8.49124223e-07,-0.167179551,ok,5.49272426e-07,-8.49124249e-07,-0.167179551,ok,2.59999999884357e-14,match
