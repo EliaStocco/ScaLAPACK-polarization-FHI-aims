@@ -1,0 +1,64 @@
+@------------------------------
+script file         : optimize.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/PBEsol/relax
+VScode debugging    : "args" : ["-i", "geometry.in", "-u", "false", "-p", "9585", "-f", "1e-6", "-cs", "true", "-rc", "true"] 
+running script as   : optimize.py  -i geometry.in -u false -p 9585 -f 1e-6 -cs true -rc true
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10573223
+PID                 : 759646
+start date          : 2026-07-13
+start time          : 11:54:17
+@------------------------------
+
+	 Run an ASE optimizer with constrained symmetries.
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	                 port: 9585
+	              address: None
+	                 unix: False
+	                 fmax: 1e-06
+	              opt_par: None
+	           trajectory: minimization-trajectory.extxyz
+	              restart: None
+	              maxstep: 100
+	   constrain_symmetry: True
+	              symprec: 0.01
+	           relax_cell: True
+	               output: final.extxyz
+	        output_format: None
+
+	Reading the first atomic structure from file 'geometry.in' ... done
+	n. of atoms:  5
+	Setting constraints for preserving symmetries ... 
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 221 , international (Hermann-Mauguin) Pm-3m , Hall  -P 4 2 3
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 221 , international (Hermann-Mauguin) Pm-3m , Hall  -P 4 2 3
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 221 , international (Hermann-Mauguin) Pm-3m , Hall  -P 4 2 3
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 221 , international (Hermann-Mauguin) Pm-3m , Hall  -P 4 2 3
+	Preparing filter to relax the cell ... done
+	Allocating BFGS optimizer  ... done
+	unitsocket: None
+	port: 9585
+	Running BFGS optimizer  ... 
+      Step     Time          Energy          fmax
+BFGS:    0 11:55:48  -254466.792483        0.098913
+BFGS:    1 11:56:49  -254466.792836        0.087142
+BFGS:    2 11:57:53  -254466.793891        0.000798
+BFGS:    3 11:58:50  -254466.793894        0.000006
+BFGS:    4 11:59:41  -254466.793894        0.000000
+	Finished running BFGS optimizer
+	Saving the relaxed atomic structure and optimizer state to file 'final.extxyz' ... done
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-13
+end time: 11:59:42s 
+elapsed seconds: 324s
+elapsed time: 00:05:24
+------------------------------@
+

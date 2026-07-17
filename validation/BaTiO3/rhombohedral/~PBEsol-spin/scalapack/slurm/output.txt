@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: vipc[2224,2227,2230,2445-2446,2466]
+Job start: Mon Jun  1 20:28:48 CEST 2026
+Job end:   Mon Jun  1 20:29:33 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BaTiO3/rhombohedral/PBEsol-spin/scalapack/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/rhombohedral/PBEsol-spin/scalapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+9370823           BaTiO3      6          1536                             00:00:45      0:0
+9370823.0     aims.26052      6    768   1536      238.49M      227.97M   00:00:41      0:0
+  
+Maximum memory per node: 32.008962 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 71.1 %
+  

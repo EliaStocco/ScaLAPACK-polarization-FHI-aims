@@ -1,4 +1,4 @@
-xc                           pbesol
+xc                           pw-lda
 relativistic                 atomic_zora scalar
 k_grid                       8 8 8
 sc_accuracy_rho              1e-6

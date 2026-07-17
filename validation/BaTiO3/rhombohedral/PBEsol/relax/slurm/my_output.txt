@@ -1,0 +1,15 @@
+Installing ESLIB ...
+Done. All the scripts should be available in the PATH.
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['number']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['hall']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['wyckoffs']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['equivalent_atoms']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/var/spool/slurmd/job10575319/slurm_script: line 54: : No such file or directory
+srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x &> aims.out
+/var/spool/slurmd/job10575319/slurm_script: line 60: : No such file or directory
+/var/spool/slurmd/job10575319/slurm_script: line 61: : No such file or directory
+

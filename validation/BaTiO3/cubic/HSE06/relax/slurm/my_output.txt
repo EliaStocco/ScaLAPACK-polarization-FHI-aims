@@ -1,0 +1,98 @@
+Installing ESLIB ...
+Done. All the scripts should be available in the PATH.
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['number']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['international']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['hall']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_lattice']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['transformation_matrix']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_rotation_matrix']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_positions']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['mapping_to_primitive']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_mapping_to_primitive']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['rotations']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['translations']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+srun /u/elsto/programs/FHIaims/build/aims.260629.scalapack.mpi.x &> aims.out
+
+@------------------------------
+script file         : convert-file.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/convert/convert-file.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/cubic/HSE06/relax
+VScode debugging    : "args" : ["-i", "final.extxyz", "-o", "geometry.in"] 
+running script as   : convert-file.py  -i final.extxyz -o geometry.in
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10600832
+PID                 : 4075332
+start date          : 2026-07-16
+start time          : 01:43:08
+@------------------------------
+
+	 Convert the format and unit of a file using 'ASE'
+
+	 Input arguments:
+	                input: final.extxyz
+	         input_format: None
+	      remove_replicas: False
+	    remove_properties: False
+	        remove_arrays: False
+	                  pbc: None
+	           input_unit: None
+	      input_unit_cell: None
+	          output_unit: None
+	          pos_keyword: positions
+	            same_cell: False
+	               scaled: False
+	               rotate: False
+	                index: :
+	               output: geometry.in
+	        output_format: None
+	               folder: None
+
+	 Deducing input file format: extxyz
+	 Deducing output file format: aims
+01:43:08 Reading data from input file 'final.extxyz' ...           00:00:00 Reading data from input file 'final.extxyz' ... done          
+	 n. of atomic structures: 1
+	 The atomic structure is periodic.
+
+	  Summary of the properties: 
+
+	         key   i/a numeric   dtype     shape
+	      energy  info    True float64      (1,)
+	 free_energy  info    True float64      (1,)
+	      stress  info    True float64    (1, 6)
+	     numbers array    True   int64    (1, 5)
+	   positions array    True float64 (1, 5, 3)
+	      forces array    True float64 (1, 5, 3)
+
+01:43:08 Writing data to file 'geometry.in' ...           00:00:00 Writing data to file 'geometry.in' ... done          
+
+	  Input file size: 512.0 B
+	 Output file size: 512.0 B
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-16
+end time: 01:43:08s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['wyckoffs']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['equivalent_atoms']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+srun /u/elsto/programs/FHIaims/build/aims.260629.scalapack.mpi.x &> aims.out
+
