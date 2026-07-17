@@ -1,0 +1,37 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  PbTiO3-PBEsol
+Node list: vipc2179
+Job start: Fri Jul 17 12:12:58 CEST 2026
+Job end:   Fri Jul 17 12:26:34 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/test-PbTiO3/PBEsol/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/test-PbTiO3/PBEsol/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+10615630      PbTiO3-PBE      1           256                             00:13:36      0:0
+10615630.0    aims.26062      1    128    256      223.43M      206.32M   00:01:18      0:0
+10615630.1    aims.26062      1    128    256      227.19M      212.29M   00:01:23      0:0
+10615630.2    aims.26062      1    128    256      224.81M      212.90M   00:01:22      0:0
+10615630.3    aims.26062      1    128    256      223.18M      210.11M   00:01:22      0:0
+10615630.4    aims.26062      1    128    256      225.61M      209.97M   00:01:22      0:0
+10615630.5    aims.26062      1    128    256      218.04M      208.15M   00:01:23      0:0
+10615630.6    aims.26062      1    128    256      217.90M      207.85M   00:01:21      0:0
+10615630.7    aims.26062      1    128    256      225.41M      208.47M   00:01:21      0:0
+10615630.8    aims.26062      1    128    256      220.73M      208.09M   00:01:21      0:0
+10615630.9    aims.26062      1    128    256      216.42M      200.16M   00:01:19      0:0
+  
+Maximum memory per node: 30.492328 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 89.0 %
+  
