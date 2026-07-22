@@ -1,0 +1,29 @@
+Wrote 6 rows to BiFeO3.csv
+BiFeO3_R-3c_AFM HSE06   not_compared_missing_value
+BiFeO3_R-3c_AFM LDA     match
+BiFeO3_R-3c_AFM PBEsol  match
+BiFeO3_R3c_AFM HSE06   not_compared_missing_value
+BiFeO3_R3c_AFM LDA     match
+BiFeO3_R3c_AFM PBEsol  match
+
+LAPACK full polarization along periodic directions (C/m^2):
+BiFeO3_R-3c_AFM HSE06   missing_aims.out
+BiFeO3_R-3c_AFM LDA     P1=0.317286276  P2=0.317286272  P3=0.317286281
+BiFeO3_R-3c_AFM PBEsol  P1=0.310703647  P2=0.310703649  P3=-0.310703646
+BiFeO3_R3c_AFM HSE06   missing_aims.out
+BiFeO3_R3c_AFM LDA     P1=0.024385025  P2=0.0243772  P3=0.024381656
+BiFeO3_R3c_AFM PBEsol  P1=0.030985006  P2=0.030976339  P3=0.030978909
+
+BiFeO3_R3c_AFM minus BiFeO3_R-3c_AFM LAPACK full polarization (C/m^2):
+HSE06   not available (missing_aims.out; missing_aims.out)
+LDA     ΔP1=-0.292901251  ΔP2=-0.292909072  ΔP3=-0.292904625
+PBEsol  ΔP1=-0.279718641  ΔP2=-0.27972731  ΔP3=0.341682555
+
+BiFeO3_R3c_AFM minus BiFeO3_R-3c_AFM Cartesian polarization (C/m^2):
+HSE06   lapack    not available (missing_aims.out; missing_aims.out)
+HSE06   scalapack not available (missing_aims.out; missing_aims.out)
+LDA     lapack    ΔPx=-0.693957285  ΔPy=-0.393507514  ΔPz=-0.276403905  |ΔP|=0.844289047
+LDA     scalapack ΔPx=-0.693957285  ΔPy=-0.393507514  ΔPz=-0.276403905  |ΔP|=0.844289047
+PBEsol  lapack    ΔPx=-0.296008174  ΔPy=-0.167854775  ΔPz=0.349177652  |ΔP|=0.487566505
+PBEsol  scalapack ΔPx=-0.296008174  ΔPy=-0.167854775  ΔPz=0.349177652  |ΔP|=0.487566505
+Everything is okay: LAPACK and ScaLAPACK return the same values.

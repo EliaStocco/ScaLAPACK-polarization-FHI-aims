@@ -1,0 +1,27 @@
+# BiFeO3, centrosymmetric R-3c reference, 10-atom rhombohedral primitive cell
+# G-type collinear AFM initialization: Fe moments +5 and -5 mu_B
+# Model structural parameters from Phys. Rev. B 104, 035159 (2021)
+# Same cell as the polar R3c phase: a = 5.641 Angstrom, alpha = 59.11 degrees
+# Fractional parameters: x_Fe = 0.250; O = (0.500, 0.064, 0.936)
+#
+# This is the symmetry-restored reference used to remove the polar ionic
+# displacements while retaining antiphase oxygen-octahedral rotations.
+
+lattice_vector  5.6410000000  0.0000000000  0.0000000000
+lattice_vector  2.8960413593  4.8408496615  0.0000000000
+lattice_vector  2.8960413593  1.6421732359  4.5537997879
+
+atom_frac  0.000000000  0.000000000  0.000000000  Bi
+atom_frac  0.500000000  0.500000000  0.500000000  Bi
+
+atom_frac  0.250000000  0.250000000  0.250000000  Fe
+initial_moment  5.0
+atom_frac  0.750000000  0.750000000  0.750000000  Fe
+initial_moment -5.0
+
+atom_frac  0.500000000  0.064000000  0.936000000  O
+atom_frac  0.936000000  0.500000000  0.064000000  O
+atom_frac  0.064000000  0.936000000  0.500000000  O
+atom_frac  0.000000000  0.436000000  0.564000000  O
+atom_frac  0.436000000  0.564000000  0.000000000  O
+atom_frac  0.564000000  0.000000000  0.436000000  O

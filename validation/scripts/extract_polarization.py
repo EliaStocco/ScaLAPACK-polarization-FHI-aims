@@ -123,6 +123,7 @@ def main() -> int:
 
     structures = args.structures
     rows = []
+    cartesian_polarizations = {}
     lapack_directives = {}
     for structure in structures:
         for functional in FUNCTIONALS:
@@ -131,6 +132,9 @@ def main() -> int:
             for backend in BACKENDS:
                 path = args.material_dir / structure / functional / backend / "aims.out"
                 vectors[backend], statuses[backend] = read_polarization(path)
+                cartesian_polarizations[(structure, functional, backend)] = (
+                    vectors[backend], statuses[backend]
+                )
             lapack_path = args.material_dir / structure / functional / "lapack" / "aims.out"
             lapack_directives[(structure, functional)] = read_full_directive_polarizations(lapack_path)
             comparison, max_difference = compare(
@@ -190,6 +194,34 @@ def main() -> int:
             f"{functional:7} "
             f"ΔP1={difference[0]:.9g}  ΔP2={difference[1]:.9g}  ΔP3={difference[2]:.9g}"
         )
+
+    print(
+        f"\n{comparison_structure} minus {reference} "
+        "Cartesian polarization (C/m^2):"
+    )
+    for functional in FUNCTIONALS:
+        for backend in BACKENDS:
+            reference_values, reference_status = cartesian_polarizations[
+                (reference, functional, backend)
+            ]
+            comparison_values, comparison_status = cartesian_polarizations[
+                (comparison_structure, functional, backend)
+            ]
+            if reference_values is None or comparison_values is None:
+                print(
+                    f"{functional:7} {backend:9} not available "
+                    f"({reference_status}; {comparison_status})"
+                )
+                continue
+            difference = tuple(
+                right - left for left, right in zip(reference_values, comparison_values)
+            )
+            modulus = math.sqrt(sum(component ** 2 for component in difference))
+            print(
+                f"{functional:7} {backend:9} "
+                f"ΔPx={difference[0]:.9g}  ΔPy={difference[1]:.9g}  "
+                f"ΔPz={difference[2]:.9g}  |ΔP|={modulus:.9g}"
+            )
 
     comparisons = [row[-1] for row in rows]
     if "mismatch" in comparisons:

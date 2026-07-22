@@ -1,0 +1,79 @@
+@------------------------------
+script file         : information-and-primitive.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/inspect/information-and-primitive.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R3c_AFM/HSE06/relax-cheap
+VScode debugging    : "args" : ["-i", "geometry.in"] 
+running script as   : information-and-primitive.py  -i geometry.in
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10627824
+PID                 : 2066552
+start date          : 2026-07-20
+start time          : 07:25:56
+@------------------------------
+
+	 Show general information of a given atomic structure and find its primitive cell structure.
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	            threshold: 0.001
+	               rotate: True
+	                shift: False
+	       show_positions: False
+	           conversion: None
+	               output: None
+	        output_format: None
+
+
+	----------------------------------------------------------------------------------------------------
+	Reading atomic structure from input file 'geometry.in' ... done
+	Rotating the lattice vectors of the atomic structure such that they will be in upper triangular form ... done
+
+	Computing general information of the atomic structure ... done
+	Warning:
+	the positions are assumed to be stored in angstrom in the input file
+	
+	Original structure information:
+	--------------
+	Number of atoms               : 10
+	Chemical formula              : Bi2Fe2O6
+	(a, b, c, α, β, γ) [ang,deg]  : 5.54370627727 5.54370627727 5.54370627727 59.900756401778 59.900756401778 59.900756401778 
+	Bravais Lattice               : primitive rhombohedral RHL(a=5.54371, alpha=59.9008)
+	Symmetry Threshold            : 0.001
+	Spacegroup number             : 161
+	Hall symbol                   : R 3 -2"c
+	International symbol          : R3c
+	Occupied Wyckoff positions    : a b 
+	Unique equivalent atoms       : 1 3 5 
+	Is primitive cell?            : True
+	
+	Additional information:
+	volume [ang^3]                : 120.20062364776432
+	volume [au^3]                 : 811.1539831232774
+	density [g/cm^3]              : 8.64311220745344
+
+	Cell:
+	|-----------------------------------|
+	|   |    1         2         3      |
+	|-----------------------------------|
+	| x |    5.5437    2.7802    2.7802 |
+	| y |    0.0000    4.7962    1.6019 |
+	| z |    0.0000    0.0000    4.5208 |
+	|-----------------------------------|
+
+
+	Magnetic space group information:
+		Magnetic symmetry analysis failed:
+		 No module named 'pymatgen'
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-20
+end time: 07:25:56s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+
