@@ -1,0 +1,7 @@
+structure,functional,lapack_px_C_m2,lapack_py_C_m2,lapack_pz_C_m2,lapack_status,scalapack_px_C_m2,scalapack_py_C_m2,scalapack_pz_C_m2,scalapack_status,max_abs_difference_C_m2,comparison
+cubic,HSE06,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+cubic,LDA,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+cubic,PBEsol,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+rhombohedral,HSE06,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+rhombohedral,LDA,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+rhombohedral,PBEsol,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value

@@ -1,0 +1,7 @@
+structure,functional,lapack_px_C_m2,lapack_py_C_m2,lapack_pz_C_m2,lapack_status,scalapack_px_C_m2,scalapack_py_C_m2,scalapack_pz_C_m2,scalapack_status,max_abs_difference_C_m2,comparison
+BiFeO3_R-3c_AFM,HSE06,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+BiFeO3_R-3c_AFM,LDA,0.753753231,0.427408735,0.30022011,ok,0.753753231,0.427408735,0.30022011,ok,0,match
+BiFeO3_R-3c_AFM,PBEsol,0.372555986,0.211254398,-0.318691001,ok,0.372555986,0.211254398,-0.318691001,ok,0,match
+BiFeO3_R3c_AFM,HSE06,,,,missing_aims.out,,,,missing_aims.out,,not_compared_missing_value
+BiFeO3_R3c_AFM,LDA,0.059795946,0.033901221,0.023816205,ok,0.059795946,0.033901221,0.023816205,ok,0,match
+BiFeO3_R3c_AFM,PBEsol,0.076547812,0.043399623,0.030486651,ok,0.076547812,0.043399623,0.030486651,ok,0,match

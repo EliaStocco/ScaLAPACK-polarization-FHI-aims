@@ -1,0 +1,27 @@
+# BiFeO3, polar R3c phase, 10-atom rhombohedral primitive cell
+# G-type collinear AFM initialization: Fe moments +5 and -5 mu_B
+# HSE06-relaxed structural parameters from Phys. Rev. B 104, 035159 (2021)
+# a = 5.641 Angstrom, alpha = 59.11 degrees
+# Fractional parameters: x_Fe = 0.220; O = (0.433, 0.027, 0.892)
+#
+# initial_moment only initializes the AFM solution. Check the converged local
+# moments and keep the same magnetic branch along the polarization path.
+
+lattice_vector  5.6410000000  0.0000000000  0.0000000000
+lattice_vector  2.8960413593  4.8408496615  0.0000000000
+lattice_vector  2.8960413593  1.6421732359  4.5537997879
+
+atom_frac  0.000000000  0.000000000  0.000000000  Bi
+atom_frac  0.500000000  0.500000000  0.500000000  Bi
+
+atom_frac  0.220000000  0.220000000  0.220000000  Fe
+initial_moment  5.0
+atom_frac  0.720000000  0.720000000  0.720000000  Fe
+initial_moment -5.0
+
+atom_frac  0.433000000  0.027000000  0.892000000  O
+atom_frac  0.892000000  0.433000000  0.027000000  O
+atom_frac  0.027000000  0.892000000  0.433000000  O
+atom_frac  0.933000000  0.392000000  0.527000000  O
+atom_frac  0.392000000  0.527000000  0.933000000  O
+atom_frac  0.527000000  0.933000000  0.392000000  O
