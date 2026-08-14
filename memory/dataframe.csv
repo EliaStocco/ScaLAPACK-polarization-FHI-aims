@@ -1,5 +1,0 @@
-supercell,atoms,memory,time,file
-1,2,232.43,80.288 ,supercell-1/lapack/aims.out
-2,16,225.34,58.734,supercell-2/lapack/aims.out
-3,54,606.60,226.152,supercell-3/lapack/aims.out
-4,128,1924.39,1205.529,supercell-4/lapack/aims.out
