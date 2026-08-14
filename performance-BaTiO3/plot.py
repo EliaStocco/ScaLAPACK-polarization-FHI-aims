@@ -141,7 +141,7 @@ ax.add_artist(ab)
 
 ax.text(
     0.5, 0.48,
-    r"ideal scaling: $m=1$",
+    r"ideal scalability: $m=1$",
     transform=ax.transAxes,
     rotation=-18,      # angle in degrees
     ha="center",

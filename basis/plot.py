@@ -148,7 +148,7 @@ legend._legend_box.align = "left"
 
 ax.text(
     0.4, 0.2,
-    r"ideal scaling: $m=1$",
+    r"ideal scalability: $m=1$",
     transform=ax.transAxes,
     rotation=-15,      # angle in degrees
     ha="center",

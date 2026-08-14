@@ -137,7 +137,7 @@ def plot(df):
     ax1.text(
         0.13,
         0.25,
-        "ideal scaling",
+        "ideal scalability",
         transform=ax1.transAxes,
         rotation=-60,
         fontsize=8,

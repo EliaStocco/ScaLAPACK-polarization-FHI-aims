@@ -11,7 +11,7 @@ OUTPUT_FILE = BASE / "scaling-2-nodes.pdf"
 
 
 def plot(rows):
-    fig, ax = plt.subplots(figsize=(3,3))
+    fig, ax = plt.subplots(figsize=(3,2))
     fig.set_layout_engine(None)
     fig.set_tight_layout(False)
 
@@ -41,7 +41,7 @@ def plot(rows):
     ax.set_yscale("log", base=2)
     ax.set_ylim(1.0 / 4500.0, 30.0)
     ax.set_xlabel("n. atoms")
-    ax.set_ylabel("CPU time (h)")
+    ax.set_ylabel("CPU time")
 
     time_ticks = [1.0 / 3600.0, 1.0 / 60.0, 1.0, 24.0]
     time_labels = ["1 s", "1 m", "1 h", "1 day"]
