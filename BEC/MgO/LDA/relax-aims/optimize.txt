@@ -1,0 +1,80 @@
+@------------------------------
+script file         : optimize.py
+script global path  : /raven/u/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+working directory   : /raven/u/elsto/works/ScaLAPACK-BEC/MgO-LDA/relax
+VScode debugging    : "args" : ["-i", "geometry.in", "-p", "7605", "-f", "1e-6", "-cs", "true", "-rc", "true", "--print-cell", "true"]
+running script as   : optimize.py -i geometry.in -p 7605 -f 1e-6 -cs true -rc true --print-cell true
+python --version    : 3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:50:21)  [GCC 12.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 29317752
+PID                 : 69139
+start date          : 2026-08-13
+start time          : 13:14:40
+@------------------------------
+
+	 Run an ASE optimizer with constrained symmetries.
+
+	 Documentation:
+	 Optimize the first structure in an input file with ASE's BFGS optimizer.
+	 Energies, forces, and stresses are obtained from an external calculator through
+	 a TCP or UNIX socket. The script can preserve the initial symmetry, relax the
+	 cell, fix selected deformation-gradient components, and write an ASE trajectory.
+	 
+	 Examples:
+	   # Relax atomic positions using a TCP-connected calculator
+	   python optimize.py -i start.extxyz -p 6000 -o relaxed.extxyz
+	 
+	   # Relax atoms and cell through a UNIX socket, keeping all z cell components fixed
+	   python optimize.py -i start.extxyz -u driver.socket --relax-cell true \
+	       --cell-constraints az bz cz --constrain-symmetry true -o relaxed.extxyz
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	                 port: 7605
+	           unixsocket: None
+	                 fmax: 1e-06
+	              opt_par: None
+	           trajectory: minimization-trajectory.traj
+	              restart: None
+	            max_steps: 100
+	   constrain_symmetry: True
+	              symprec: 0.01
+	           relax_cell: True
+	           print_cell: True
+	     cell_constraints: None
+	               output: final.extxyz
+	        output_format: None
+
+	Reading the first atomic structure from file 'geometry.in' ... done
+	n. of atoms:  2
+	Setting constraints for preserving symmetries ... 
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 225 , international (Hermann-Mauguin) Fm-3m , Hall  -F 4 2 3
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 225 , international (Hermann-Mauguin) Fm-3m , Hall  -F 4 2 3
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 225 , international (Hermann-Mauguin) Fm-3m , Hall  -F 4 2 3
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 225 , international (Hermann-Mauguin) Fm-3m , Hall  -F 4 2 3
+done
+	Preparing filter to relax the cell ... done
+	Allocating BFGS optimizer  ... done
+	TCP socket: listening on port 7605
+	Running BFGS optimizer  ... 
+      Step     Time          Energy          fmax
+BFGS:    0 13:15:17    -7474.002977        0.000000
+Cell:
+[[2.998, -0.0, -0.0], [1.499, 2.596, -0.0], [1.499, 0.865, 2.448]]
+Stress tensor (eV/A^3):
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+	Finished running BFGS optimizer
+	Saving the relaxed atomic structure and optimizer state to file 'final.extxyz' ... done
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-08-13
+end time: 13:15:17s
+elapsed seconds: 36s
+elapsed time: 00:00:36
+------------------------------@
+

@@ -1,0 +1,89 @@
+@------------------------------
+script file         : information-and-primitive.py
+script global path  : /home/stoccoel/codes/eslib/eslib/scripts/inspect/information-and-primitive.py
+working directory   : /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/BEC/BaTiO3-PBE
+VScode debugging    : "args" : ["-i", "start.extxyz", "-sp", "true"] 
+running script as   : information-and-primitive.py  -i start.extxyz -sp true
+python --version    : 3.9.23 (main, Sep  4 2025, 10:12:33)  [GCC 12.2.0]
+which python        : /home/stoccoel/.pyenv/versions/eslib/bin/python
+conda env           : none
+PID                 : 92023
+start date          : 2026-07-29
+start time          : 13:34:47
+@------------------------------
+
+	 Show general information of a given atomic structure and find its primitive cell structure.
+
+	 Input arguments:
+	                input: start.extxyz
+	         input_format: None
+	            threshold: 0.001
+	               rotate: True
+	                shift: False
+	       show_positions: True
+	           conversion: None
+	               output: None
+	        output_format: None
+
+
+	----------------------------------------------------------------------------------------------------
+	Reading atomic structure from input file 'start.extxyz' ... done
+	Rotating the lattice vectors of the atomic structure such that they will be in upper triangular form ... done
+
+	Computing general information of the atomic structure ... done
+	Warning:
+	the positions are assumed to be stored in angstrom in the input file
+	
+	Original structure information:
+	--------------
+	Number of atoms               : 5
+	Chemical formula              : BaO3Ti
+	(a, b, c, α, β, γ) [ang,deg]  : 4.035 4.035 4.035 90.0 90.0 90.0 
+	Bravais Lattice               : primitive cubic CUB(a=4.035)
+	Symmetry Threshold            : 0.001
+	Spacegroup number             : 221
+	Hall symbol                   : -P 4 2 3
+	International symbol          : Pm-3m
+	Occupied Wyckoff positions    : a b d 
+	Unique equivalent atoms       : 1 2 3 
+	Is primitive cell?            : True
+	
+	Additional information:
+	volume [ang^3]                : 65.694742875
+	volume [au^3]                 : 443.3300821256342
+	density [g/cm^3]              : 5.89427237101092
+
+	Cell:
+	|-----------------------------------|
+	|   |    1         2         3      |
+	|-----------------------------------|
+	| x |    4.0350    0.0000    0.0000 |
+	| y |    0.0000    4.0350    0.0000 |
+	| z |    0.0000    0.0000    4.0350 |
+	|-----------------------------------|
+
+
+	Positions (cartesian and fractional):
+	|------------------------------------------------------|
+	|    |   Rx      Ry      Rz      fx      fy      fy    |
+	|------------------------------------------------------|
+	| Ba |   2.018   2.018   2.018   0.500   0.500   0.500 |
+	| Ti |   0.000   0.000   0.000   0.000   0.000   0.000 |
+	|  O |   0.000   0.000   2.018   0.000   0.000   0.500 |
+	|  O |   2.018   0.000   0.000   0.500   0.000   0.000 |
+	|  O |   0.000   2.018   0.000   0.000   0.500   0.000 |
+	|------------------------------------------------------|
+
+
+	Magnetic space group information:
+		All magnetic moments are zero.
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-29
+end time: 13:34:47s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+

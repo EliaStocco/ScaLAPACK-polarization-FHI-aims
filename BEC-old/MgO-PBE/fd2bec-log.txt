@@ -1,0 +1,31 @@
+
+@-------------------------------------------
+@ Description: 
+Generate all symmetry inequivalent cartesian displacements.
+@ Running: /home/stoccoel/.pyenv/versions/fd2bec/bin/generate_symmetry_inequivalent_displacements -i start.extxyz
+@ Let's start!
+
+	Reading input structure from start.extxyz ... done
+	Constructing Born Effective Charges ... done
+	Found 5 symmetry inequivalent displacements out of 5 total displacements.
+	Writing cartesian displacements to displacements.txt ... done
+
+@ Job done :)
+@ Finished in 0.08s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Description: 
+Apply the displacements to an atomic structure.
+@ Running: /home/stoccoel/.pyenv/versions/fd2bec/bin/apply_displacements -i start.extxyz -d displacements.txt
+@ Let's start!
+
+	Reading input structure from start.extxyz ... done
+	Reading cartesian displacements from displacements.txt ... done
+	Writing 5 displaced structures to geometries in aims format ...done
+
+@ Job done :)
+@ Finished in 0.01s
+-------------------------------------------@
+
