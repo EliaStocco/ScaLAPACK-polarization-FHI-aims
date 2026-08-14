@@ -126,18 +126,18 @@ ab = AnnotationBbox(
 )
 ax.add_artist(ab)
 
-ax.text(
-    0.132, 0.33,
-    r"$y = Ax^{-m}$",
-    transform=ax.transAxes,
-    ha="right",
-    va="top",
-    bbox=dict(
-        boxstyle="round",
-        facecolor="white",
-        edgecolor="black"
-    )
-)
+# ax.text(
+#     0.132, 0.33,
+#     r"$y = Ax^{-m}$",
+#     transform=ax.transAxes,
+#     ha="right",
+#     va="top",
+#     bbox=dict(
+#         boxstyle="round",
+#         facecolor="white",
+#         edgecolor="black"
+#     )
+# )
 
 ax.text(
     0.5, 0.48,
