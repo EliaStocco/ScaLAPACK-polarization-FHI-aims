@@ -133,7 +133,7 @@ ax.text(
 
 ax.text(
     0.5, 0.59,
-    r"ideal scaling: $m=1$",
+    r"ideal scalability: $m=1$",
     transform=ax.transAxes,
     rotation=-33,      # angle in degrees
     ha="center",
