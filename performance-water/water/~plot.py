@@ -138,18 +138,18 @@ ax.text(
 )
 
 ax.text(
-    0.5, 0.58,
+    0.5, 0.59,
     r"ideal scaling: $m=1$",
     transform=ax.transAxes,
-    rotation=-22,      # angle in degrees
+    rotation=-33,      # angle in degrees
     ha="center",
     va="center",
     color="gray"
 )
 
 ax.text(
-    0.5, 0.35,
-    r"$m=0.69$",
+    0.5, 0.38,
+    r"$m=0.53$",
     transform=ax.transAxes,
     rotation=-15,      # angle in degrees
     ha="center",
@@ -158,10 +158,10 @@ ax.text(
 )
 
 ax.text(
-    0.5, 0.78,
-    r"$m=0.38$",
+    0.5, 0.88,
+    r"$m=0.48$",
     transform=ax.transAxes,
-    rotation=-10,      # angle in degrees
+    rotation=-15,      # angle in degrees
     ha="center",
     va="center",
     color="#ff7f0e"
@@ -188,8 +188,6 @@ YTICKS = [50, 100, 200]
 ax.yaxis.set_major_locator(FixedLocator(YTICKS))
 ax.yaxis.set_major_formatter(ScalarFormatter())
 ax.yaxis.set_minor_locator(NullLocator())
-
-ax.set_ylim(None,320)
 
 # Ideal scaling guides
 add_inverse_lines(
