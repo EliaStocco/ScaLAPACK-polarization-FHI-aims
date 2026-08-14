@@ -7,10 +7,10 @@
 # Job Name:
 #SBATCH -J BiFeO3-AFM
 
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --mail-type=NONE
-#SBATCH --time=01:00:00
+#SBATCH --time=04:00:00
 
 ###################################################################
 # Clean slurm folder

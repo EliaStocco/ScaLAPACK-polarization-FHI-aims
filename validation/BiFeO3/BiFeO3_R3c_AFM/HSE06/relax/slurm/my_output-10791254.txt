@@ -1,0 +1,114 @@
+[2026-07-31 19:21:51] Job started
+[2026-07-31 19:21:51] Job ID: 10791254
+[2026-07-31 19:21:51] Working directory: /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R3c_AFM/HSE06/relax-cheap
+[2026-07-31 19:21:51] Host: vipl2004
+[2026-07-31 19:21:51] Node list: vipl[2004,2009-2010,2053]
+[2026-07-31 19:21:51] Tasks: 512
+[2026-07-31 19:21:51] CPUs per task: unknown
+[2026-07-31 19:21:51] Submission host: viper01
+[2026-07-31 19:21:51] Loading software environment
+Installing ESLIB ...
+Done. All the scripts should be available in the PATH.
+[2026-07-31 19:21:54] Python: /u/elsto/conda-envs/eslib/bin/python
+[2026-07-31 19:21:54] Python version: Python 3.9.0
+[2026-07-31 19:21:54] Optimizer: /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+[2026-07-31 19:21:54] Trajectory converter: /viper/u1/elsto/programs/eslib/eslib/scripts/convert/tra2extxyz.py
+[2026-07-31 19:21:54] FHI-aims executable: /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-31 19:21:54] Stack limit: unlimited
+[2026-07-31 19:21:54] Loaded modules:
+Currently Loaded Modulefiles:
+ 1) intel/2024.0   2) impi/2021.11   3) mkl/2024.0  
+[2026-07-31 19:21:54] No non-empty minimization-trajectory.traj found; using the submitted geometry.in
+[2026-07-31 19:21:54] Saving the starting geometry as original.in
+[2026-07-31 19:21:54] Optimizer socket: 10.179.6.191:9766
+[2026-07-31 19:21:54] Starting optimizer; stdout and stderr will be written to optimize.txt
+[2026-07-31 19:21:54] Optimizer started: PID=610106
+[2026-07-31 19:21:54] Waiting 10 seconds for the optimizer socket
+[2026-07-31 19:22:04] Starting FHI-aims: output=scf.out
+[2026-07-31 19:22:04] Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-31 21:57:20] FHI-aims process ended: output=scf.out exit=0 elapsed=9316s
+[2026-07-31 21:57:20] FHI-aims output size: 14750026 bytes, 169621 lines
+[2026-07-31 21:57:20] FHI-aims completed normally: output=scf.out
+[2026-07-31 21:57:20] Waiting for optimizer PID=610106
+[2026-07-31 21:57:20] Optimizer ended: exit=0
+[2026-07-31 21:57:20] Optimizer completed and produced final.extxyz (1757 bytes)
+[2026-07-31 21:57:20] Converting final.extxyz to geometry.in
+@------------------------------
+script file         : convert-file.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/convert/convert-file.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R3c_AFM/HSE06/relax-cheap
+VScode debugging    : "args" : ["-i", "final.extxyz", "-o", "geometry.in"] 
+running script as   : convert-file.py  -i final.extxyz -o geometry.in
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10791254
+PID                 : 617741
+start date          : 2026-07-31
+start time          : 21:57:24
+@------------------------------
+
+	 Convert the format and unit of a file using 'ASE'
+
+	 Input arguments:
+	                input: final.extxyz
+	         input_format: None
+	      remove_replicas: False
+	    remove_properties: False
+	        remove_arrays: False
+	                  pbc: None
+	           input_unit: None
+	      input_unit_cell: None
+	          output_unit: None
+	          pos_keyword: positions
+	            same_cell: False
+	               scaled: False
+	               rotate: False
+	                index: :
+	               output: geometry.in
+	        output_format: None
+	               folder: None
+
+	 Deducing input file format: extxyz
+	 Deducing output file format: aims
+21:57:24 Reading data from input file 'final.extxyz' ...           00:00:00 Reading data from input file 'final.extxyz' ... done          
+	 n. of atomic structures: 1
+	 The atomic structure is periodic.
+
+	  Summary of the properties: 
+
+	             key   i/a numeric   dtype      shape
+	          energy  info    True float64       (1,)
+	     free_energy  info    True float64       (1,)
+	          stress  info    True float64     (1, 6)
+	         numbers array    True   int64    (1, 10)
+	       positions array    True float64 (1, 10, 3)
+	 initial_magmoms array    True float64    (1, 10)
+	          forces array    True float64 (1, 10, 3)
+
+21:57:24 Writing data to file 'geometry.in' ...           00:00:00 Writing data to file 'geometry.in' ... done          
+
+	  Input file size: 512.0 B
+	 Output file size: 512.0 B
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-31
+end time: 21:57:24s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+
+[2026-07-31 21:57:24] Computing symmetry information
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['wyckoffs']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['equivalent_atoms']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+[2026-07-31 21:57:25] Preparing final FHI-aims calculation
+[2026-07-31 21:57:25] Starting FHI-aims: output=relax.out
+[2026-07-31 21:57:25] Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-31 22:20:51] FHI-aims process ended: output=relax.out exit=0 elapsed=1406s
+[2026-07-31 22:20:51] FHI-aims output size: 2271484 bytes, 26638 lines
+[2026-07-31 22:20:51] FHI-aims completed normally: output=relax.out
+[2026-07-31 22:20:51] Job finished: exit=0 elapsed=10740s
