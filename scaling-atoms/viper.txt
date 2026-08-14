@@ -1,0 +1,41 @@
+    
+    |------------------------------------------------------------------------------------------------------------------------------------------------------|
+	| job name | job ID   | run time | max time | dependency     | nodes | working directory                                                               |
+	|------------------------------------------------------------------------------------------------------------------------------------------------------|
+	| MgO      | 10916616 | 00:00:00 | 00:15:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-1/converge         |
+	| MgO      | 10916617 | 00:00:00 | 00:15:00 | 10916616 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-1/lapack/dipole    |
+	| MgO      | 10916618 | 00:00:00 | 00:15:00 | 10916616 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-1/lapack/scf       |
+	| MgO      | 10916619 | 00:00:00 | 00:15:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-2/converge         |
+	| MgO      | 10916620 | 00:00:00 | 00:15:00 | 10916619 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-2/lapack/dipole    |
+	| MgO      | 10916621 | 00:00:00 | 00:15:00 | 10916619 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-2/lapack/scf       |
+	| MgO      | 10916622 | 00:00:00 | 00:15:00 | 10916619 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-2/scalapack/dipole |
+	| MgO      | 10916623 | 00:00:00 | 00:15:00 | 10916619 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-2/scalapack/scf    |
+	| MgO      | 10916624 | 00:00:00 | 00:15:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-3/converge         |
+	| MgO      | 10916625 | 00:00:00 | 00:15:00 | 10916624 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-3/lapack/dipole    |
+	| MgO      | 10916626 | 00:00:00 | 00:15:00 | 10916624 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-3/lapack/scf       |
+	| MgO      | 10916627 | 00:00:00 | 00:15:00 | 10916624 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-3/scalapack/dipole |
+	| MgO      | 10916628 | 00:00:00 | 00:15:00 | 10916624 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-3/scalapack/scf    |
+	| MgO      | 10916629 | 00:00:00 | 00:15:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-4/converge         |
+	| MgO      | 10916630 | 00:00:00 | 00:15:00 | 10916629 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-4/lapack/dipole    |
+	| MgO      | 10916631 | 00:00:00 | 00:15:00 | 10916629 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-4/lapack/scf       |
+	| MgO      | 10916632 | 00:00:00 | 00:15:00 | 10916629 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-4/scalapack/dipole |
+	| MgO      | 10916633 | 00:00:00 | 00:15:00 | 10916629 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-4/scalapack/scf    |
+	| MgO      | 10916634 | 00:00:00 | 00:20:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-6/converge         |
+	| MgO      | 10916635 | 00:00:00 | 01:30:00 | 10916634 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-6/lapack/dipole    |
+	| MgO      | 10916636 | 00:00:00 | 00:25:00 | 10916634 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-6/lapack/scf       |
+	| MgO      | 10916637 | 00:00:00 | 00:15:00 | 10916634 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-6/scalapack/dipole |
+	| MgO      | 10916638 | 00:00:00 | 00:15:00 | 10916634 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-6/scalapack/scf    |
+	| MgO      | 10916639 | 00:00:00 | 00:30:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-7/converge         |
+	| MgO      | 10916640 | 00:00:00 | 06:00:00 | 10916639 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-7/lapack/dipole    |
+	| MgO      | 10916641 | 00:00:00 | 01:00:00 | 10916639 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-7/lapack/scf       |
+	| MgO      | 10916642 | 00:00:00 | 00:20:00 | 10916639 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-7/scalapack/dipole |
+	| MgO      | 10916643 | 00:00:00 | 00:15:00 | 10916639 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-7/scalapack/scf    |
+	| MgO      | 10916644 | 00:00:00 | 01:00:00 |                |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-8/converge         |
+	| MgO      | 10916645 | 00:00:00 | 20:00:00 | 10916644 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-8/lapack/dipole    |
+	| MgO      | 10916646 | 00:00:00 | 03:00:00 | 10916644 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-8/lapack/scf       |
+	| MgO      | 10916647 | 00:00:00 | 01:00:00 | 10916644 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-8/scalapack/dipole |
+	| MgO      | 10916648 | 00:00:00 | 00:20:00 | 10916644 [any] |   2   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-2-light/supercell-8/scalapack/scf    |
+	| MgO      | 10914032 | 00:00:00 | 02:00:00 |                |   4   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-4/supercell-6/lapack/dipole          |
+	| MgO      | 10915817 | 00:00:00 | 10:00:00 |                |   4   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-4/supercell-7/lapack/dipole          |
+	| MgO      | 10915498 | 00:00:19 | 01:00:00 |                |   4   | /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-4/supercell-7/lapack/scf             |
+	|------------------------------------------------------------------------------------------------------------------------------------------------------|
