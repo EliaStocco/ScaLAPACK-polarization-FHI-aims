@@ -1,0 +1,28 @@
+[2026-07-29 20:08:51] Job started
+[2026-07-29 20:08:51] Job ID: 10769250
+[2026-07-29 20:08:51] Working directory: /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R3c_AFM/HSE06/relax-cheap
+[2026-07-29 20:08:51] Host: vipc2365
+[2026-07-29 20:08:51] Node list: vipc[2365,2372]
+[2026-07-29 20:08:51] Tasks: 256
+[2026-07-29 20:08:51] CPUs per task: unknown
+[2026-07-29 20:08:51] Submission host: viper01
+[2026-07-29 20:08:51] Loading software environment
+Installing ESLIB ...
+Done. All the scripts should be available in the PATH.
+[2026-07-29 20:08:53] Python: /u/elsto/conda-envs/eslib/bin/python
+[2026-07-29 20:08:53] Python version: Python 3.9.0
+[2026-07-29 20:08:53] Optimizer: /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+[2026-07-29 20:08:53] Trajectory converter: /viper/u1/elsto/programs/eslib/eslib/scripts/convert/tra2extxyz.py
+[2026-07-29 20:08:53] FHI-aims executable: /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-29 20:08:53] Stack limit: unlimited
+[2026-07-29 20:08:53] Loaded modules:
+Currently Loaded Modulefiles:
+ 1) intel/2024.0   2) impi/2021.11   3) mkl/2024.0  
+[2026-07-29 20:08:53] No non-empty minimization-trajectory.traj found; using the submitted geometry.in
+[2026-07-29 20:08:53] Saving the starting geometry as original.in
+[2026-07-29 20:08:53] Optimizer socket: 10.179.5.109:30452
+[2026-07-29 20:08:53] Starting optimizer; stdout and stderr will be written to optimize.txt
+[2026-07-29 20:08:53] Optimizer started: PID=1185494
+[2026-07-29 20:08:53] Waiting 10 seconds for the optimizer socket
+[2026-07-29 20:09:03] Starting FHI-aims: output=scf.out
+[2026-07-29 20:09:03] Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x

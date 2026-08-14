@@ -1,0 +1,292 @@
+[2026-07-31 19:27:26] Job started
+[2026-07-31 19:27:26] Job ID: 10791321
+[2026-07-31 19:27:26] Working directory: /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R-3c_AFM/HSE06/relax-cheap
+[2026-07-31 19:27:26] Host: vipl2022
+[2026-07-31 19:27:26] Node list: vipl[2022,2026,2043,2050]
+[2026-07-31 19:27:26] Tasks: 512
+[2026-07-31 19:27:26] CPUs per task: unknown
+[2026-07-31 19:27:26] Submission host: viper01
+[2026-07-31 19:27:26] Loading software environment
+Installing ESLIB ...
+Done. All the scripts should be available in the PATH.
+[2026-07-31 19:27:28] Python: /u/elsto/conda-envs/eslib/bin/python
+[2026-07-31 19:27:28] Python version: Python 3.9.0
+[2026-07-31 19:27:28] Optimizer: /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+[2026-07-31 19:27:28] Trajectory converter: /viper/u1/elsto/programs/eslib/eslib/scripts/convert/tra2extxyz.py
+[2026-07-31 19:27:28] FHI-aims executable: /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-31 19:27:28] Stack limit: unlimited
+[2026-07-31 19:27:28] Loaded modules:
+Currently Loaded Modulefiles:
+ 1) intel/2024.0   2) impi/2021.11   3) mkl/2024.0  
+[2026-07-31 19:27:28] Restarting from minimization-trajectory.traj (20689 bytes)
+[2026-07-31 19:27:28] Command: tra2extxyz.py minimization-trajectory.traj minimization-trajectory.extxyz
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['number']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['international']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['hall']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_lattice']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['transformation_matrix']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_rotation_matrix']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_positions']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['mapping_to_primitive']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['std_mapping_to_primitive']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['rotations']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+/u/elsto/.local/lib/python3.9/site-packages/spglib/spglib.py:115: DeprecationWarning: dict interface (SpglibDataset['translations']) is deprecated.Use attribute interface ({self.__class__.__name__}.{key}) instead
+  warnings.warn(
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+Converted 15 frame(s): minimization-trajectory.traj -> minimization-trajectory.extxyz
+[2026-07-31 19:27:34] Command: convert-file.py -i minimization-trajectory.extxyz -o geometry.in --index -1
+@------------------------------
+script file         : convert-file.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/convert/convert-file.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R-3c_AFM/HSE06/relax-cheap
+VScode debugging    : "args" : ["-i", "minimization-trajectory.extxyz", "-o", "geometry.in", "--index", "-1"] 
+running script as   : convert-file.py  -i minimization-trajectory.extxyz -o geometry.in --index -1
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10791321
+PID                 : 2167331
+start date          : 2026-07-31
+start time          : 19:27:39
+@------------------------------
+
+	 Convert the format and unit of a file using 'ASE'
+
+	 Input arguments:
+	                input: minimization-trajectory.extxyz
+	         input_format: None
+	      remove_replicas: False
+	    remove_properties: False
+	        remove_arrays: False
+	                  pbc: None
+	           input_unit: None
+	      input_unit_cell: None
+	          output_unit: None
+	          pos_keyword: positions
+	            same_cell: False
+	               scaled: False
+	               rotate: False
+	                index: -1
+	               output: geometry.in
+	        output_format: None
+	               folder: None
+
+	 Deducing input file format: extxyz
+	 Deducing output file format: aims
+19:27:39 Reading data from input file 'minimization-trajectory.extxyz' ...           00:00:00 Reading data from input file 'minimization-trajectory.extxyz' ... done          
+	 n. of atomic structures: 1
+	 The atomic structure is periodic.
+
+	  Summary of the properties: 
+
+	             key   i/a numeric   dtype      shape
+	          energy  info    True float64       (1,)
+	          stress  info    True float64     (1, 6)
+	     free_energy  info    True float64       (1,)
+	         numbers array    True   int64    (1, 10)
+	       positions array    True float64 (1, 10, 3)
+	 initial_magmoms array    True float64    (1, 10)
+	          forces array    True float64 (1, 10, 3)
+
+19:27:39 Writing data to file 'geometry.in' ...           00:00:00 Writing data to file 'geometry.in' ... done          
+
+	  Input file size: 25.68 KB
+	 Output file size: 512.0 B
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-31
+end time: 19:27:39s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+
+[2026-07-31 19:27:39] Restart geometry generated from the final trajectory snapshot
+[2026-07-31 19:27:39] Saving the starting geometry as original.in
+[2026-07-31 19:27:39] Optimizer socket: 10.179.6.209:15335
+[2026-07-31 19:27:39] Starting optimizer; stdout and stderr will be written to optimize.txt
+[2026-07-31 19:27:39] Optimizer started: PID=2167348
+[2026-07-31 19:27:39] Waiting 10 seconds for the optimizer socket
+[2026-07-31 19:27:49] Starting FHI-aims: output=scf.out
+[2026-07-31 19:27:49] Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-31 22:59:59] FHI-aims process ended: output=scf.out exit=0 elapsed=12730s
+[2026-07-31 22:59:59] FHI-aims output size: 18284381 bytes, 205217 lines
+[2026-07-31 22:59:59] FHI-aims completed normally: output=scf.out
+[2026-07-31 22:59:59] Waiting for optimizer PID=2167348
+[2026-07-31 22:59:59] Optimizer ended: exit=0
+[2026-07-31 22:59:59] Optimizer completed and produced final.extxyz (1750 bytes)
+[2026-07-31 22:59:59] Converting final.extxyz to geometry.in
+@------------------------------
+script file         : convert-file.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/convert/convert-file.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R-3c_AFM/HSE06/relax-cheap
+VScode debugging    : "args" : ["-i", "final.extxyz", "-o", "geometry.in"] 
+running script as   : convert-file.py  -i final.extxyz -o geometry.in
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 10791321
+PID                 : 2177393
+start date          : 2026-07-31
+start time          : 23:00:00
+@------------------------------
+
+	 Convert the format and unit of a file using 'ASE'
+
+	 Input arguments:
+	                input: final.extxyz
+	         input_format: None
+	      remove_replicas: False
+	    remove_properties: False
+	        remove_arrays: False
+	                  pbc: None
+	           input_unit: None
+	      input_unit_cell: None
+	          output_unit: None
+	          pos_keyword: positions
+	            same_cell: False
+	               scaled: False
+	               rotate: False
+	                index: :
+	               output: geometry.in
+	        output_format: None
+	               folder: None
+
+	 Deducing input file format: extxyz
+	 Deducing output file format: aims
+23:00:00 Reading data from input file 'final.extxyz' ...           00:00:00 Reading data from input file 'final.extxyz' ... done          
+	 n. of atomic structures: 1
+	 The atomic structure is periodic.
+
+	  Summary of the properties: 
+
+	             key   i/a numeric   dtype      shape
+	          energy  info    True float64       (1,)
+	     free_energy  info    True float64       (1,)
+	          stress  info    True float64     (1, 6)
+	         numbers array    True   int64    (1, 10)
+	       positions array    True float64 (1, 10, 3)
+	 initial_magmoms array    True float64    (1, 10)
+	          forces array    True float64 (1, 10, 3)
+
+23:00:00 Writing data to file 'geometry.in' ...           00:00:00 Writing data to file 'geometry.in' ... done          
+
+	  Input file size: 512.0 B
+	 Output file size: 512.0 B
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-31
+end time: 23:00:00s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+
+[2026-07-31 23:00:00] Computing symmetry information
+[2026-07-31 23:00:01] Preparing final FHI-aims calculation
+[2026-07-31 23:00:01] Starting FHI-aims: output=relax.out
+[2026-07-31 23:00:01] Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
+[2026-07-31 23:23:39] FHI-aims process ended: output=relax.out exit=0 elapsed=1418s
+[2026-07-31 23:23:39] FHI-aims output size: 2199365 bytes, 25890 lines
+[2026-07-31 23:23:39] FHI-aims completed normally: output=relax.out
+[2026-07-31 23:23:39] Job finished: exit=0 elapsed=14173s
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BiFeO3-AFM
+Node list: vipl[2022,2026,2043,2050]
+Job start: Fri Jul 31 19:27:22 CEST 2026
+Job end:   Fri Jul 31 23:23:40 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R-3c_AFM/HSE06/relax-cheap/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R-3c_AFM/HSE06/relax-cheap/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+10791321      BiFeO3-AFM      4          1024                             03:56:18      0:0
+10791321.0    aims.26052      4    512   1024     2181.66M     1496.60M   03:32:11      0:0
+10791321.1    aims.26052      4    512   1024     1646.06M     1257.87M   00:23:39      0:0
+  
+Maximum memory per node: 292.817076 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 98.4 %
+  

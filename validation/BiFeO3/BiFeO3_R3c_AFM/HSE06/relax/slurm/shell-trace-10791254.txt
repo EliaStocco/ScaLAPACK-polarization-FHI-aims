@@ -1,0 +1,122 @@
++ 1785518514.320811 /var/spool/slurmd/job10791254/slurm_script:172: prepare_restart_geometry
++ 1785518514.320913 /var/spool/slurmd/job10791254/slurm_script:144: local trajectory_file=minimization-trajectory.traj
++ 1785518514.320932 /var/spool/slurmd/job10791254/slurm_script:145: local trajectory_extxyz=minimization-trajectory.extxyz
++ 1785518514.320944 /var/spool/slurmd/job10791254/slurm_script:147: [[ ! -s minimization-trajectory.traj ]]
++ 1785518514.321272 /var/spool/slurmd/job10791254/slurm_script:148: log 'No non-empty minimization-trajectory.traj found; using the submitted geometry.in'
++ 1785518514.321680 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'No non-empty minimization-trajectory.traj found; using the submitted geometry.in'
++ 1785518514.321885 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518514.323853 /var/spool/slurmd/job10791254/slurm_script:149: return 0
++ 1785518514.323934 /var/spool/slurmd/job10791254/slurm_script:174: log 'Saving the starting geometry as original.in'
++ 1785518514.324296 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Saving the starting geometry as original.in'
++ 1785518514.324543 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518514.326521 /var/spool/slurmd/job10791254/slurm_script:175: cp geometry.in original.in
+++ 1785518514.337500 /var/spool/slurmd/job10791254/slurm_script:177: hostname -i
+++ 1785518514.337727 /var/spool/slurmd/job10791254/slurm_script:177: awk '{print $1}'
++ 1785518514.341752 /var/spool/slurmd/job10791254/slurm_script:177: export SOCKET_HOST=10.179.6.191
++ 1785518514.341791 /var/spool/slurmd/job10791254/slurm_script:177: SOCKET_HOST=10.179.6.191
++ 1785518514.341860 /var/spool/slurmd/job10791254/slurm_script:178: export SOCKET_PORT=9766
++ 1785518514.341871 /var/spool/slurmd/job10791254/slurm_script:178: SOCKET_PORT=9766
++ 1785518514.341890 /var/spool/slurmd/job10791254/slurm_script:179: log 'Optimizer socket: 10.179.6.191:9766'
++ 1785518514.342425 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Optimizer socket: 10.179.6.191:9766'
++ 1785518514.342587 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518514.344685 /var/spool/slurmd/job10791254/slurm_script:181: log 'Starting optimizer; stdout and stderr will be written to optimize.txt'
++ 1785518514.345090 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Starting optimizer; stdout and stderr will be written to optimize.txt'
++ 1785518514.345289 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518514.347467 /var/spool/slurmd/job10791254/slurm_script:183: optimizer_pid=610106
++ 1785518514.347516 /var/spool/slurmd/job10791254/slurm_script:184: log 'Optimizer started: PID=610106'
++ 1785518514.347560 /var/spool/slurmd/job10791254/slurm_script:182: PYTHONUNBUFFERED=1
++ 1785518514.347607 /var/spool/slurmd/job10791254/slurm_script:182: optimize.py -i geometry.in -p 9766 -f 1e-4 -cs true -rc true --print-cell true
++ 1785518514.347905 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Optimizer started: PID=610106'
++ 1785518514.348203 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518514.350509 /var/spool/slurmd/job10791254/slurm_script:186: echo 'use_pimd_wrapper 10.179.6.191 9766'
++ 1785518514.350815 /var/spool/slurmd/job10791254/slurm_script:188: cat tmp.in aims.in
++ 1785518514.372150 /var/spool/slurmd/job10791254/slurm_script:189: rm tmp.in
++ 1785518514.374391 /var/spool/slurmd/job10791254/slurm_script:191: log 'Waiting 10 seconds for the optimizer socket'
++ 1785518514.374788 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Waiting 10 seconds for the optimizer socket'
++ 1785518514.375032 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518514.376970 /var/spool/slurmd/job10791254/slurm_script:192: sleep 10
++ 1785518524.379628 /var/spool/slurmd/job10791254/slurm_script:194: kill -0 610106
++ 1785518524.379744 /var/spool/slurmd/job10791254/slurm_script:206: run_aims scf.out
++ 1785518524.379779 /var/spool/slurmd/job10791254/slurm_script:109: local output_file=scf.out
++ 1785518524.379796 /var/spool/slurmd/job10791254/slurm_script:110: local start_time=13
++ 1785518524.379805 /var/spool/slurmd/job10791254/slurm_script:111: local rc
++ 1785518524.379816 /var/spool/slurmd/job10791254/slurm_script:113: log 'Starting FHI-aims: output=scf.out'
++ 1785518524.380250 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Starting FHI-aims: output=scf.out'
++ 1785518524.380444 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518524.382669 /var/spool/slurmd/job10791254/slurm_script:114: log 'Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x'
++ 1785518524.383020 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x'
++ 1785518524.383258 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785518524.385481 /var/spool/slurmd/job10791254/slurm_script:116: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
++ 1785527840.830714 /var/spool/slurmd/job10791254/slurm_script:117: rc=0
++ 1785527840.830815 /var/spool/slurmd/job10791254/slurm_script:122: log 'FHI-aims process ended: output=scf.out exit=0 elapsed=9316s'
++ 1785527840.831326 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'FHI-aims process ended: output=scf.out exit=0 elapsed=9316s'
++ 1785527840.831559 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.836003 /var/spool/slurmd/job10791254/slurm_script:123: [[ -f scf.out ]]
+++ 1785527840.836535 /var/spool/slurmd/job10791254/slurm_script:124: wc -c
+++ 1785527840.839722 /var/spool/slurmd/job10791254/slurm_script:124: wc -l
++ 1785527840.846678 /var/spool/slurmd/job10791254/slurm_script:124: log 'FHI-aims output size: 14750026 bytes, 169621 lines'
++ 1785527840.847018 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'FHI-aims output size: 14750026 bytes, 169621 lines'
++ 1785527840.847280 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.849502 /var/spool/slurmd/job10791254/slurm_script:127: ((  rc != 0  ))
++ 1785527840.849536 /var/spool/slurmd/job10791254/slurm_script:134: grep -q 'Have a nice day' scf.out
++ 1785527840.855561 /var/spool/slurmd/job10791254/slurm_script:140: log 'FHI-aims completed normally: output=scf.out'
++ 1785527840.855927 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'FHI-aims completed normally: output=scf.out'
++ 1785527840.856193 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.858102 /var/spool/slurmd/job10791254/slurm_script:208: log 'Waiting for optimizer PID=610106'
++ 1785527840.858551 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Waiting for optimizer PID=610106'
++ 1785527840.858765 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.861229 /var/spool/slurmd/job10791254/slurm_script:209: wait 610106
++ 1785527840.861261 /var/spool/slurmd/job10791254/slurm_script:210: optimizer_rc=0
++ 1785527840.861532 /var/spool/slurmd/job10791254/slurm_script:214: optimizer_pid=
++ 1785527840.861549 /var/spool/slurmd/job10791254/slurm_script:215: log 'Optimizer ended: exit=0'
++ 1785527840.861918 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Optimizer ended: exit=0'
++ 1785527840.862157 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.864277 /var/spool/slurmd/job10791254/slurm_script:217: ((  optimizer_rc != 0  ))
++ 1785527840.864320 /var/spool/slurmd/job10791254/slurm_script:223: [[ ! -s final.extxyz ]]
+++ 1785527840.864749 /var/spool/slurmd/job10791254/slurm_script:228: wc -c
++ 1785527840.867323 /var/spool/slurmd/job10791254/slurm_script:228: log 'Optimizer completed and produced final.extxyz (1757 bytes)'
++ 1785527840.867693 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Optimizer completed and produced final.extxyz (1757 bytes)'
++ 1785527840.867909 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.870039 /var/spool/slurmd/job10791254/slurm_script:230: rm -f minimization-trajectory.pickle
++ 1785527840.871980 /var/spool/slurmd/job10791254/slurm_script:231: rm -f minimization-trajectory.extxyz
++ 1785527840.876787 /var/spool/slurmd/job10791254/slurm_script:235: log 'Converting final.extxyz to geometry.in'
++ 1785527840.877209 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Converting final.extxyz to geometry.in'
++ 1785527840.877468 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527840.879748 /var/spool/slurmd/job10791254/slurm_script:236: convert-file.py -i final.extxyz -o geometry.in
++ 1785527844.687268 /var/spool/slurmd/job10791254/slurm_script:238: log 'Computing symmetry information'
++ 1785527844.687748 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Computing symmetry information'
++ 1785527844.687945 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527844.690261 /var/spool/slurmd/job10791254/slurm_script:239: information-and-primitive.py -i geometry.in
++ 1785527845.562560 /var/spool/slurmd/job10791254/slurm_script:241: log 'Preparing final FHI-aims calculation'
++ 1785527845.563055 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Preparing final FHI-aims calculation'
++ 1785527845.563294 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527845.565550 /var/spool/slurmd/job10791254/slurm_script:242: cp aims.in control.in
++ 1785527845.570017 /var/spool/slurmd/job10791254/slurm_script:243: run_aims relax.out
++ 1785527845.570083 /var/spool/slurmd/job10791254/slurm_script:109: local output_file=relax.out
++ 1785527845.570101 /var/spool/slurmd/job10791254/slurm_script:110: local start_time=9334
++ 1785527845.570125 /var/spool/slurmd/job10791254/slurm_script:111: local rc
++ 1785527845.570137 /var/spool/slurmd/job10791254/slurm_script:113: log 'Starting FHI-aims: output=relax.out'
++ 1785527845.570494 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Starting FHI-aims: output=relax.out'
++ 1785527845.570738 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527845.572575 /var/spool/slurmd/job10791254/slurm_script:114: log 'Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x'
++ 1785527845.572951 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'Command: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x'
++ 1785527845.573226 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785527845.575422 /var/spool/slurmd/job10791254/slurm_script:116: srun /u/elsto/programs/FHIaims-polarization-scalapack/build/aims.260527.scalapack.mpi.x
++ 1785529251.085005 /var/spool/slurmd/job10791254/slurm_script:117: rc=0
++ 1785529251.085105 /var/spool/slurmd/job10791254/slurm_script:122: log 'FHI-aims process ended: output=relax.out exit=0 elapsed=1406s'
++ 1785529251.085614 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'FHI-aims process ended: output=relax.out exit=0 elapsed=1406s'
++ 1785529251.085763 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785529251.087987 /var/spool/slurmd/job10791254/slurm_script:123: [[ -f relax.out ]]
+++ 1785529251.088509 /var/spool/slurmd/job10791254/slurm_script:124: wc -c
+++ 1785529251.091689 /var/spool/slurmd/job10791254/slurm_script:124: wc -l
++ 1785529251.094724 /var/spool/slurmd/job10791254/slurm_script:124: log 'FHI-aims output size: 2271484 bytes, 26638 lines'
++ 1785529251.095058 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'FHI-aims output size: 2271484 bytes, 26638 lines'
++ 1785529251.095347 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785529251.097583 /var/spool/slurmd/job10791254/slurm_script:127: ((  rc != 0  ))
++ 1785529251.097617 /var/spool/slurmd/job10791254/slurm_script:134: grep -q 'Have a nice day' relax.out
++ 1785529251.100716 /var/spool/slurmd/job10791254/slurm_script:140: log 'FHI-aims completed normally: output=relax.out'
++ 1785529251.101085 /var/spool/slurmd/job10791254/slurm_script:35: printf '[%(%Y-%m-%d %H:%M:%S)T] %s\n' -1 'FHI-aims completed normally: output=relax.out'
++ 1785529251.101326 /var/spool/slurmd/job10791254/slurm_script:35: tee -a log.out
++ 1785529251.103232 /var/spool/slurmd/job10791254/slurm_script:1: on_exit
++ 1785529251.103262 /var/spool/slurmd/job10791254/slurm_script:47: local rc=0
++ 1785529251.103280 /var/spool/slurmd/job10791254/slurm_script:48: set +x

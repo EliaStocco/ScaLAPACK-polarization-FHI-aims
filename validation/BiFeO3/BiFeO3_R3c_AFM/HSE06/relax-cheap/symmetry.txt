@@ -7,10 +7,10 @@ running script as   : information-and-primitive.py  -i geometry.in
 python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
 which python        : /u/elsto/conda-envs/eslib/bin/python
 conda env           : /u/elsto/conda-envs/eslib
-SLURM job ID        : 10627824
-PID                 : 2066552
-start date          : 2026-07-20
-start time          : 07:25:56
+SLURM job ID        : 10791254
+PID                 : 617754
+start date          : 2026-07-31
+start time          : 21:57:25
 @------------------------------
 
 	 Show general information of a given atomic structure and find its primitive cell structure.
@@ -39,8 +39,8 @@ start time          : 07:25:56
 	--------------
 	Number of atoms               : 10
 	Chemical formula              : Bi2Fe2O6
-	(a, b, c, α, β, γ) [ang,deg]  : 5.54370627727 5.54370627727 5.54370627727 59.900756401778 59.900756401778 59.900756401778 
-	Bravais Lattice               : primitive rhombohedral RHL(a=5.54371, alpha=59.9008)
+	(a, b, c, α, β, γ) [ang,deg]  : 5.648834026201 5.648834026201 5.648834026201 59.204558948743 59.204558948743 59.204558948743 
+	Bravais Lattice               : primitive rhombohedral RHL(a=5.64883, alpha=59.2046)
 	Symmetry Threshold            : 0.001
 	Spacegroup number             : 161
 	Hall symbol                   : R 3 -2"c
@@ -50,17 +50,17 @@ start time          : 07:25:56
 	Is primitive cell?            : True
 	
 	Additional information:
-	volume [ang^3]                : 120.20062364776432
-	volume [au^3]                 : 811.1539831232774
-	density [g/cm^3]              : 8.64311220745344
+	volume [ang^3]                : 125.14650618014612
+	volume [au^3]                 : 844.530451517965
+	density [g/cm^3]              : 8.301530017130641
 
 	Cell:
 	|-----------------------------------|
 	|   |    1         2         3      |
 	|-----------------------------------|
-	| x |    5.5437    2.7802    2.7802 |
-	| y |    0.0000    4.7962    1.6019 |
-	| z |    0.0000    0.0000    4.5208 |
+	| x |    5.6488    2.8921    2.8921 |
+	| y |    0.0000    4.8524    1.6431 |
+	| z |    0.0000    0.0000    4.5657 |
 	|-----------------------------------|
 
 
@@ -71,8 +71,8 @@ start time          : 07:25:56
 	 Job done :)
 
 ------------------------------@
-end date: 2026-07-20
-end time: 07:25:56s 
+end date: 2026-07-31
+end time: 21:57:25s 
 elapsed seconds: 0s
 elapsed time: 00:00:00
 ------------------------------@
