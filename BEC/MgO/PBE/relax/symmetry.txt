@@ -1,0 +1,80 @@
+@------------------------------
+script file         : information-and-primitive.py
+script global path  : /raven/u/elsto/programs/eslib/eslib/scripts/inspect/information-and-primitive.py
+working directory   : /raven/u/elsto/works/ScaLAPACK-BEC/MgO-PBE/relax
+VScode debugging    : "args" : ["-i", "geometry.in"] 
+running script as   : information-and-primitive.py  -i geometry.in
+python --version    : 3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:50:21)  [GCC 12.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 29318868
+PID                 : 90441
+start date          : 2026-08-13
+start time          : 15:06:48
+@------------------------------
+
+	 Show general information of a given atomic structure and find its primitive cell structure.
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	            threshold: 0.001
+	               rotate: True
+	                shift: False
+	       show_positions: False
+	           conversion: None
+	               output: None
+	        output_format: None
+
+
+	----------------------------------------------------------------------------------------------------
+	Reading atomic structure from input file 'geometry.in' ... done
+	Rotating the lattice vectors of the atomic structure such that they will be in upper triangular form ... done
+
+	Computing general information of the atomic structure ... done
+	Warning:
+	the positions are assumed to be stored in angstrom in the input file
+	
+	Original structure information:
+	--------------
+	Number of atoms               : 8
+	Chemical formula              : Mg4O4
+	(a, b, c, α, β, γ) [ang,deg]  : 4.254989883326 4.254989883326 4.254989883326 90.0 90.0 90.0 
+	Bravais Lattice               : primitive cubic CUB(a=4.25499)
+	Symmetry Threshold            : 0.001
+	Spacegroup number             : 225
+	Hall symbol                   : -F 4 2 3
+	International symbol          : Fm-3m
+	Crystal class                 : m-3m
+	Occupied Wyckoff positions    : a b 
+	Unique equivalent atoms       : 1 5 
+	Is primitive cell?            : False
+	
+	Additional information:
+	volume [ang^3]                : 77.03633188841297
+	volume [au^3]                 : 519.866915496284
+	density [g/cm^3]              : 3.4750541693222257
+
+	Cell:
+	|-----------------------------------|
+	|   |    1         2         3      |
+	|-----------------------------------|
+	| x |    4.2550   -0.0000   -0.0000 |
+	| y |   -0.0000    4.2550   -0.0000 |
+	| z |    0.0000   -0.0000    4.2550 |
+	|-----------------------------------|
+
+
+	Magnetic space group information:
+		Magnetic symmetry analysis failed:
+		 No module named 'pymatgen'
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-08-13
+end time: 15:06:48s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+

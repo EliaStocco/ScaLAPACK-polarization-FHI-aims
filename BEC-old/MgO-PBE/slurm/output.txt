@@ -1,0 +1,27 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-BEC
+Node list: vipl2006
+Job start: Tue Jul 28 20:45:36 CEST 2026
+Job end:   Tue Jul 28 20:45:41 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-BEC/MgO-PBE/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-BEC/MgO-PBE/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+10761636         MgO-BEC      1           256                             00:00:05      0:0
+  
+Maximum memory per node: 0.009561 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 0.0 %
+  

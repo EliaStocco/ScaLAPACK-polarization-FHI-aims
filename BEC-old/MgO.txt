@@ -1,0 +1,92 @@
+@------------------------------
+script file         : information-and-primitive.py
+script global path  : /home/stoccoel/codes/eslib/eslib/scripts/inspect/information-and-primitive.py
+working directory   : /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/BEC
+VScode debugging    : "args" : ["-i", "MgO.cif", "-sp", "true"] 
+running script as   : information-and-primitive.py  -i MgO.cif -sp true
+python --version    : 3.9.23 (main, Sep  4 2025, 10:12:33)  [GCC 12.2.0]
+which python        : /home/stoccoel/.pyenv/versions/eslib/bin/python
+conda env           : none
+PID                 : 24004
+start date          : 2026-07-28
+start time          : 16:55:39
+@------------------------------
+
+	 Show general information of a given atomic structure and find its primitive cell structure.
+
+	 Input arguments:
+	                input: MgO.cif
+	         input_format: None
+	            threshold: 0.001
+	               rotate: True
+	                shift: False
+	       show_positions: True
+	           conversion: None
+	               output: None
+	        output_format: None
+
+
+	----------------------------------------------------------------------------------------------------
+	Reading atomic structure from input file 'MgO.cif' ... done
+	Rotating the lattice vectors of the atomic structure such that they will be in upper triangular form ... done
+
+	Computing general information of the atomic structure ... done
+	Warning:
+	the positions are assumed to be stored in angstrom in the input file
+	
+	Original structure information:
+	--------------
+	Number of atoms               : 8
+	Chemical formula              : Mg4O4
+	(a, b, c, α, β, γ) [ang,deg]  : 4.19400279 4.19400279 4.19400279 90.0 90.0 90.0 
+	Bravais Lattice               : primitive cubic CUB(a=4.194)
+	Symmetry Threshold            : 0.001
+	Spacegroup number             : 225
+	Hall symbol                   : -F 4 2 3
+	International symbol          : Fm-3m
+	Occupied Wyckoff positions    : a b 
+	Unique equivalent atoms       : 1 5 
+	Is primitive cell?            : False
+	
+	Additional information:
+	volume [ang^3]                : 73.77108060935126
+	volume [au^3]                 : 497.83190851769467
+	density [g/cm^3]              : 3.628866814839441
+
+	Cell:
+	|-----------------------------------|
+	|   |    1         2         3      |
+	|-----------------------------------|
+	| x |    4.1940    0.0000    0.0000 |
+	| y |    0.0000    4.1940    0.0000 |
+	| z |    0.0000    0.0000    4.1940 |
+	|-----------------------------------|
+
+
+	Positions (cartesian and fractional):
+	|------------------------------------------------------|
+	|    |   Rx      Ry      Rz      fx      fy      fy    |
+	|------------------------------------------------------|
+	| Mg |   0.000   0.000   0.000   0.000   0.000   0.000 |
+	| Mg |   2.097   2.097   0.000   0.500   0.500   0.000 |
+	| Mg |   2.097   0.000   2.097   0.500   0.000   0.500 |
+	| Mg |   0.000   2.097   2.097   0.000   0.500   0.500 |
+	|  O |   0.000   0.000   2.097   0.000   0.000   0.500 |
+	|  O |   2.097   0.000   0.000   0.500   0.000   0.000 |
+	|  O |   0.000   2.097   0.000   0.000   0.500   0.000 |
+	|  O |   2.097   2.097   2.097   0.500   0.500   0.500 |
+	|------------------------------------------------------|
+
+
+	Magnetic space group information:
+		All magnetic moments are zero.
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-07-28
+end time: 16:55:40s 
+elapsed seconds: 0s
+elapsed time: 00:00:00
+------------------------------@
+
