@@ -130,21 +130,21 @@ add_inverse_lines(
 # -----------------------------
 # Legend styling
 # -----------------------------
-legend = ax.legend(title="Basis set", loc="lower left")
+legend = ax.legend(title="species", loc="lower left")
 legend._legend_box.align = "left"
 
-ax.text(
-    0.98, 0.95,
-    r"$y = Ax^{-m}$",
-    transform=ax.transAxes,
-    ha="right",
-    va="top",
-    bbox=dict(
-        boxstyle="round",
-        facecolor="white",
-        edgecolor="black"
-    )
-)
+# ax.text(
+#     0.98, 0.95,
+#     r"$y = Ax^{-m}$",
+#     transform=ax.transAxes,
+#     ha="right",
+#     va="top",
+#     bbox=dict(
+#         boxstyle="round",
+#         facecolor="white",
+#         edgecolor="black"
+#     )
+# )
 
 ax.text(
     0.4, 0.2,
