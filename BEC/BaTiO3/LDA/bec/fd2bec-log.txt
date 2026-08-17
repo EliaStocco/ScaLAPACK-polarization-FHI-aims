@@ -1,0 +1,71 @@
+
+@-------------------------------------------
+@ Description: 
+Generate Cartesian atomic or cell displacements and displaced structures.
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/displacements/generate_displacements.py -i start.extxyz -w bec -a 0.001 -d displacements.txt -o displaced-structures.extxyz
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: start.extxyz
+	            amplitude: 0.001
+	                 what: bec
+	          no_symmetry: False
+	               number: None
+	                 seed: None
+	 displacements_output: displacements.txt
+	               output: displaced-structures.extxyz
+	----------------------------------------
+
+	Reading input structure from start.extxyz ... done
+	Input cell [Angstrom]:
+	[[ 3.93474242  0.         -0.        ]
+	 [ 0.          3.93474242  0.        ]
+	 [-0.          0.          3.93474242]]
+	Fractional coordinates:
+	     0 Ba   0.49979371  0.49989685  0.49989685
+	     1 Ti  -0.00020629 -0.00010315 -0.00010315
+	     2  O  -0.00020629 -0.00010315  0.49989685
+	     3  O   0.49979371 -0.00010315 -0.00010315
+	     4  O  -0.00020629  0.49989685 -0.00010315
+	Constructing bec tensor ... done
+	Found 8 unique signed displacements from 31 symmetry-mode candidates.
+	Space group: 221 (Pm-3m); 48 symmetry operations.
+	Symmetry-selected atomic displacements: 8; 9 structures including the reference.
+	  [0] reference (zero)
+	  [1] Ba[0].x=0.001
+	  [2] Ti[1].x=0.001
+	  [3] O[2].x=0.001
+	  [4] O[2].z=0.001
+	  [5] Ba[0].x=-0.001
+	  [6] Ti[1].x=-0.001
+	  [7] O[2].x=-0.001
+	  [8] O[2].z=-0.001
+	Writing displacements to displacements.txt ... done
+	Writing 9 displaced structures to displaced-structures.extxyz ... done
+
+@ Job done :)
+@ Finished in 0.03s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Description: 
+Write each snapshot from a multi-frame extxyz file to a separate file.
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/displacements/extxyz2folder.py -i displaced-structures.extxyz -f aims -o geometries
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: displaced-structures.extxyz
+	               format: aims
+	               output: geometries
+	----------------------------------------
+
+	Reading snapshots from displaced-structures.extxyz ... done (9 structures)
+	Writing aims geometries to geometries ... done (9 files)
+
+@ Job done :)
+@ Finished in 0.01s
+-------------------------------------------@
+

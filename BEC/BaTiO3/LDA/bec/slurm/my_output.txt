@@ -1,0 +1,18 @@
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+

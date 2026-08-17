@@ -1,0 +1,222 @@
+
+@-------------------------------------------
+@ Description: 
+Build dataset to compute Born Effective Charges as derivative of polarization/dipole w.r.t. nuclear displacements.
+The script reads either polarization or dipole from DFT output files.
+
+Input parsing is controlled via '--format'. This can be:
+  (1) a predefined format key
+  (2) a JSON file defining a custom format
+
+Each format defines:
+  - type: polarization or dipole
+  - regex: extraction pattern
+  - factor: unit conversion factor
+  - drop_patterns: optional lines to ignore
+
+Available formats:
+aims_polarization, aims_dipole
+
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/build_dataset4dPdR.py -i results -r start.extxyz -f aims_polarization -o dataset.extxyz
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: results
+	            reference: start.extxyz
+	               format: aims_polarization
+	               output: dataset.extxyz
+	----------------------------------------
+
+	Reading input structures from 'start.extxyz'
+	n. atoms:  5
+	Reading input structures from 'results'
+	 - reading file 'results/aims.n=0.out'
+	 - reading file 'results/aims.n=1.out'
+	 - reading file 'results/aims.n=2.out'
+	 - reading file 'results/aims.n=3.out'
+	 - reading file 'results/aims.n=4.out'
+	 - reading file 'results/aims.n=5.out'
+	 - reading file 'results/aims.n=6.out'
+	 - reading file 'results/aims.n=7.out'
+	 - reading file 'results/aims.n=8.out'
+	n. read files: 9
+	
+	List of all read files:
+	 -   0) results/aims.n=0.out
+	 -   1) results/aims.n=1.out
+	 -   2) results/aims.n=2.out
+	 -   3) results/aims.n=3.out
+	 -   4) results/aims.n=4.out
+	 -   5) results/aims.n=5.out
+	 -   6) results/aims.n=6.out
+	 -   7) results/aims.n=7.out
+	 -   8) results/aims.n=8.out
+	
+	List of read 'polarization':
+	 -   0) [ 4.928982e-10,  4.929379e-10,  4.928997e-10]
+	 -   1) [ 7.145309e-04,  4.929088e-10,  4.928960e-10]
+	 -   2) [ 1.892306e-03,  4.929146e-10,  4.928866e-10]
+	 -   3) [-5.546317e-04,  4.929300e-10,  4.928902e-10]
+	 -   4) [ 4.928801e-10,  4.929219e-10, -1.497577e-03]
+	 -   5) [-7.145299e-04,  4.929112e-10,  4.928941e-10]
+	 -   6) [-1.892305e-03,  4.928914e-10,  4.928875e-10]
+	 -   7) [ 5.546327e-04,  4.929124e-10,  4.928905e-10]
+	 -   8) [ 4.928742e-10,  4.929210e-10,  1.497578e-03]
+	
+	Using the following conversion factor to e/ang^2: 0.06241517271464743
+	Converting polarization to dipole using volume 62.48548164040692 Å^3
+	
+	Wrapping dipoles on the same branch:
+	 -   0) [ 1.922324e-09,  1.922479e-09,  1.922330e-09] --> [ 1.922324e-09,  1.922479e-09,  1.922330e-09] | jump of [  0,   0,   0]
+	 -   1) [ 2.786701e-03,  1.922365e-09,  1.922315e-09] --> [ 2.786701e-03,  1.922365e-09,  1.922315e-09] | jump of [  0,   0,   0]
+	 -   2) [ 7.380073e-03,  1.922388e-09,  1.922279e-09] --> [ 7.380073e-03,  1.922388e-09,  1.922279e-09] | jump of [  0,   0,   0]
+	 -   3) [-2.163087e-03,  1.922448e-09,  1.922293e-09] --> [-2.163087e-03,  1.922448e-09,  1.922293e-09] | jump of [  0,   0,   0]
+	 -   4) [ 1.922253e-09,  1.922416e-09, -5.840613e-03] --> [ 1.922253e-09,  1.922416e-09, -5.840613e-03] | jump of [  0,   0,   0]
+	 -   5) [-2.786697e-03,  1.922375e-09,  1.922308e-09] --> [-2.786697e-03,  1.922375e-09,  1.922308e-09] | jump of [  0,   0,   0]
+	 -   6) [-7.380069e-03,  1.922297e-09,  1.922282e-09] --> [-7.380069e-03,  1.922297e-09,  1.922282e-09] | jump of [  0,   0,   0]
+	 -   7) [ 2.163091e-03,  1.922379e-09,  1.922294e-09] --> [ 2.163091e-03,  1.922379e-09,  1.922294e-09] | jump of [  0,   0,   0]
+	 -   8) [ 1.922230e-09,  1.922412e-09,  5.840617e-03] --> [ 1.922230e-09,  1.922412e-09,  5.840617e-03] | jump of [  0,   0,   0]
+	
+	Final dipoles:
+	 -   0) [ 1.922324e-09,  1.922479e-09,  1.922330e-09]
+	 -   1) [ 2.786701e-03,  1.922365e-09,  1.922315e-09]
+	 -   2) [ 7.380073e-03,  1.922388e-09,  1.922279e-09]
+	 -   3) [-2.163087e-03,  1.922448e-09,  1.922293e-09]
+	 -   4) [ 1.922253e-09,  1.922416e-09, -5.840613e-03]
+	 -   5) [-2.786697e-03,  1.922375e-09,  1.922308e-09]
+	 -   6) [-7.380069e-03,  1.922297e-09,  1.922282e-09]
+	 -   7) [ 2.163091e-03,  1.922379e-09,  1.922294e-09]
+	 -   8) [ 1.922230e-09,  1.922412e-09,  5.840617e-03]
+	
+	Saving dipoles [e*ang] to atomic structures using the keyword 'REF_dipole'
+	Constructing cartesian displacements and saving them using keyword 'displacements'
+	info keys: {'REF_dipole', 'polarization', 'free_energy', 'energy', 'stress'}
+	arrays keys: {'positions', 'displacements', 'forces', 'numbers'}
+	Saving dataset to file 'dataset.extxyz'
+
+@ Job done :)
+@ Finished in 0.91s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Description: 
+Compute the Born Effective Charges as derivative of polarization/dipole w.r.t. nuclear displacements.
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/dPdR2bec.py -i dataset.extxyz -o .
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: dataset.extxyz
+	                retry: True
+	               output: .
+	----------------------------------------
+
+	Reading input structures from 'dataset.extxyz' ... done
+	n. structures:  9
+	n. atoms:  5
+	Extracting dipole from 'REF_dipole' ... done
+	dipole.shape:  (9, 3)
+	Extracting displacements from 'displacements' ... done
+	displacements.shape:  (9, 5, 3)
+	Reconstructing reference structure ... done
+	Preparing Born Charges and symmetrization ... done
+	
+	Matrix shapes:
+	 - b.shape: (27,)
+	 - A.shape: (27, 45)
+	 - S.shape: (45, 4)
+	
+	Matrix shapes with symmetrization:
+	 - b.shape: (27,)
+	 - A.shape: (27, 4)
+	
+	Matrix for total dipoles:
+	 - b.shape: (27,)
+	 - A.shape: (27, 7)
+	Preparing linear system ... done
+	Solving linear systems  ... done
+	
+	----------------------------------------
+	Linear Fit Summary
+	----------------------------------------
+	Error          : 4.783e-11
+	Relative Error : 3.365e-09
+	Quality        : GOOD
+	Bad points     : 18 / 27
+	----------------------------------------
+	
+	Extracting Born Charges  ... done
+	
+	Atom   0, species Ba
+	Position: [  1.983279   1.983688   1.983688]
+	||Z*|| =    2.78670
+	Born effective charge tensor (Z*):
+	       2.78670   -0.00000    0.00000
+	       0.00000    2.78670    0.00000
+	       0.00000    0.00000    2.78670
+	
+	Atom   1, species Ti
+	Position: [ -0.000819  -0.000409  -0.000409]
+	||Z*|| =    7.38007
+	Born effective charge tensor (Z*):
+	       7.38007   -0.00000    0.00000
+	       0.00000    7.38007    0.00000
+	       0.00000    0.00000    7.38007
+	
+	Atom   2, species O
+	Position: [ -0.000819  -0.000409   1.983688]
+	||Z*|| =    3.80660
+	Born effective charge tensor (Z*):
+	      -2.16309    0.00000    0.00000
+	       0.00000   -2.16309    0.00000
+	       0.00000    0.00000   -5.84062
+	
+	Atom   3, species O
+	Position: [  1.983279  -0.000409  -0.000409]
+	||Z*|| =    3.80660
+	Born effective charge tensor (Z*):
+	      -5.84062    0.00000    0.00000
+	       0.00000   -2.16309    0.00000
+	       0.00000    0.00000   -2.16309
+	
+	Atom   4, species O
+	Position: [ -0.000819   1.983688  -0.000409]
+	||Z*|| =    3.80660
+	Born effective charge tensor (Z*):
+	      -2.16309    0.00000    0.00000
+	       0.00000   -5.84062    0.00000
+	       0.00000    0.00000   -2.16309
+	
+	Checking Acoustic Sum Rule:
+	||sum_I Z*_I|| =    0.00000 | this value should be almost zero
+	Writing Born Charges to bec-no-asr.txt ... done
+	Writing sum of all Born Charges to asr.txt ... done
+	Writing sum of Born Charges with ASR applied to bec.txt ... done
+
+@ Job done :)
+@ Finished in 0.02s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Description: 
+Convert BEC to atomic charges.
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/general/bec2charges.py -i bec.txt -o charges.txt
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: bec.txt
+	               output: charges.txt
+	----------------------------------------
+
+	Reading input structure from bec.txt ... done
+	Total sum:  0.0
+	Writing charges to charges.txt ... done
+
+@ Job done :)
+@ Finished in 0.00s
+-------------------------------------------@
+
