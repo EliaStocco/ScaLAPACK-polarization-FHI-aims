@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: ravc[2081-2084,2093-2096]
+Job start: Sat Aug 15 01:16:44 CEST 2026
+Job end:   Sat Aug 15 01:16:56 CEST 2026
+Work dir:  /u/elsto/works/tetragonal/LDA/scalapack/./
+Command:   /raven/u/elsto/works/tetragonal/LDA/scalapack/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+29330570          BaTiO3      8          1152                             00:00:12      0:0
+29330570.0    aims.26062      8    576   1152        2.09M        1.98M   00:00:07      2:0
+  
+Maximum memory per node: 0.157778 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 0.0 %
+  
