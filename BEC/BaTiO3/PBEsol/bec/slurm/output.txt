@@ -1,0 +1,36 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BEC
+Node list: ravc3058
+Job start: Mon Aug 17 13:29:09 CEST 2026
+Job end:   Mon Aug 17 14:25:29 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-BEC/BaTiO3/PBEsol/bec/./
+Command:   /raven/u/elsto/works/ScaLAPACK-BEC/BaTiO3/PBEsol/bec/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+29362905             BEC      1           144                             00:56:20      0:0
+29362905.0    aims.26032      1     72    144      372.41M      359.00M   00:06:04      0:0
+29362905.1    aims.26032      1     72    144      372.86M      359.63M   00:06:15      0:0
+29362905.2    aims.26032      1     72    144      370.66M      358.10M   00:06:15      0:0
+29362905.3    aims.26032      1     72    144      379.47M      358.46M   00:06:17      0:0
+29362905.4    aims.26032      1     72    144      373.41M      361.02M   00:06:16      0:0
+29362905.5    aims.26032      1     72    144      378.69M      359.14M   00:06:15      0:0
+29362905.6    aims.26032      1     72    144      375.31M      358.67M   00:06:14      0:0
+29362905.7    aims.26032      1     72    144      373.28M      359.06M   00:06:21      0:0
+29362905.8    aims.26032      1     72    144      375.42M      358.59M   00:06:15      0:0
+  
+Maximum memory per node: 28.649226 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 97.8 %
+  

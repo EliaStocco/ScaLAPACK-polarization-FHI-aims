@@ -1,0 +1,226 @@
+
+@-------------------------------------------
+@ Description: 
+Build dataset to compute Born Effective Charges as derivative of polarization/dipole w.r.t. nuclear displacements.
+The script reads either polarization or dipole from DFT output files.
+
+Input parsing is controlled via '--format'. This can be:
+  (1) a predefined format key
+  (2) a JSON file defining a custom format
+
+Each format defines:
+  - type: polarization or dipole
+  - regex: extraction pattern
+  - factor: unit conversion factor
+  - drop_patterns: optional lines to ignore
+
+Available formats:
+aims_polarization, aims_dipole
+
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/build_dataset4dPdR.py -i results -r start.extxyz -f aims_polarization -o dataset.extxyz
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: results
+	            reference: start.extxyz
+	               format: aims_polarization
+	               output: dataset.extxyz
+	----------------------------------------
+
+	Reading input structures from 'start.extxyz'
+	n. atoms:  8
+	Reading input structures from 'results'
+	 - reading file 'results/aims.n=0.out'
+	 - reading file 'results/aims.n=1.out'
+	 - reading file 'results/aims.n=2.out'
+	 - reading file 'results/aims.n=3.out'
+	 - reading file 'results/aims.n=4.out'
+	n. read files: 5
+	
+	List of all read files:
+	 -   0) results/aims.n=0.out
+	 -   1) results/aims.n=1.out
+	 -   2) results/aims.n=2.out
+	 -   3) results/aims.n=3.out
+	 -   4) results/aims.n=4.out
+	
+	List of read 'polarization':
+	 -   0) [-2.426725e-14, -2.962176e-14, -2.485673e-14]
+	 -   1) [ 4.161556e-04, -1.267399e-14, -1.075815e-14]
+	 -   2) [-4.161558e-04, -2.122156e-14, -1.630916e-14]
+	 -   3) [-4.161556e-04, -4.863274e-15, -3.635175e-15]
+	 -   4) [ 4.161558e-04, -1.345997e-14, -1.670215e-14]
+	
+	Using the following conversion factor to e/ang^2: 0.06241517271464743
+	Converting polarization to dipole using volume 77.03633170774836 Å^3
+	
+	Wrapping dipoles on the same branch:
+	 -   0) [-1.166826e-13, -1.424284e-13, -1.195170e-13] --> [-1.166826e-13, -1.424284e-13, -1.195170e-13] | jump of [  0,   0,   0]
+	 -   1) [ 2.000974e-03, -6.093952e-14, -5.172773e-14] --> [ 2.000974e-03, -6.093952e-14, -5.172773e-14] | jump of [  0,   0,   0]
+	 -   2) [-2.000975e-03, -1.020383e-13, -7.841830e-14] --> [-2.000975e-03, -1.020383e-13, -7.841830e-14] | jump of [  0,   0,   0]
+	 -   3) [-2.000974e-03, -2.338377e-14, -1.747878e-14] --> [-2.000974e-03, -2.338377e-14, -1.747878e-14] | jump of [  0,   0,   0]
+	 -   4) [ 2.000975e-03, -6.471872e-14, -8.030790e-14] --> [ 2.000975e-03, -6.471872e-14, -8.030790e-14] | jump of [  0,   0,   0]
+	
+	Final dipoles:
+	 -   0) [-1.166826e-13, -1.424284e-13, -1.195170e-13]
+	 -   1) [ 2.000974e-03, -6.093952e-14, -5.172773e-14]
+	 -   2) [-2.000975e-03, -1.020383e-13, -7.841830e-14]
+	 -   3) [-2.000974e-03, -2.338377e-14, -1.747878e-14]
+	 -   4) [ 2.000975e-03, -6.471872e-14, -8.030790e-14]
+	
+	Saving dipoles [e*ang] to atomic structures using the keyword 'REF_dipole'
+	Constructing cartesian displacements and saving them using keyword 'displacements'
+	info keys: {'polarization', 'energy', 'free_energy', 'REF_dipole'}
+	arrays keys: {'numbers', 'positions', 'displacements'}
+	Saving dataset to file 'dataset.extxyz'
+
+@ Job done :)
+@ Finished in 0.47s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Description: 
+Compute the Born Effective Charges as derivative of polarization/dipole w.r.t. nuclear displacements.
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/dPdR2bec.py -i dataset.extxyz -o .
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: dataset.extxyz
+	                retry: True
+	               output: .
+	----------------------------------------
+
+	Reading input structures from 'dataset.extxyz' ... done
+	n. structures:  5
+	n. atoms:  8
+	Extracting dipole from 'REF_dipole' ... done
+	dipole.shape:  (5, 3)
+	Extracting displacements from 'displacements' ... done
+	displacements.shape:  (5, 8, 3)
+	Reconstructing reference structure ... done
+	Preparing Born Charges and symmetrization ... done
+	
+	Matrix shapes:
+	 - b.shape: (15,)
+	 - A.shape: (15, 72)
+	 - S.shape: (72, 2)
+	
+	Matrix shapes with symmetrization:
+	 - b.shape: (15,)
+	 - A.shape: (15, 2)
+	
+	Matrix for total dipoles:
+	 - b.shape: (15,)
+	 - A.shape: (15, 5)
+	Preparing linear system ... done
+	Solving linear systems  ... done
+	
+	----------------------------------------
+	Linear Fit Summary
+	----------------------------------------
+	Error          : 1.574e-13
+	Relative Error : 3.934e-11
+	Quality        : GOOD
+	Bad points     : 12 / 15
+	----------------------------------------
+	
+	Extracting Born Charges  ... done
+	
+	Atom   0, species Mg
+	Position: [  0.000287   0.000287   0.000287]
+	||Z*|| =    2.00097
+	Born effective charge tensor (Z*):
+	       2.00097    0.00000    0.00000
+	       0.00000    2.00097    0.00000
+	       0.00000    0.00000    2.00097
+	
+	Atom   1, species Mg
+	Position: [  2.127782   2.127782   0.000287]
+	||Z*|| =    2.00097
+	Born effective charge tensor (Z*):
+	       2.00097    0.00000    0.00000
+	       0.00000    2.00097    0.00000
+	       0.00000    0.00000    2.00097
+	
+	Atom   2, species Mg
+	Position: [  2.127782   0.000287   2.127782]
+	||Z*|| =    2.00097
+	Born effective charge tensor (Z*):
+	       2.00097    0.00000    0.00000
+	       0.00000    2.00097    0.00000
+	       0.00000    0.00000    2.00097
+	
+	Atom   3, species Mg
+	Position: [  0.000287   2.127782   2.127782]
+	||Z*|| =    2.00097
+	Born effective charge tensor (Z*):
+	       2.00097    0.00000    0.00000
+	       0.00000    2.00097    0.00000
+	       0.00000    0.00000    2.00097
+	
+	Atom   4, species O
+	Position: [  0.000287   0.000287   2.127782]
+	||Z*|| =    2.00098
+	Born effective charge tensor (Z*):
+	      -2.00098   -0.00000    0.00000
+	       0.00000   -2.00098    0.00000
+	       0.00000    0.00000   -2.00098
+	
+	Atom   5, species O
+	Position: [  2.127782   0.000287   0.000287]
+	||Z*|| =    2.00098
+	Born effective charge tensor (Z*):
+	      -2.00098    0.00000    0.00000
+	       0.00000   -2.00098    0.00000
+	       0.00000    0.00000   -2.00098
+	
+	Atom   6, species O
+	Position: [  0.000287   2.127782   0.000287]
+	||Z*|| =    2.00098
+	Born effective charge tensor (Z*):
+	      -2.00098    0.00000    0.00000
+	       0.00000   -2.00098    0.00000
+	       0.00000    0.00000   -2.00098
+	
+	Atom   7, species O
+	Position: [  2.127782   2.127782   2.127782]
+	||Z*|| =    2.00098
+	Born effective charge tensor (Z*):
+	      -2.00098    0.00000    0.00000
+	       0.00000   -2.00098    0.00000
+	       0.00000    0.00000   -2.00098
+	
+	Checking Acoustic Sum Rule:
+	||sum_I Z*_I|| =    0.00000 | this value should be almost zero
+	Writing Born Charges to bec-no-asr.txt ... done
+	Writing sum of all Born Charges to asr.txt ... done
+	Writing sum of Born Charges with ASR applied to bec.txt ... done
+
+@ Job done :)
+@ Finished in 0.06s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Description: 
+Convert BEC to atomic charges.
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/general/bec2charges.py -i bec.txt -o charges.txt
+@ Let's start!
+
+	----------------------------------------
+	Input arguments:
+	                input: bec.txt
+	               output: charges.txt
+	----------------------------------------
+
+	Reading input structure from bec.txt ... done
+	Total sum:  0.0
+	Writing charges to charges.txt ... done
+
+@ Job done :)
+@ Finished in 0.01s
+-------------------------------------------@
+
