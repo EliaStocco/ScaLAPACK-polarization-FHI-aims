@@ -1,0 +1,19 @@
+#=======================================================
+# FHI-aims file: /work/home/christia/Projects/2026_ES_BaTiO3/relax_same_rep/relax/relaxation/geometry.in.next_step
+# Created using the Atomic Simulation Environment (ASE)
+# Tue Aug 11 15:39:48 2026
+
+# Additional information:
+#  Relaxed with BFGS, fmax=0.100 meV/AA
+#  nsteps = 16
+#  residual force  = 0.016875 meV/AA
+#  residual stress = 0.010518 meV/AA
+#=======================================================
+lattice_vector 3.9877240129930001 0.0025219866180000 0.0025189535810000 
+lattice_vector 0.0073264375850000 3.9877180802479999 0.0025189535810000 
+lattice_vector 0.0073264375850000 0.0073176159250000 3.9877121617740001 
+atom_frac 0.0003871237680000 0.0003871246380000 0.0003871253880000 Ba
+atom_frac 0.5117147727060000 0.5117147735760000 0.5117147743249999 Ti
+atom_frac 0.4884351509220000 0.4884351517919999 0.9821286438380000 O
+atom_frac 0.9821286422190000 0.4884351517919999 0.4884351525410000 O
+atom_frac 0.4884351509220000 0.9821286430880000 0.4884351525410000 O
