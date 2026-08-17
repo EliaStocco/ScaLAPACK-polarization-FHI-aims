@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO
+Node list: vipm[2075-2076,2078,2087]
+Job start: Sat Aug 15 00:20:30 CEST 2026
+Job end:   Sat Aug 15 01:14:41 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-4-light/supercell-8/lapack/scf/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-atoms-fixed/nodes-4-light/supercell-8/lapack/scf/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+10916783             MgO      4          1024                             00:54:11      0:0
+10916783.0    aims.26052      4    512   1024    13259.75M     1124.31M   00:54:07      0:0
+  
+Maximum memory per node: 1779.693781 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 98.4 %
+  

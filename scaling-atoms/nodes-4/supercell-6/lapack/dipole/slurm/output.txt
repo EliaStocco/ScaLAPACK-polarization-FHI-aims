@@ -5,11 +5,11 @@ Global information about the job:
   
 Job owner: elsto(84651)
 Job name:  MgO
-Node list: vipl[2053,2066]
-Job start: Fri Aug  7 11:24:49 CEST 2026
-Job end:   Fri Aug  7 12:50:30 CEST 2026
-Work dir:  /u/elsto/works/ScaLAPACK-atoms/supercell-6/lapack/dipole/./
-Command:   /viper/u1/elsto/works/ScaLAPACK-atoms/supercell-6/lapack/dipole/main.sh
+Node list: vipm[2028-2030,2032]
+Job start: Fri Aug 14 22:09:34 CEST 2026
+Job end:   Fri Aug 14 23:31:29 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-atoms-fixed/nodes-4/supercell-6/lapack/dipole/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-atoms-fixed/nodes-4/supercell-6/lapack/dipole/main.sh
   
   
   
@@ -20,9 +20,9 @@ tasks of the per-task memory high-water marks; cf. "man sacct"):
   
 JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
 ------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
-10845259             MgO      2           512                             01:25:41      0:0
-10845259.0    aims.26052      2    256    512    14857.91M     2472.91M   01:25:36      0:0
+10914032             MgO      4          1024                             01:21:55      0:0
+10914032.0    aims.26052      4    512   1024    14940.46M     2319.53M   01:21:52      0:0
   
-Maximum memory per node: 1994.194682 GB (defined as MaxRSS*Ntasks/NNodes)
+Maximum memory per node: 2005.274067 GB (defined as MaxRSS*Ntasks/NNodes)
 CPU utilization: 98.6 %
   
