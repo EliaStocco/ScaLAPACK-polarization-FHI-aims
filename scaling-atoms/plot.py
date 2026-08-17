@@ -29,6 +29,8 @@ NODE_STYLES = {
     4: {"marker": "s", "linestyle": "--"},
 }
 
+import pandas as pd
+
 
 def load_data(path):
     required = {
@@ -40,27 +42,26 @@ def load_data(path):
         "dipole_time",
         "polarization_time",
     }
-    with path.open(newline="") as csvfile:
-        reader = csv.DictReader(csvfile)
-        missing = required - set(reader.fieldnames or ())
-        if missing:
-            raise ValueError(f"Missing columns in {path}: {sorted(missing)}")
 
-        rows = []
-        for row in reader:
-            rows.append(
-                {
-                    "nodes": int(row["nodes"]),
-                    "supercell": int(row["supercell"]),
-                    "atoms": int(row["atoms"]),
-                    "method": row["method"],
-                    "scf_time": float(row["scf_time"]),
-                    "dipole_time": float(row["dipole_time"]),
-                    "polarization_time": float(row["polarization_time"]),
-                }
-            )
+    df = pd.read_csv(path)
 
-    return sorted(rows, key=lambda row: (row["method"], row["nodes"], row["atoms"]))
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"Missing columns in {path}: {sorted(missing)}")
+
+    df = df.astype({
+        "nodes": int,
+        "supercell": int,
+        "atoms": int,
+        "method": str,
+        "scf_time": float,
+        "dipole_time": float,
+        "polarization_time": float,
+    })
+    
+    df = df[df["atoms"] != 686]
+
+    return df.sort_values(["method", "nodes", "atoms"]).to_dict("records")
 
 
 def plot(rows):

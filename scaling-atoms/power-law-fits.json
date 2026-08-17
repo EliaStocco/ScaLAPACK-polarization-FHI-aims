@@ -1,0 +1,51 @@
+{
+    "polarization_time": {
+        "A": 0.0007796552998168525,
+        "m": 1.8698699438248036,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    },
+    "wannier_time": {
+        "A": 0.0023722597416276107,
+        "m": 1.6494380567504492,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    },
+    "fourier_ev_time": {
+        "A": 0.00010819453214030421,
+        "m": 2.0784548017406324,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    },
+    "dipole_matrix_time": {
+        "A": 0.022228431852618927,
+        "m": 0.7977098075596085,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    },
+    "dipole_term_time": {
+        "A": 3.550530905924351e-07,
+        "m": 2.630787448021641,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    },
+    "berry_term_time": {
+        "A": 1.2102372622781994e-05,
+        "m": 2.0798452730076002,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    },
+    "converge_time": {
+        "A": 0.1415254076666933,
+        "m": 1.1647775896380554,
+        "n_points": 6,
+        "min_atoms": 16,
+        "max_atoms": 1024
+    }
+}
