@@ -30,8 +30,8 @@ export LD_LIBRARY_PATH="${MKL_HOME}/lib/intel64:${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${INTEL_HOME}/compiler/2022.2.1/linux/compiler/lib/intel64_lin:${LD_LIBRARY_PATH}"
 
 # Programs and paths
-export AIMS_PATH="/u/elsto/programs/FHIaims-polarization-scalapack/build"
-export AIMS_EXE="aims.260527.scalapack.mpi.x"
+export AIMS_PATH="/u/elsto/programs/FHIaims/build/"
+export AIMS_EXE="aims.260326.scalapack.mpi.x"
 
 ulimit -s unlimited
 
@@ -64,38 +64,38 @@ run_aims(){
     rm aims.out
 }
 
-# #-----------------------------------#
-# cp geometry.in original.in
-# # Logging
-# LOG_FILE="log.out"
-# rm -f "$LOG_FILE"
-# echo "# Job ID: $SLURM_JOB_ID" >> "$LOG_FILE"
-# echo "# Date and Time: $(date +"%Y-%m-%d %H:%M:%S")" >> "$LOG_FILE"
+#-----------------------------------#
+cp geometry.in original.in
+# Logging
+LOG_FILE="log.out"
+rm -f "$LOG_FILE"
+echo "# Job ID: $SLURM_JOB_ID" >> "$LOG_FILE"
+echo "# Date and Time: $(date +"%Y-%m-%d %H:%M:%S")" >> "$LOG_FILE"
 
-# export SOCKET_HOST="${SOCKET_HOST:-$(hostname -i | awk '{print $1}')}"
-# export SOCKET_PORT=$((1025 + RANDOM % (65535 - 1025 + 1)))
+export SOCKET_HOST="${SOCKET_HOST:-$(hostname -i | awk '{print $1}')}"
+export SOCKET_PORT=$((1025 + RANDOM % (65535 - 1025 + 1)))
 
-# optimize.py  -i geometry.in -u false -p ${SOCKET_PORT} -f 1e-6 -cs true -rc true > optimize.txt & 
-# echo "use_pimd_wrapper ${SOCKET_HOST} ${SOCKET_PORT}" > tmp.in
+optimize.py  -i geometry.in -u false -p ${SOCKET_PORT} -f 1e-6 -cs true -rc true > optimize.txt & 
+echo "use_pimd_wrapper ${SOCKET_HOST} ${SOCKET_PORT}" > tmp.in
 
-# # optimize.py  -i geometry.in -u true -a ${SOCKET_HOST} -f 1e-4 -cs true -rc true > optimize.txt & 
-# # echo "use_pimd_wrapper UNIX:${SOCKET_HOST} ${SOCKET_PORT}" > tmp.in
+# optimize.py  -i geometry.in -u true -a ${SOCKET_HOST} -f 1e-4 -cs true -rc true > optimize.txt & 
+# echo "use_pimd_wrapper UNIX:${SOCKET_HOST} ${SOCKET_PORT}" > tmp.in
 
-# cat tmp.in aims.in > control.in
-# rm tmp.in
+cat tmp.in aims.in > control.in
+rm tmp.in
 
-# sleep 10
-# AIMS_OUTPUT_FILE="scf.out"
-# run_aims
+sleep 10
+AIMS_OUTPUT_FILE="scf.out"
+run_aims
 
-# rm -f minimization-trajectory.pickle
-# rm -f minimization-trajectory.extxyz
+rm -f minimization-trajectory.pickle
+rm -f minimization-trajectory.extxyz
 
 #-----------------------------------#
 
-# convert-file.py -i final.extxyz -o geometry.in
+convert-file.py -i final.extxyz -o geometry.in
 
-information-and-primitive.py -i geometry.in -o geometry.in > symmetry.txt
+information-and-primitive.py -i geometry.in > symmetry.txt
 
 cp aims.in control.in
 AIMS_OUTPUT_FILE="relax.out"

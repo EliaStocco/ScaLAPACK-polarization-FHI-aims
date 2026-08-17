@@ -1,0 +1,29 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BaTiO3
+Node list: ravc4110
+Job start: Mon Aug 17 14:11:18 CEST 2026
+Job end:   Mon Aug 17 14:13:58 CEST 2026
+Work dir:  /u/elsto/works/tetragonal/LDA/relax/./
+Command:   /raven/u/elsto/works/tetragonal/LDA/relax/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+29363433          BaTiO3      1           144                             00:02:40      0:0
+29363433.0    aims.26032      1     72    144      123.10M      111.68M   00:00:10    255:0
+29363433.1    aims.26032      1     72    144      306.75M      293.35M   00:01:59      0:0
+  
+Maximum memory per node: 23.158850 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 70.7 %
+  

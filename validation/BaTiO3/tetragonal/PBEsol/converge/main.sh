@@ -27,8 +27,8 @@ export LD_LIBRARY_PATH="${MKL_HOME}/lib/intel64:${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${INTEL_HOME}/compiler/2022.2.1/linux/compiler/lib/intel64_lin:${LD_LIBRARY_PATH}"
 
 # Programs and paths
-export AIMS_PATH="/u/elsto/programs/FHIaims-polarization-scalapack/build/"
-export AIMS_EXE="aims.260527.scalapack.mpi.x"
+export AIMS_PATH="/u/elsto/programs/FHIaims/build/"
+export AIMS_EXE="aims.260326.scalapack.mpi.x"
 
 ulimit -s unlimited
 
