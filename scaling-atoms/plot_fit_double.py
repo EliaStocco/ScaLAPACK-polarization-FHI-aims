@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import least_squares
+from plot_fit import SCALAPACK_QUANTITIES, LABELS, add_lines
 
 
 BASE = Path(__file__).resolve().parent
@@ -18,26 +19,6 @@ DATA_FILE = BASE / "dataframe.csv"
 OUTPUT_FILE = BASE / "two-power-law-fits.pdf"
 FIT_FILE = BASE / "two-power-law-fits.json"
 
-
-SCALAPACK_QUANTITIES = [
-    # "polarization_time",
-    # "wannier_time",
-    "fourier_ev_time",
-    "dipole_matrix_time",
-    "dipole_term_time",
-    "berry_term_time",
-]
-
-
-LABELS = {
-    "polarization_time": "Polarization",
-    "wannier_time": "Wannier",
-    "fourier_ev_time": "Fourier EV",
-    "dipole_matrix_time": "Dipole matrix",
-    "dipole_term_time": "Dipole term",
-    "berry_term_time": "Berry term",
-    "converge_time": "SCF",
-}
 
 
 def two_power_law(x, A, m, B, n):
@@ -262,7 +243,7 @@ def fit_and_plot(
     ax.plot(
         x_fit,
         y_fit,
-        "--",
+        "-" if quantity in ["wannier_time","converge_time"] else "--",
         color=color,
         label=label
     )
@@ -381,11 +362,11 @@ def main():
         r"$y = A x^m + B x^n$"
     )
 
-    ax.grid(
-        True,
-        which="both",
-        alpha=0.25,
-    )
+    # ax.grid(
+    #     True,
+    #     which="both",
+    #     alpha=0.25,
+    # )
 
     ax.legend(
         fontsize=8,
@@ -421,6 +402,16 @@ def main():
     )
 
     ax.legend(ncol=1)
+    
+    # Ideal scaling guides
+    add_lines(
+        ax,
+        n_lines=20,
+        color="gray",
+        alpha=0.5,
+        linewidth=0.5,
+        linestyle="--",
+    )
 
     print(f"Saved {OUTPUT_FILE}")
     plt.tight_layout()
