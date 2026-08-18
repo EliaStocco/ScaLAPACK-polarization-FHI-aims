@@ -17,10 +17,31 @@ DATA_FILE = BASE / "dataframe.csv"
 FIT_FILE = BASE / "power-law-fits.json"
 OUTPUT_FILE = BASE / "power-law-fits.pdf"
 
+def add_lines(ax, n_lines, **plot_kwargs):
+    """Add n_lines cubic curves with y = c*x**3 scaling."""
+
+    xmin, xmax = sorted(ax.get_xlim())
+    ymin, ymax = sorted(ax.get_ylim())
+
+    constants = np.logspace(
+        np.log10(ymin / xmax**3),
+        np.log10(ymax / xmin**3),
+        n_lines,
+    )
+
+    # More than 2 points gives smooth curves on linear axes
+    x = np.logspace(np.log10(xmin), np.log10(xmax), 200)
+
+    for c in constants:
+        ax.plot(x, c * x**3, **plot_kwargs)
+
+    ax.set_xlim(xmin, xmax)
+    ax.set_ylim(ymin, ymax)
+
 
 SCALAPACK_QUANTITIES = [
     # "polarization_time",
-    # "wannier_time",
+    "wannier_time",
     "fourier_ev_time",
     "dipole_matrix_time",
     "dipole_term_time",
@@ -29,7 +50,7 @@ SCALAPACK_QUANTITIES = [
 
 LABELS = {
     "polarization_time": "Polarization",
-    "wannier_time": "Wannier",
+    "wannier_time": "Polarization (total)",
     "fourier_ev_time": "Fourier EV",
     "dipole_matrix_time": "Dipole matrix",
     "dipole_term_time": "Dipole term",
@@ -126,7 +147,7 @@ def main():
         ax.plot(
             x_fit,
             power_law(x_fit, A, m),
-            "--",
+            "-" if quantity == "wannier_time" else "--",
             color=color,
             label=LABELS[quantity],
         )
@@ -174,7 +195,7 @@ def main():
             ax.plot(
                 x_fit,
                 power_law(x_fit, A, m),
-                "--",
+                "-",
                 color=color,
                 label=LABELS["converge_time"],
             )
@@ -192,13 +213,23 @@ def main():
         r"$y = A x^m$"
     )
 
-    ax.grid(
-        True,
-        which="both",
-        alpha=0.25,
-    )
+    # ax.grid(
+    #     True,
+    #     which="both",
+    #     alpha=0.25,
+    # )
 
     ax.legend(ncol=1)
+    
+    # Ideal scaling guides
+    add_lines(
+        ax,
+        n_lines=20,
+        color="gray",
+        alpha=0.5,
+        linewidth=0.5,
+        linestyle="--",
+    )
 
     print(f"Saved {OUTPUT_FILE}")
     plt.tight_layout()
