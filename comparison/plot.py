@@ -46,7 +46,7 @@ def add_inverse_lines(ax, n_lines=20, **kwargs):
 STYLE_FILE = "../style.mplstyle"
 DATA_FILE = "dataframe.csv"
 IMAGE_FILE = "MgO.png"
-OUTPUT_FILE = "scaling.pdf"
+OUTPUT_FILE = "scalability.pdf"
 
 COLORS = {
     "LAPACK": "#1f77b4",
@@ -134,15 +134,15 @@ def plot(df):
     ax1.set_ylabel("CPU time (s)")
     ax1.legend(loc="lower left", framealpha=1.0)
 
-    ax1.text(
-        0.13,
-        0.25,
-        "ideal scalability",
-        transform=ax1.transAxes,
-        rotation=-60,
-        fontsize=8,
-        color="gray",
-    )
+    # ax1.text(
+    #     0.13,
+    #     0.25,
+    #     "ideal scalability",
+    #     transform=ax1.transAxes,
+    #     rotation=-60,
+    #     fontsize=8,
+    #     color="gray",
+    # )
     
     ax1.set_xlim(7,576)
     xticks = [8, 16, 32, 64, 128, 256, 512]
@@ -195,13 +195,13 @@ def plot(df):
     
     ax2.set_ylim(0,None)
     
-    ax2.grid(
-    True,
-    color="gray",
-    alpha=0.5,
-    linewidth=0.5,
-    linestyle="--",
-)
+    # ax2.grid(
+    #     True,
+    #     color="gray",
+    #     alpha=0.5,
+    #     linewidth=0.5,
+    #     linestyle="--",
+    # )
 
     fig.tight_layout()
     return fig
