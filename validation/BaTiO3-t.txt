@@ -1,0 +1,29 @@
+Wrote 6 rows to BaTiO3-t.csv
+cubic        HSE06   match
+cubic        LDA     match
+cubic        PBEsol  match
+tetragonal   HSE06   mismatch
+tetragonal   LDA     not_compared_missing_value
+tetragonal   PBEsol  not_compared_missing_value
+
+LAPACK full polarization along periodic directions (C/m^2):
+cubic        HSE06   P1=-1.077382e-09  P2=-1.077404e-09  P3=-1.077384e-09
+cubic        LDA     P1=-1.077364e-09  P2=-1.077402e-09  P3=-1.077414e-09
+cubic        PBEsol  P1=5.97288707e-10  P2=5.97235049e-10  P3=5.97216411e-10
+tetragonal   HSE06   P1=1.2945609e-14  P2=6.52719779e-16  P3=0.460710533
+tetragonal   LDA     P1=2.480416e-09  P2=2.480386e-09  P3=0.264717004
+tetragonal   PBEsol  P1=-1.290596e-09  P2=-1.290605e-09  P3=0.345067347
+
+tetragonal minus cubic LAPACK full polarization (C/m^2):
+HSE06   ΔP1=1.07739495e-09  ΔP2=1.07740465e-09  ΔP3=0.460710534
+LDA     ΔP1=3.55778e-09  ΔP2=3.557788e-09  ΔP3=0.264717005
+PBEsol  ΔP1=-1.88788471e-09  ΔP2=-1.88784005e-09  ΔP3=0.345067346
+
+tetragonal minus cubic Cartesian polarization (C/m^2):
+HSE06   lapack    ΔPx=1.07739495e-09  ΔPy=1.07740465e-09  ΔPz=0.460710534  |ΔP|=0.460710534
+HSE06   scalapack ΔPx=4.11551363e-10  ΔPy=4.11556081e-10  ΔPz=0.337458051  |ΔP|=0.337458051
+LDA     lapack    ΔPx=3.55778e-09  ΔPy=3.557788e-09  ΔPz=0.264717005  |ΔP|=0.264717005
+LDA     scalapack not available (ok; polarization_not_found)
+PBEsol  lapack    ΔPx=-1.88788471e-09  ΔPy=-1.88784005e-09  ΔPz=0.345067346  |ΔP|=0.345067346
+PBEsol  scalapack not available (ok; polarization_not_found)
+Mismatch found: LAPACK and ScaLAPACK do not agree for every complete pair.
