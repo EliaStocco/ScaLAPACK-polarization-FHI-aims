@@ -1,0 +1,11 @@
+supercell,scf k_grid,pol k-grid,n k-points,scalapack,atoms
+1x1x1,16x16x16,64x16x16,4096,no,2
+2x1x1,8x16x16,32x16x16,2048,no,4
+2x2x1,8x8x16,32x8x16,1024,no,8
+2x2x2,8x8x8,32x8x8,512,yes,16
+4x2x2,4x8x8,16x8x8,256,yes,32
+4x4x2,4x4x8,16x4x8,128,yes,64
+4x4x4,4x4x4,16x4x4,64,yes,128
+8x4x4,2x4x4,8x4x4,32,yes,256
+8x8x4,2x2x4,8x2x4,16,yes,512
+8x8x8,2x2x2,8x2x2,8,yes,1024
