@@ -1,0 +1,1 @@
+rsync -av --exclude='*.csc' raven:/u/elsto/works/tetragonal .

@@ -61,7 +61,7 @@ with open("fit.json") as f:
 
 
 # Create figure
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(6,3.4))
 
 for marker, mol in zip(MARKERS, MOLECULES):
 

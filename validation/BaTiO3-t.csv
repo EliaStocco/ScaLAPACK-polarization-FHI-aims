@@ -1,0 +1,7 @@
+structure,functional,lapack_px_C_m2,lapack_py_C_m2,lapack_pz_C_m2,lapack_status,scalapack_px_C_m2,scalapack_py_C_m2,scalapack_pz_C_m2,scalapack_status,max_abs_difference_C_m2,comparison
+cubic,HSE06,-1.077382e-09,-1.077404e-09,-1.077384e-09,ok,-1.077382e-09,-1.077404e-09,-1.077384e-09,ok,0,match
+cubic,LDA,-1.077364e-09,-1.077402e-09,-1.077414e-09,ok,-1.077382e-09,-1.077404e-09,-1.077384e-09,ok,2.99999999998438e-14,match
+cubic,PBEsol,5.97288707e-10,5.97235049e-10,5.97216411e-10,ok,5.97266114e-10,5.97233807e-10,5.97197659e-10,ok,2.25930000000593e-14,match
+tetragonal,HSE06,1.2945609e-14,6.52719779e-16,0.460710533,ok,-6.65830637e-10,-6.65847919e-10,0.33745805,ok,0.123252483,mismatch
+tetragonal,LDA,2.480416e-09,2.480386e-09,0.264717004,ok,,,,polarization_not_found,,not_compared_missing_value
+tetragonal,PBEsol,-1.290596e-09,-1.290605e-09,0.345067347,ok,,,,polarization_not_found,,not_compared_missing_value
