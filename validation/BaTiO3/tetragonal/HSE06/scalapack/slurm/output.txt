@@ -5,9 +5,9 @@ Global information about the job:
   
 Job owner: elsto(84651)
 Job name:  BaTiO3
-Node list: ravc[2217-2224]
-Job start: Sat Aug 15 01:26:35 CEST 2026
-Job end:   Sat Aug 15 01:26:47 CEST 2026
+Node list: ravc[3006,3235,3246,3251,3676-3679]
+Job start: Wed Aug 19 16:09:55 CEST 2026
+Job end:   Wed Aug 19 16:10:50 CEST 2026
 Work dir:  /u/elsto/works/tetragonal/HSE06/scalapack/./
 Command:   /raven/u/elsto/works/tetragonal/HSE06/scalapack/main.sh
   
@@ -20,9 +20,9 @@ tasks of the per-task memory high-water marks; cf. "man sacct"):
   
 JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
 ------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
-29330580          BaTiO3      8          1152                             00:00:12      0:0
-29330580.0    aims.26062      8    576   1152        2.05M        1.97M   00:00:06      2:0
+29397864          BaTiO3      8          1152                             00:00:55      0:0
+29397864.0    aims.26032      8    576   1152      336.26M      295.43M   00:00:50      0:0
   
-Maximum memory per node: 0.155124 GB (defined as MaxRSS*Ntasks/NNodes)
-CPU utilization: 0.0 %
+Maximum memory per node: 25.386910 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 60.0 %
   

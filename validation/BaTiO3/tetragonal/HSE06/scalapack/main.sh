@@ -28,7 +28,7 @@ export LD_LIBRARY_PATH="${INTEL_HOME}/compiler/2022.2.1/linux/compiler/lib/intel
 
 # Programs and paths
 export AIMS_PATH="/u/elsto/programs/FHIaims/build/"
-export AIMS_EXE="aims.260629.scalapack.mpi.x"
+export AIMS_EXE="aims.260326.scalapack.mpi.x"
 
 ulimit -s unlimited
 

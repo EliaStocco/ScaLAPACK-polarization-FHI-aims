@@ -5,9 +5,9 @@ Global information about the job:
   
 Job owner: elsto(84651)
 Job name:  BaTiO3
-Node list: ravc[3344,3348,3355,3358]
-Job start: Mon Aug 17 14:27:11 CEST 2026
-Job end:   Mon Aug 17 15:01:06 CEST 2026
+Node list: ravc[4090,4110,4135,4144]
+Job start: Mon Aug 24 21:27:56 CEST 2026
+Job end:   Mon Aug 24 21:59:12 CEST 2026
 Work dir:  /u/elsto/works/tetragonal/HSE06/converge/./
 Command:   /raven/u/elsto/works/tetragonal/HSE06/converge/main.sh
   
@@ -20,9 +20,9 @@ tasks of the per-task memory high-water marks; cf. "man sacct"):
   
 JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
 ------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
-29363442          BaTiO3      4           576                             00:33:55      0:0
-29363442.0    aims.26032      4    288    576     2650.96M     1771.17M   00:33:51      0:0
+29553799          BaTiO3      4           576                             00:31:16      0:0
+29553799.0    aims.26032      4    288    576     2579.83M     1757.02M   00:31:10      0:0
   
-Maximum memory per node: 200.140554 GB (defined as MaxRSS*Ntasks/NNodes)
-CPU utilization: 99.3 %
+Maximum memory per node: 194.770502 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.0 %
   

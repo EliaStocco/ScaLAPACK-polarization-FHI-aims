@@ -75,7 +75,7 @@ echo "# Date and Time: $(date +"%Y-%m-%d %H:%M:%S")" >> "$LOG_FILE"
 export SOCKET_HOST="${SOCKET_HOST:-$(hostname -i | awk '{print $1}')}"
 export SOCKET_PORT=$((1025 + RANDOM % (65535 - 1025 + 1)))
 
-optimize.py  -i geometry.in -u false -p ${SOCKET_PORT} -f 1e-6 -cs true -rc true > optimize.txt & 
+optimize.py  -i geometry.in -p ${SOCKET_PORT} -f 1e-6 -cs true -rc true > optimize.txt & 
 echo "use_pimd_wrapper ${SOCKET_HOST} ${SOCKET_PORT}" > tmp.in
 
 # optimize.py  -i geometry.in -u true -a ${SOCKET_HOST} -f 1e-4 -cs true -rc true > optimize.txt & 

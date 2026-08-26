@@ -1,0 +1,78 @@
+
+@-------------------------------------------
+@ Running: /home/stoccoel/.pyenv/versions/fd2bec/bin/tensor_symmetries -i start.extxyz -n positions -k positions
+@ Started: Tuesday, 25 August 2026 at 11:33:15 CEST
+@ Working directory: /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/validation/BaTiO3/tetragonal/PBEsol/converge
+@ Git branch: develop
+@ Last commit: 27ac8479a39e70c849a86b3f59419304357eda49 ok
+@ Python: 3.10.18 (/home/stoccoel/.pyenv/versions/fd2bec/bin/python)
+@ Python environment: virtualenv: fd2bec (/home/stoccoel/.pyenv/versions/3.10.18/envs/fd2bec)
+@ Let's start!
+
+	Description:
+	Show the symmetry-allowed components of a tensor.
+
+	----------------------------------------
+	Input arguments:
+	                input: start.extxyz
+	                 name: positions
+	              keyword: positions
+	    conventional_axes: False
+	                basis: None
+	            precision: None
+	----------------------------------------
+
+	Reading input structure from start.extxyz ... done
+	--------------------
+	Reference structure:
+	
+	Cell vectors [Angstrom]:
+		a1:      3.95387898     -0.00000000     -0.00000000
+		a2:      0.00000000      3.95387898      0.00000000
+		a3:     -0.00000000      0.00000000      4.04322297
+	
+	Lattice parameters:
+		a,b,c (Å) =     3.95387898     3.95387898     4.04322297
+		α,β,γ (°) =    90.00000000    90.00000000    90.00000000
+	
+	Fractional coordinates:
+		atom              x              y              z
+		Ba        0.00000000      0.00000000      0.00000000
+		Ti        0.50000000      0.50000000      0.51559315
+		O         0.50000000      0.50000000      0.97031975
+		O         0.50000000      0.00000000      0.48103437
+		O         0.00000000      0.50000000      0.48103437
+	--------------------
+	
+	Constructed positions tensor with shape (5, 3) in fractional basis.
+	Extracting numeric tensor 'positions' from the structure ... done
+	
+	Computing symmetry-allowed displacement modes ... done
+	n. symmetry-inequivalent component(s): 4 out of 15 (26.7%)
+	           x        y        z
+	  0      0.0      0.0        a
+	  1      0.5      0.5  0.5 + b
+	  2      0.5      0.5       -c
+	  3      0.5      0.0  0.5 - d
+	  4      0.0      0.5  0.5 - d
+	
+	Numeric tensor from atoms.arrays['positions'] (fractional basis, input axes):
+	          x       y       z
+	  0       0       0       0
+	  1     0.5     0.5  0.5156
+	  2     0.5     0.5  0.9703
+	  3     0.5       0   0.481
+	  4       0     0.5   0.481
+	
+	Symmetry-inequivalent component values:
+	  a: 0
+	  b: 0.01559
+	  c: 0.02968
+	  d: 0.01897
+	
+	Zero-component check: PASS; all 4 symmetry-forbidden components are zero within absolute tolerance 1.0e-05.
+
+@ Job done :)
+@ Finished in 0.02s
+-------------------------------------------@
+

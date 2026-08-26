@@ -7,10 +7,10 @@ running script as   : information-and-primitive.py  -i geometry.in
 python --version    : 3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:50:21)  [GCC 12.3.0]
 which python        : /u/elsto/conda-envs/eslib/bin/python
 conda env           : /u/elsto/conda-envs/eslib
-SLURM job ID        : 29363437
-PID                 : 37388
-start date          : 2026-08-17
-start time          : 14:11:56
+SLURM job ID        : 29417131
+PID                 : 87649
+start date          : 2026-08-20
+start time          : 15:56:47
 @------------------------------
 
 	 Show general information of a given atomic structure and find its primitive cell structure.
@@ -39,8 +39,8 @@ start time          : 14:11:56
 	--------------
 	Number of atoms               : 5
 	Chemical formula              : BaO3Ti
-	(a, b, c, α, β, γ) [ang,deg]  : 3.963082198169 3.963082198169 4.051482709681 90.0 90.0 90.0 
-	Bravais Lattice               : primitive tetragonal TET(a=3.96308, c=4.05148)
+	(a, b, c, α, β, γ) [ang,deg]  : 3.953878976461 3.953878976461 4.043222965375 90.0 90.0 90.0 
+	Bravais Lattice               : primitive tetragonal TET(a=3.95388, c=4.04322)
 	Symmetry Threshold            : 0.001
 	Spacegroup number             : 99
 	Hall symbol                   : P 4 -2
@@ -51,17 +51,17 @@ start time          : 14:11:56
 	Is primitive cell?            : True
 	
 	Additional information:
-	volume [ang^3]                : 63.6326705319056
-	volume [au^3]                 : 429.4145287463861
-	density [g/cm^3]              : 6.08528142245145
+	volume [ang^3]                : 63.208347330440596
+	volume [au^3]                 : 426.5510539610258
+	density [g/cm^3]              : 6.126132452482204
 
 	Cell:
 	|-----------------------------------|
 	|   |    1         2         3      |
 	|-----------------------------------|
-	| x |    3.9631    0.0000    0.0000 |
-	| y |    0.0000    3.9631    0.0000 |
-	| z |    0.0000    0.0000    4.0515 |
+	| x |    3.9539    0.0000   -0.0000 |
+	| y |   -0.0000    3.9539    0.0000 |
+	| z |   -0.0000    0.0000    4.0432 |
 	|-----------------------------------|
 
 
@@ -72,8 +72,8 @@ start time          : 14:11:56
 	 Job done :)
 
 ------------------------------@
-end date: 2026-08-17
-end time: 14:11:56s 
+end date: 2026-08-20
+end time: 15:56:47s 
 elapsed seconds: 0s
 elapsed time: 00:00:00
 ------------------------------@
