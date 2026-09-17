@@ -90,7 +90,7 @@ def plot(df):
     fig, (ax1, ax2) = plt.subplots(
         2,
         1,
-        figsize=(3, 4),
+        figsize=(4, 4),
         sharex=True,
         gridspec_kw={"height_ratios": [2, 1]},
     )
@@ -154,14 +154,14 @@ def plot(df):
     ax1.yaxis.set_major_locator(mticker.FixedLocator(yticks))
     ax1.yaxis.set_major_formatter(mticker.ScalarFormatter())
 
-    add_inverse_lines(
-        ax1,
-        n_lines=20,
-        color="gray",
-        alpha=0.5,
-        linewidth=0.5,
-        linestyle="--",
-    )
+    # add_inverse_lines(
+    #     ax1,
+    #     n_lines=20,
+    #     color="gray",
+    #     alpha=0.5,
+    #     linewidth=0.5,
+    #     linestyle="--",
+    # )
 
     # =========================================================
     # BOTTOM: dipole peak memory ONLY
