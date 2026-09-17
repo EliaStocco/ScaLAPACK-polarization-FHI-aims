@@ -174,8 +174,16 @@ def plot_components(ax, rows, primary_nodes):
     set_atom_ticks(ax, plotted_atoms)
     ax.set_yscale("log")
     ax.set_xlabel("n. atoms")
-    ax.set_ylabel("Wall-clock time (s)")
-    ax.legend()
+    ax.set_ylabel("CPU time (s)")
+    # ax.legend()
+    
+    legend = ax.legend(
+        loc="upper left",
+        bbox_to_anchor=(1.02, 1),
+        borderaxespad=0,
+    )
+    legend._legend_box.align = "left"
+
 
     xmin, xmax = ax.get_xlim()
     guide_x = [8, 1300]
@@ -205,18 +213,18 @@ def plot_components(ax, rows, primary_nodes):
         color="gray",
         arrowprops=arrow_style,
     )
-    quadratic_target_x = 14
+    quadratic_target_x = 1100
     ax.annotate(
         "quadratic scaling",
         xy=(quadratic_target_x, 1e-4 * quadratic_target_x**2),
         xycoords="data",
-        xytext=(0.10, 0.08),
+        xytext=(0.60, 0.08),
         textcoords="axes fraction",
         color="gray",
         arrowprops=arrow_style,
     )
     ax.set_xlim(xmin, xmax)
-    ax.set_ylim(1e-3, 1e3)
+    ax.set_ylim(3e-2, 7e2)
 
 
 def main():
@@ -225,7 +233,7 @@ def main():
 
     rows = load_data(DATA_FILE)
     primary_nodes = primary_node_count(rows)
-    fig, ax = plt.subplots(figsize=(6, 3.5))
+    fig, ax = plt.subplots(figsize=(8, 3))
     plot_components(ax, rows, primary_nodes)
     fig.savefig(OUTPUT_FILE, bbox_inches="tight")
     print(f"Saved {OUTPUT_FILE}")
