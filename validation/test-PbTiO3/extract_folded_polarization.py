@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Extract and unwrap polarization along the PbTiO3 distortion path."""
+"""Extract and unwrap polarization along the PbTiO3 distortion path.
+
+When the PBE path is unavailable, estimate its endpoint difference from
+``validation/PbTiO3`` using the explicitly requested final-state branch shift.
+"""
 
 from __future__ import annotations
 
@@ -135,11 +139,89 @@ def conventional_representation(
     return reduced, quantum_magnitudes, conventional_components, cartesian
 
 
+def row_from_snapshot(
+    functional: str,
+    geometry: int,
+    raw_cartesian: Vector,
+    raw_directives: Vector,
+    directive_quanta: Vector,
+    cell: Cell,
+    branch_shifts: tuple[int, int, int],
+    source_file: str,
+) -> tuple[dict[str, str | int], tuple[Vector, Vector, Vector, Vector]]:
+    """Create one CSV row after applying the stated polarization-branch shift."""
+    folded_directives = tuple(
+        value + shift * quantum
+        for value, shift, quantum in zip(
+            raw_directives, branch_shifts, directive_quanta
+        )
+    )
+    (
+        reduced_polarizations,
+        conventional_quanta,
+        conventional_components,
+        folded_cartesian,
+    ) = conventional_representation(folded_directives, directive_quanta, cell)
+    return ({
+        "functional": functional,
+        "geometry": geometry,
+        "raw_polarization_x_C_per_m2": f"{raw_cartesian[0]:.12f}",
+        "raw_polarization_y_C_per_m2": f"{raw_cartesian[1]:.12f}",
+        "raw_polarization_z_C_per_m2": f"{raw_cartesian[2]:.12f}",
+        "raw_polarization_1_C_per_m2": f"{raw_directives[0]:.12f}",
+        "raw_polarization_2_C_per_m2": f"{raw_directives[1]:.12f}",
+        "raw_polarization_3_C_per_m2": f"{raw_directives[2]:.12f}",
+        "polarization_quantum_1_C_per_m2": f"{directive_quanta[0]:.9f}",
+        "polarization_quantum_2_C_per_m2": f"{directive_quanta[1]:.9f}",
+        "polarization_quantum_3_C_per_m2": f"{directive_quanta[2]:.9f}",
+        "branch_shift_1_quanta": branch_shifts[0],
+        "branch_shift_2_quanta": branch_shifts[1],
+        "branch_shift_3_quanta": branch_shifts[2],
+        "folded_polarization_1_C_per_m2": f"{folded_directives[0]:.12f}",
+        "folded_polarization_2_C_per_m2": f"{folded_directives[1]:.12f}",
+        "folded_polarization_3_C_per_m2": f"{folded_directives[2]:.12f}",
+        "reduced_polarization_1": f"{reduced_polarizations[0]:.12f}",
+        "reduced_polarization_2": f"{reduced_polarizations[1]:.12f}",
+        "reduced_polarization_3": f"{reduced_polarizations[2]:.12f}",
+        "conventional_quantum_1_C_per_m2": f"{conventional_quanta[0]:.12f}",
+        "conventional_quantum_2_C_per_m2": f"{conventional_quanta[1]:.12f}",
+        "conventional_quantum_3_C_per_m2": f"{conventional_quanta[2]:.12f}",
+        "folded_conventional_polarization_1_C_per_m2": f"{conventional_components[0]:.12f}",
+        "folded_conventional_polarization_2_C_per_m2": f"{conventional_components[1]:.12f}",
+        "folded_conventional_polarization_3_C_per_m2": f"{conventional_components[2]:.12f}",
+        "folded_polarization_x_C_per_m2": f"{folded_cartesian[0]:.12f}",
+        "folded_polarization_y_C_per_m2": f"{folded_cartesian[1]:.12f}",
+        "folded_polarization_z_C_per_m2": f"{folded_cartesian[2]:.12f}",
+        "source_file": source_file,
+    }, (
+        folded_directives,
+        conventional_components,
+        conventional_quanta,
+        folded_cartesian,
+    ))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "root", nargs="?", type=Path, default=Path(__file__).parent,
         help="Directory containing LDA/, PBEsol/, and HSE06/ (default: script directory).",
+    )
+    parser.add_argument(
+        "--endpoint-root", type=Path,
+        default=Path(__file__).parent.parent / "PbTiO3",
+        help=(
+            "PbTiO3 endpoint-results directory used for a PBE estimate when "
+            "the PBE distortion path is absent (default: <validation>/PbTiO3)."
+        ),
+    )
+    parser.add_argument(
+        "--pbe-endpoint-branch-shifts", nargs=3, type=int,
+        default=(0, 0, 1), metavar=("N1", "N2", "N3"),
+        help=(
+            "Polarization quanta to add to the displaced PBE endpoint when "
+            "estimating it without a PBE path (default: 0 0 1)."
+        ),
     )
     parser.add_argument(
         "-o", "--output", type=Path,
@@ -155,6 +237,7 @@ def main() -> None:
 
     rows = []
     folded_directive_rows = []
+    estimates = {}
     for functional_dir in functional_dirs:
         files = []
         for path in (functional_dir / "results").glob("aims.n=*.out"):
@@ -244,6 +327,28 @@ def main() -> None:
                 "source_file": str(path.relative_to(functional_dir)),
             })
 
+    if not any(row["functional"] == "PBE" for row in rows):
+        initial_path = args.endpoint_root / "cubic" / "PBE" / "lapack" / "aims.out"
+        final_path = (
+            args.endpoint_root / "displaced" / "PBE" / "lapack" / "aims.out"
+        )
+        if initial_path.is_file() and final_path.is_file():
+            initial = parse_output(initial_path)
+            final = parse_output(final_path)
+            initial_row, initial_folded = row_from_snapshot(
+                "PBE", 0, *initial, (0, 0, 0), str(initial_path)
+            )
+            final_shifts = tuple(args.pbe_endpoint_branch_shifts)
+            final_row, final_folded = row_from_snapshot(
+                "PBE", 9, *final, final_shifts, str(final_path)
+            )
+            rows.extend((initial_row, final_row))
+            folded_directive_rows.extend((
+                ("PBE", 0, *initial_folded),
+                ("PBE", 9, *final_folded),
+            ))
+            estimates["PBE"] = (final_shifts, final[2], initial_path, final_path)
+
     fields = list(rows[0]) if rows else []
     if not rows:
         raise SystemExit(f"No results/aims.n=*.out files found below {args.root}")
@@ -254,6 +359,25 @@ def main() -> None:
 
     for functional in sorted({row["functional"] for row in rows}):
         functional_rows = [row for row in rows if row["functional"] == functional]
+        if functional in estimates:
+            shifts, final_quanta, initial_path, final_path = estimates[functional]
+            added_polarization = tuple(
+                shift * quantum for shift, quantum in zip(shifts, final_quanta)
+            )
+            print(
+                f"{functional}: no distortion path was found; estimating from "
+                "the cubic and displaced endpoints."
+            )
+            print(
+                f"{functional}: displaced endpoint branch shift = {shifts} "
+                "polarization quanta (Q1, Q2, Q3)."
+            )
+            print(
+                f"{functional}: explicitly add ({added_polarization[0]:.9f}, "
+                f"{added_polarization[1]:.9f}, {added_polarization[2]:.9f}) "
+                "C/m^2 to the displaced projected polarization."
+            )
+            print(f"{functional}: endpoint inputs: {initial_path}; {final_path}")
         print(
             f"{functional}: branch-unwrapped conventional P1, P2, P3 "
             "(signed magnitudes along a1, a2, a3; C/m^2):"

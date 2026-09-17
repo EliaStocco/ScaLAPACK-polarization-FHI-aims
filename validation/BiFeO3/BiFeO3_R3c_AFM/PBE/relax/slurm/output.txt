@@ -1,0 +1,29 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  BiFeO3-AFM
+Node list: vipm[2065-2067,2076]
+Job start: Sun Sep 13 21:49:33 CEST 2026
+Job end:   Sun Sep 13 23:20:38 CEST 2026
+Work dir:  /u/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R3c_AFM/PBE/relax/./
+Command:   /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R3c_AFM/PBE/relax/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11700256      BiFeO3-AFM      4          1024                             01:31:05      0:0
+11700256.0    aims.26052      4    512   1024      565.42M      475.54M   01:28:16      0:0
+11700256.1    aims.26052      4    512   1024      439.00M      411.49M   00:02:24      0:0
+  
+Maximum memory per node: 75.888984 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 97.6 %
+  

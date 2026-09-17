@@ -19,7 +19,7 @@ from pathlib import Path
 from typing import Optional
 
 
-FUNCTIONALS = ("HSE06", "LDA", "PBEsol")
+FUNCTIONALS = ("HSE06", "LDA", "PBEsol","PBE")
 BACKENDS = ("lapack", "scalapack")
 MARKER = "| Cartesian Polarization"
 NUMBER_TEXT = r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[EeDd][+-]?\d+)?"
