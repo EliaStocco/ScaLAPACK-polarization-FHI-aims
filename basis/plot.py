@@ -32,6 +32,18 @@ def add_inverse_lines(ax, n_lines, **plot_kwargs):
     ax.set_ylim(ymin, ymax)
 
 
+def power_law_angle(ax, exponent):
+    """Return the on-page angle of y ∝ x**exponent for the current axes."""
+
+    xmin, xmax = ax.get_xlim()
+    ymin, ymax = ax.get_ylim()
+    x = np.sqrt(xmin * xmax)
+    y = np.sqrt(ymin * ymax)
+    scale = 1.1
+    start, end = ax.transData.transform(((x, y), (x * scale, y * scale ** exponent)))
+    return np.degrees(np.arctan2(end[1] - start[1], end[0] - start[0]))
+
+
 # -----------------------------
 # Load + reshape data
 # -----------------------------
@@ -57,7 +69,7 @@ with open("fit.json") as f:
 # -----------------------------
 # Plot
 # -----------------------------
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(6,3))
 
 basis_sets = ["light", "intermediate", "tight"]
 markers = ["o", "s", "D"]
@@ -130,7 +142,12 @@ add_inverse_lines(
 # -----------------------------
 # Legend styling
 # -----------------------------
-legend = ax.legend(title="species", loc="lower left")
+legend = ax.legend(
+    title="species:",
+    loc="upper left",
+    bbox_to_anchor=(1.02, 1),
+    borderaxespad=0,
+)
 legend._legend_box.align = "left"
 
 # ax.text(
@@ -146,48 +163,46 @@ legend._legend_box.align = "left"
 #     )
 # )
 
-ax.text(
+annotations = []
+
+annotations.append((ax.text(
     0.4, 0.2,
     r"ideal scalability: $m=1$",
     transform=ax.transAxes,
-    rotation=-15,      # angle in degrees
     ha="center",
     va="center",
     color="gray"
-)
+), -1))
 
-ax.text(
+annotations.append((ax.text(
     0.5, 0.32,
     r"$m=0.82$",
     transform=ax.transAxes,
-    rotation=-12,      # angle in degrees
     ha="center",
     va="center",
     color="#1f77b4"
-)
+), fit["linear"]["light"]["m"]))
 
-ax.text(
+annotations.append((ax.text(
     0.5, 0.51,
     r"$m=0.87$",
     transform=ax.transAxes,
-    rotation=-15,      # angle in degrees
     ha="center",
     va="center",
     color="#ff7f0e"
-)
+), fit["linear"]["intermediate"]["m"]))
 
-ax.text(
+annotations.append((ax.text(
     0.5, 0.77,
     r"$m=0.72$",
     transform=ax.transAxes,
-    rotation=-15,      # angle in degrees
     ha="center",
     va="center",
     color="#2ca02c"
-)
+), fit["linear"]["tight"]["m"]))
 
 img = mpimg.imread("BaTiO3.4x4x4.png")
-imagebox = OffsetImage(img, zoom=0.055)
+imagebox = OffsetImage(img, zoom=0.04)
 ab = AnnotationBbox(
     imagebox,
     (0.78, 0.8),              # position
@@ -204,4 +219,7 @@ ax.xaxis.set_minor_locator(NullLocator())
 # Save
 # -----------------------------
 plt.tight_layout()
+fig.canvas.draw()
+for annotation, exponent in annotations:
+    annotation.set_rotation(power_law_angle(ax, exponent))
 plt.savefig("basis.pdf", bbox_inches="tight")

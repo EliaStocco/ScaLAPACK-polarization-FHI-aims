@@ -6,22 +6,23 @@
 text.usetex : True
 
 # Figure size (two-column APS)
-figure.figsize : 6, 3
+figure.figsize : 8, 3
 
 # Font setup
 font.family : serif
-font.size : 9
+font.size : 10
 
 # Axes labels
-axes.labelsize : 9
-axes.titlesize : 9
+axes.labelsize : 10
+axes.titlesize : 10
 
 # Tick labels
-xtick.labelsize : 8
-ytick.labelsize : 8
+xtick.labelsize : 10
+ytick.labelsize : 10
 
 # Legend
-legend.fontsize : 8
+legend.fontsize : 10
+legend.handletextpad : 0.3
 legend.loc : best
 legend.facecolor : white
 legend.edgecolor : black

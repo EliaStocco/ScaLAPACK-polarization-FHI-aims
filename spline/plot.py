@@ -105,7 +105,7 @@ print(
 # Create figure
 # ---------------------------------------------------------
 fig, ax = plt.subplots(
-    figsize=(3, 2.5),
+    figsize=(4, 3),
 )
 
 
@@ -148,7 +148,7 @@ ax.set_xscale(
 # )
 
 ax.set_xlabel(
-    r"perpendicular nscf $\mathbf{k}$-grid"
+    r"nscf $\mathbf{k}$-grid"
 )
 
 ax.set_ylabel(
@@ -194,17 +194,36 @@ xticks = sorted(
     df["k_grid"].unique()
 )
 
+# Keep a tick at every calculated k-grid, but label only alternating grids.
+# The SCF grid is fixed at 8x8x8, while the perpendicular grids vary.
+labelled_xticks = set(xticks[::2])
+
 ax.xaxis.set_major_locator(
     mticker.FixedLocator(xticks)
 )
 
 ax.xaxis.set_major_formatter(
-    mticker.FormatStrFormatter("%d")
+    mticker.FuncFormatter(
+        lambda value, _: (
+            rf"${int(value)}\!\times\!{int(value)}\!8$"
+            if value in labelled_xticks
+            else ""
+        )
+    )
 )
 
 ax.xaxis.set_minor_locator(
     mticker.NullLocator()
 )
+
+ax.tick_params(
+    axis="x",
+    labelrotation=45,
+)
+
+for label in ax.get_xticklabels():
+    label.set_horizontalalignment("right")
+    label.set_rotation_mode("anchor")
 
 
 # ---------------------------------------------------------
