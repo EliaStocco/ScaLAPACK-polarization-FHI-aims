@@ -66,8 +66,26 @@ SCALAPACK_BLOCK_SIZE_REGEX = re.compile(
     r"^\s*ScaLAPACK block size set to:\s*(?P<block_size>\d+)\s*$",
     re.MULTILINE,
 )
+POLARIZATION_REGEX = re.compile(
+    r"^\s*output polarization\s+(?P<direction>[123])\s+"
+    r"(?P<k1>\d+)\s+(?P<k2>\d+)\s+(?P<k3>\d+)\s*$",
+    re.MULTILINE,
+)
+SCALAPACK_POLARIZATION_LISTING_REGEX = re.compile(
+    r"^\s*Detailed listing of bands and assigned k-points in polarization "
+    r"calculation:\s*\n"
+    r"(?P<tasks>(?:\s*Task\s+\d+.*?-->\s+(?:useful|useless)\s*\n)+)",
+    re.MULTILINE,
+)
+SCALAPACK_POLARIZATION_TASK_REGEX = re.compile(
+    r"-->\s+(?P<status>useful|useless)\s*$",
+    re.MULTILINE,
+)
 SUPERCELL_REGEX = re.compile(r"supercell-(\d+)x(\d+)x(\d+)$")
 NODES_REGEX = re.compile(r"^\s*#SBATCH\s+--nodes=(\d+)\s*$", re.MULTILINE)
+TASKS_PER_NODE_REGEX = re.compile(
+    r"^\s*#SBATCH\s+--ntasks-per-node=(\d+)\s*$", re.MULTILINE
+)
 SUCCESS_MARKER = "Have a nice day."
 
 
@@ -124,6 +142,39 @@ def read_blacs_configuration(text):
     }
 
 
+def read_lapack_polarization_cores(text):
+    """Return the k-point count along the requested polarization direction."""
+    polarization = POLARIZATION_REGEX.search(text)
+    if polarization is None:
+        raise ValueError("could not find output polarization setting")
+
+    direction = int(polarization.group("direction"))
+    k_points = [
+        int(polarization.group("k1")),
+        int(polarization.group("k2")),
+        int(polarization.group("k3")),
+    ]
+    return k_points[direction - 1]
+
+
+def read_scalapack_polarization_cores(text):
+    """Return the common useful-task count from ScaLAPACK polarization listings."""
+    useful_counts = []
+    for listing in SCALAPACK_POLARIZATION_LISTING_REGEX.finditer(text):
+        statuses = SCALAPACK_POLARIZATION_TASK_REGEX.findall(
+            listing.group("tasks")
+        )
+        useful_counts.append(statuses.count("useful"))
+
+    if not useful_counts:
+        raise ValueError("could not find ScaLAPACK polarization task listings")
+    if len(set(useful_counts)) != 1:
+        raise ValueError(
+            "ScaLAPACK polarization listings have different useful-task counts"
+        )
+    return useful_counts[0]
+
+
 def supercell_directories(base):
     """Return ``supercell-AxBxC`` directories sorted by their volume."""
     directories = []
@@ -142,6 +193,18 @@ def read_nodes(job_script):
         return None
     match = NODES_REGEX.search(job_script.read_text(errors="ignore"))
     return int(match.group(1)) if match is not None else None
+
+
+def read_allocated_cores(job_script):
+    """Return the requested MPI rank count, if it is specified in the job script."""
+    if not job_script.exists():
+        return None
+    script = job_script.read_text(errors="ignore")
+    nodes = NODES_REGEX.search(script)
+    tasks_per_node = TASKS_PER_NODE_REGEX.search(script)
+    if nodes is None or tasks_per_node is None:
+        return None
+    return int(nodes.group(1)) * int(tasks_per_node.group(1))
 
 
 def relative(path, base):
@@ -221,14 +284,43 @@ def main():
                 )
                 continue
 
-            nodes = read_nodes(supercell_dir / method / "scf" / "main.sh")
-            dipole_nodes = read_nodes(supercell_dir / method / "dipole" / "main.sh")
+            scf_job_script = supercell_dir / method / "scf" / "main.sh"
+            dipole_job_script = supercell_dir / method / "dipole" / "main.sh"
+            nodes = read_nodes(scf_job_script)
+            dipole_nodes = read_nodes(dipole_job_script)
             if nodes is not None and dipole_nodes is not None and nodes != dipole_nodes:
                 print(
                     f"[WARN] Skipping {supercell}/{method}: node counts differ "
                     f"({nodes} and {dipole_nodes})"
                 )
                 continue
+
+            allocated_cores = read_allocated_cores(dipole_job_script)
+            scf_allocated_cores = read_allocated_cores(scf_job_script)
+            if (
+                allocated_cores is not None
+                and scf_allocated_cores is not None
+                and allocated_cores != scf_allocated_cores
+            ):
+                print(
+                    f"[WARN] Skipping {supercell}/{method}: requested MPI ranks differ "
+                    f"({scf_allocated_cores} and {allocated_cores})"
+                )
+                continue
+
+            try:
+                if allocated_cores is None:
+                    raise ValueError("could not find requested MPI rank count")
+                dipole_text = read_text(outputs["dipole"])
+                if method == "lapack":
+                    polarization_cores = read_lapack_polarization_cores(dipole_text)
+                else:
+                    polarization_cores = read_scalapack_polarization_cores(dipole_text)
+            except ValueError as error:
+                print(f"[WARN] Skipping {relative(outputs['dipole'], base)}: {error}")
+                continue
+
+            polarization_cores_percentage = 100 * polarization_cores / allocated_cores
 
             component_times = {
                 "wannier_time": None,
@@ -246,7 +338,6 @@ def main():
             }
             if method == "scalapack":
                 scf_text = read_text(outputs["scf"])
-                dipole_text = read_text(outputs["dipole"])
                 try:
                     wannier_time = read_component_time(
                         dipole_text,
@@ -284,6 +375,9 @@ def main():
                 "supercell": supercell,
                 "atoms": scf_atoms,
                 "method": method,
+                "allocated_cores": allocated_cores,
+                "polarization_cores": polarization_cores,
+                "polarization_cores_percentage": polarization_cores_percentage,
                 "scf_time": scf_time,
                 "dipole_time": dipole_time,
                 "polarization_time": polarization_time,
@@ -295,7 +389,8 @@ def main():
             print(
                 f"{nodes if nodes is not None else '?'} nodes | {supercell:>5} | "
                 f"{method:10s} | {scf_atoms:>4} atoms | "
-                f"polarization {polarization_time:.3f} s"
+                f"polarization {polarization_time:.3f} s | "
+                f"useful cores {polarization_cores_percentage:.2f}%"
             )
 
     if not rows:
@@ -303,14 +398,18 @@ def main():
 
     rows.sort(key=lambda row: (row["atoms"], row["method"]))
     fieldnames = [
-        "nodes", "supercell", "atoms", "method", "scf_time", "dipole_time",
+        "nodes", "allocated_cores", "polarization_cores",
+        "polarization_cores_percentage", "supercell", "atoms", "method",
+        "scf_time", "dipole_time",
         "polarization_time", "converge_time", "wannier_time", "untracked_time",
         "fourier_ev_time", "dipole_matrix_time", "dipole_term_time", "berry_term_time",
         "blacs_tasks", "blacs_grid_rows", "blacs_grid_columns",
         "scalapack_block_size",
     ]
     with output.open("w", newline="") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer = csv.DictWriter(
+            csvfile, fieldnames=fieldnames, lineterminator="\n"
+        )
         writer.writeheader()
         writer.writerows(rows)
     print(f"\nSaved {output}")
