@@ -1,0 +1,100 @@
+@------------------------------
+script file         : optimize.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BaTiO3/tetragonal/PBE/relax
+VScode debugging    : "args" : ["-i", "geometry.in", "-p", "11155", "-f", "1e-6", "-cs", "true", "-rc", "true"]
+running script as   : optimize.py -i geometry.in -p 11155 -f 1e-6 -cs true -rc true
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 11705849
+PID                 : 1447412
+start date          : 2026-09-14
+start time          : 13:16:12
+@------------------------------
+
+	 Run an ASE optimizer with constrained symmetries.
+
+	 Documentation:
+	 Optimize the first structure in an input file with ASE's BFGS optimizer.
+	 Energies, forces, and stresses are obtained from an external calculator through
+	 a TCP or UNIX socket. The script can preserve the initial symmetry, relax the
+	 cell, fix selected deformation-gradient components, and write an ASE trajectory.
+	 
+	 Examples:
+	   # Relax atomic positions using a TCP-connected calculator
+	   python optimize.py -i start.extxyz -p 6000 -o relaxed.extxyz
+	 
+	   # Relax atoms and cell through a UNIX socket, keeping all z cell components fixed
+	   python optimize.py -i start.extxyz -u driver.socket --relax-cell true \
+	       --cell-constraints az bz cz --constrain-symmetry true -o relaxed.extxyz
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	                 port: 11155
+	           unixsocket: None
+	                 fmax: 1e-06
+	              opt_par: None
+	           trajectory: minimization-trajectory.traj
+	              restart: None
+	            max_steps: 100
+	   constrain_symmetry: True
+	              symprec: 0.01
+	           relax_cell: True
+	           print_cell: False
+	     cell_constraints: None
+	               output: final.extxyz
+	        output_format: None
+
+	Reading the first atomic structure from file 'geometry.in' ... done
+	n. of atoms:  5
+	Setting constraints for preserving symmetries ... 
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 99 , international (Hermann-Mauguin) P4mm , Hall  P 4 -2
+done
+	Preparing filter to relax the cell ... done
+	Allocating BFGS optimizer  ... done
+	TCP socket: listening on port 11155
+	Running BFGS optimizer  ... 
+      Step     Time          Energy          fmax
+BFGS:    0 13:17:32  -254603.188235        0.508634
+BFGS:    1 13:18:27  -254603.198750        0.444646
+BFGS:    2 13:19:21  -254603.233758        0.275411
+BFGS:    3 13:20:13  -254603.236210        0.256488
+BFGS:    4 13:21:07  -254603.240701        0.096193
+BFGS:    5 13:21:58  -254603.241488        0.076199
+BFGS:    6 13:22:50  -254603.242022        0.105289
+BFGS:    7 13:23:41  -254603.242931        0.132543
+BFGS:    8 13:24:33  -254603.244654        0.150042
+BFGS:    9 13:25:26  -254603.247016        0.134758
+BFGS:   10 13:26:19  -254603.248936        0.083825
+BFGS:   11 13:27:11  -254603.249707        0.074281
+BFGS:   12 13:28:01  -254603.249970        0.065866
+BFGS:   13 13:28:52  -254603.250310        0.045808
+BFGS:   14 13:29:43  -254603.250623        0.029749
+BFGS:   15 13:30:32  -254603.250743        0.014662
+BFGS:   16 13:31:21  -254603.250742        0.003378
+BFGS:   17 13:32:06  -254603.250738        0.000515
+BFGS:   18 13:32:51  -254603.250738        0.000063
+BFGS:   19 13:33:32  -254603.250738        0.000036
+BFGS:   20 13:34:12  -254603.250738        0.000023
+BFGS:   21 13:34:52  -254603.250738        0.000009
+BFGS:   22 13:35:30  -254603.250738        0.000007
+BFGS:   23 13:36:08  -254603.250738        0.000003
+BFGS:   24 13:36:44  -254603.250738        0.000002
+BFGS:   25 13:37:20  -254603.250738        0.000001
+	Finished running BFGS optimizer
+	Saving the relaxed atomic structure and optimizer state to file 'final.extxyz' ... done
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-09-14
+end time: 13:37:20s
+elapsed seconds: 1267s
+elapsed time: 00:21:07
+------------------------------@
+

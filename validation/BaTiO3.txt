@@ -1,21 +1,36 @@
-Wrote 6 rows to BaTiO3.csv
-cubic        HSE06   not_compared_missing_value
+Wrote 8 rows to BaTiO3.csv
+cubic        HSE06   match
 cubic        LDA     match
 cubic        PBEsol  match
+cubic        PBE     match
 rhombohedral HSE06   not_compared_missing_value
 rhombohedral LDA     match
 rhombohedral PBEsol  match
+rhombohedral PBE     match
 
 LAPACK full polarization along periodic directions (C/m^2):
-cubic        HSE06   missing_aims.out
+cubic        HSE06   P1=-1.360001e-09  P2=-1.360039e-09  P3=-1.360034e-09
 cubic        LDA     P1=-1.077364e-09  P2=-1.077402e-09  P3=-1.077414e-09
 cubic        PBEsol  P1=5.97288707e-10  P2=5.97235049e-10  P3=5.97216411e-10
+cubic        PBE     P1=4.276335e-09  P2=4.276343e-09  P3=4.27632e-09
 rhombohedral HSE06   P1=0.277849493  P2=0.277849524  P3=0.277849484
 rhombohedral LDA     P1=0.177390094  P2=0.177390003  P3=0.177389936
 rhombohedral PBEsol  P1=0.225997307  P2=0.225997169  P3=0.225996999
+rhombohedral PBE     P1=0.287833127  P2=0.287833366  P3=0.287833558
 
 rhombohedral minus cubic LAPACK full polarization (C/m^2):
-HSE06   not available (missing_aims.out; ok)
+HSE06   ΔP1=0.277849494  ΔP2=0.277849525  ΔP3=0.277849485
 LDA     ΔP1=0.177390095  ΔP2=0.177390004  ΔP3=0.177389937
 PBEsol  ΔP1=0.225997306  ΔP2=0.225997168  ΔP3=0.225996998
+PBE     ΔP1=0.287833123  ΔP2=0.287833362  ΔP3=0.287833554
+
+rhombohedral minus cubic Cartesian polarization (C/m^2):
+HSE06   lapack    ΔPx=0.280365886  ΔPy=0.279102049  ΔPz=0.277849485  |ΔP|=0.483428713
+HSE06   scalapack not available (ok; missing_aims.out)
+LDA     lapack    ΔPx=0.177817796  ΔPy=0.177603597  ΔPz=0.177389937  |ΔP|=0.307618914
+LDA     scalapack ΔPx=0.177817796  ΔPy=0.177603597  ΔPz=0.177389937  |ΔP|=0.307618914
+PBEsol  lapack    ΔPx=0.227115152  ΔPy=0.226554712  ΔPz=0.225996998  |ΔP|=0.392406643
+PBEsol  scalapack ΔPx=0.227115152  ΔPy=0.226554712  ΔPz=0.225996998  |ΔP|=0.392406643
+PBE     lapack    ΔPx=0.290014856  ΔPy=0.28935462  ΔPz=0.288697341  |ΔP|=0.501179476
+PBE     scalapack ΔPx=0.290014856  ΔPy=0.28935462  ΔPz=0.288697341  |ΔP|=0.501179476
 Everything is okay: LAPACK and ScaLAPACK return the same values.

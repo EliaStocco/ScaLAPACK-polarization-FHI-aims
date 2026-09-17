@@ -1,0 +1,182 @@
+@------------------------------
+script file         : optimize.py
+script global path  : /viper/u1/elsto/programs/eslib/eslib/scripts/ase_scripts/optimize.py
+working directory   : /viper/u1/elsto/works/ScaLAPACK-validation/BiFeO3/BiFeO3_R-3c_AFM/PBE/relax
+VScode debugging    : "args" : ["-i", "geometry.in", "-p", "32396", "-f", "1e-6", "-cs", "true", "-rc", "true", "--print-cell", "true"]
+running script as   : optimize.py -i geometry.in -p 32396 -f 1e-6 -cs true -rc true --print-cell true
+python --version    : 3.9.0 | packaged by conda-forge | (default, Nov 26 2020, 07:57:39)  [GCC 9.3.0]
+which python        : /u/elsto/conda-envs/eslib/bin/python
+conda env           : /u/elsto/conda-envs/eslib
+SLURM job ID        : 11651374
+PID                 : 437360
+start date          : 2026-09-12
+start time          : 17:48:54
+@------------------------------
+
+	 Run an ASE optimizer with constrained symmetries.
+
+	 Documentation:
+	 Optimize the first structure in an input file with ASE's BFGS optimizer.
+	 Energies, forces, and stresses are obtained from an external calculator through
+	 a TCP or UNIX socket. The script can preserve the initial symmetry, relax the
+	 cell, fix selected deformation-gradient components, and write an ASE trajectory.
+	 
+	 Examples:
+	   # Relax atomic positions using a TCP-connected calculator
+	   python optimize.py -i start.extxyz -p 6000 -o relaxed.extxyz
+	 
+	   # Relax atoms and cell through a UNIX socket, keeping all z cell components fixed
+	   python optimize.py -i start.extxyz -u driver.socket --relax-cell true \
+	       --cell-constraints az bz cz --constrain-symmetry true -o relaxed.extxyz
+
+	 Input arguments:
+	                input: geometry.in
+	         input_format: None
+	                 port: 32396
+	           unixsocket: None
+	                 fmax: 1e-06
+	              opt_par: None
+	           trajectory: minimization-trajectory.traj
+	              restart: None
+	            max_steps: 100
+	   constrain_symmetry: True
+	              symprec: 0.01
+	           relax_cell: True
+	           print_cell: True
+	     cell_constraints: None
+	               output: final.extxyz
+	        output_format: None
+
+	Reading the first atomic structure from file 'geometry.in' ... done
+	n. of atoms:  10
+	Setting constraints for preserving symmetries ... 
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.0001 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+ase.spacegroup.symmetrize: prec 0.01 got symmetry group number 167 , international (Hermann-Mauguin) R-3c , Hall  -R 3 2"c
+done
+	Preparing filter to relax the cell ... done
+	Allocating BFGS optimizer  ... done
+	TCP socket: listening on port 32396
+	Running BFGS optimizer  ... 
+      Step     Time          Energy          fmax
+BFGS:    0 17:52:17 -1300132.417809        0.577858
+Cell:
+[[5.409, -0.123, -0.086], [2.672, 4.705, -0.086], [2.672, 1.515, 4.455]]
+Stress tensor (eV/A^3):
+[[-0.048, 0.001, 0.001], [0.001, -0.049, 0.0], [0.001, 0.0, -0.05]]
+
+BFGS:    1 17:54:41 -1300132.431591        0.541809
+Cell:
+[[5.414, -0.123, -0.086], [2.674, 4.709, -0.086], [2.674, 1.516, 4.459]]
+Stress tensor (eV/A^3):
+[[-0.045, 0.001, 0.001], [0.001, -0.046, 0.0], [0.001, 0.0, -0.047]]
+
+BFGS:    2 17:57:12 -1300132.542838        0.086287
+Cell:
+[[5.482, -0.125, -0.088], [2.707, 4.769, -0.088], [2.707, 1.535, 4.516]]
+Stress tensor (eV/A^3):
+[[-0.006, -0.003, -0.002], [-0.003, -0.002, -0.001], [-0.002, -0.001, -0.001]]
+
+BFGS:    3 17:59:20 -1300132.544354        0.081308
+Cell:
+[[5.487, -0.125, -0.088], [2.71, 4.773, -0.088], [2.71, 1.537, 4.52]]
+Stress tensor (eV/A^3):
+[[-0.003, -0.003, -0.002], [-0.003, 0.001, -0.001], [-0.002, -0.001, 0.002]]
+
+BFGS:    4 18:01:42 -1300132.545864        0.064225
+Cell:
+[[5.492, -0.125, -0.088], [2.713, 4.777, -0.088], [2.713, 1.538, 4.523]]
+Stress tensor (eV/A^3):
+[[-0.001, -0.003, -0.002], [-0.003, 0.003, -0.001], [-0.002, -0.001, 0.003]]
+
+BFGS:    5 18:04:12 -1300132.547440        0.054847
+Cell:
+[[5.496, -0.123, -0.087], [2.716, 4.78, -0.087], [2.716, 1.54, 4.526]]
+Stress tensor (eV/A^3):
+[[-0.0, -0.003, -0.002], [-0.003, 0.003, -0.001], [-0.002, -0.001, 0.004]]
+
+BFGS:    6 18:06:35 -1300132.548063        0.037867
+Cell:
+[[5.496, -0.122, -0.086], [2.717, 4.779, -0.086], [2.717, 1.541, 4.525]]
+Stress tensor (eV/A^3):
+[[-0.001, -0.002, -0.002], [-0.002, 0.002, -0.001], [-0.002, -0.001, 0.003]]
+
+BFGS:    7 18:08:39 -1300132.548140        0.033168
+Cell:
+[[5.495, -0.121, -0.085], [2.717, 4.778, -0.085], [2.717, 1.54, 4.523]]
+Stress tensor (eV/A^3):
+[[-0.001, -0.002, -0.001], [-0.002, 0.001, -0.001], [-0.001, -0.001, 0.001]]
+
+BFGS:    8 18:10:55 -1300132.548166        0.035268
+Cell:
+[[5.494, -0.121, -0.085], [2.717, 4.777, -0.085], [2.717, 1.54, 4.522]]
+Stress tensor (eV/A^3):
+[[-0.002, -0.002, -0.001], [-0.002, 0.0, -0.001], [-0.001, -0.001, 0.001]]
+
+BFGS:    9 18:13:17 -1300132.548253        0.037575
+Cell:
+[[5.494, -0.12, -0.084], [2.717, 4.776, -0.084], [2.717, 1.541, 4.521]]
+Stress tensor (eV/A^3):
+[[-0.002, -0.002, -0.001], [-0.002, -0.001, -0.001], [-0.001, -0.001, -0.0]]
+
+BFGS:   10 18:15:24 -1300132.548482        0.037646
+Cell:
+[[5.494, -0.118, -0.083], [2.72, 4.776, -0.083], [2.72, 1.542, 4.52]]
+Stress tensor (eV/A^3):
+[[-0.003, -0.001, -0.001], [-0.001, -0.001, -0.0], [-0.001, -0.0, -0.001]]
+
+BFGS:   11 18:17:43 -1300132.548886        0.030063
+Cell:
+[[5.498, -0.114, -0.08], [2.725, 4.776, -0.08], [2.725, 1.545, 4.52]]
+Stress tensor (eV/A^3):
+[[-0.002, -0.001, -0.0], [-0.001, -0.002, -0.0], [-0.0, -0.0, -0.002]]
+
+BFGS:   12 18:19:43 -1300132.549279        0.014520
+Cell:
+[[5.503, -0.11, -0.077], [2.73, 4.779, -0.077], [2.73, 1.548, 4.522]]
+Stress tensor (eV/A^3):
+[[-0.001, -0.0, -0.0], [-0.0, -0.001, -0.0], [-0.0, -0.0, -0.001]]
+
+BFGS:   13 18:21:54 -1300132.549452        0.004466
+Cell:
+[[5.505, -0.109, -0.077], [2.733, 4.78, -0.077], [2.733, 1.55, 4.523]]
+Stress tensor (eV/A^3):
+[[-0.0, 0.0, 0.0], [0.0, -0.0, 0.0], [0.0, 0.0, -0.0]]
+
+BFGS:   14 18:23:50 -1300132.549483        0.000478
+Cell:
+[[5.506, -0.109, -0.077], [2.733, 4.781, -0.077], [2.733, 1.549, 4.523]]
+Stress tensor (eV/A^3):
+[[-0.0, 0.0, 0.0], [0.0, -0.0, 0.0], [0.0, 0.0, -0.0]]
+
+BFGS:   15 18:25:54 -1300132.549484        0.000051
+Cell:
+[[5.506, -0.11, -0.077], [2.732, 4.781, -0.077], [2.732, 1.549, 4.523]]
+Stress tensor (eV/A^3):
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+BFGS:   16 18:27:43 -1300132.549484        0.000003
+Cell:
+[[5.505, -0.11, -0.077], [2.732, 4.781, -0.077], [2.732, 1.549, 4.523]]
+Stress tensor (eV/A^3):
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+BFGS:   17 18:28:42 -1300132.549484        0.000000
+Cell:
+[[5.505, -0.11, -0.077], [2.732, 4.781, -0.077], [2.732, 1.549, 4.523]]
+Stress tensor (eV/A^3):
+[[0.0, -0.0, -0.0], [-0.0, 0.0, -0.0], [-0.0, -0.0, 0.0]]
+
+	Finished running BFGS optimizer
+	Saving the relaxed atomic structure and optimizer state to file 'final.extxyz' ... done
+
+	 Job done :)
+
+------------------------------@
+end date: 2026-09-12
+end time: 18:28:43s
+elapsed seconds: 2388s
+elapsed time: 00:39:48
+------------------------------@
+

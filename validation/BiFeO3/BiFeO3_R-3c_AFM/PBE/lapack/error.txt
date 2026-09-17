@@ -1,0 +1,101 @@
+
+@-------------------------------------------
+@ Running: /home/stoccoel/.pyenv/versions/fd2bec/bin/tensor_symmetries -i tmp.extxyz -n positions
+@ Started: Thursday, 17 September 2026 at 11:51:05 CEST
+@ Working directory: /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/validation/BiFeO3/BiFeO3_R-3c_AFM/PBE/lapack
+@ Git branch: develop
+@ Last commit: 0ee2ce9cf036ab4413a578e1ed6a865f16b5e465 sorting
+@ Python: 3.10.18 (/home/stoccoel/.pyenv/versions/fd2bec/bin/python)
+@ Python environment: virtualenv: fd2bec (/home/stoccoel/.pyenv/versions/3.10.18/envs/fd2bec)
+@ Let's start!
+
+	Description:
+	Show the symmetry-allowed components of a tensor.
+
+	----------------------------------------
+	Input arguments:
+	                input: tmp.extxyz
+	                 name: positions
+	              keyword: None
+	    conventional_axes: False
+	                basis: None
+	            precision: None
+	              symprec: 0.0001
+	----------------------------------------
+
+	Reading input structure from tmp.extxyz ... done
+	--------------------
+	+---------------------------------------------------------------------------------------------+
+	| Reference structure (Bi2Fe2O6):                                                             |
+	|   atoms = 10                                                                                |
+	|   periodic boundary conditions = [True, True, True]                                         |
+	|   total mass [amu] = 625.64480000                                                           |
+	|                                                                                             |
+	| Cell vectors [Angstrom]:                                                                    |
+	|   a1:     5.50549906     -0.10960152     -0.07698621                                        |
+	|   a2:     2.73242129      4.78083741     -0.07698621                                        |
+	|   a3:     2.73242129      1.54939400      4.52346232                                        |
+	|                                                                                             |
+	| Lattice parameters:                                                                         |
+	|   a, b, c [Angstrom]       = 5.50712804  5.50712804  5.50712804                             |
+	|   alpha, beta, gamma [deg] = 61.38429951 61.38429951 61.38429951                            |
+	|   volume [Angstrom^3]      = 121.77578088                                                   |
+	|                                                                                             |
+	| Positions (Cartesian [Angstrom] and fractional):                                            |
+	|   index  atom           Rx           Ry           Rz           fx           fy           fz |
+	|       1    Bi     0.000000     0.000000     0.000000     0.000000     0.000000     0.000000 |
+	|       2    Bi     5.485171     3.110315     2.184745     0.500000     0.500000     0.500000 |
+	|       3    Fe     2.742585     1.555157     1.092372     0.250000     0.250000     0.250000 |
+	|       4    Fe     8.227756     4.665472     3.277117     0.750000     0.750000     0.750000 |
+	|       5     O     5.485171     1.768783     4.094618     0.500000     0.084851     0.915149 |
+	|       6     O     6.636412     2.421584     0.274872     0.915149     0.500000     0.084851 |
+	|       7     O     4.333929     5.140577     2.184745     0.084851     0.915149     0.500000 |
+	|       8     O     8.237920     2.781324     2.536603     1.000000     0.415149     0.584851 |
+	|       9     O     3.883663     2.750575    -0.076986     0.415149     0.584851     0.000000 |
+	|      10     O     7.086679     5.359967     1.755901     0.584851     1.000000     0.415149 |
+	+---------------------------------------------------------------------------------------------+
+	--------------------
+	
+	Constructed positions tensor with shape (10, 3) in fractional basis.
+	
+	Computing symmetry-allowed displacement modes ... done
+	n. symmetry-inequivalent component(s): 1 out of 30 (3.3%)
+	                       x                    y                    z
+	  0                  0.0                  0.0                  0.0
+	  1                  0.5                  0.5                  0.5
+	  2   0.2500000003434421  0.24999999990819444  0.24999999893708855
+	  3   0.7499999992729961   0.7500000010618454   0.7499999990148124
+	  4                  0.5                    a                   -a
+	  5                   -a                  0.5                    a
+	  6                    a                   -a                  0.5
+	  7                  0.0              0.5 - a              0.5 + a
+	  8              0.5 - a              0.5 + a                  0.0
+	  9              0.5 + a                  0.0              0.5 - a
+	
+	Numeric tensor from input structure['positions'] (fractional basis, input axes):
+	             x          y          z
+	  0          0          0          0
+	  1        0.5        0.5        0.5
+	  2       0.25       0.25       0.25
+	  3       0.75       0.75       0.75
+	  4        0.5    0.08485     0.9151
+	  5     0.9151        0.5    0.08485
+	  6    0.08485     0.9151        0.5
+	  7          1     0.4151     0.5849
+	  8     0.4151     0.5849  4.766e-10
+	  9     0.5849          1     0.4151
+	
+	Symmetry-inequivalent component values:
+	  a: 0.08485
+	
+	Zero-component check: FAIL; 2 of 6 symmetry-forbidden components exceed absolute tolerance 1.0e-05.
+Traceback (most recent call last):
+  File "/home/stoccoel/.pyenv/versions/fd2bec/bin/tensor_symmetries", line 6, in <module>
+    sys.exit(main())
+  File "/home/stoccoel/codes/fd2bec/fd2bec/cli/__init__.py", line 210, in wrapper
+    result = main_func(args)
+  File "/home/stoccoel/codes/fd2bec/fd2bec/cli/symmetry/tensor_symmetries.py", line 138, in main
+    print_numeric_tensor(
+  File "/home/stoccoel/codes/fd2bec/fd2bec/show.py", line 537, in print_numeric_tensor
+    raise ValueError(
+ValueError: Symmetry-forbidden tensor components are non-zero; maximum absolute value is 1.000000e+00.
