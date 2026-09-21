@@ -196,7 +196,7 @@ xticks = sorted(
 
 # Keep a tick at every calculated k-grid, but label only alternating grids.
 # The SCF grid is fixed at 8x8x8, while the perpendicular grids vary.
-labelled_xticks = set(xticks[::2])
+labelled_xticks = set(xticks[::1])
 
 ax.xaxis.set_major_locator(
     mticker.FixedLocator(xticks)
@@ -205,7 +205,7 @@ ax.xaxis.set_major_locator(
 ax.xaxis.set_major_formatter(
     mticker.FuncFormatter(
         lambda value, _: (
-            rf"${int(value)}\!\times\!{int(value)}\!8$"
+            rf"${int(value)}\!\times\!{int(value)}\!\times\!8$"
             if value in labelled_xticks
             else ""
         )
