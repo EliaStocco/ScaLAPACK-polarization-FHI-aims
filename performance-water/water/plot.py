@@ -37,6 +37,20 @@ def add_inverse_lines(ax, n_lines, **plot_kwargs):
     ax.set_ylim(ymin, ymax)
 
 
+def power_law_angle(ax, exponent):
+    """Return the on-page angle of ``y ∝ x**exponent`` for *ax*."""
+
+    xmin, xmax = ax.get_xlim()
+    ymin, ymax = ax.get_ylim()
+    x = np.sqrt(xmin * xmax)
+    y = np.sqrt(ymin * ymax)
+    scale = 1.1
+    start, end = ax.transData.transform(
+        ((x, y), (x * scale, y * scale ** exponent))
+    )
+    return np.degrees(np.arctan2(end[1] - start[1], end[0] - start[0]))
+
+
 # Load data
 df = pd.read_csv("dataframe.csv")
 
@@ -137,35 +151,32 @@ ax.add_artist(ab)
 #     )
 # )
 
-ax.text(
+annotations = [(ax.text(
     0.5, 0.58,
     r"ideal scalability: $m=1$",
     transform=ax.transAxes,
-    rotation=-22,      # angle in degrees
     ha="center",
     va="center",
     color="gray"
-)
+), -1)]
 
-ax.text(
+annotations.append((ax.text(
     0.5, 0.35,
     r"$m=0.69$",
     transform=ax.transAxes,
-    rotation=-15,      # angle in degrees
     ha="center",
     va="center",
     color="#1f77b4"
-)
+), fit["linear"]["128"]["m"]))
 
-ax.text(
-    0.5, 0.78,
-    r"$m=0.38$",
+annotations.append((ax.text(
+    0.5, 0.82,
+    r"$m=0.48$",
     transform=ax.transAxes,
-    rotation=-10,      # angle in degrees
     ha="center",
     va="center",
     color="#ff7f0e"
-)
+), fit["linear"]["196"]["m"]))
 
 ax.set_xscale("log")
 ax.set_yscale("log")
@@ -202,4 +213,7 @@ add_inverse_lines(
 )
 
 plt.tight_layout()
+fig.canvas.draw()
+for annotation, exponent in annotations:
+    annotation.set_rotation(power_law_angle(ax, exponent))
 plt.savefig("water.pdf", bbox_inches="tight")
