@@ -163,7 +163,7 @@ def plot_water(ax) -> list[tuple]:
     "gray",
 ),
         add_power_law_annotation(ax, (0.5, 0.35), r"$m=0.69$", -0.69, "#1f77b4"),
-        add_power_law_annotation(ax, (0.5, 0.77), r"$m=0.38$", -0.38, "#ff7f0e"),
+        add_power_law_annotation(ax, (0.5, 0.82), r"$m=0.48$", -0.48, "#ff7f0e"),
     ]
 
     ax.set_xscale("log")
