@@ -43,7 +43,7 @@ def add_inverse_lines(ax, n_lines=20, **kwargs):
 # -----------------------------
 # Settings
 # -----------------------------
-STYLE_FILE = "../style.mplstyle"
+STYLE_FILE = "../../style.mplstyle"
 DATA_FILE = "dataframe.csv"
 IMAGE_FILE = "MgO.png"
 OUTPUT_FILE = "scalability.pdf"
@@ -72,7 +72,7 @@ def load_data(path):
 # -----------------------------
 # Optional image overlay
 # -----------------------------
-def add_image(ax, path, xy=(160, 800), zoom=0.06):
+def add_image(ax, path, xy=(200, 800), zoom=0.06):
     path = Path(path)
     if not path.exists():
         return
@@ -95,7 +95,7 @@ def plot(df):
         gridspec_kw={"height_ratios": [2, 1]},
     )
 
-    df = df[df["ncores"] <= 512]
+    df = df[df["ncores"] <= 1024]
 
     # =========================================================
     # TOP: CPU time (dipole only, as before: dipole - scf)
@@ -114,18 +114,23 @@ def plot(df):
 
     for method, sub in diff.groupby("method"):
         sub = sub.sort_values("ncores")
+        color = COLORS.get(method, "black")
+        high_core_lapack = (method == "LAPACK") & (sub["ncores"] > 32)
+        facecolors = np.where(high_core_lapack, "white", color)
 
         ax1.plot(
             sub["ncores"],
             sub["time"],
-            color=COLORS.get(method, "black"),
+            color=color,
             alpha=0.7,
         )
 
         ax1.scatter(
             sub["ncores"],
             sub["time"],
-            color=COLORS.get(method, "black"),
+            facecolors=facecolors,
+            edgecolors=color,
+            linewidths=1.0,
             label=method,
             zorder=3,
         )
@@ -144,8 +149,8 @@ def plot(df):
     #     color="gray",
     # )
     
-    ax1.set_xlim(7,576)
-    xticks = [8, 16, 32, 64, 128, 256, 512]
+    ax1.set_xlim(7,1200)
+    xticks = [8, 16, 32, 64, 128, 256, 512, 1024]
     ax1.xaxis.set_major_locator(mticker.FixedLocator(xticks))
     ax1.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
     
@@ -170,18 +175,23 @@ def plot(df):
 
     for method, sub in mem.groupby("method"):
         sub = sub.sort_values("ncores")
+        color = COLORS.get(method, "black")
+        high_core_lapack = (method == "LAPACK") & (sub["ncores"] > 32)
+        facecolors = np.where(high_core_lapack, "white", color)
 
         ax2.plot(
             sub["ncores"],
             sub["peak_memory_mb"]/1000,
-            color=COLORS.get(method, "black"),
+            color=color,
             alpha=0.7,
         )
 
         ax2.scatter(
             sub["ncores"],
             sub["peak_memory_mb"]/1000,
-            color=COLORS.get(method, "black"),
+            facecolors=facecolors,
+            edgecolors=color,
+            linewidths=1.0,
             zorder=3,
         )
 
@@ -189,7 +199,7 @@ def plot(df):
     ax2.set_xlabel("n. cores")
     ax2.set_ylabel("peak memory (GB)")
 
-    xticks = [8, 16, 32, 64, 128, 256, 512]
+    xticks = [8, 16, 32, 64, 128, 256, 512, 1024]
     ax2.xaxis.set_major_locator(mticker.FixedLocator(xticks))
     ax2.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
     
