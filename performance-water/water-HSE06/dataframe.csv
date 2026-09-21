@@ -1,0 +1,9 @@
+calculation,ncores,time
+dipole,128,441.644
+dipole,256,273.735
+dipole,512,187.762
+dipole,1024,152.006
+scf,128,312.222
+scf,256,197.08
+scf,512,149.953
+scf,1024,112.474

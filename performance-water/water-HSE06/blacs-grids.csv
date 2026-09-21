@@ -1,0 +1,9 @@
+file,calculation,mpi_tasks,kpoint,blacs_tasks,nprow,npcol,grid,aspect_ratio,shape,task_count_matches
+dipole-HSE06/results/aims.n=128.out,dipole,128,1,16,4,4,4 x 4,1.0,square,True
+dipole-HSE06/results/aims.n=256.out,dipole,256,1,32,8,4,8 x 4,2.0,skewed,True
+dipole-HSE06/results/aims.n=512.out,dipole,512,1,64,8,8,8 x 8,1.0,square,True
+dipole-HSE06/results/aims.n=1024.out,dipole,1024,1,128,16,8,16 x 8,2.0,skewed,True
+scf-HSE06/results/aims.n=128.out,scf,128,1,16,4,4,4 x 4,1.0,square,True
+scf-HSE06/results/aims.n=256.out,scf,256,1,32,8,4,8 x 4,2.0,skewed,True
+scf-HSE06/results/aims.n=512.out,scf,512,1,64,8,8,8 x 8,1.0,square,True
+scf-HSE06/results/aims.n=1024.out,scf,1024,1,128,16,8,16 x 8,2.0,skewed,True
