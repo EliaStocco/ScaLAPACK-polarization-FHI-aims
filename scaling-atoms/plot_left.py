@@ -194,6 +194,8 @@ def plot_scaling(ax, rows, primary_nodes):
             ydata,
             color=COLORS[method],
             marker="o",
+            markerfacecolor="white" if method == "lapack" else COLORS[method],
+            markeredgecolor=COLORS[method],
             label=METHOD_LABELS[method],
         )
         ax.plot(
@@ -390,23 +392,24 @@ def main():
 
     rows = load_data(DATA_FILE)
     primary_nodes = primary_node_count(rows)
-    fig, (ax_scaling, ax_utilization, ax_cost, ax_balance) = plt.subplots(
-        4,
+    fig, (ax_scaling, ax_balance) = plt.subplots(
+        2,
         1,
-        figsize=(4, 8.25),
+        figsize=(4, 5.25),
         sharex=True,
-        gridspec_kw={"height_ratios": [3, 0.75, 0.75, 1]},
+        gridspec_kw={"height_ratios": [3, 1]},
         layout="constrained",
     )
     fit_annotations = plot_scaling(ax_scaling, rows, primary_nodes)
     ax_scaling.set_xlabel("")
     ax_scaling.tick_params(axis="x", labelbottom=False)
-    plot_core_utilization(ax_utilization, rows, primary_nodes)
-    ax_utilization.set_xlabel("")
-    ax_utilization.tick_params(axis="x", labelbottom=False)
-    plot_full_activity_cost(ax_cost, rows, primary_nodes)
-    ax_cost.set_xlabel("")
-    ax_cost.tick_params(axis="x", labelbottom=False)
+    # The two central panels are intentionally omitted from the current figure.
+    # plot_core_utilization(ax_utilization, rows, primary_nodes)
+    # ax_utilization.set_xlabel("")
+    # ax_utilization.tick_params(axis="x", labelbottom=False)
+    # plot_full_activity_cost(ax_cost, rows, primary_nodes)
+    # ax_cost.set_xlabel("")
+    # ax_cost.tick_params(axis="x", labelbottom=False)
     plot_blacs_grid_balance(ax_balance, rows, primary_nodes)
     fig.canvas.draw()
     for annotation, exponent in fit_annotations:
