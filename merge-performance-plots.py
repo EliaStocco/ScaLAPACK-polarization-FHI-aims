@@ -21,7 +21,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT_PDF = ROOT / "performance-combined.pdf"
+OUTPUT_PDF = ROOT / "performance-combined-old.pdf"
 
 # Keep the overall width at 6 inches.  Adjust only the second value as needed.
 FIGSIZE = (8,3)
@@ -155,13 +155,13 @@ def plot_water(ax) -> list[tuple]:
     add_image(ax, directory / "water.m=128.png", (0.1, 0.7), 0.02*factor)
     add_image(ax, directory / "water.m=196.png", (0.89, 0.8), 0.0275*factor)
     annotations = [
-        add_power_law_annotation(
-    ax,
-    (0.6, 0.49),  # x, y in axes-relative coordinates
-    r"ideal scalability: $m=1$",
-    -1,
-    "gray",
-),
+#         add_power_law_annotation(
+#     ax,
+#     (0.6, 0.33),  # x, y in axes-relative coordinates
+#     r"ideal scalability: $m=1$",
+#     -1,
+#     "gray",
+# ),
         add_power_law_annotation(ax, (0.5, 0.35), r"$m=0.69$", -0.69, "#1f77b4"),
         add_power_law_annotation(ax, (0.5, 0.82), r"$m=0.48$", -0.48, "#ff7f0e"),
     ]
