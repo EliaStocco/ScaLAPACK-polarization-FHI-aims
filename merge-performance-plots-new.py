@@ -3,7 +3,7 @@
 
 Run from any directory with:
 
-    python3 merge-performance-plots.py
+    python3 merge-performance-plots-new.py
 
 The output is intended for ``\\includegraphics[width=\\linewidth]{...}``
 where ``\\linewidth`` is about 6 inches.  Its plotting text is set to 10 pt.
@@ -14,6 +14,7 @@ import json
 
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
 import numpy as np
@@ -21,7 +22,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT_PDF = ROOT / "performance-combined-old.pdf"
+OUTPUT_PDF = ROOT / "performance-combined.pdf"
 
 # Keep the overall width at 6 inches.  Adjust only the second value as needed.
 FIGSIZE = (8,3)
@@ -52,6 +53,60 @@ def add_image(ax, image_path: Path, position: tuple[float, float], zoom: float) 
             xycoords="axes fraction",
             frameon=False,
         )
+    )
+
+
+def add_image_arrow(
+    ax,
+    tail: tuple[float, float],
+    target: tuple[float, float],
+) -> None:
+    """Connect a structure image to a point on its corresponding curve."""
+
+    ax.annotate(
+        "",
+        xy=target,
+        xycoords="data",
+        xytext=tail,
+        textcoords="axes fraction",
+        arrowprops={
+            "arrowstyle": "-|>",
+            "color": "gray",
+            # A shallow arc keeps the arrow from the left-hand image readable
+            # without the pronounced right-angle bend.
+            "connectionstyle": "arc3,rad=-0.12",
+            "mutation_scale": 8,
+            "shrinkA": 4,
+            "shrinkB": 2,
+        },
+        zorder=4,
+    )
+
+
+def add_vertical_image_arrow(
+    ax,
+    tail: tuple[float, float],
+    curves: tuple[tuple[float, float], ...],
+) -> None:
+    """Draw a vertical arrow from an image to the midpoint of fitted curves."""
+
+    xdata, _ = ax.transData.inverted().transform(ax.transAxes.transform((tail[0], 0.5)))
+    ydata = np.mean([amplitude * xdata**exponent for amplitude, exponent in curves])
+    _, target_y = ax.transAxes.inverted().transform(ax.transData.transform((xdata, ydata)))
+    ax.annotate(
+        "",
+        xy=(tail[0], target_y),
+        xycoords="axes fraction",
+        xytext=tail,
+        textcoords="axes fraction",
+        arrowprops={
+            "arrowstyle": "-|>",
+            "color": "gray",
+            "mutation_scale": 8,
+            "shrinkA": 4,
+            "shrinkB": 2,
+        },
+        zorder=4,
     )
 
 
@@ -99,7 +154,7 @@ def plot_batio3(ax) -> list[tuple]:
     with (directory / "fit.json").open() as file:
         fit = json.load(file)
 
-    for marker, supercell in zip(("o", "s"), (4, 8)):
+    for marker, supercell in zip(("s", "o"), (4, 8)):
         subset = dataframe[dataframe["supercell"] == supercell].copy()
         subset = subset.sort_values("ncores")
         ax.scatter(subset["ncores"], subset["time"], marker=marker, label=f"{supercell}x{supercell}x{supercell}")
@@ -132,54 +187,86 @@ def plot_batio3(ax) -> list[tuple]:
 
 
 def plot_water(ax) -> list[tuple]:
-    directory = ROOT / "performance-water" / "water"
-    dataframe = pd.read_csv(directory / "dataframe.csv")
-    dataframe = dataframe.pivot(
-        index=["molecules", "ncores"], columns="calculation", values="time"
-    ).reset_index()
-    dataframe["time"] = dataframe["dipole"] - dataframe["scf"]
+    directory = ROOT / "performance-water" / "final"
+    dataframe = pd.read_csv(directory / "analysis-dataframe.csv")
+    functionals = ("revPBE", "revPBE0")
+    colors = {"revPBE": "#1f77b4", "revPBE0": "#ff7f0e"}
+    markers = {"revPBE": "s", "revPBE0": "o"}
+    dataframe = dataframe[dataframe["functional"].isin(functionals)].copy()
+    dataframe["time"] = dataframe["polarization_time_s"]
 
     with (directory / "fit.json").open() as file:
         fit = json.load(file)
 
-    for marker, molecules in zip(("o", "s"), (128, 196)):
-        subset = dataframe[dataframe["molecules"] == molecules].copy()
-        subset = subset.sort_values("ncores")
-        ax.scatter(subset["ncores"], subset["time"], marker=marker, label=str(molecules))
+    for functional in functionals:
+        for molecules in (128, 196):
+            subset = dataframe[
+                (dataframe["functional"] == functional)
+                & (dataframe["molecules"] == molecules)
+            ].copy()
+            subset = subset.sort_values("ncores")
+            ax.scatter(
+                subset["ncores"],
+                subset["time"],
+                marker=markers[functional],
+                color=colors[functional],
+            )
 
-        x = np.logspace(np.log10(subset["ncores"].min()), np.log10(subset["ncores"].max()), 1000)
-        params = fit["linear"][str(molecules)]
-        ax.plot(x, params["A"] * x ** params["m"], linestyle="--", alpha=0.5)
+            x = np.logspace(np.log10(subset["ncores"].min()), np.log10(subset["ncores"].max()), 1000)
+            params = fit["linear"][functional][str(molecules)]
+            ax.plot(x, params["A"] * x ** params["m"], color=colors[functional], linestyle="--", alpha=0.65)
 
     factor = 1.5
-    add_image(ax, directory / "water.m=128.png", (0.1, 0.7), 0.02*factor)
-    add_image(ax, directory / "water.m=196.png", (0.89, 0.8), 0.0275*factor)
+    add_image(ax, directory / "water.m=128.png", (0.1, 0.67), 0.02*factor)
+    add_image(ax, directory / "water.m=196.png", (0.89, 0.67), 0.0275*factor)
     annotations = [
-#         add_power_law_annotation(
-#     ax,
-#     (0.6, 0.33),  # x, y in axes-relative coordinates
-#     r"ideal scalability: $m=1$",
-#     -1,
-#     "gray",
-# ),
-        add_power_law_annotation(ax, (0.5, 0.35), r"$m=0.69$", -0.69, "#1f77b4"),
-        add_power_law_annotation(ax, (0.5, 0.82), r"$m=0.48$", -0.48, "#ff7f0e"),
+        add_power_law_annotation(
+    ax,
+    (0.55, 0.75),  # x, y in axes-relative coordinates
+    r"ideal scalability: $m=1$",
+    -1,
+    "gray",
+),
+        add_power_law_annotation(ax, (0.2, 0.5), rf"$m={abs(fit['linear']['revPBE']['128']['m']):.2f}$", fit["linear"]["revPBE"]["128"]["m"], colors["revPBE"]),
+        add_power_law_annotation(ax, (0.85, 0.16), rf"$m={abs(fit['linear']['revPBE0']['128']['m']):.2f}$", fit["linear"]["revPBE0"]["128"]["m"], colors["revPBE0"]),
+        add_power_law_annotation(ax, (0.25, 0.8), rf"$m={abs(fit['linear']['revPBE']['196']['m']):.2f}$", fit["linear"]["revPBE"]["196"]["m"], colors["revPBE"]),
+        add_power_law_annotation(ax, (0.85, 0.43), rf"$m={abs(fit['linear']['revPBE0']['196']['m']):.2f}$", fit["linear"]["revPBE0"]["196"]["m"], colors["revPBE0"]),
     ]
 
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_xlabel("n. cores")
     ax.set_ylabel("CPU time (s)")
-    legend = ax.legend(title="n. molecules:", loc="lower left")
-    legend._legend_box.align = "left"
-    ax.xaxis.set_major_locator(FixedLocator((128, 256, 512, 1024)))
+    ax.legend(
+        handles=[
+            Line2D(
+                [0], [0], color=colors[functional], marker=markers[functional],
+                linestyle="--", label=functional,
+            )
+            for functional in functionals
+        ],
+        title="functional:",
+        loc="lower left",
+    )
+    ax.xaxis.set_major_locator(FixedLocator((128, 256, 512, 1024, 2048)))
     ax.xaxis.set_major_formatter(ScalarFormatter())
     ax.xaxis.set_minor_locator(NullLocator())
-    ax.yaxis.set_major_locator(FixedLocator((50, 100, 200)))
+    ax.yaxis.set_major_locator(FixedLocator((50, 100, 200, 400)))
     ax.yaxis.set_major_formatter(ScalarFormatter())
     ax.yaxis.set_minor_locator(NullLocator())
-    ax.set_ylim(None, 320)
+    ax.set_ylim(None, 450)
     add_inverse_lines(ax, 20, color="gray", alpha=0.5, linewidth=0.5, linestyle="--")
+    arrow_core_count = 384
+    small_curve_times = [
+        fit["linear"][functional]["128"]["A"]
+        * arrow_core_count**fit["linear"][functional]["128"]["m"]
+        for functional in functionals
+    ]
+    #print(np.mean(small_curve_times))
+    add_image_arrow(ax, (0.17, 0.67), (arrow_core_count, 65))
+    # Keep the right-hand arrow's origin, but point it into the requested
+    # 512--1024-core, 100--150-second region.
+    add_image_arrow(ax, (0.89, 0.55), (800, 110))
     return annotations
 
 
