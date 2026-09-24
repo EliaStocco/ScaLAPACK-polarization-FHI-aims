@@ -1,0 +1,13 @@
+xc                           hse06 0.11
+hse_unit                     bohr
+hybrid_xc_coeff              0.25
+relativistic                 atomic_zora scalar
+d3
+spin                         none
+k_grid                       2 2 2
+sc_accuracy_rho              1d-1
+sc_iter_limit                1
+postprocess_anyway          .true.
+elsi_restart                 read
+force_complex_eigenvectors  .true.
+

@@ -1,89 +1,208 @@
-"""Plot the HSE06 dipole-only scaling results.
-
-Run ``extract.py`` and ``fit-dataframe.py`` before this script.  The plot is
-saved as ``water-HSE06.pdf`` in the current directory.
-"""
-
 import json
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
-
 
 plt.style.use("../../style.mplstyle")
 
-XTICKS = [128, 256, 512, 1024]
-YTICKS = [25, 50, 100, 200]
+
+MOLECULES = [128, 196]
+MARKERS = ["o", "s"]
+
+XTICKS = [128, 256, 512, 768, 1024]
 
 
 def add_inverse_lines(ax, n_lines, **plot_kwargs):
-    """Add guides with ideal inverse-core scaling."""
+    """Add n_lines lines of ideal 1/x scaling."""
 
     xmin, xmax = sorted(ax.get_xlim())
     ymin, ymax = sorted(ax.get_ylim())
-    constants = np.logspace(np.log10(xmin * ymin), np.log10(xmax * ymax), n_lines)
+
+    constants = np.logspace(
+        np.log10(xmin * ymin),
+        np.log10(xmax * ymax),
+        n_lines,
+    )
+
     x = np.logspace(np.log10(xmin), np.log10(xmax), 2)
 
-    for constant in constants:
-        ax.plot(x, constant / x, **plot_kwargs)
+    for c in constants:
+        ax.plot(x, c / x, **plot_kwargs)
 
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
 
+def power_law_angle(ax, exponent):
+    """Return the on-page angle of ``y ∝ x**exponent`` for *ax*."""
+
+    xmin, xmax = ax.get_xlim()
+    ymin, ymax = ax.get_ylim()
+    x = np.sqrt(xmin * xmax)
+    y = np.sqrt(ymin * ymax)
+    scale = 1.1
+    start, end = ax.transData.transform(
+        ((x, y), (x * scale, y * scale ** exponent))
+    )
+    return np.degrees(np.arctan2(end[1] - start[1], end[0] - start[0]))
+
+
+# Load data
 df = pd.read_csv("dataframe.csv")
-df = df.pivot(index="ncores", columns="calculation", values="time").reset_index()
-df["time"] = df["dipole"] - df["scf"]
-df = df.sort_values("ncores")
 
-with open("fit.json") as handle:
-    fit = json.load(handle)
+# -----------------------------
+# Convert to wide format
+# -----------------------------
+df_wide = df.pivot(
+    index=["molecules", "ncores"],
+    columns="calculation",
+    values="time"
+).reset_index()
 
-fig, ax = plt.subplots(figsize=(6, 3.4))
+# -----------------------------
+# Compute difference
+# -----------------------------
+df_wide["time"] = df_wide["dipole"] - df_wide["scf"]
 
-ax.scatter(df["ncores"], df["time"], marker="o", label="HSE06")
+with open("fit.json") as f:
+    fit = json.load(f)
 
-x = np.logspace(np.log10(df["ncores"].min()), np.log10(df["ncores"].max()), 1000)
-params = fit["linear"]
-ax.plot(x, params["A"] * x ** params["m"], linestyle="--", alpha=0.5)
 
-ax.text(
-    0.5,
-    0.75,
-    "ideal scalability: $m=1$",
+# Create figure
+fig, ax = plt.subplots(figsize=(6,3.4))
+
+for marker, mol in zip(MARKERS, MOLECULES):
+
+    subset = df_wide[df_wide["molecules"] == mol]
+    
+    if subset.empty:
+        continue
+    
+    # IMPORTANT: compute difference here
+    subset = subset.copy()
+    subset["time"] = subset["dipole"] - subset["scf"]
+
+    subset = subset.sort_values("ncores")
+
+    # Data points
+    ax.scatter(
+        subset["ncores"],
+        subset["time"],
+        marker=marker,
+        label=f"{mol}",
+    )
+
+    # Fit
+    params = fit["linear"][str(mol)]
+
+    x = np.logspace(
+        np.log10(subset["ncores"].min()),
+        np.log10(subset["ncores"].max()),
+        1000,
+    )
+
+    y = params["A"] * x ** params["m"]
+
+    ax.plot(
+        x,
+        y,
+        linestyle="--",
+        alpha=0.5,
+    )
+
+
+# Axes formatting
+#ax.set_title("Liquid water, intermediate basis set, revPBE0+D3")
+
+img = mpimg.imread("water.m=128.png")
+imagebox = OffsetImage(img, zoom=0.04)
+ab = AnnotationBbox(
+    imagebox,
+    (0.1, 0.8),              # position
+    xycoords='axes fraction',  # IMPORTANT: decouples from data limits
+    frameon=False
+)
+ax.add_artist(ab)
+
+img = mpimg.imread("water.m=196.png")
+imagebox = OffsetImage(img, zoom=0.055)
+ab = AnnotationBbox(
+    imagebox,
+    (0.9, 0.8),              # position
+    xycoords='axes fraction',  # IMPORTANT: decouples from data limits
+    frameon=False
+)
+ax.add_artist(ab)
+
+# ax.text(
+#     0.138, 0.33,
+#     r"$y = Ax^{-m}$",
+#     transform=ax.transAxes,
+#     ha="right",
+#     va="top",
+#     bbox=dict(
+#         boxstyle="round",
+#         facecolor="white",
+#         edgecolor="black"
+#     )
+# )
+
+annotations = [(ax.text(
+    0.5, 0.58,
+    r"ideal scalability: $m=1$",
     transform=ax.transAxes,
-    rotation=-22,
     ha="center",
     va="center",
-    color="gray",
-)
-ax.text(
-    0.5,
-    0.42,
-    rf"$m={params['m']:.2f}$",
+    color="gray"
+), -1)]
+
+annotations.append((ax.text(
+    0.5, 0.35,
+    r"$m=0.69$",
     transform=ax.transAxes,
-    rotation=-16,
     ha="center",
     va="center",
-    color="#1f77b4",
-)
+    color="#1f77b4"
+), fit["linear"]["128"]["m"]))
+
+annotations.append((ax.text(
+    0.5, 0.82,
+    r"$m=0.48$",
+    transform=ax.transAxes,
+    ha="center",
+    va="center",
+    color="#ff7f0e"
+), fit["linear"]["196"]["m"]))
 
 ax.set_xscale("log")
 ax.set_yscale("log")
+
 ax.set_xlabel("n. cores")
 ax.set_ylabel("CPU time (s)")
-ax.legend(loc="lower left")
+
+legend = ax.legend(
+    title="n. molecules:",
+    loc="lower left",
+)
+legend._legend_box.align = "left"
 
 ax.xaxis.set_major_locator(FixedLocator(XTICKS))
 ax.xaxis.set_major_formatter(ScalarFormatter())
 ax.xaxis.set_minor_locator(NullLocator())
+
+YTICKS = [50, 100, 200]
+
 ax.yaxis.set_major_locator(FixedLocator(YTICKS))
 ax.yaxis.set_major_formatter(ScalarFormatter())
 ax.yaxis.set_minor_locator(NullLocator())
-ax.set_ylim(25, 200)
 
+ax.set_ylim(None,320)
+
+# Ideal scaling guides
 add_inverse_lines(
     ax,
     n_lines=20,
@@ -94,4 +213,7 @@ add_inverse_lines(
 )
 
 plt.tight_layout()
-plt.savefig("water-HSE06.pdf", bbox_inches="tight")
+fig.canvas.draw()
+for annotation, exponent in annotations:
+    annotation.set_rotation(power_law_angle(ax, exponent))
+plt.savefig("water.pdf", bbox_inches="tight")
