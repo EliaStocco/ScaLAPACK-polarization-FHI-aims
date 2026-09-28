@@ -5,9 +5,9 @@ Global information about the job:
   
 Job owner: elsto(84651)
 Job name:  MgO-lapack
-Node list: vipc[2289-2293,2295-2297]
-Job start: Tue Sep 22 04:54:06 CEST 2026
-Job end:   Tue Sep 22 04:58:52 CEST 2026
+Node list: vipc2291
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:06:33 CEST 2026
 Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
 Command:   (null)
   
@@ -20,9 +20,233 @@ tasks of the per-task memory high-water marks; cf. "man sacct"):
   
 JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
 ------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
-11915623      MgO-lapack      8          2048                             00:04:46      0:0
-11915623.0    aims.26052      8   1024   2048     1934.93M      742.92M   00:04:42      0:0
+11942428      MgO-lapack      1           256                             00:08:46      0:0
+11942428.0    aims.26052      1     56    256     1922.12M     1040.56M   00:08:42      0:0
   
-Maximum memory per node: 259.702522 GB (defined as MaxRSS*Ntasks/NNodes)
-CPU utilization: 95.5 %
+Maximum memory per node: 112.867328 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 42.6 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc2290
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:06:47 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942427      MgO-lapack      1           256                             00:09:00      1:0
+11942427.0    aims.26052      1     48    256     1897.79M     1098.27M   00:08:57      0:0
+  
+Maximum memory per node: 95.519097 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 36.2 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc2289
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:08:02 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942426      MgO-lapack      1           256                             00:10:15      1:0
+11942426.0    aims.26052      1     40    256     1898.66M     1181.13M   00:10:12      0:0
+  
+Maximum memory per node: 79.635579 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 30.5 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipm2061
+Job start: Tue Sep 22 22:48:06 CEST 2026
+Job end:   Tue Sep 22 23:08:27 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942420      MgO-lapack      1           256                             00:20:21      1:0
+11942420.0    aims.26052      1     10    256     2219.09M     2109.75M   00:20:17      0:0
+  
+Maximum memory per node: 23.268803 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 7.6 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc2033
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:10:27 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942425      MgO-lapack      1           256                             00:12:40      1:0
+11942425.0    aims.26052      1     28    256     1919.58M     1397.16M   00:12:36      0:0
+  
+Maximum memory per node: 56.359174 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 21.3 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc2032
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:12:41 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942424      MgO-lapack      1           256                             00:14:54      1:0
+11942424.0    aims.26052      1     24    256     1941.02M     1517.63M   00:14:50      0:0
+  
+Maximum memory per node: 48.847405 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 18.2 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc2029
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:14:03 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942423      MgO-lapack      1           256                             00:16:16      1:0
+11942423.0    aims.26052      1     20    256     1928.29M     1678.02M   00:16:12      0:0
+  
+Maximum memory per node: 40.439153 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 15.3 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipl2049
+Job start: Tue Sep 22 22:55:25 CEST 2026
+Job end:   Tue Sep 22 23:18:20 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942421      MgO-lapack      1           256                             00:22:55      1:0
+11942421.0    aims.26052      1     12    256     2191.89M     2036.96M   00:22:51      0:0
+  
+Maximum memory per node: 27.580355 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 9.2 %
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack
+Node list: vipc2094
+Job start: Tue Sep 22 22:57:47 CEST 2026
+Job end:   Tue Sep 22 23:20:03 CEST 2026
+Work dir:  /ptmp/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack/./
+Command:   (null)
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+11942422      MgO-lapack      1           256                             00:22:16      1:0
+11942422.0    aims.26052      1     14    256     2164.86M     1983.57M   00:22:13      0:0
+  
+Maximum memory per node: 31.780217 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 10.7 %
   

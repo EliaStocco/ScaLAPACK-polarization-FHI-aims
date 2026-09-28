@@ -1,5 +1,27 @@
-# Job ID: 11915623
-# Date and Time: 2026-09-22 04:54:10
-Running results/aims.n=1024.out
-# End Time: 2026-09-22 04:58:52
-# Elapsed Time: 282 seconds
+# Job ID: 11942427
+# Date and Time: 2026-09-22 22:57:50
+# Date and Time: 2026-09-22 22:57:50
+Running results/aims.n=40.out
+Running results/aims.n=48.out
+Running results/aims.n=20.out
+Running results/aims.n=56.out
+Running results/aims.n=28.out
+Running results/aims.n=24.out
+# End Time: 2026-09-22 23:06:33
+# Elapsed Time: 522 seconds
+# End Time: 2026-09-22 23:06:47
+# Elapsed Time: 537 seconds
+# End Time: 2026-09-22 23:08:02
+# Elapsed Time: 612 seconds
+# End Time: 2026-09-22 23:08:27
+# Elapsed Time: 1217 seconds
+# End Time: 2026-09-22 23:10:27
+# Elapsed Time: 756 seconds
+# End Time: 2026-09-22 23:12:41
+# Elapsed Time: 890 seconds
+# End Time: 2026-09-22 23:14:03
+# Elapsed Time: 973 seconds
+# End Time: 2026-09-22 23:18:20
+# Elapsed Time: 1371 seconds
+# End Time: 2026-09-22 23:20:03
+# Elapsed Time: 1333 seconds
