@@ -1,0 +1,261 @@
+
+@-------------------------------------------
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/build_dataset4dPdR.py -i results -r reference.extxyz -f aims_polarization -o postprocess/dataset.extxyz
+@ Started: Sunday, 27 September 2026 at 15:11:08 CEST
+@ Working directory: /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/convergence-k/raw/bec_kgrid_convergence/k-grid-28
+@ Git branch: develop
+@ Last commit: 05198fc518a74287b09735158c5120934cc71619 logo
+@ Python: 3.10.18 (/home/stoccoel/.pyenv/versions/fd2bec/bin/python)
+@ Python environment: virtualenv: fd2bec (/home/stoccoel/.pyenv/versions/3.10.18/envs/fd2bec)
+@ Let's start!
+
+	┏━╸╺┳┓┏━┓┏┓ ┏━╸┏━╸
+	┣╸  ┃┃┏━┛┣┻┓┣╸ ┃
+	╹  ╺┻┛┗━╸┗━┛┗━╸┗━╸
+
+	Description:
+	Build dataset to compute Born Effective Charges as derivative of polarization/dipole w.r.t. nuclear displacements.
+	The script reads either polarization or dipole from DFT output files.
+
+	Input parsing is controlled via '--format'. This can be:
+	  (1) a predefined format key
+	  (2) a JSON file defining a custom format
+
+	Each format defines:
+	  - type: polarization or dipole
+	  - regex: extraction pattern
+	  - factor: unit conversion factor
+	  - drop_patterns: optional lines to ignore
+
+	Available formats:
+	aims_polarization, aims_dipole
+
+
+	----------------------------------------
+	Input arguments:
+	                input: results
+	            reference: reference.extxyz
+	               format: aims_polarization
+	               output: postprocess/dataset.extxyz
+	----------------------------------------
+
+	Reading reference structure from reference.extxyz ... done
+	n. atoms:  5
+	Reading input structures from 'results'
+	 - reading file 'results/aims.n=0.out'
+	 - reading file 'results/aims.n=1.out'
+	 - reading file 'results/aims.n=2.out'
+	 - reading file 'results/aims.n=3.out'
+	 - reading file 'results/aims.n=4.out'
+	 - reading file 'results/aims.n=5.out'
+	 - reading file 'results/aims.n=6.out'
+	 - reading file 'results/aims.n=7.out'
+	 - reading file 'results/aims.n=8.out'
+	n. read files: 9
+	
+	List of all read files:
+	 -   0) results/aims.n=0.out
+	 -   1) results/aims.n=1.out
+	 -   2) results/aims.n=2.out
+	 -   3) results/aims.n=3.out
+	 -   4) results/aims.n=4.out
+	 -   5) results/aims.n=5.out
+	 -   6) results/aims.n=6.out
+	 -   7) results/aims.n=7.out
+	 -   8) results/aims.n=8.out
+	
+	List of read 'polarization':
+	 -   0) [ 2.267611e-01,  2.264880e-01,  2.262155e-01]
+	 -   1) [ 2.274710e-01,  2.264841e-01,  2.262116e-01]
+	 -   2) [ 2.283511e-01,  2.264109e-01,  2.261385e-01]
+	 -   3) [ 2.262541e-01,  2.264853e-01,  2.262403e-01]
+	 -   4) [ 2.268185e-01,  2.265453e-01,  2.249276e-01]
+	 -   5) [ 2.260513e-01,  2.264919e-01,  2.262194e-01]
+	 -   6) [ 2.251687e-01,  2.265645e-01,  2.262920e-01]
+	 -   7) [ 2.272681e-01,  2.264907e-01,  2.261905e-01]
+	 -   8) [ 2.267034e-01,  2.264303e-01,  2.275022e-01]
+	
+	Using the following conversion factor to e/ang^2: 0.06241517271464743
+	Converting polarization to dipole using volume 63.412055695035406 Å^3
+	
+	Wrapping dipoles on the same branch:
+	 -   0) [ 8.974920e-01,  8.964110e-01,  8.953326e-01] --> [ 8.974920e-01,  8.964110e-01,  8.953326e-01] | jump of [  0,   0,   0]
+	 -   1) [ 9.003016e-01,  8.963954e-01,  8.953171e-01] --> [ 9.003016e-01,  8.963954e-01,  8.953171e-01] | jump of [  0,   0,   0]
+	 -   2) [ 9.037850e-01,  8.961060e-01,  8.950279e-01] --> [ 9.037850e-01,  8.961060e-01,  8.950279e-01] | jump of [  0,   0,   0]
+	 -   3) [ 8.954853e-01,  8.964004e-01,  8.954306e-01] --> [ 8.954853e-01,  8.964004e-01,  8.954306e-01] | jump of [  0,   0,   0]
+	 -   4) [ 8.977192e-01,  8.966379e-01,  8.902352e-01] --> [ 8.977192e-01,  8.966379e-01,  8.902352e-01] | jump of [  0,   0,   0]
+	 -   5) [ 8.946825e-01,  8.964263e-01,  8.953479e-01] --> [ 8.946825e-01,  8.964263e-01,  8.953479e-01] | jump of [  0,   0,   0]
+	 -   6) [ 8.911894e-01,  8.967139e-01,  8.956351e-01] --> [ 8.911894e-01,  8.967139e-01,  8.956351e-01] | jump of [  0,   0,   0]
+	 -   7) [ 8.994985e-01,  8.964217e-01,  8.952337e-01] --> [ 8.994985e-01,  8.964217e-01,  8.952337e-01] | jump of [  0,   0,   0]
+	 -   8) [ 8.972634e-01,  8.961827e-01,  9.004253e-01] --> [ 8.972634e-01,  8.961827e-01,  9.004253e-01] | jump of [  0,   0,   0]
+	
+	Final dipoles:
+	 -   0) [ 8.974920e-01,  8.964110e-01,  8.953326e-01]
+	 -   1) [ 9.003016e-01,  8.963954e-01,  8.953171e-01]
+	 -   2) [ 9.037850e-01,  8.961060e-01,  8.950279e-01]
+	 -   3) [ 8.954853e-01,  8.964004e-01,  8.954306e-01]
+	 -   4) [ 8.977192e-01,  8.966379e-01,  8.902352e-01]
+	 -   5) [ 8.946825e-01,  8.964263e-01,  8.953479e-01]
+	 -   6) [ 8.911894e-01,  8.967139e-01,  8.956351e-01]
+	 -   7) [ 8.994985e-01,  8.964217e-01,  8.952337e-01]
+	 -   8) [ 8.972634e-01,  8.961827e-01,  9.004253e-01]
+	
+	Saving dipoles [e*ang] to atomic structures using the keyword 'REF_dipole'
+	Constructing cartesian displacements and saving them using keyword 'displacements'
+	info keys: {'energy', 'free_energy', 'polarization', 'REF_dipole'}
+	arrays keys: {'displacements', 'positions', 'numbers'}
+	Saving dataset to file 'postprocess/dataset.extxyz'
+
+@ Job done :)
+@ Finished in 0.37s
+-------------------------------------------@
+
+/home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/dPdR2bec.py:195: UserWarning: Acoustic Sum Rule is not satisfied: 2.59895e-05 > 1.0e-05
+  warn(f"Acoustic Sum Rule is not satisfied: {norm:.5e} > {ATOL:.1e}")
+
+@-------------------------------------------
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/dPdR/dPdR2bec.py -i postprocess/dataset.extxyz --cache-dir .fd2bec -sp 0.0001 -o postprocess
+@ Started: Sunday, 27 September 2026 at 15:11:09 CEST
+@ Working directory: /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/convergence-k/raw/bec_kgrid_convergence/k-grid-28
+@ Git branch: develop
+@ Last commit: 05198fc518a74287b09735158c5120934cc71619 logo
+@ Python: 3.10.18 (/home/stoccoel/.pyenv/versions/fd2bec/bin/python)
+@ Python environment: virtualenv: fd2bec (/home/stoccoel/.pyenv/versions/3.10.18/envs/fd2bec)
+@ Let's start!
+
+	┏━╸╺┳┓┏━┓┏┓ ┏━╸┏━╸
+	┣╸  ┃┃┏━┛┣┻┓┣╸ ┃
+	╹  ╺┻┛┗━╸┗━┛┗━╸┗━╸
+
+	Description:
+	Compute the Born Effective Charges as derivative of polarization/dipole w.r.t. nuclear displacements.
+
+	----------------------------------------
+	Input arguments:
+	                input: postprocess/dataset.extxyz
+	                retry: True
+	               output: postprocess
+	            cache_dir: .fd2bec
+	             no_cache: False
+	              symprec: 0.0001
+	----------------------------------------
+
+	Reading input structures from postprocess/dataset.extxyz ... done
+	n. structures:  9
+	n. atoms:  5
+	Extracting dipole from 'REF_dipole' ... done
+	dipole.shape:  (9, 3)
+	Extracting displacements from 'displacements' ... done
+	displacements.shape:  (9, 5, 3)
+	Reconstructing reference structure ... done
+	Preparing Born Charges and symmetrization ... cached in '.fd2bec'; done
+	
+	Matrix shapes:
+	 - b.shape: (27,)
+	 - A.shape: (27, 45)
+	 - mode_basis.shape: (45, 9)
+	
+	Matrix shapes with symmetrization:
+	 - b.shape: (27,)
+	 - A.shape: (27, 9)
+	
+	Matrix for total dipoles:
+	 - b.shape: (27,)
+	 - A.shape: (27, 12)
+	Preparing linear system ... done
+	Solving linear systems  ... done
+	
+	----------------------------------------
+	Linear Fit Summary
+	----------------------------------------
+	Error          : 6.468e-06
+	Relative Error : 1.389e-06
+	Quality        : GOOD
+	Bad points     : 12 / 27
+	----------------------------------------
+	
+	Extracting Born Charges  ... done
+	
+	Atom   0, species Ba
+	Position: [  0.001549   0.001548   0.001546]
+	||Z*|| =    2.80969
+	Born effective charge tensor (Z*):
+	           2.80957        -0.01544        -0.01542
+	          -0.01544         2.80960        -0.01540
+	          -0.01542        -0.01540         2.80964
+	
+	Atom   1, species Ti
+	Position: [  2.048075   2.045609   2.043149]
+	||Z*|| =    6.31312
+	Born effective charge tensor (Z*):
+	           6.29777        -0.30396        -0.30360
+	          -0.30396         6.29850        -0.30323
+	          -0.30360        -0.30323         6.29923
+	
+	Atom   2, species O
+	Position: [  1.958519   1.956160   3.918907]
+	||Z*|| =    3.37320
+	Born effective charge tensor (Z*):
+	          -2.00662        -0.01063         0.09843
+	          -0.01063        -2.00659         0.09832
+	           0.22790         0.22763        -5.09502
+	
+	Atom   3, species O
+	Position: [  3.923615   1.953793   1.951443]
+	||Z*|| =    3.37320
+	Born effective charge tensor (Z*):
+	          -5.09423         0.23161         0.23133
+	           0.10214        -2.00702        -0.01103
+	           0.10202        -0.01103        -2.00699
+	
+	Atom   4, species O
+	Position: [  1.958519   3.921258   1.951443]
+	||Z*|| =    3.37320
+	Born effective charge tensor (Z*):
+	          -2.00662         0.09842        -0.01075
+	           0.22789        -5.09462         0.23134
+	          -0.01091         0.10203        -2.00699
+	
+	Checking Acoustic Sum Rule:
+	||sum_I Z*_I|| =    0.00003 | this value should be almost zero
+	Writing Born Charges to postprocess/bec-no-asr.txt ... done
+	Writing sum of all Born Charges to postprocess/asr.txt ... done
+	Writing sum of Born Charges with ASR applied to postprocess/bec.txt ... done
+	Writing Born Charges to postprocess/bec.extxyz under 'REF_BEC' ... done
+
+@ Job done :)
+@ Finished in 0.03s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Running: /home/stoccoel/codes/fd2bec/fd2bec/cli/general/bec2charges.py -i postprocess/bec.txt -o postprocess/charges.txt
+@ Started: Sunday, 27 September 2026 at 15:11:10 CEST
+@ Working directory: /home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/convergence-k/raw/bec_kgrid_convergence/k-grid-28
+@ Git branch: develop
+@ Last commit: 05198fc518a74287b09735158c5120934cc71619 logo
+@ Python: 3.10.18 (/home/stoccoel/.pyenv/versions/fd2bec/bin/python)
+@ Python environment: virtualenv: fd2bec (/home/stoccoel/.pyenv/versions/3.10.18/envs/fd2bec)
+@ Let's start!
+
+	┏━╸╺┳┓┏━┓┏┓ ┏━╸┏━╸
+	┣╸  ┃┃┏━┛┣┻┓┣╸ ┃
+	╹  ╺┻┛┗━╸┗━┛┗━╸┗━╸
+
+	Description:
+	Convert BEC to atomic charges.
+
+	----------------------------------------
+	Input arguments:
+	                input: postprocess/bec.txt
+	               output: postprocess/charges.txt
+	----------------------------------------
+
+	Reading input structure from postprocess/bec.txt ... done
+	Total sum:  -3.3306690738754696e-13
+	Writing charges to postprocess/charges.txt ... done
+
+@ Job done :)
+@ Finished in 0.01s
+-------------------------------------------@
+

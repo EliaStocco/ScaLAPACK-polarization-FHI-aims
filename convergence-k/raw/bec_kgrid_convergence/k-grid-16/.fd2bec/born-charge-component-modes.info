@@ -1,0 +1,3 @@
+# fd2bec cache settings
+cache_version = 1
+symprec = 0.0001
