@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  bec-density-1x1x1
+Node list: ravc2512
+Job start: Fri Sep 25 15:30:48 CEST 2026
+Job end:   Fri Sep 25 15:32:07 CEST 2026
+Work dir:  /raven/u/elsto/works/piezo-aims/converge-pol/1x1x1/bec_kgrid_convergence
+Command:   /raven/u/elsto/works/piezo-aims/converge-pol/1x1x1/bec_kgrid_convergence/run_density.slurm
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+30568476      bec-densit      1           144                             00:01:19      0:0
+30568476.0    aims.26032      1     72    144      200.56M      190.36M   00:01:14      0:0
+  
+Maximum memory per node: 15.141667 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 79.8 %
+  

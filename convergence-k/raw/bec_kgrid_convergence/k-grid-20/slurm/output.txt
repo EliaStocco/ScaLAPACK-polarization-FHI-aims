@@ -1,0 +1,54 @@
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+srun /u/elsto/programs/FHIaims/build/aims.260326.scalapack.mpi.x &> aims.out
+
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  bec-k-grid-20
+Node list: ravl1039
+Job start: Fri Sep 25 16:52:52 CEST 2026
+Job end:   Fri Sep 25 17:02:56 CEST 2026
+Work dir:  /raven/u/elsto/works/piezo-aims/converge-pol/1x1x1/bec_kgrid_convergence/k-grid-20
+Command:   /raven/u/elsto/works/piezo-aims/converge-pol/1x1x1/bec_kgrid_convergence/run_kgrid.slurm
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+30568478      bec-k-grid      1           144                             00:10:04      0:0
+30568478.0    aims.26032      1     72    144      224.30M      213.38M   00:00:46      0:0
+30568478.1    aims.26032      1     72    144      227.50M      213.85M   00:01:13      0:0
+30568478.2    aims.26032      1     72    144      226.17M      213.17M   00:01:10      0:0
+30568478.3    aims.26032      1     72    144      228.80M      213.48M   00:01:06      0:0
+30568478.4    aims.26032      1     72    144      225.50M      213.21M   00:01:09      0:0
+30568478.5    aims.26032      1     72    144      230.20M      213.92M   00:01:09      0:0
+30568478.6    aims.26032      1     72    144      224.00M      213.47M   00:01:09      0:0
+30568478.7    aims.26032      1     72    144      227.09M      213.64M   00:01:06      0:0
+30568478.8    aims.26032      1     72    144      224.66M      213.70M   00:01:11      0:0
+  
+Maximum memory per node: 17.379459 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 88.1 %
+  

@@ -1,0 +1,100 @@
+
+@-------------------------------------------
+@ Running: /raven/u/elsto/programs/fd2bec/fd2bec/cli/displacements/generate_displacements.py -i reference.extxyz -w bec -a 0.001 -sp 0.0001 -d displacements.txt -o displaced-structures.extxyz
+@ Started: Thursday, 24 September 2026 at 13:48:39 CEST
+@ Working directory: /raven/u/elsto/works/piezo-aims/converge-pol/1x1x1/bec_kgrid_convergence/k-grid-64
+@ Git branch: develop
+@ Last commit: 0ee2ce9cf036ab4413a578e1ed6a865f16b5e465 sorting
+@ Python: 3.9.7 (/u/elsto/venv/fd2bec/bin/python)
+@ Python environment: conda: base (/mpcdf/soft/SLE_15/packages/x86_64/anaconda/3/2023.03)
+@ Let's start!
+
+	Description:
+	Generate Cartesian atomic or cell displacements and displaced structures.
+
+	----------------------------------------
+	Input arguments:
+	                input: reference.extxyz
+	            amplitude: 0.001
+	                 what: bec
+	          no_symmetry: False
+	               number: None
+	                 seed: None
+	 displacements_output: displacements.txt
+	               output: displaced-structures.extxyz
+	              symprec: 0.0001
+	----------------------------------------
+
+	Reading input structure from reference.extxyz ... done
+	+---------------------------------------------------------------------------------------------+
+	| Input structure (BaO3Ti):                                                                   |
+	|   atoms = 5                                                                                 |
+	|   periodic boundary conditions = [True, True, True]                                         |
+	|   total mass [amu] = 233.19100000                                                           |
+	|                                                                                             |
+	| Cell vectors [Angstrom]:                                                                    |
+	|   a1:     3.98772401      0.00252199      0.00251895                                        |
+	|   a2:     0.00732644      3.98771808      0.00251895                                        |
+	|   a3:     0.00732644      0.00731762      3.98771216                                        |
+	|                                                                                             |
+	| Lattice parameters:                                                                         |
+	|   a, b, c [Angstrom]       = 3.98772561  3.98772561  3.98772561                             |
+	|   alpha, beta, gamma [deg] = 89.85847460 89.85847460 89.85847460                            |
+	|   volume [Angstrom^3]      = 63.41205577                                                    |
+	|                                                                                             |
+	| Positions (Cartesian [Angstrom] and fractional):                                            |
+	|   index  atom           Rx           Ry           Rz           fx           fy           fz |
+	|       1    Ba     0.001549     0.001548     0.001546     0.000387     0.000387     0.000387 |
+	|       2    Ti     2.048075     2.045609     2.043149     0.511715     0.511715     0.511715 |
+	|       3     O     1.958519     1.956160     3.918907     0.488435     0.488435     0.982129 |
+	|       4     O     3.923615     1.953793     1.951443     0.982129     0.488435     0.488435 |
+	|       5     O     1.958519     3.921258     1.951443     0.488435     0.982129     0.488435 |
+	+---------------------------------------------------------------------------------------------+
+	Constructing bec tensor ... done
+	Found 8 unique signed displacements from 31 symmetry-mode candidates.
+	Space group: 160 (R3m); 6 symmetry operations.
+	Symmetry-selected atomic displacements: 8; 9 structures including the reference.
+	  [0] reference (zero)
+	  [1] Ba[0].x=0.001
+	  [2] Ti[1].x=0.001
+	  [3] O[2].x=0.001
+	  [4] O[2].z=0.001
+	  [5] Ba[0].x=-0.001
+	  [6] Ti[1].x=-0.001
+	  [7] O[2].x=-0.001
+	  [8] O[2].z=-0.001
+	Writing displacements to displacements.txt ... done
+	Writing 9 displaced structures to displaced-structures.extxyz ... done
+
+@ Job done :)
+@ Finished in 0.08s
+-------------------------------------------@
+
+
+@-------------------------------------------
+@ Running: /raven/u/elsto/programs/fd2bec/fd2bec/cli/displacements/extxyz2folder.py -i displaced-structures.extxyz -f aims -o geometries
+@ Started: Thursday, 24 September 2026 at 13:48:41 CEST
+@ Working directory: /raven/u/elsto/works/piezo-aims/converge-pol/1x1x1/bec_kgrid_convergence/k-grid-64
+@ Git branch: develop
+@ Last commit: 0ee2ce9cf036ab4413a578e1ed6a865f16b5e465 sorting
+@ Python: 3.9.7 (/u/elsto/venv/fd2bec/bin/python)
+@ Python environment: conda: base (/mpcdf/soft/SLE_15/packages/x86_64/anaconda/3/2023.03)
+@ Let's start!
+
+	Description:
+	Write each snapshot from a multi-frame extxyz file to a separate file.
+
+	----------------------------------------
+	Input arguments:
+	                input: displaced-structures.extxyz
+	               format: aims
+	               output: geometries
+	----------------------------------------
+
+	Reading input structures from displaced-structures.extxyz ... done
+	Writing aims geometries to geometries ... done (9 files)
+
+@ Job done :)
+@ Finished in 0.07s
+-------------------------------------------@
+
