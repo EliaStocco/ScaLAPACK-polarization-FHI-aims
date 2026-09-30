@@ -14,7 +14,7 @@ from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
 
 HERE = Path(__file__).resolve().parent
 STYLE = HERE.parents[1] / "style.mplstyle"
-FUNCTIONALS = ["revPBE", "revPBE0", "HSE06"]
+FUNCTIONALS = ["revPBE", "HSE06", "revPBE0"]
 MOLECULES = [128, 196, 256]
 MARKERS = {128: "o", 196: "s", 256: "^"}
 COLORS = {128: "#1f77b4", 196: "#ff7f0e", 256: "#2ca02c"}

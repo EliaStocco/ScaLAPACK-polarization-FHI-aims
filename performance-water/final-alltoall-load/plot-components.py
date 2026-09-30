@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Plot water polarization timing components for every scaling series.
 
-Each PDF contains one functional/water-box curve and mirrors the component
-breakdown in ``scaling-atoms/scaling-right.pdf``, using core count on the
-x-axis.  Run ``extract.py`` first to refresh ``dataframe.csv``.
+Each PDF contains total SCF and dipole-run timings plus their difference,
+broken down into polarization components.  Run ``extract.py`` first to
+refresh ``dataframe.csv``.
 """
 
 from __future__ import annotations
@@ -24,6 +24,9 @@ SCALABILITY_FILE = HERE / "component-scalability.csv"
 # Match fit-dataframe.py: do not use the HSE06 2048-core timings in plots or
 # component power-law fits, while preserving them in the raw dataframe.
 EXCLUDED_SERIES_POINTS = {("HSE06", 2048)}
+FUNCTIONAL_ORDER = {"revPBE": 0, "HSE06": 1, "revPBE0": 2}
+CORE_COUNTS = [128, 256, 512, 1024, 2048]
+CORE_XLIM = (128, 2048)
 
 COMPONENTS = (
     ("scf_time_s", "SCF (total)", "#0173b2", "o", "-"),
@@ -69,6 +72,7 @@ def load_series() -> dict[tuple[str, int], list[dict[str, float]]]:
         row = {
             "ncores": float(ncores),
             "scf_time_s": scf_time,
+            "dipole_time_s": dipole_time,
             "polarization_time_s": polarization_time,
             # As in scaling-right.pdf, plot the residual magnitude on the
             # logarithmic axis because it can be signed.
@@ -104,13 +108,78 @@ def add_inverse_scaling_guides(axis: plt.Axes, count: int = 12) -> None:
     axis.set_ylim(ymin, ymax)
 
 
-def plot_series(functional: str, molecules: int, rows: list[dict[str, float]]) -> Path:
-    """Create one timing-component plot for a functional/water-box series."""
+def configure_axis(axis: plt.Axes) -> None:
+    """Apply the common core-count scale and ideal-scaling guides."""
 
-    figure, axis = plt.subplots(figsize=(7, 6))
-    for name, label, color, marker, linestyle in COMPONENTS:
+    axis.set_xscale("log", base=2)
+    axis.set_yscale("log")
+    axis.set_xlim(*CORE_XLIM)
+    axis.xaxis.set_major_locator(FixedLocator(CORE_COUNTS))
+    axis.xaxis.set_major_formatter(ScalarFormatter())
+    axis.xaxis.set_minor_locator(NullLocator())
+    add_inverse_scaling_guides(axis)
+
+
+def fit_power_law(rows: list[dict[str, float]], name: str) -> tuple[float, float]:
+    """Fit one timing series to ``time = A * ncores**m`` in log space."""
+
+    ncores = np.array([row["ncores"] for row in rows])
+    times = np.array([row[name] for row in rows])
+    exponent, intercept = np.polyfit(np.log10(ncores), np.log10(times), 1)
+    return 10**intercept, exponent
+
+
+def plot_total(axis: plt.Axes, rows: list[dict[str, float]], name: str, title: str) -> None:
+    """Plot one end-to-end timing series."""
+
+    color = "#0173b2" if name == "scf_time_s" else "#de8f05"
+    marker = "o" if name == "scf_time_s" else "s"
+    axis.plot(
+        [row["ncores"] for row in rows],
+        [row[name] for row in rows],
+        color=color,
+        marker=marker,
+        label=title,
+    )
+    prefactor, exponent = fit_power_law(rows, name)
+    ncores = np.logspace(
+        np.log10(rows[0]["ncores"]), np.log10(rows[-1]["ncores"]), 300
+    )
+    axis.plot(
+        ncores,
+        prefactor * ncores**exponent,
+        color=color,
+        linestyle="--",
+        alpha=0.8,
+    )
+    configure_axis(axis)
+    axis.set_title(title)
+    axis.set_ylabel("CPU time (s)")
+    axis.text(
+        0.04,
+        0.06,
+        f"$A={prefactor:.2e}$\n$m={exponent:.2f}$",
+        color=color,
+        transform=axis.transAxes,
+        va="bottom",
+    )
+
+
+def plot_series(functional: str, molecules: int, rows: list[dict[str, float]]) -> Path:
+    """Create SCF, dipole, and component-breakdown panels for one series."""
+
+    figure = plt.figure(figsize=(10, 9), constrained_layout=True)
+    grid = figure.add_gridspec(2, 2)
+    scf_axis = figure.add_subplot(grid[0, 0])
+    dipole_axis = figure.add_subplot(grid[0, 1], sharex=scf_axis)
+    difference_axis = figure.add_subplot(grid[1, :], sharex=scf_axis)
+
+    plot_total(scf_axis, rows, "scf_time_s", "SCF")
+    plot_total(dipole_axis, rows, "dipole_time_s", "Dipole calculation")
+
+    for name, label, color, marker, linestyle in COMPONENTS[1:]:
         subset = [row for row in rows if row.get(name) is not None and row[name] > 0]
-        axis.plot(
+        difference_axis.plot(
             [row["ncores"] for row in subset],
             [row[name] for row in subset],
             color=color,
@@ -118,21 +187,15 @@ def plot_series(functional: str, molecules: int, rows: list[dict[str, float]]) -
             linestyle=linestyle,
             label=label,
         )
+    configure_axis(difference_axis)
+    difference_axis.set_title("Polarization overhead (dipole − SCF)")
+    difference_axis.set_ylabel("CPU time (s)")
+    difference_axis.set_xlabel("n. cores")
+    difference_axis.legend(loc="upper right", ncol=2)
 
-    core_counts = [row["ncores"] for row in rows]
-    axis.set_xscale("log", base=2)
-    axis.set_yscale("log")
-    axis.set_xlim(100, 2200)
-    axis.xaxis.set_major_locator(FixedLocator(core_counts))
-    axis.xaxis.set_major_formatter(ScalarFormatter())
-    axis.xaxis.set_minor_locator(NullLocator())
-    add_inverse_scaling_guides(axis)
-    axis.set_xlabel("n. cores")
-    axis.set_ylabel("CPU time (s)")
-    axis.set_title(f"{functional}, {molecules} water molecules")
-    legend = axis.legend(loc="upper left", bbox_to_anchor=(1.02, 1), borderaxespad=0)
-    legend._legend_box.align = "left"
-    figure.tight_layout()
+    scf_axis.tick_params(labelbottom=False)
+    dipole_axis.tick_params(labelbottom=False)
+    figure.suptitle(f"{functional}, {molecules} water molecules")
 
     output = OUTPUT_DIRECTORY / f"components-{functional}-m{molecules}.pdf"
     figure.savefig(output, bbox_inches="tight")
@@ -218,7 +281,14 @@ def main() -> None:
     if not series:
         raise RuntimeError(f"No paired SCF/dipole series found in {DATA_FILE}")
     write_scalability_csv(series)
-    for (functional, molecules), rows in series.items():
+    for (functional, molecules), rows in sorted(
+        series.items(),
+        key=lambda item: (
+            FUNCTIONAL_ORDER.get(item[0][0], len(FUNCTIONAL_ORDER)),
+            item[0][0],
+            item[0][1],
+        ),
+    ):
         print(f"Wrote {plot_series(functional, molecules, rows)}")
 
 
