@@ -15,9 +15,9 @@ from matplotlib.ticker import FixedLocator, NullLocator, ScalarFormatter
 HERE = Path(__file__).resolve().parent
 STYLE = HERE.parents[1] / "style.mplstyle"
 FUNCTIONALS = ["revPBE", "revPBE0", "HSE06"]
-MOLECULES = [128, 196]
-MARKERS = {128: "o", 196: "s"}
-COLORS = {128: "#1f77b4", 196: "#ff7f0e"}
+MOLECULES = [128, 196, 256]
+MARKERS = {128: "o", 196: "s", 256: "^"}
+COLORS = {128: "#1f77b4", 196: "#ff7f0e", 256: "#2ca02c"}
 XTICKS = [128, 256, 512, 1024, 2048]
 XLIM = (110, 2400)
 
@@ -66,7 +66,7 @@ def main() -> None:
             axis.set_visible(False)
             continue
 
-        for molecules in MOLECULES:
+        for series_index, molecules in enumerate(MOLECULES):
             subset = sorted(
                 (row for row in functional_data if row["molecules"] == molecules),
                 key=lambda row: row["ncores"],
@@ -93,7 +93,7 @@ def main() -> None:
             axis.plot(x, parameters["A"] * x**parameters["m"], color=color, ls="--", alpha=0.8)
             axis.text(
                 0.97,
-                0.18 if molecules == 128 else 0.31,
+                0.18 + 0.13 * series_index,
                 format_exponent(parameters["m"]),
                 color=color,
                 ha="right",

@@ -1,4 +1,4 @@
-for m in 128 196; do
+for m in 196; do
     mkdir -p m=${m}
     for xc in revPBE0 revPBE HSE06; do 
         mkdir -p m=${m}/xc=${xc}

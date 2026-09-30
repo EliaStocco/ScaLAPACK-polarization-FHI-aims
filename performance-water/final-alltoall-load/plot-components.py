@@ -83,10 +83,31 @@ def load_series() -> dict[tuple[str, int], list[dict[str, float]]]:
     return series
 
 
+def add_inverse_scaling_guides(axis: plt.Axes, count: int = 12) -> None:
+    """Draw log-spaced guides with the ideal strong-scaling exponent ``m=-1``."""
+
+    xmin, xmax = axis.get_xlim()
+    ymin, ymax = axis.get_ylim()
+    constants = np.logspace(np.log10(xmin * ymin), np.log10(xmax * ymax), count)
+    x = np.array([xmin, xmax])
+    for constant in constants:
+        axis.plot(
+            x,
+            constant / x,
+            color="0.65",
+            alpha=0.45,
+            linewidth=0.45,
+            linestyle="--",
+            zorder=0,
+        )
+    axis.set_xlim(xmin, xmax)
+    axis.set_ylim(ymin, ymax)
+
+
 def plot_series(functional: str, molecules: int, rows: list[dict[str, float]]) -> Path:
     """Create one timing-component plot for a functional/water-box series."""
 
-    figure, axis = plt.subplots(figsize=(8, 3))
+    figure, axis = plt.subplots(figsize=(7, 6))
     for name, label, color, marker, linestyle in COMPONENTS:
         subset = [row for row in rows if row.get(name) is not None and row[name] > 0]
         axis.plot(
@@ -101,9 +122,11 @@ def plot_series(functional: str, molecules: int, rows: list[dict[str, float]]) -
     core_counts = [row["ncores"] for row in rows]
     axis.set_xscale("log", base=2)
     axis.set_yscale("log")
+    axis.set_xlim(100, 2200)
     axis.xaxis.set_major_locator(FixedLocator(core_counts))
     axis.xaxis.set_major_formatter(ScalarFormatter())
     axis.xaxis.set_minor_locator(NullLocator())
+    add_inverse_scaling_guides(axis)
     axis.set_xlabel("n. cores")
     axis.set_ylabel("CPU time (s)")
     axis.set_title(f"{functional}, {molecules} water molecules")
