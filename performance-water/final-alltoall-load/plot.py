@@ -93,10 +93,11 @@ def main() -> None:
             axis.plot(x, parameters["A"] * x**parameters["m"], color=color, ls="--", alpha=0.8)
             axis.text(
                 0.97,
-                0.18 + 0.13 * series_index,
+                0.75 + 0.10 * series_index,
                 format_exponent(parameters["m"]),
                 color=color,
                 ha="right",
+                va="top",
                 transform=axis.transAxes,
             )
 
@@ -110,7 +111,7 @@ def main() -> None:
         axis.xaxis.set_minor_locator(NullLocator())
         add_inverse_lines(axis)
 
-    axes[0].set_ylabel("polarization overhead (s)")
+    axes[0].set_ylabel("CPU time (s)")
     axes[0].legend(title="water box", loc="lower left")
     fig.suptitle("Liquid water polarization scaling")
     fig.tight_layout()
