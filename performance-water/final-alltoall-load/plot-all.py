@@ -19,9 +19,9 @@ HERE = Path(__file__).resolve().parent
 STYLE = HERE.parents[1] / "style.mplstyle"
 FUNCTIONALS = ["revPBE", "revPBE0"]
 FUNCTIONAL_COLORS = {"revPBE": "#1f77b4", "revPBE0": "#ff7f0e"}
-MOLECULES = [128, 196]
+MOLECULES = [128, 196, 256]
 MARKERS = {"revPBE": "x", "revPBE0": "+"}
-LINESTYLES = {128: "-.", 196: "--"}
+LINESTYLES = {128: "-.", 196: "--", 256: ":"}
 XTICKS = [128, 256, 512, 1024, 2048]
 
 
@@ -126,8 +126,14 @@ def main() -> None:
     axis.xaxis.set_minor_locator(NullLocator())
     add_inverse_lines(axis)
 
-    add_water_box_image(axis, HERE / "water.m=128.png", (0.10, 0.78), 0.035)
-    add_water_box_image(axis, HERE / "water.m=196.png", (0.89, 0.78), 0.045)
+    for image_name, position, zoom in (
+        ("water.m=128.png", (0.10, 0.78), 0.035),
+        ("water.m=196.png", (0.89, 0.78), 0.045),
+        ("water.m=256.png", (0.50, 0.78), 0.050),
+    ):
+        image_path = HERE / image_name
+        if image_path.exists():
+            add_water_box_image(axis, image_path, position, zoom)
 
     axis.legend(
         handles=[
@@ -153,9 +159,13 @@ def main() -> None:
         ("revPBE0", 128): (0.37, 0.29),
         ("revPBE", 196): (0.35, 0.69),
         ("revPBE0", 196): (0.62, 0.56),
+        ("revPBE", 256): (0.74, 0.38),
+        ("revPBE0", 256): (0.18, 0.48),
     }
     annotations = []
     for (functional, molecules), (xpos, ypos) in annotation_positions.items():
+        if str(molecules) not in fits.get(functional, {}):
+            continue
         exponent = fits[functional][str(molecules)]["m"]
         annotation = axis.text(
             xpos,
