@@ -1,0 +1,23 @@
+{
+  "formula": "polarization_time_s = A * ncores**m + B * ncores**n",
+  "fit_selection": "all extracted points except 2048 cores",
+  "objective": "least squares of logarithmic residuals",
+  "constraints": "A > 0, B > 0, -5 <= m <= 0, -5 <= n <= 0",
+  "warning": "HSE06 has only three fitted points, so its four-parameter model is underdetermined and not unique.",
+  "fits": {
+    "LDA": {
+      "A": 2084128893812.1614,
+      "m": -4.367677507335369,
+      "B": 34190.40713719994,
+      "n": -0.7197830885655222,
+      "log_residual_sum_squares": 2.2245877527232533e-28
+    },
+    "HSE06": {
+      "A": 23953327.409333866,
+      "m": -2.0561024862935415,
+      "B": 15081.935031831856,
+      "n": -0.5807351287907939,
+      "log_residual_sum_squares": 8.098540716307534e-25
+    }
+  }
+}
