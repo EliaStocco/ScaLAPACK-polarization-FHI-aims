@@ -1,0 +1,22 @@
+{
+  "formula": "polarization_time_s = A * ncores**m + B * ncores**n",
+  "fit_selection": "all extracted points",
+  "objective": "least squares of logarithmic residuals",
+  "constraints": "A > 0, B > 0, -5 <= m <= 0, -5 <= n <= 0",
+  "fits": {
+    "LDA": {
+      "A": 2267539708.6632557,
+      "m": -2.915117079141792,
+      "B": 9094.867916897945,
+      "n": -0.5269454190408899,
+      "log_residual_sum_squares": 0.004968679438678453
+    },
+    "HSE06": {
+      "A": 1003420.626467315,
+      "m": -1.3017429252712405,
+      "B": 145.93389162980324,
+      "n": 0.0,
+      "log_residual_sum_squares": 0.016769595243762953
+    }
+  }
+}

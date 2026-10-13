@@ -1,0 +1,19 @@
+{
+  "formula": "polarization_time_s = A * ncores**m",
+  "fit_selection": "all extracted points except 2048 cores",
+  "objective": "least squares in log10 space",
+  "fits": {
+    "LDA": {
+      "A": 344743.5066451449,
+      "m": -1.072325229782062,
+      "err-A": 350918.7225732943,
+      "err-m": 0.17084615900421188
+    },
+    "HSE06": {
+      "A": 71433.81819528423,
+      "m": -0.7990816384325278,
+      "err-A": 24226.46391653875,
+      "err-m": 0.05397289170950368
+    }
+  }
+}
