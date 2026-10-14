@@ -27,7 +27,9 @@ python3 build_dataframe.py
 ```
 
 The command scans `outputs/**/*.out` and overwrites
-`fhi_aims_hse06_revpbe0_calculations.csv`.
+`fhi_aims_hse06_revpbe0_calculations.csv`. Outputs below a directory named
+`converge` are deliberately ignored: they are convergence-test files, not part
+of the production-job failure analysis.
 
 `python3 build_dataframe.py --collect` also attempts to copy matching outputs
 from the source-project locations hard-coded in `SOURCE_ROOTS`.  That command
@@ -78,15 +80,10 @@ HSE06 and revPBE0, and plots maximum basis dimension versus total MPI tasks.
 That plot colors each run by available node-memory capacity and uses circles
 and X markers for successful and failed jobs, respectively.
 
-The notebook also writes `plots/water_configuration_failure_map.png`, an
-interpretable two-dimensional map of the effective `load_balancing` state and
-the raw `use_alltoall` control-file echo for the 384- and 588-atom water runs.
-It removes byte-identical copied outputs. The FHI-aims source establishes that
-an omitted `use_alltoall` is effective `false`, so the apparent difference
-between its omitted and explicit-false forms is a campaign/input-history
-marker, not an all-to-all setting effect. The remaining load-balancing
-association is observational; use matched reruns that change one setting at a
-time to test it.
+`plots/instances_allocation_correlations.png` summarizes the relationship of
+reported FHI-aims instances to allocated nodes and total MPI tasks. It reports
+Spearman's correlation for the jobs with both fields present; missing instance
+counts are not assigned a numerical value for this calculation.
 
 `plots/water_mpi_tasks_vs_node_memory_failure_map.png` is a second,
 configuration-independent map: it plots total MPI tasks against allocated
@@ -131,7 +128,11 @@ This exposes that the water HSE06 failures in the mixed region occur in build
 strong campaign/build association, not proof that the build alone caused the
 failure.
 
-Plots use `../style.mplstyle` and are saved under `plots/` when cells run. The
+The dataframe defines `status == "succeeded"` by the normal FHI-aims completion
+marker, `Leaving FHI-aims.`. This identifies a run that reached its normal
+program end, including a run that issued an SCF non-convergence warning. The
+separate `scf_converged` field is `true` only when the stricter `Have a nice
+day.` marker is present. Plots use `../style.mplstyle` and are saved under `plots/` when cells run. The
 notebook needs NumPy, Matplotlib, and SciPy for its main analysis; the optional
 adjusted regression additionally needs pandas and statsmodels.
 

@@ -107,6 +107,8 @@ DATAFRAME_FIELDS = [
     "filepath",
     "bundle_filepath",
     "status",
+    "completed_normally",
+    "scf_converged",
     "number_of_atoms",
     "number_of_basis_functions",
     "maximum_number_of_basis_functions",
@@ -265,8 +267,8 @@ def resource_metadata(path: Path, root: Path) -> tuple[str, str, str]:
     return partition or "unknown", constraint or "unknown", source or "not found"
 
 
-def classify_failure(text: str, success: bool) -> tuple[str, str, str, str]:
-    if success:
+def classify_failure(text: str, completed_normally: bool) -> tuple[str, str, str, str]:
+    if completed_normally:
         return "succeeded", "", "", ""
     terminal = OOM_RE.search(text) or ERROR_RE.search(text)
     if not terminal:
@@ -292,6 +294,11 @@ def is_aims_output(path: Path) -> bool:
     return path.name.lstrip("~").startswith("aims") and path.suffix == ".out"
 
 
+def is_convergence_output(path: Path) -> bool:
+    """Return whether an output belongs to a separate ``converge`` run."""
+    return any(part.lower() == "converge" for part in path.parts)
+
+
 def collect(dataset_dir: Path) -> None:
     outputs_dir = dataset_dir / "outputs"
     manifest_rows: list[dict[str, str]] = []
@@ -303,7 +310,7 @@ def collect(dataset_dir: Path) -> None:
                 continue
             except ValueError:
                 pass
-            if not is_aims_output(source_path):
+            if not is_aims_output(source_path) or is_convergence_output(source_path):
                 continue
             try:
                 text = source_path.read_text(errors="replace")
@@ -349,6 +356,7 @@ def refresh_runtime_metadata(dataset_dir: Path) -> int:
     csv_path = dataset_dir / "fhi_aims_hse06_revpbe0_calculations.csv"
     with csv_path.open(newline="") as handle:
         rows = list(csv.DictReader(handle))
+    rows = [row for row in rows if not is_convergence_output(Path(row["bundle_filepath"]))]
     for row in rows:
         output_path = dataset_dir / row["bundle_filepath"]
         try:
@@ -376,7 +384,7 @@ def build_dataframe(dataset_dir: Path) -> int:
     rows: list[dict[str, str | int]] = []
     outputs_dir = dataset_dir / "outputs"
     for path in sorted(outputs_dir.rglob("*.out")):
-        if not is_aims_output(path):
+        if not is_aims_output(path) or is_convergence_output(path):
             continue
         try:
             text = path.read_text(errors="replace")
@@ -389,8 +397,9 @@ def build_dataframe(dataset_dir: Path) -> int:
         system = path.relative_to(outputs_dir).parts[0]
         bundle_filepath = str(path.relative_to(dataset_dir))
         source = manifest.get(bundle_filepath, {})
-        success = "Have a nice day." in text
-        status, failure_phase, marker, failure_timestamp = classify_failure(text, success)
+        completed_normally = "Leaving FHI-aims." in text
+        scf_converged = "Have a nice day." in text
+        status, failure_phase, marker, failure_timestamp = classify_failure(text, completed_normally)
         ranks = first(RANKS_RE, text) or output_rank(path) or ""
         nodes = node_metadata(text, node_inventory)
         rows.append(
@@ -400,6 +409,8 @@ def build_dataframe(dataset_dir: Path) -> int:
                 "filepath": source.get("source_filepath", bundle_filepath),
                 "bundle_filepath": bundle_filepath,
                 "status": status,
+                "completed_normally": str(completed_normally).lower(),
+                "scf_converged": str(scf_converged).lower(),
                 "number_of_atoms": first(ATOM_RE, text) or "",
                 "number_of_basis_functions": first(BASIS_RE, text) or "",
                 "maximum_number_of_basis_functions": first(MAX_BASIS_RE, text) or "",
@@ -440,6 +451,36 @@ def build_dataframe(dataset_dir: Path) -> int:
     return len(rows)
 
 
+def refresh_completion_status(dataset_dir: Path) -> int:
+    """Refresh completion/convergence fields without re-parsing all metadata."""
+    csv_path = dataset_dir / "fhi_aims_hse06_revpbe0_calculations.csv"
+    with csv_path.open(newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    rows = [row for row in rows if not is_convergence_output(Path(row["bundle_filepath"]))]
+
+    for row in rows:
+        try:
+            text = (dataset_dir / row["bundle_filepath"]).read_text(errors="replace")
+        except OSError:
+            continue
+        completed_normally = "Leaving FHI-aims." in text
+        scf_converged = "Have a nice day." in text
+        status, failure_phase, marker, failure_timestamp = classify_failure(text, completed_normally)
+        row["status"] = status
+        row["completed_normally"] = str(completed_normally).lower()
+        row["scf_converged"] = str(scf_converged).lower()
+        row["failure_phase"] = failure_phase
+        row["last_phase_marker"] = marker
+        row["failure_timestamp"] = failure_timestamp
+
+    with csv_path.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=DATAFRAME_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"Refreshed completion status for {len(rows)} rows.")
+    return len(rows)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--collect", action="store_true", help="copy source outputs and refresh the manifest")
@@ -448,12 +489,19 @@ def main() -> None:
         action="store_true",
         help="enrich the existing CSV from output headers without a full rebuild",
     )
+    parser.add_argument(
+        "--refresh-completion-status",
+        action="store_true",
+        help="classify normal completion and SCF convergence from saved output endings",
+    )
     args = parser.parse_args()
     dataset_dir = Path(__file__).resolve().parent
     if args.collect:
         collect(dataset_dir)
     if args.refresh_runtime_metadata:
         refresh_runtime_metadata(dataset_dir)
+    elif args.refresh_completion_status:
+        refresh_completion_status(dataset_dir)
     else:
         build_dataframe(dataset_dir)
 
