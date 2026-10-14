@@ -25,6 +25,9 @@ ATOM_RE = re.compile(r"Number of atoms\s*:\s*(\d+)", re.I)
 RANKS_RE = re.compile(r"Integration load balanced across\s*(\d+)\s+MPI tasks", re.I)
 BASIS_RE = re.compile(r"Total number of basis functions\s*:\s*(\d+)", re.I)
 MAX_BASIS_RE = re.compile(r"Maximum number of basis functions\s*:\s*(\d+)", re.I)
+K_GRID_RE = re.compile(r"^\s*k_grid\s+(\d+)\s+(\d+)\s+(\d+)", re.I | re.M)
+FHI_AIMS_VERSION_RE = re.compile(r"FHI-aims version\s*:\s*(\S+)", re.I)
+FHI_AIMS_COMMIT_RE = re.compile(r"Commit number\s*:\s*(\S+)", re.I)
 FOCK_RE = re.compile(
     r"Assumed free memory per node for Fock matrix prefactors \[GB\]\s+([0-9.]+)",
     re.I,
@@ -35,6 +38,39 @@ COULOMB_RE = re.compile(
 )
 NODES_RE = re.compile(r"Number of nodes, tasks per node\s+(\d+)\s+(\d+)", re.I)
 INSTANCES_RE = re.compile(r"Number of instances:\s*(\d+)", re.I)
+# Runtime quantities reported by the hybrid-functional auto-tuner.  They are
+# deliberately kept separate from the initial estimates above: only runs that
+# reach Fock-matrix initialization print them.
+MAX_HARTREE_FOCK_MEMORY_RE = re.compile(
+    r"Max\. memory consumption per node for Hartree Fock matrix \[GB\]\s+([0-9.]+)",
+    re.I,
+)
+FOCK_BLOCK_SIZE_RE = re.compile(r"Blocksize for Fock matrix computation:\s*(\d+)", re.I)
+MIN_FREE_MEMORY_AFTER_FOCK_INIT_RE = re.compile(
+    r"Minimal free memory per node after Fock matrix initialization \[GB\]:\s*([0-9.]+)",
+    re.I,
+)
+BVK_ATOM_PAIRS_RE = re.compile(r"Number of atoms pairs in BvK cells:\s*(\d+)", re.I)
+# These are echoed from control.in near the start of an FHI-aims output.  A
+# missing match means the setting was not printed, rather than that it was
+# explicitly set to false.
+LOAD_BALANCING_RE = re.compile(r"^\s*load_balancing\s+\.(true|false)\.", re.I | re.M)
+USE_ALLTOALL_RE = re.compile(r"^\s*use_alltoall\s+\.(true|false)\.", re.I | re.M)
+# Runtime confirmation is more useful than the control echo.  In the FHI-aims
+# commits recorded in this dataset, use_load_balancing and use_alltoall both
+# initialise to .false.  load_balancing can subsequently be switched off if
+# ScaLAPACK is unavailable/inapplicable, hence the ordering in the helper
+# below.
+LOAD_BALANCING_ACTIVE_RE = re.compile(
+    r"Using load balancing for integrations\.|Start compute_balanced_batch_distribution|"
+    r"Integrating (?:Hamiltonian|overlap) matrix with load balancing",
+    re.I,
+)
+LOAD_BALANCING_DISABLED_RE = re.compile(
+    r"switching off load_balancing(?: and use_local_index)?|No scalapack: No load_balancing|"
+    r"load_balancing requested false explicitly",
+    re.I,
+)
 HOST_RE = re.compile(r"^\s*Task\s+\d+\s+on host\s+(\S+)\s+reporting\.", re.I | re.M)
 JOB_RE = re.compile(r"(?:StepId=|job_)(\d+)", re.I)
 TIME_RE = re.compile(r"\[([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9:.+-]+)\]\s+error:", re.I)
@@ -74,6 +110,9 @@ DATAFRAME_FIELDS = [
     "number_of_atoms",
     "number_of_basis_functions",
     "maximum_number_of_basis_functions",
+    "number_of_kpoints",
+    "fhi_aims_version",
+    "fhi_aims_commit",
     "number_of_ranks",
     "partition",
     "constraint",
@@ -88,6 +127,15 @@ DATAFRAME_FIELDS = [
     "number_of_nodes",
     "tasks_per_node",
     "number_of_instances",
+    "maximum_hartree_fock_memory_per_node_gb",
+    "fock_matrix_block_size",
+    "minimum_free_memory_after_fock_initialization_gb",
+    "number_of_atom_pairs_in_bvk_cells",
+    "load_balancing",
+    "effective_load_balancing",
+    "load_balancing_evidence",
+    "use_alltoall",
+    "effective_use_alltoall",
     "allocated_node_hostnames",
     "detected_number_of_nodes",
     "available_memory_per_node_mb",
@@ -100,6 +148,32 @@ DATAFRAME_FIELDS = [
 def first(pattern: re.Pattern[str], text: str, group: int = 1) -> str | None:
     match = pattern.search(text)
     return match.group(group) if match else None
+
+
+def kpoint_count(text: str) -> str:
+    """Return the nominal number of k-grid points from the control echo."""
+    match = K_GRID_RE.search(text)
+    if not match:
+        return ""
+    return str(int(match.group(1)) * int(match.group(2)) * int(match.group(3)))
+
+
+def effective_load_balancing(text: str) -> tuple[str, str]:
+    """Return the final option state and evidence visible in an output file."""
+    if LOAD_BALANCING_DISABLED_RE.search(text):
+        return "false", "runtime disabled/explicit false"
+    if LOAD_BALANCING_ACTIVE_RE.search(text):
+        return "true", "runtime confirmed"
+    if first(LOAD_BALANCING_RE, text) == "true":
+        return "true", "control echo; no later disable message"
+    # runtime_choices.f90 initialises use_load_balancing=.false. in output
+    # versions 251119, 260527, and 260824 represented in this bundle.
+    return "false", "code default false"
+
+
+def effective_use_alltoall(text: str) -> str:
+    """Return the effective all-to-all setting for the bundled code versions."""
+    return first(USE_ALLTOALL_RE, text) or "false"
 
 
 def output_rank(path: Path) -> int | None:
@@ -265,6 +339,37 @@ def load_manifest(dataset_dir: Path) -> dict[str, dict[str, str]]:
         return {row["bundle_filepath"]: row for row in csv.DictReader(handle)}
 
 
+def refresh_runtime_metadata(dataset_dir: Path) -> int:
+    """Enrich an existing CSV without re-reading every multi-megabyte output.
+
+    The version banner and control-parser diagnostics are emitted near the
+    beginning of the output.  Reading only that prefix makes it practical to
+    add new runtime metadata to an already-built dataset.
+    """
+    csv_path = dataset_dir / "fhi_aims_hse06_revpbe0_calculations.csv"
+    with csv_path.open(newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for row in rows:
+        output_path = dataset_dir / row["bundle_filepath"]
+        try:
+            with output_path.open(errors="replace") as handle:
+                prefix = handle.read(262_144)
+        except OSError:
+            prefix = ""
+        state, evidence = effective_load_balancing(prefix)
+        row["fhi_aims_version"] = first(FHI_AIMS_VERSION_RE, prefix) or "unknown"
+        row["fhi_aims_commit"] = first(FHI_AIMS_COMMIT_RE, prefix) or "unknown"
+        row["effective_load_balancing"] = state
+        row["load_balancing_evidence"] = evidence
+        row["effective_use_alltoall"] = effective_use_alltoall(prefix)
+    with csv_path.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=DATAFRAME_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"Refreshed runtime metadata for {len(rows)} rows.")
+    return len(rows)
+
+
 def build_dataframe(dataset_dir: Path) -> int:
     manifest = load_manifest(dataset_dir)
     node_inventory = load_node_inventory(dataset_dir)
@@ -298,6 +403,9 @@ def build_dataframe(dataset_dir: Path) -> int:
                 "number_of_atoms": first(ATOM_RE, text) or "",
                 "number_of_basis_functions": first(BASIS_RE, text) or "",
                 "maximum_number_of_basis_functions": first(MAX_BASIS_RE, text) or "",
+                "number_of_kpoints": kpoint_count(text),
+                "fhi_aims_version": first(FHI_AIMS_VERSION_RE, text) or "unknown",
+                "fhi_aims_commit": first(FHI_AIMS_COMMIT_RE, text) or "unknown",
                 "number_of_ranks": ranks,
                 "partition": source.get("partition", "unknown"),
                 "constraint": source.get("constraint", "unknown"),
@@ -312,6 +420,15 @@ def build_dataframe(dataset_dir: Path) -> int:
                 "number_of_nodes": first(NODES_RE, text, 1) or "",
                 "tasks_per_node": first(NODES_RE, text, 2) or "",
                 "number_of_instances": first(INSTANCES_RE, text) or "",
+                "maximum_hartree_fock_memory_per_node_gb": first(MAX_HARTREE_FOCK_MEMORY_RE, text) or "",
+                "fock_matrix_block_size": first(FOCK_BLOCK_SIZE_RE, text) or "",
+                "minimum_free_memory_after_fock_initialization_gb": first(MIN_FREE_MEMORY_AFTER_FOCK_INIT_RE, text) or "",
+                "number_of_atom_pairs_in_bvk_cells": first(BVK_ATOM_PAIRS_RE, text) or "",
+                "load_balancing": first(LOAD_BALANCING_RE, text) or "unset",
+                "effective_load_balancing": effective_load_balancing(text)[0],
+                "load_balancing_evidence": effective_load_balancing(text)[1],
+                "use_alltoall": first(USE_ALLTOALL_RE, text) or "unset",
+                "effective_use_alltoall": effective_use_alltoall(text),
                 **nodes,
             }
         )
@@ -326,11 +443,19 @@ def build_dataframe(dataset_dir: Path) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--collect", action="store_true", help="copy source outputs and refresh the manifest")
+    parser.add_argument(
+        "--refresh-runtime-metadata",
+        action="store_true",
+        help="enrich the existing CSV from output headers without a full rebuild",
+    )
     args = parser.parse_args()
     dataset_dir = Path(__file__).resolve().parent
     if args.collect:
         collect(dataset_dir)
-    build_dataframe(dataset_dir)
+    if args.refresh_runtime_metadata:
+        refresh_runtime_metadata(dataset_dir)
+    else:
+        build_dataframe(dataset_dir)
 
 
 if __name__ == "__main__":
