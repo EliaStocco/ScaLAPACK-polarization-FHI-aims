@@ -1,0 +1,59 @@
+\documentclass[10pt,landscape]{article}
+\usepackage[margin=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[active,tightpage]{preview}
+\PreviewBorder=0pt
+
+\definecolor{LdaBlue}{HTML}{EAF3FA}
+\definecolor{HseOrange}{HTML}{FFF0E1}
+% Align one-line entries with the first line of a multi-line row.
+\newcommand{\topcell}[1]{\raisebox{2.25\baselineskip}[0pt][0pt]{#1}}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{preview}
+\begin{minipage}{\textwidth}
+\centering
+\captionof{table}{BaTiO$_3$ polarization-cost scaling. All scaling powers use $t=C N^{-p}$. Percentage ranges use raw timings across the measured core counts. Slurm node memory: normalmem 480 GB/node, largemem 980 GB/node, hugemem 2,250 GB/node.}
+\vspace{0.5em}
+\resizebox{\textwidth}{!}{%
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llllll>{\color{red}\bfseries}llllrrrrrrrrrr}
+\toprule
+\multicolumn{4}{c}{Calculation} & \multicolumn{4}{c}{Polarization along direction 3} & \multicolumn{2}{c}{Run setup} & \multicolumn{6}{c}{Scaling power / fit quality} & \multicolumn{4}{c}{Raw contribution share range (\%)} \\
+\cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-10}\cmidrule(lr){11-16}\cmidrule(lr){17-20}
+Supercell & SCF $k$-grid & XC & Polarization grid & $P_3/|P_0|$ & $P_{\mathrm{ion}}/|P_0|$ & {\color{black}\normalfont$P_{\mathrm{Berry}}/|P_0|$} & $P_{\mathrm{dipole}}/|P_0|$ & FHI tracked GiB/node (partition \%) & Nodes / partition & Total $p$ & $R^2$ & Fourier & Matrix & Berry & Dipole & Fourier & Matrix & Berry & Dipole \\
+\specialrule{1pt}{0pt}{0pt}
+\rowcolor{LdaBlue}
+4$\times$4$\times$4 & 2 2 2 & LDA   & 3 4 2 2 & -0.166 & 0.008 & -0.349 & 0.175 & 78 (17\% normalmem) & 1/2/4/8/16 normalmem & \textbf{0.89} & 0.936 & 0.78 & 0.65 & 1.12 & 1.20 & 71--80 & 6--10 & 6--12 & 4--12 \\ \hline
+\rowcolor{LdaBlue}
+4$\times$4$\times$4 & 2 2 2 & LDA   & 3 6 4 4 & -0.239 & 0.008 & -0.420 & 0.174 & 82 (18\% normalmem) & 1/2/4/8/16 normalmem & \textbf{0.92} & 0.950 & 0.79 & 0.58 & 1.28 & 1.39 & 53--78 & 4--11 & 8--21 & 6--22 \\ \hline
+\rowcolor{HseOrange}
+4$\times$4$\times$4 & 2 2 2 & HSE06 & 3 4 2 2 & -0.031 & 0.008 & -0.142 & 0.103 & 253 (54\% normalmem) & 1/2/4/8/16 normalmem & \textbf{0.73} & 0.991 & 0.69 & 0.56 & 1.11 & 1.19 & 71--83 & 6--12 & 4--12 & 3--11 \\ \hline
+\rowcolor{HseOrange}
+4$\times$4$\times$4 & 2 2 2 & HSE06 & 3 6 4 4 & -0.089 & 0.008 & -0.198 & 0.102 & 253 (54\% normalmem) & 1/2/4/8/16 normalmem & \textbf{0.76} & 0.971 & 0.70 & 0.41 & 1.11 & 1.19 & 65--79 & 4--13 & 6--16 & 5--15 \\ 
+\specialrule{1pt}{0pt}{0pt}
+\rowcolor{LdaBlue}
+8$\times$8$\times$8 & 1 1 1 & LDA   & 3 2 1 1 & -0.275 & 0.030 & 0.000 & -0.305 & 578 (60\% largemem) & 1/2/4/8/16 largemem & \textbf{0.88} & 0.999 & 0.84 & 0.93 & ---  & 0.95 & 71--78 & 1--1 & 0--0 & 22--28 \\ \hline
+\rowcolor{LdaBlue}
+8$\times$8$\times$8 & 1 1 1 & LDA   & 3 3 2 2 & 0.083 & 0.030 & 0.358 & -0.305 & 578 (60\% largemem) & 1/2/4/8/16 largemem & \textbf{0.88} & 0.992 & 0.85 & 0.84 & 0.94 & 0.96 & 72--78 & 0--0 & 11--14 & 11--14 \\ \hline
+\rowcolor{HseOrange}
+\topcell{8$\times$8$\times$8} & \topcell{1 1 1} & \topcell{HSE06} & \topcell{3 2 1 1} & \topcell{0.376} & \topcell{0.030} & \topcell{0.000} & \topcell{0.346} & \topcell{1599 (73\% hugemem)} & \shortstack[l]{1 hugemem;\\4/8/16 largemem} & \topcell{\textbf{0.84}} & \topcell{0.996} & \topcell{0.79} & \topcell{0.70} & \topcell{---} & \topcell{0.86} & \topcell{74--78} & \topcell{1--1} & \topcell{0--0} & \topcell{21--25} \\ \hline
+\rowcolor{HseOrange}
+\topcell{8$\times$8$\times$8} & \topcell{1 1 1} & \topcell{HSE06} & \topcell{3 3 2 2} & \topcell{-0.486} & \topcell{0.030} & \topcell{0.138} & \topcell{0.346} & \topcell{1599 (73\% hugemem)} & \shortstack[l]{1 hugemem;\\4/8/16 largemem} & \topcell{\textbf{0.84}} & \topcell{0.998} & \topcell{0.81} & \topcell{0.67} & \topcell{0.88} & \topcell{0.90} & \topcell{73--77} & \topcell{0--0} & \topcell{11--14} & \topcell{11--14} \\
+\specialrule{1pt}{0pt}{0pt}
+\end{tabular}%
+}
+\par\smallskip
+
+\raggedright\footnotesize
+\textbf{Notes.} Blue rows are LDA and orange rows are HSE06. $P_3$ is the full FHI-aims polarization (ionic plus branch-mapped Berry and dipole terms) along reciprocal-lattice vector 3, reported from the 128-core dipole calculation. All ratios use $|P_0|$, the magnitude of the polarization quantum: 64.767 mC/m$^2$ for the 4$\times$4$\times$4 supercell and 16.192 mC/m$^2$ for 8$\times$8$\times$8. Thus $P_3/|P_0|=P_{\mathrm{ion}}/|P_0|+P_{\mathrm{Berry}}/|P_0|+P_{\mathrm{dipole}}/|P_0|$, subject to rounding. Max. tracked memory is the largest FHI-aims code-tracked value over each series' archived SCF and dipole runs, reported as the maximum per-rank value multiplied by 128 (all maxima occur in the 128-core dipole run); the parenthetical percentage uses the Slurm memory capacity of the partition for that run. This is not Slurm MaxRSS. The percentage columns use the raw FHI-aims component timers divided by the sum of those four timers and report the range over measured core counts.
+\end{minipage}
+\end{preview}
+
+\end{document}
