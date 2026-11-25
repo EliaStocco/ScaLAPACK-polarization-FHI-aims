@@ -58,7 +58,7 @@ The table values were transcribed into the manuscript from the files below.
 | I (polarization) | `validation/BaTiO3.{csv,txt}`, `validation/BaTiO3-t.{csv,txt}`, `validation/BiFeO3.txt`, `validation/BiFeO3/polarization_difference.csv`, `validation/PbTiO3.txt`, `validation/test-PbTiO3/folded_polarization.csv` | `validation/`: `bash run.sh` |
 | II (lattice constants, Born effective charges) | `BEC/{MgO,BaTiO3}/{LDA,PBE,PBEsol}/bec/bec.txt`, `bec/geometry.in`, `relax/` | `bec.txt` is written by `post_process_aims` from the fd2bec package (<https://github.com/EliaStocco/fd2bec>), using the outputs in `bec/results/` |
 | III (core-scalability exponents) | `viper-polarization-scaling-20261118/scaling_summary.csv`, `timing_data.csv` | `viper-polarization-scaling-20261118/fit_scaling.py` (part of `run_all.sh`) |
-| S1–S4 (geometries) | relaxed `geometry.in` files under `validation/{BaTiO3,PbTiO3,BiFeO3}/**/{lapack,relax}/` | lattice and internal-site parameters computed from these geometries |
+| S1–S4 (geometries) | relaxed `geometry.in` files under `validation/{BaTiO3,PbTiO3,BiFeO3}/**/lapack/`; fd2bec outputs in `validation/geometry-parameters/` | `validation/geometry-parameters/`: `bash run.sh` (see its README for the mapping to the table columns) |
 
 Table III: the exponents are the column `p` of
 `viper-polarization-scaling-20261118/scaling_summary.csv`, and their

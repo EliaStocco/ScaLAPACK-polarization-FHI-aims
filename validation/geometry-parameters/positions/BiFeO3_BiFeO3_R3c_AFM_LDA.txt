@@ -1,0 +1,106 @@
+/home/stoccoel/codes/fd2bec/fd2bec/cli/__init__.py:218: UserWarning: The first atom is not at fractional coordinates (0, 0, 0). The coordinates shown below are shifted to that origin; use fd2bec/cli/structures/shift_origin.py (the shift_origin command) to write the shifted structure.
+  result = main_func(args)
+
+@-------------------------------------------
+@ Running: /home/stoccoel/.pyenv/versions/fd2bec/bin/tensor_symmetries -i geometries/BiFeO3_BiFeO3_R3c_AFM_LDA.in -n positions --precision 7
+@ Started: Wednesday, 25 November 2026 at 14:47:52 CET
+@ Working directory: /tmp/claude-59110/-home-stoccoel-Documents-LaTeX-ScaLAPACK/87aa7f93-a653-48ee-b982-228f3b0c7a4b/scratchpad/repro-wt/validation/geometry-parameters
+@ Git branch: thermophase-incubation
+@ Last commit: d18eb6639b930f07c1d16504b7310b25a894addd let's see
+@ Python: 3.10.18 (/home/stoccoel/.pyenv/versions/fd2bec/bin/python)
+@ Python environment: pyenv: fd2bec (/home/stoccoel/.pyenv/versions/fd2bec)
+@ Let's start!
+
+	┏━╸╺┳┓┏━┓┏┓ ┏━╸┏━╸
+	┣╸  ┃┃┏━┛┣┻┓┣╸ ┃
+	╹  ╺┻┛┗━╸┗━┛┗━╸┗━╸
+
+	Description:
+	Show the symmetry-allowed components of a tensor.
+
+	----------------------------------------
+	Input arguments:
+	                input: geometries/BiFeO3_BiFeO3_R3c_AFM_LDA.in
+	                 name: positions
+	              keyword: None
+	    conventional_axes: False
+	                basis: None
+	            precision: 7
+	              symprec: 0.0001
+	----------------------------------------
+
+	Reading input structure from geometries/BiFeO3_BiFeO3_R3c_AFM_LDA.in ... done
+	--------------------
+	+---------------------------------------------------------------------------------------------+
+	| Reference structure (Bi2Fe2O6):                                                             |
+	|   atoms = 10                                                                                |
+	|   periodic boundary conditions = [True, True, True]                                         |
+	|   total mass [amu] = 625.64480000                                                           |
+	|                                                                                             |
+	| Cell vectors [Angstrom]:                                                                    |
+	|   a1:     5.45963400     -0.05538069     -0.03890046                                        |
+	|   a2:     2.75540441      4.71364159     -0.03890046                                        |
+	|   a3:     2.75540441      1.56242637      4.44733112                                        |
+	|                                                                                             |
+	| Lattice parameters:                                                                         |
+	|   a, b, c [Angstrom]       = 5.46005345  5.46005345  5.46005345                             |
+	|   alpha, beta, gamma [deg] = 60.27065007 60.27065007 60.27065007                            |
+	|   volume [Angstrom^3]      = 115.80517106                                                   |
+	|                                                                                             |
+	| Positions (Cartesian [Angstrom] and fractional):                                            |
+	|   index  atom           Rx           Ry           Rz           fx           fy           fz |
+	|       1    Bi     0.000000     0.000000     0.000000     0.000000     0.000000     0.000000 |
+	|       2    Bi     5.485221     3.110344     2.184765     0.500000     0.500000     0.500000 |
+	|       3    Fe     2.527038     1.432933     1.006520     0.230350     0.230350     0.230350 |
+	|       4    Fe     8.012259     4.543277     3.191285     0.730350     0.730350     0.730350 |
+	|       5     O     5.004858     1.572093     3.974080     0.442830     0.041123     0.897821 |
+	|       6     O     6.235258     2.101871     0.130735     0.897821     0.442830     0.041123 |
+	|       7     O     3.918550     4.921617     1.932886     0.041123     0.897821     0.442830 |
+	|       8     O     7.734675     2.668434     2.354401     0.942830     0.397821     0.541123 |
+	|       9     O     6.260845     4.001730     4.156551     0.397821     0.541123     0.942830 |
+	|      10     O     6.648367     5.035760     1.711514     0.541123     0.942830     0.397821 |
+	+---------------------------------------------------------------------------------------------+
+	--------------------
+	
+	Constructed positions tensor with shape (10, 3) in fractional basis.
+	
+	Computing symmetry-allowed displacement modes ... done
+	n. symmetry-inequivalent component(s): 5 out of 30 (16.7%)
+	           x        y        z
+	  0      0.0      0.0      0.0
+	  1      0.5      0.5      0.5
+	  2        a        a        a
+	  3  0.5 + a  0.5 + a  0.5 + a
+	  4  0.5 - b        c       -d
+	  5       -d  0.5 - b        c
+	  6        c       -d  0.5 - b
+	  7       -b  0.5 - d  0.5 + c
+	  8  0.5 - d  0.5 + c       -b
+	  9  0.5 + c       -b  0.5 - d
+	
+	Numeric tensor from input structure['positions'] (fractional basis, input axes):
+	             x          y          z
+	  0          0          0          0
+	  1        0.5        0.5        0.5
+	  2  0.2303497  0.2303497  0.2303497
+	  3  0.7303497  0.7303497  0.7303497
+	  4  0.4428299  0.0411229  0.8978207
+	  5  0.8978207  0.4428299  0.0411229
+	  6  0.0411229  0.8978207  0.4428299
+	  7  0.9428299  0.3978207  0.5411229
+	  8  0.3978207  0.5411229  0.9428299
+	  9  0.5411229  0.9428299  0.3978207
+	
+	Symmetry-inequivalent component values:
+	  a:  0.2303497
+	  b:  0.05717009
+	  c:  0.0411229
+	  d:  0.1021793
+	
+	Symmetry-breaking residual norm: 3.980652e-16; PASS (<= absolute tolerance 1.0e-05).
+
+@ Job done :)
+@ Finished in 0.03s
+@ Peak memory (max RSS): 126.84 MiB
+-------------------------------------------@
+
