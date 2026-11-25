@@ -22,7 +22,7 @@ in the manuscript repository; they are not data plots.
 | 5 | `comparison/2x2x16/`: `python extract.py` | `python comparison/2x2x16/plot.py` | `comparison/2x2x16/Figure-5.pdf` |
 | 6 | `scaling-atoms/`: `python extract.py` | `python scaling-atoms/plot-left_top.py` | `scaling-atoms/Figure-6.pdf` |
 | 7, S3, S5 | `viper-polarization-scaling-20261118/`: `PYTHON=python bash run_all.sh` | (included in `run_all.sh`) | `Figure-7-left-only.pdf`, `Figure-7-components-ideal.pdf`, `Figure-S4-dense-k-grid-scalability.pdf` |
-| S1 | see note below | `python comparison/2x2x16/timer-breakdown-20261118/plot_component_times.py` | `comparison/2x2x16/timer-breakdown-20261118/Figure-5-components.pdf` |
+| S1 | `comparison/2x2x16/timer-breakdown-20261118/`: `python extract_component_times.py lapack-rerun-recompiled-executable-bugfix2` | `python comparison/2x2x16/timer-breakdown-20261118/plot_component_times.py` | `comparison/2x2x16/timer-breakdown-20261118/Figure-5-components.pdf` |
 | S2 | `scaling-atoms/`: `python extract.py` | `python scaling-atoms/plot_right.py` | `scaling-atoms/Figure-S1.pdf` |
 | S4 | `performance-water/final-alltoall-load/`: `python extract.py && python fit-dataframe.py` | `python performance-water/final-alltoall-load/plot.py` | `performance-water/final-alltoall-load/water.pdf` |
 
@@ -37,11 +37,9 @@ Notes:
   (`scaling-atoms/supercell-8x8x8/*/dipole/rerun-20261120-dir1*`), selected in
   `scaling-atoms/extract.py`.
 - Figure S1: the ScaLAPACK timers come from the outputs in
-  `comparison/2x2x16/dipole/scalapack/`; the LAPACK timers come from a rerun
-  that is not stored here (see
-  `comparison/2x2x16/timer-breakdown-20261118/README.md`).
-  The figure is therefore reproduced from the committed
-  `component_timing_data.csv`.
+  `comparison/2x2x16/dipole/scalapack/`; the LAPACK timers come from the
+  timer-corrected rerun in
+  `comparison/2x2x16/timer-breakdown-20261118/lapack-rerun-recompiled-executable-bugfix2/`.
 - The reference data used by Figures 7, S3 and S5
   (`viper-polarization-scaling-20261118/reference_*`) are copies of
   `performance-BaTiO3/dataframe.csv`, `performance-BaTiO3/fit.json` and
