@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot revPBE and HSE06 polarization scaling by molecule count."""
+"""Plot revPBE and HSE06 polarization scalability by molecule count."""
 from pathlib import Path
 import csv, json
 import numpy as np
@@ -68,7 +68,7 @@ coefficient_axes[0].text(
     0.03, 0.03, "$m$: log-log fit from 128 cores\nto the indicated endpoint",
     transform=coefficient_axes[0].transAxes, fontsize=8, va="bottom",
 )
-fig.suptitle("Polarization scaling: revPBE vs HSE06")
+fig.suptitle("Polarization scalability: revPBE vs HSE06")
 fig.tight_layout()
 output = HERE / "scaling-per-box.pdf"
 fig.savefig(output, bbox_inches="tight")

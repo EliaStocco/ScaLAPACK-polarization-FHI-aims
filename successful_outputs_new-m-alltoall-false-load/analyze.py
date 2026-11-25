@@ -75,7 +75,7 @@ def main():
     with (OUT/"fit.json").open("w") as f: json.dump({"formula":"time=A*ncores**m","fits":fits},f,indent=2); f.write("\n")
     comp.sort(key=lambda r:r["deviation_from_ideal"],reverse=True)
     with (OUT/"component-scalability.csv").open("w",newline="") as f: w=csv.DictWriter(f,fieldnames=list(comp[0])); w.writeheader(); w.writerows(comp)
-    # Overview plot: polarization overhead and running scaling exponent by functional.
+    # Overview plot: polarization overhead and running scalability exponent by functional.
     available_funs = {r["functional"] for r in paired}
     preferred_funs = ["revPBE", "HSE06", "revPBE0"]
     funs = [fun for fun in preferred_funs if fun in available_funs]
