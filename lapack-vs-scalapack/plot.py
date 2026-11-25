@@ -42,7 +42,7 @@ def add_inverse_lines(ax, n_lines=20, **kwargs):
 # Settings
 # -----------------------------
 BASE = Path(__file__).resolve().parent
-ROOT = BASE.parents[1]
+ROOT = BASE.parent
 STYLE_FILE = ROOT / "style.mplstyle"
 DATA_FILE = BASE / "dataframe.csv"
 OUTPUT_FILE = Path(__file__).resolve().parent / "Figure-5.pdf"

@@ -12,7 +12,7 @@ import pandas as pd
 
 
 HERE = Path(__file__).resolve().parent
-STYLE_FILE = HERE.parents[2] / "style.mplstyle"
+STYLE_FILE = HERE.parents[1] / "style.mplstyle"
 DATA_FILE = HERE / "component_timing_data.csv"
 OUTPUT_FILE = HERE / "Figure-5-components.pdf"
 
