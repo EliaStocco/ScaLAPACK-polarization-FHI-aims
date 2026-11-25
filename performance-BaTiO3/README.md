@@ -39,6 +39,11 @@ The `8x8x8` Fourier term is itself near ideal (`m = -0.926`) and dominates the t
 - [`component-scalability.csv`](component-scalability.csv) contains fitted exponents, errors, log--log R² values, and ideal-scaling deviations.
 - [`component-plots/`](component-plots/) contains one breakdown PDF per supercell.
 
+The breakdown PDFs plot only polarization total, Fourier interpolation, dipole
+matrix, dipole term, and Berry term versus core count.  SCF/density-convergence
+time and the residual `Extra` quantity remain available in the extracted CSV
+but are not plotted.
+
 Regenerate with:
 
 ```bash

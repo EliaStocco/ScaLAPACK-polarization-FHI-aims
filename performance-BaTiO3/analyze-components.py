@@ -54,6 +54,15 @@ COMPONENTS = (
     ("berry_term_time_s", "Berry term", "#7a7a7a", "P", "--"),
     ("extra_time_s", "Extra", "#029e73", "X", "--"),
 )
+# Component series shown in the Figure 7 companion plots.  SCF/density
+# convergence and the residual extra time remain in the extracted tables, but
+# are intentionally excluded from these plots.
+PLOT_COMPONENTS = tuple(
+    component
+    for component in COMPONENTS
+    if component[0]
+    not in {"scf_time_s", "extra_time_s"}
+)
 
 
 def parse_output(path: Path, include_components: bool) -> dict[str, float]:
@@ -193,7 +202,7 @@ def write_scalability_csv(series: dict[str, list[dict[str, float]]]) -> None:
 
 def plot_series(supercell: str, rows: list[dict[str, float]]) -> Path:
     figure, axis = plt.subplots(figsize=(8, 3))
-    for name, label, color, marker, linestyle in COMPONENTS:
+    for name, label, color, marker, linestyle in PLOT_COMPONENTS:
         axis.plot(
             [row["ncores"] for row in rows],
             [row[name] for row in rows],
