@@ -10,7 +10,9 @@ from pathlib import Path
 
 
 BASE = Path(__file__).resolve().parent
-plt.style.use("../style.mplstyle")
+ROOT = BASE.parent
+OUTPUT_FILE = BASE / "Figure-3.pdf"
+plt.style.use(ROOT / "style.mplstyle")
 
 COLORS = {
     "yes": "#ff7f0e",
@@ -18,9 +20,6 @@ COLORS = {
 }
 
 DATA_FILE = BASE / "dataframe.csv"
-OUTPUT_FILE = BASE / "spline.pdf"
-
-
 # ---------------------------------------------------------
 # Load data
 # ---------------------------------------------------------
@@ -148,7 +147,7 @@ ax.set_xscale(
 # )
 
 ax.set_xlabel(
-    r"nscf $\mathbf{k}$-grid"
+    r"perpendicular \texttt{nscf} $\mathbf{k}$-grid"
 )
 
 ax.set_ylabel(
@@ -173,7 +172,7 @@ ax.axvline(
 # SCF k-grid annotation
 # ---------------------------------------------------------
 ax.annotate(
-    r"scf $\mathbf{k}$-grid",
+    r"\texttt{scf} $\mathbf{k}$-grid",
     xy=(8, 0.5),
     xycoords=("data", "axes fraction"),
     xytext=(0.6, 0.6),
@@ -205,7 +204,7 @@ ax.xaxis.set_major_locator(
 ax.xaxis.set_major_formatter(
     mticker.FuncFormatter(
         lambda value, _: (
-            rf"${int(value)}\!\times\!{int(value)}\!\times\!8$"
+            rf"${int(value)}\!\times\!{int(value)}$"
             if value in labelled_xticks
             else ""
         )
@@ -218,12 +217,14 @@ ax.xaxis.set_minor_locator(
 
 ax.tick_params(
     axis="x",
-    labelrotation=45,
+    labelrotation=30,
+    pad=6,
 )
 
 for label in ax.get_xticklabels():
     label.set_horizontalalignment("right")
-    label.set_rotation_mode("anchor")
+    # label.set_verticalalignment("top")
+    # label.set_rotation_mode("anchor")
 
 
 # ---------------------------------------------------------
@@ -248,6 +249,7 @@ fig.subplots_adjust(
     top=0.98,
 )
 
+OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 plt.savefig(
     OUTPUT_FILE,
     bbox_inches="tight",
