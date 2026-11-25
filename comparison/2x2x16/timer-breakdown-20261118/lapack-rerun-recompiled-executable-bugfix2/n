@@ -1,0 +1,232 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n8
+Node list: vipc2497
+Job start: Wed Nov 18 23:11:39 CET 2026
+Job end:   Wed Nov 18 23:39:39 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302551      MgO-lapack      1           256                             00:28:00      0:0
+13302551.0    aims.26052      1      8    256     2245.96M     2236.71M   00:27:56      0:0
+  
+Maximum memory per node: 18.840461 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 6.1 %
+CO2 footprint: 197.1200 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n32
+Node list: vipl2054
+Job start: Thu Nov 19 00:05:58 CET 2026
+Job end:   Thu Nov 19 00:18:25 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302553      MgO-lapack      1           256                             00:12:27      0:0
+13302553.0    aims.26052      1     32    256     1935.86M     1314.70M   00:12:22      0:0
+  
+Maximum memory per node: 64.956629 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 24.5 %
+CO2 footprint: 87.6480 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n16
+Node list: vipc2419
+Job start: Wed Nov 18 23:59:47 CET 2026
+Job end:   Thu Nov 19 00:18:41 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302552      MgO-lapack      1           256                             00:18:54      0:0
+13302552.0    aims.26052      1     16    256     1974.49M     1934.88M   00:18:49      0:0
+  
+Maximum memory per node: 33.126482 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 12.2 %
+CO2 footprint: 133.0560 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n128
+Node list: vipc2584
+Job start: Thu Nov 19 00:20:04 CET 2026
+Job end:   Thu Nov 19 00:25:57 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302555      MgO-lapack      1           256                             00:05:53      0:0
+13302555.0    aims.26052      1    128    256     1896.80M      833.51M   00:05:49      0:0
+  
+Maximum memory per node: 254.583898 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 94.6 %
+CO2 footprint: 41.4187 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n64
+Node list: vipc2540
+Job start: Thu Nov 19 00:20:04 CET 2026
+Job end:   Thu Nov 19 00:28:01 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302554      MgO-lapack      1           256                             00:07:57      0:0
+13302554.0    aims.26052      1     64    256     1913.25M      993.74M   00:07:53      0:0
+  
+Maximum memory per node: 128.395706 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 48.6 %
+CO2 footprint: 55.9680 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n256
+Node list: vipc[2434,2475]
+Job start: Thu Nov 19 00:23:08 CET 2026
+Job end:   Thu Nov 19 00:28:33 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302556      MgO-lapack      2           512                             00:05:25      0:0
+13302556.0    aims.26052      2    256    512     1924.91M      807.23M   00:05:20      0:0
+  
+Maximum memory per node: 258.357592 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 92.9 %
+CO2 footprint: 76.2667 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n512
+Node list: vipc[2258-2259,2364,2379]
+Job start: Thu Nov 19 00:28:41 CET 2026
+Job end:   Thu Nov 19 00:33:58 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302557      MgO-lapack      4          1024                             00:05:17      0:0
+13302557.0    aims.26052      4    512   1024     1925.28M      798.31M   00:05:13      0:0
+  
+Maximum memory per node: 258.407006 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 95.3 %
+CO2 footprint: 148.7787 g (estimate based on total cluster power and electricity mix)
+  
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-lapack-new-n1024
+Node list: vipc[2235,2258,2276,2347,2364,2379,2434,2475]
+Job start: Thu Nov 19 00:45:26 CET 2026
+Job end:   Thu Nov 19 00:50:28 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/n
+Command:   /viper/ptmp1/elsto/works/ScaLAPACK-comparison/2x2x2/dipole-2x2x16/lapack-rerun-recompiled-executable-bugfix2/job.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13302559      MgO-lapack      8          2048                             00:05:02      0:0
+13302559.0    aims.26052      8   1024   2048     1934.84M      802.81M   00:04:58      0:0
+  
+Maximum memory per node: 259.689284 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 93.7 %
+CO2 footprint: 283.4773 g (estimate based on total cluster power and electricity mix)
+  
