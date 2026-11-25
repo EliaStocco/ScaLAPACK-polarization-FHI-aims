@@ -44,9 +44,10 @@ Notes:
   (`viper-polarization-scaling-20261118/reference_*`) are copies of
   `performance-BaTiO3/dataframe.csv`, `performance-BaTiO3/fit.json` and
   `scaling-comparison_20261104/dense_component_data.csv`.
-  `scaling-comparison_20261104/extract_dense_components.py` regenerates the
-  latter exactly; `performance-BaTiO3/extract.py` reads additional core counts
-  that the committed `dataframe.csv` does not include.
+  `performance-BaTiO3/extract.py` followed by `fit-dataframe.py` (run in
+  `performance-BaTiO3/`) and
+  `scaling-comparison_20261104/extract_dense_components.py` regenerate them
+  exactly.
 
 ## Tables
 
