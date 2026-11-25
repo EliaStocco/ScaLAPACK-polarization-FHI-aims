@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import numpy as np
 import pandas as pd
-import matplotlib.image as mpimg
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
 
 def add_inverse_lines(ax, n_lines=20, **kwargs):
@@ -43,14 +41,19 @@ def add_inverse_lines(ax, n_lines=20, **kwargs):
 # -----------------------------
 # Settings
 # -----------------------------
-STYLE_FILE = "../../style.mplstyle"
-DATA_FILE = "dataframe.csv"
-IMAGE_FILE = "MgO.png"
-OUTPUT_FILE = "scalability.pdf"
+BASE = Path(__file__).resolve().parent
+ROOT = BASE.parents[1]
+STYLE_FILE = ROOT / "style.mplstyle"
+DATA_FILE = BASE / "dataframe.csv"
+OUTPUT_FILE = Path(__file__).resolve().parent / "Figure-5.pdf"
 
 COLORS = {
     "LAPACK": "#1f77b4",
     "ScaLAPACK": "#ff7f0e",
+}
+METHOD_LABELS = {
+    "LAPACK": r"\texttt{LAPACK}",
+    "ScaLAPACK": r"\texttt{ScaLAPACK}",
 }
 
 
@@ -67,20 +70,6 @@ def load_data(path):
 
     df = df.sort_values(["method", "calculation", "ncores"])
     return df
-
-
-# -----------------------------
-# Optional image overlay
-# -----------------------------
-def add_image(ax, path, xy=(200, 800), zoom=0.06):
-    path = Path(path)
-    if not path.exists():
-        return
-
-    img = mpimg.imread(path)
-    ax.add_artist(
-        AnnotationBbox(OffsetImage(img, zoom=zoom), xy, frameon=False)
-    )
 
 
 # -----------------------------
@@ -131,7 +120,7 @@ def plot(df):
             facecolors=facecolors,
             edgecolors=color,
             linewidths=1.0,
-            label=method,
+            label=METHOD_LABELS[method],
             zorder=3,
         )
 
@@ -154,10 +143,11 @@ def plot(df):
     ax1.xaxis.set_major_locator(mticker.FixedLocator(xticks))
     ax1.xaxis.set_major_formatter(mticker.FormatStrFormatter("%d"))
     
-    yticks = [500, 1000]
+    # Display the logarithmic CPU-time ticks directly in seconds.
+    yticks = [100, 200, 500, 1000]
 
     ax1.yaxis.set_major_locator(mticker.FixedLocator(yticks))
-    ax1.yaxis.set_major_formatter(mticker.ScalarFormatter())
+    ax1.yaxis.set_major_formatter(mticker.FixedFormatter([str(tick) for tick in yticks]))
 
     # add_inverse_lines(
     #     ax1,
@@ -169,9 +159,14 @@ def plot(df):
     # )
 
     # =========================================================
-    # BOTTOM: dipole peak memory ONLY
+    # BOTTOM: dipole peak memory for the same core counts as the CPU-time plot
     # =========================================================
-    mem = df[df["calculation"] == "dipole"]
+    mem = (
+        df[df["calculation"] == "dipole"]
+        .set_index(["method", "ncores"])
+        .loc[common]
+        .reset_index()
+    )
 
     for method, sub in mem.groupby("method"):
         sub = sub.sort_values("ncores")
@@ -213,7 +208,7 @@ def plot(df):
     #     linestyle="--",
     # )
 
-    fig.tight_layout()
+    fig.subplots_adjust(left=0.20, right=0.98, bottom=0.14, top=0.98, hspace=0.12)
     return fig
 
 
@@ -228,9 +223,8 @@ def main():
 
     fig = plot(df)
 
-    add_image(fig.axes[0], IMAGE_FILE)
-
-    fig.savefig(OUTPUT_FILE, bbox_inches="tight")
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(OUTPUT_FILE)
 
 
 if __name__ == "__main__":
