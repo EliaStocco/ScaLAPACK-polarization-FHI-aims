@@ -60,5 +60,7 @@ The table values were transcribed into the manuscript from the files below.
 | III (core-scalability exponents) | `viper-polarization-scaling-20261118/scaling_summary.csv`, `timing_data.csv` | `viper-polarization-scaling-20261118/fit_scaling.py` (part of `run_all.sh`) |
 | S1–S4 (geometries) | relaxed `geometry.in` files under `validation/{BaTiO3,PbTiO3,BiFeO3}/**/{lapack,relax}/` | lattice and internal-site parameters computed from these geometries |
 
-The uncertainties of the exponents in Table III are the standard errors of the
-log–log slopes fitted to `timing_data.csv`.
+Table III: the exponents are the column `p` of
+`viper-polarization-scaling-20261118/scaling_summary.csv`, and their
+uncertainties are the standard errors of the log–log slopes in the column
+`p_stderr` of the same file.

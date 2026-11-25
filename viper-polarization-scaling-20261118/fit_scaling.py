@@ -63,17 +63,20 @@ def scf_path(size: str, functional: str, cores: int) -> Path:
     return ROOT / "raw" / size / directory / "scf" / f"n={cores}" / name
 
 
-def fit(points: list[tuple[int, float]]) -> tuple[float, float, float]:
+def fit(points: list[tuple[int, float]]) -> tuple[float, float, float, float]:
     x = [math.log(cores) for cores, _ in points]
     y = [math.log(time) for _, time in points]
     x_mean = sum(x) / len(x)
     y_mean = sum(y) / len(y)
     slope = sum((a - x_mean) * (b - y_mean) for a, b in zip(x, y))
-    slope /= sum((value - x_mean) ** 2 for value in x)
+    sxx = sum((value - x_mean) ** 2 for value in x)
+    slope /= sxx
     intercept = y_mean - slope * x_mean
     residual = sum((value - (intercept + slope * point)) ** 2 for point, value in zip(x, y))
     total = sum((value - y_mean) ** 2 for value in y)
-    return -slope, math.exp(intercept), 1 - residual / total if total else 1.0
+    # Standard error of the fitted log-log slope.
+    stderr = math.sqrt(residual / (len(x) - 2) / sxx) if len(x) > 2 else float("nan")
+    return -slope, math.exp(intercept), 1 - residual / total if total else 1.0, stderr
 
 
 def main() -> None:
@@ -102,7 +105,7 @@ def main() -> None:
                 }
             )
             points.append((cores, polarization_seconds))
-        exponent, prefactor, r_squared = fit(points)
+        exponent, prefactor, r_squared, exponent_stderr = fit(points)
         summaries.append(
             {
                 "supercell": size,
@@ -113,6 +116,7 @@ def main() -> None:
                 "p": f"{exponent:.8f}",
                 "prefactor_seconds": f"{prefactor:.8g}",
                 "R2": f"{r_squared:.8f}",
+                "p_stderr": f"{exponent_stderr:.8f}",
             }
         )
 
