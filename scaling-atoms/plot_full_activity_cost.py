@@ -20,6 +20,7 @@ BASE = Path(__file__).resolve().parent
 DATA_FILE = BASE / "dataframe.csv"
 STYLE_FILE = BASE.parent / "style.mplstyle"
 OUTPUT_FILE = BASE / "scaling-full-activity-cost.pdf"
+SELECTED_ATOM_COUNTS = frozenset((4, 16, 64, 256, 1024))
 
 COLORS = {
     "lapack": "#1f77b4",
@@ -69,6 +70,7 @@ def load_data(path):
             if (
                 row["nodes"] > 0
                 and row["atoms"] > 0
+                and row["atoms"] in SELECTED_ATOM_COUNTS
                 and row["method"] in METHOD_LABELS
                 and row["allocated_cores"] > 0
                 and 0 < row["polarization_cores"] <= row["allocated_cores"]

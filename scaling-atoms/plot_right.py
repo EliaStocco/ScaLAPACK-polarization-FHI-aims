@@ -16,12 +16,12 @@ import matplotlib.ticker as mticker
 BASE = Path(__file__).resolve().parent
 DATA_FILE = BASE / "dataframe.csv"
 STYLE_FILE = BASE.parent / "style.mplstyle"
-OUTPUT_FILE = BASE / "scaling-right.pdf"
+OUTPUT_FILE = BASE / "Figure-S1.pdf"
+SELECTED_ATOM_COUNTS = frozenset((4, 16, 64, 256, 1024))
 
 RAW_QUANTITIES = [
     "converge_time",
     "polarization_time",
-    "wannier_time",
     "fourier_ev_time",
     "dipole_matrix_time",
     "dipole_term_time",
@@ -35,28 +35,25 @@ QUANTITIES = [
     "dipole_matrix_time",
     "dipole_term_time",
     "berry_term_time",
-    "extra_time",
 ]
 LABELS = {
     "converge_time": "Density convergence",
     # This is the same dipole-minus-SCF quantity used for the ScaLAPACK
     # (orange) curve in plot_left.py.
     "polarization_time": "Polarization (total)",
-    "extra_time": "Extra",
     "fourier_ev_time": "Fourier interpolation",
     "dipole_matrix_time": "Dipole matrix",
     "dipole_term_time": "Dipole term",
     "berry_term_time": "Berry term",
-    "scf_time": "1 SCF cycle",
+    "scf_time": r"1 \texttt{scf} cycle",
 }
 COLORS = {
-    "converge_time": "#0173b2",
-    "polarization_time": "#de8f05",
-    "fourier_ev_time": "#d55e00",
-    "dipole_matrix_time": "#cc78bc",
-    "dipole_term_time": "#ca9161",
-    "berry_term_time": "#7a7a7a",
-    "extra_time": "#029e73",
+    "converge_time": "#718096",
+    "polarization_time": "#0072B2",
+    "fourier_ev_time": "#E69F00",
+    "dipole_matrix_time": "#009E73",
+    "dipole_term_time": "#D55E00",
+    "berry_term_time": "#CC79A7",
 }
 MARKERS = {
     "converge_time": "o",
@@ -65,7 +62,6 @@ MARKERS = {
     "dipole_matrix_time": "D",
     "dipole_term_time": "v",
     "berry_term_time": "P",
-    "extra_time": "X",
 }
 
 
@@ -93,24 +89,13 @@ def load_data(path):
                 }
                 for quantity in RAW_QUANTITIES:
                     row[quantity] = to_float(raw[quantity])
-                if (
-                    row["polarization_time"] is not None
-                    and row["wannier_time"] is not None
-                ):
-                    # The signed residual is retained as untracked_time by
-                    # extract.py.  Plot its absolute magnitude because the
-                    # logarithmic y axis cannot represent negative values.
-                    row["extra_time"] = abs(
-                        row["polarization_time"] - row["wannier_time"]
-                    )
-                else:
-                    row["extra_time"] = None
             except (TypeError, ValueError):
                 continue
 
             if (
                 row["nodes"] > 0
                 and row["atoms"] > 0
+                and row["atoms"] in SELECTED_ATOM_COUNTS
                 and row["method"] == "scalapack"
             ):
                 rows.append(row)
@@ -224,7 +209,7 @@ def plot_components(ax, rows, primary_nodes):
         arrowprops=arrow_style,
     )
     ax.set_xlim(xmin, xmax)
-    ax.set_ylim(3e-2, 7e2)
+    ax.set_ylim(3e-2, 2e3)
 
 
 def main():
@@ -235,6 +220,7 @@ def main():
     primary_nodes = primary_node_count(rows)
     fig, ax = plt.subplots(figsize=(8, 3))
     plot_components(ax, rows, primary_nodes)
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT_FILE, bbox_inches="tight")
     print(f"Saved {OUTPUT_FILE}")
 
