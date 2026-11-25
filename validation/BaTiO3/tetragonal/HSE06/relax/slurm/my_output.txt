@@ -1,3 +1,0 @@
-Installing ESLIB ...
-Done. All the scripts should be available in the PATH.
-srun /u/elsto/programs/FHIaims/build//aims.260326.scalapack.mpi.x &> aims.out

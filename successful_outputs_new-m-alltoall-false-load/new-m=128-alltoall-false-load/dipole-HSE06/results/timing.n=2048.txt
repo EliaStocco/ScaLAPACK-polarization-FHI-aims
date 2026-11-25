@@ -1,3 +1,0 @@
-# Job ID: 11961673
-# MPI tasks: 2048
-# Elapsed Time: 90 seconds

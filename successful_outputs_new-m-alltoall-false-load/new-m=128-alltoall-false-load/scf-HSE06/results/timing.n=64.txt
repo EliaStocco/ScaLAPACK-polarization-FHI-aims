@@ -1,3 +1,0 @@
-# Job ID: 12041629
-# MPI tasks: 64
-# Elapsed Time: 346 seconds
