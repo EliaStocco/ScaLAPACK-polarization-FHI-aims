@@ -2,8 +2,8 @@
 
 This branch contains only the FHI-aims outputs, extracted data and scripts
 needed to regenerate the data figures and tables of the manuscript
-"Scalable Implementation of Berry-Phase Polarization with Localized Atomic
-Orbitals" and its supplementary material.
+"Scalable Berry-Phase Polarization Calculations with Numeric Atomic Orbitals"
+and its supplementary material.
 
 Install the Python packages in `requirements.txt` first.
 The plotting scripts read `style.mplstyle` from the repository root and use
