@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            //"program": "/home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/validation/scripts/delta-polarization.py",
+            //"cwd": "/home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/validation/",
+            //"args" : ["-i","data/dataframe.csv","-o","data/delta-polarization.csv"]
+            "program" : "/home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/convergence-k/raw/bec_kgrid_convergence/analyse_bec_convergence.py",
+            "cwd" : "/home/stoccoel/Documents/ScaLAPACK-polarization-FHI-aims/convergence-k/raw/bec_kgrid_convergence/"
+        }
+    ]
+}

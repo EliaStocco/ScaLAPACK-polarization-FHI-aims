@@ -22,7 +22,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT_PDF = ROOT / "performance-combined.pdf"
+OUTPUT_PDF = ROOT / "Figure-7.pdf"
 
 # Keep the overall width at 6 inches.  Adjust only the second value as needed.
 FIGSIZE = (8,3)
@@ -280,11 +280,12 @@ def main() -> None:
 
     figure, axes = plt.subplots(1, 2, figsize=FIGSIZE)
     annotations = plot_batio3(axes[0]) + plot_water(axes[1])
-    figure.subplots_adjust(left=0, right=1, bottom=0, top=1, wspace=0.15)
+    # figure.subplots_adjust(left=0, right=1, bottom=0, top=1, wspace=0.15)
     plt.tight_layout()
     figure.canvas.draw()
     for ax, annotation, exponent in annotations:
         annotation.set_rotation(power_law_angle(ax, exponent))
+    OUTPUT_PDF.parent.mkdir(parents=True, exist_ok=True)
     figure.savefig(OUTPUT_PDF,bbox_inches="tight")
     plt.close(figure)
     print(f"Wrote {OUTPUT_PDF.relative_to(ROOT)}")
