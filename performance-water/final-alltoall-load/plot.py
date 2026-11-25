@@ -90,7 +90,13 @@ def main() -> None:
                 np.log10(subset[-1]["ncores"]),
                 300,
             )
-            axis.plot(x, parameters["A"] * x**parameters["m"], color=color, ls="--", alpha=0.8)
+            axis.plot(
+                x,
+                parameters["A"] * x ** (-parameters["m"]),
+                color=color,
+                ls="--",
+                alpha=0.8,
+            )
             axis.text(
                 0.97,
                 0.75 + 0.10 * series_index,
@@ -112,8 +118,7 @@ def main() -> None:
         add_inverse_lines(axis)
 
     axes[0].set_ylabel("CPU time (s)")
-    axes[0].legend(title="water box", loc="lower left")
-    fig.suptitle("Liquid water polarization scaling")
+    axes[0].legend(title="water box")
     fig.tight_layout()
     fig.savefig(HERE / "water.pdf", bbox_inches="tight")
     print(f"Wrote {HERE / 'water.pdf'}")

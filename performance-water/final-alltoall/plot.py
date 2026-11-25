@@ -112,7 +112,7 @@ def main() -> None:
 
     axes[0].set_ylabel("polarization overhead (s)")
     axes[0].legend(title="water box", loc="lower left")
-    fig.suptitle("Liquid water polarization scaling")
+    fig.suptitle("Liquid water polarization scalability")
     fig.tight_layout()
     fig.savefig(HERE / "water.pdf", bbox_inches="tight")
     print(f"Wrote {HERE / 'water.pdf'}")

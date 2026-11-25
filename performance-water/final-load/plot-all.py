@@ -120,7 +120,7 @@ def main() -> None:
     axis.set_yscale("log")
     axis.set_xlabel("n. cores")
     axis.set_ylabel("CPU time (s)")
-    # axis.set_title("Liquid water polarization scaling")
+    # axis.set_title("Liquid water polarization scalability")
     axis.xaxis.set_major_locator(FixedLocator(XTICKS))
     axis.xaxis.set_major_formatter(ScalarFormatter())
     axis.xaxis.set_minor_locator(NullLocator())

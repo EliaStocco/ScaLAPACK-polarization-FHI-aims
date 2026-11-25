@@ -17,12 +17,16 @@ EXCLUDED_SERIES_POINTS = {("HSE06", 2048)}
 
 
 def fit_power_law(ncores: np.ndarray, time_s: np.ndarray) -> dict[str, float]:
-    """Fit ``time_s = A * ncores**m`` in log space, including uncertainties."""
+    """Fit ``time_s = A * ncores**(-m)`` in log space, with positive ``m``."""
 
     log_ncores = np.log10(ncores)
     log_time = np.log10(time_s)
     (exponent, intercept), covariance = np.polyfit(log_ncores, log_time, 1, cov=True)
     exponent_error, intercept_error = np.sqrt(np.diag(covariance))
+    # Timings decrease with core count, so the slope of log(time) versus
+    # log(cores) is negative.  Report the strong-scaling exponent as its
+    # positive magnitude and use it in the convention time = A*Ncores**(-m).
+    exponent = -exponent
     prefactor = 10**intercept
 
     return {
@@ -76,7 +80,7 @@ def main() -> None:
         writer.writerows(paired)
 
     results: dict[str, object] = {
-        "formula": "polarization_time_s = A * ncores**m",
+        "formula": "polarization_time_s = A * ncores**(-m), m > 0",
         "linear": {},
         "unpaired_calculations": missing_pairs,
     }
