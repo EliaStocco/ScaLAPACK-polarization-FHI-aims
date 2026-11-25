@@ -1,0 +1,29 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: elsto(84651)
+Job name:  MgO-8x8x8-dir1-lapack
+Node list: vipc[2384,2490,2492-2493]
+Job start: Mon Nov 23 07:19:11 CET 2026
+Job end:   Mon Nov 23 16:51:12 CET 2026
+Work dir:  /viper/ptmp1/elsto/works/ScaLAPACK-atoms-k-grid/supercell-8x8x8/lapack/dipole/rerun-20261120-dir1
+Command:   supercell-8x8x8/lapack/dipole/rerun-20261120-dir1/main.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+13415092      MgO-8x8x8-      4          1024                             09:32:01      0:0
+13415092.0    aims.26052      4    512   1024    36612.06M     2023.69M   09:31:55      0:0
+  
+Maximum memory per node: 4913.986929 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 98.9 %
+CO2 footprint: 16107.9893 g (estimate based on total cluster power and electricity mix)
+  
