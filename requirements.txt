@@ -4,3 +4,4 @@ matplotlib
 scipy
 ase
 tqdm
+fd2bec @ git+https://github.com/EliaStocco/fd2bec@a525b537d12f745e6faddc69cdaafa8d700acf5b
