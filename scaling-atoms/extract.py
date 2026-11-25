@@ -88,6 +88,15 @@ TASKS_PER_NODE_REGEX = re.compile(
 )
 SUCCESS_MARKER = "Have a nice day."
 
+# The original 8x8x8 dipole runs used ``output polarization 3 8 2 2``, i.e. the
+# denser string along the wrong direction.  Use the 2026-11-20 reruns with
+# ``output polarization 1 8 2 2`` instead (see viper-README.md).  The LAPACK
+# value follows the 10-hour rerun named in that README.
+DIPOLE_DIRECTORY_OVERRIDES = {
+    ("8x8x8", "lapack"): Path("dipole") / "rerun-20261120-dir1-10h",
+    ("8x8x8", "scalapack"): Path("dipole") / "rerun-20261120-dir1",
+}
+
 
 def read_text(outfile):
     text = outfile.read_text(errors="ignore")
@@ -246,9 +255,12 @@ def main():
             if not method_dir.is_dir():
                 continue
 
+            dipole_dir = method_dir / DIPOLE_DIRECTORY_OVERRIDES.get(
+                (supercell, method), Path("dipole")
+            )
             outputs = {
-                calculation: method_dir / calculation / "aims.out"
-                for calculation in ("scf", "dipole")
+                "scf": method_dir / "scf" / "aims.out",
+                "dipole": dipole_dir / "aims.out",
             }
             missing = [path for path in outputs.values() if not path.exists()]
             if missing:
@@ -285,7 +297,7 @@ def main():
                 continue
 
             scf_job_script = supercell_dir / method / "scf" / "main.sh"
-            dipole_job_script = supercell_dir / method / "dipole" / "main.sh"
+            dipole_job_script = dipole_dir / "main.sh"
             nodes = read_nodes(scf_job_script)
             dipole_nodes = read_nodes(dipole_job_script)
             if nodes is not None and dipole_nodes is not None and nodes != dipole_nodes:
